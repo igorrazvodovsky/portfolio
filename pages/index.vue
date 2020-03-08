@@ -11,9 +11,7 @@
       <span class="grid__item grid__spacer"></span>
       <span class="grid__item grid__spacer"></span>
       <span class="grid__item grid__spacer"></span>
-      <span class="grid__item grid__item__c-s-2 p-0">
-        <!--<img class="d-block" src="../images/responsive2.svg"/>-->
-      </span>
+      <span class="grid__item grid__item__c-s-2 p-0"> </span>
       <span class="grid__item grid__spacer"></span>
       <span class="grid__item grid__spacer"></span>
       <span class="grid__item grid__spacer"></span>
@@ -38,7 +36,7 @@
       <span class="grid__item grid__spacer"></span>
       <span class="grid__item grid__item__m"></span>
       <span class="grid__item grid__item__m grid__item__c-s-2 p-0">
-        <!-- ${require("!raw-loader!../images/border-01.svg")} -->
+        <img src="~/assets/border.svg" />
       </span>
       <span class="grid__item grid__item__m grid__item__c-s-2"></span>
       <span class="grid__item grid__item__m"></span>
@@ -52,9 +50,7 @@
       <span class="grid__item grid__item__m grid__item__c-s-2"></span>
       <!--6-->
       <span class="grid__item grid__item__m grid__item__c-s-2"></span>
-      <span class="grid__item grid__item__m p-0">
-        <!--<img class="d-block" src="../images/responsive.svg"/>-->
-      </span>
+      <span class="grid__item grid__item__m p-0"></span>
       <span class="grid__item grid__item__m"></span>
       <span class="grid__item grid__item__m"></span>
       <span class="grid__item grid__item__m"></span>
@@ -148,7 +144,8 @@
           that avoid redundancy. Currently working at
           <a href="https://home.kuehne-nagel.com/">Kuehne + Nagel</a>.
         </p>
-        <div class="about__expanded">
+        <span>↓ Previously</span>
+        <!-- <div class="about__expanded">
           <p>
             Most recently I have been working on back-office&nbsp;CRM system for
             educational start-up.
@@ -159,7 +156,7 @@
             <a href="https://ok.ru/">Odnoklassniki</a> social network &
             <a href="http://dego.lv/">Dego</a> design agency.
           </p>
-        </div>
+        </div> -->
       </div>
 
       <h2 class="grid__item spotify">
@@ -178,20 +175,19 @@
         >
       </div>
       <div class="grid__item spotify img my-3">
-        <!-- ${require("!raw-loader!../images/jukebox__img.svg")}
-            ${require("!raw-loader!../images/jukebox__img.svg")} -->
+        <img src="~/assets/jukebox__img.svg" />
       </div>
 
       <h2 id="scene1" class="grid__item dal">
         <span class="subheader">Experimenting with</span>
         medium for a&nbsp;recipe
         <div class="dal__veg">
-          <!-- ${require("!raw-loader!../images/dal__onion.svg")}
-                ${require("!raw-loader!../images/dal__garlic.svg")}
-                ${require("!raw-loader!../images/dal__chili.svg")}
-                ${require("!raw-loader!../images/dal__knife.svg")}
-                ${require("!raw-loader!../images/dal__ginger.svg")}
-                ${require("!raw-loader!../images/dal__pieces.svg")} -->
+          <dal-onion />
+          <dal-garlic />
+          <dal-chili />
+          <dal-knife />
+          <dal-ginger />
+          <dal-pieces />
         </div>
       </h2>
       <p class="grid__item dal">
@@ -206,18 +202,28 @@
         <a href="https://assistant.google.com/services/a/uid/0000009f815d8acf"
           >Google Assistant &rarr;</a
         >
-        <a
+        <!-- <a
           href="https://play.google.com/store/apps/details?id=com.irazvodovsky.dal"
           >Google Play &rarr;</a
-        >
+        > -->
       </div>
 
       <div class="grid__item img dal">
         <div class="dal__phone">
-          <!-- ${require("!raw-loader!../images/dal__phone.svg")} -->
-          <!-- <img class="dal__phone__screen" src="../images/dal__screen.png"/> -->
+          <dal-phone />
+          <!-- <img src="~/assets/dal__phone.svg" /> -->
+          <img class="dal__phone__screen" src="~/assets/dal__screen.png" />
         </div>
         <div class="dal__speaker">
+          <img class="dal__speaker__speaker" src="~/assets/dal__speaker.png" />
+          <img
+            class="dal__speaker__sound"
+            src="~/assets/dal__speaker__sounds.gif"
+          />
+          <img
+            class="dal__speaker__shadow"
+            src="~/assets/dal__speaker__shadow.png"
+          />
           <!-- <img class="dal__speaker__speaker" src="../images/dal__speaker.png"/>
                 <img class="dal__speaker__sound" src="../images/dal__speaker__sounds.gif"/>
                 <img class="dal__speaker__shadow" src="../images/dal__speaker__shadow.png"/> -->
@@ -232,3 +238,43 @@
     </div>
   </div>
 </template>
+
+//
+<script>
+// import DalOnion from '~/assets/dal__onion.svg?inline'
+
+// export default {
+//   components: {
+//     DalOnion
+//   }
+// }
+//
+</script>
+
+<script>
+// import dalOnionRaw from '~/assets/dal__onion.svg?raw'
+import DalOnion from '~/assets/dal__onion.svg?inline'
+import DalGarlic from '~/assets/dal__garlic.svg?inline'
+import DalGinger from '~/assets/dal__ginger.svg?inline'
+import DalKnife from '~/assets/dal__knife.svg?inline'
+import DalChili from '~/assets/dal__chili.svg?inline'
+import DalPieces from '~/assets/dal__pieces.svg?inline'
+import DalPhone from '~/assets/dal__phone.svg?inline'
+
+export default {
+  components: {
+    DalOnion,
+    DalGarlic,
+    DalGinger,
+    DalKnife,
+    DalChili,
+    DalPieces,
+    DalPhone
+  },
+  data() {
+    return {
+      // dalOnionSvg: dalOnionRaw
+    }
+  }
+}
+</script>

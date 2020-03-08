@@ -1,0 +1,23 @@
+<svg id="border__1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" preserveAspectRatio="none">
+  <defs>
+    <style>
+      .border__1__bg, .border__1__line {
+        stroke: #000;
+        fill: none;
+        stroke-miterlimit: 10;
+      }
+      .border__1__bg {
+        stroke: #fff;
+        stroke-width: 3px;
+      }
+      .border__1__line {vector-effect: non-scaling-stroke;}
+    </style>
+  </defs>
+  <title>border</title>
+  <path class="border__1__bg" d="M0,100.79H200"/>
+  <path class="border__1__line" d="M0,100.29c30.5,0,53,.5,100,0.5,55.84,0,70-.5,100-0.5">
+    <animate id="op" dur="3s"  attributeName="d" values="M0,100.29c30.5,0,53,.5,100,0.5,55.84,0,70-.5,100-0.5;M0,100.29c64.5,0,68.81,12.71,100,10.5,31.75-2.25,36.25-10.5,100-10.5" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1" begin="3s"></animate>
+    <!--<animate id="op" dur="5s"  attributeName="d" values="M0,100.29c30.5,0,53,.5,100,0.5,55.84,0,70-.5,100-0.5;M0,100.29c147,0,134.75,64.89,100,54.5-53.5-16,12.5-54.5,100-54.5;M0,100.29c30.5,0,53,.5,100,0.5,55.84,0,70-.5,100-0.5" fill="freeze" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" begin="3s;op.end+3s"></animate>-->
+  </path>
+
+</svg>

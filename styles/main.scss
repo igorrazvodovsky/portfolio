@@ -105,14 +105,9 @@ h1 {
   -moz-font-feature-settings: 'calt';
   -webkit-font-feature-settings: 'calt';
   font-feature-settings: 'calt';
-  /*
-  &:hover {
-    .a, .exclamation, .apostrophe {@extend .t-1;}
-    .a {color: $magenta;}
-    //.exclamation {color: $green;}
-    //.apostrophe {color: $yellow;}
+  @include media('<medium') {
+    word-break: break-all;
   }
-  */
 }
 
 .alt-char {
@@ -312,6 +307,9 @@ h2 {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   // Position
   grid-column: col 2 / span 5;
   @include media('>medium') {
@@ -320,14 +318,13 @@ h2 {
   grid-row: 5;
   //font-family: $font-family-display;
   p {
+    font-size: 24px;
+    line-height: 32px;
     margin-bottom: 1rem;
     a {
       cursor: pointer;
       display: inline-block;
-      //color: $black;
       font-weight: 400;
-      //border-bottom: .1rem lighten($blue, 20%) solid;
-      //height: 1.4rem;
       &:hover {
         border-color: $blue;
       }
@@ -469,7 +466,7 @@ p.dal {
     width: 100%;
     height: 100%;
     transform-origin: 0 0;
-    transform: translateZ(0.3px) scale(0.75);
+    transform: translateZ(0.1px) scale(1.2);
     // Hiding for mobile
     @include media('<medium') {
       display: none;

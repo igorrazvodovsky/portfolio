@@ -1,0 +1,9 @@
+<svg id="dal__phone__phone" viewBox="0 0 150 315" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path vector-effect="non-scaling-stroke" id="Subtract" fill-rule="evenodd" clip-rule="evenodd" d="M17 0C7.61121 0 0 7.61115 0 17V298C0 307.389 7.61121 315 17 315H133C142.389 315 150 307.389 150 298V17C150 7.61115 142.389 0 133 0H17ZM11 35C9.34314 35 8 36.3431 8 38V268C8 269.657 9.34314 271 11 271H139C140.657 271 142 269.657 142 268V38C142 36.3431 140.657 35 139 35H11Z" fill="white"/>
+<rect vector-effect="non-scaling-stroke" id="Rectangle 2" x="0.5" y="0.5" width="149" height="314" rx="16.5" stroke="#333333"/>
+<rect vector-effect="non-scaling-stroke" id="Rectangle 4.2" x="0.5" y="0.5" width="133" height="235" rx="2.5" transform="translate(8 35)" stroke="#333333"/>
+<path vector-effect="non-scaling-stroke" id="button" d="M23.5 12.5C23.5 19.1469 18.3322 24.5 12 24.5C5.66777 24.5 0.5 19.1469 0.5 12.5C0.5 5.85315 5.66777 0.5 12 0.5C18.3322 0.5 23.5 5.85315 23.5 12.5Z" transform="translate(63 280)" stroke="#333333"/>
+<line vector-effect="non-scaling-stroke" id="speaker" y1="-0.5" x2="34" y2="-0.5" transform="translate(58 17)" stroke="#333333"/>
+</g>
+</svg>
