@@ -1,5 +1,5 @@
 <template>
-  <div class="grid">
+  <div class="grid home">
     <!-- <figure class="fig fig--me">
       <img src="images/me.png" />
     </figure> -->

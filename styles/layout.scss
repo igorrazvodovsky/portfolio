@@ -2,19 +2,34 @@ body {
   margin: 0;
 }
 
-figure {
-  margin: 0;
+.home {
+  figure {
+    margin: 0;
+  }
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 }
 
-img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  display: block;
+header {
+  grid-column: span 12;
+  grid-row: header;
+  padding: var(--spacer) calc(var(--spacer) * 2) !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .header-links {
+    text-align: right;
+    a {
+      display: inline-block;
+      margin-left: calc(var(--spacer) / 2);
+    }
+  }
 }
 
 .grid {
-  --overlap: 6rem;
   display: grid;
   grid-template-columns:
     [header definition-start jukebox-img-start]
@@ -59,21 +74,6 @@ img {
   gap: var(--spacer);
 }
 
-header {
-  grid-column: span 12;
-  grid-row: header;
-  padding: var(--spacer) calc(var(--spacer) * 2) !important;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  .header-links {
-    text-align: right;
-    a {
-      display: inline-block;
-      margin-left: calc(var(--spacer) / 2);
-    }
-  }
-}
-
 .definition {
   grid-column: 1 / 7;
   grid-row: definition;
@@ -91,7 +91,6 @@ header {
 }
 
 .fig {
-  // background-color: rgba(red, 0.1);
   position: relative;
   .inprogress {
     position: absolute;
