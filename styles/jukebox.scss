@@ -1,0 +1,77 @@
+// JUKEBOX
+
+.spotify:hover {
+  #tshirt1,
+  #cup,
+  #boot {
+    fill: black;
+  }
+}
+
+h2.spotify {
+  grid-column: col 1 / span 6;
+  @include media('>medium') {
+    grid-column: col 5 / span 4;
+  }
+  grid-row: 9;
+  //grid-area: spotify_h;
+}
+p.spotify {
+  grid-column: col 1 / span 5;
+  @include media('>medium') {
+    grid-column: col 4 / span 6;
+  }
+  grid-row: 10;
+  //grid-area: spotify_p;
+}
+.spotify.links {
+  grid-column: col 1 / span 4;
+  @include media('>medium') {
+    grid-column: col 5 / span 4;
+  }
+  grid-row: 11;
+  a {
+    // TODO: Merge link styles
+    display: block;
+    &:hover {
+      //color: white;
+      //background: $blue;
+      transition: all 400ms ease;
+    }
+  }
+}
+.spotify.img {
+  grid-column: col 1 / span 6;
+  @include media('>medium') {
+    grid-column: col / span 12;
+  }
+  grid-row: 11;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  //Removing gap between inline images. TODO: Normal solution
+  font-size: 0;
+  display: flex;
+  flex-direction: column;
+  svg {
+    preserveaspectratio: none;
+    display: inline-block;
+    margin-bottom: -3px;
+    margin-top: -1px;
+    @include media('<medium') {
+      height: 30vmax;
+      transform: translate(-10%, 3px);
+    }
+  }
+}
+#leg {
+  transform-origin: 727px 128px;
+  shape-rendering: optimizeSpeed;
+}
+
+#tshirt1,
+#cup,
+#boot {
+  fill: white;
+  transition: fill 400ms ease;
+}

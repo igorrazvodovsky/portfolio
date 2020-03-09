@@ -1,0 +1,199 @@
+// DAL
+
+h2.dal {
+  grid-column: col 1 / span 6;
+  @include media('>medium') {
+    grid-column: col 6 / span 4;
+  }
+  grid-row: 14;
+}
+
+p.dal {
+  grid-column: col 4 / span 3;
+  @include media('>medium') {
+    grid-column: col 6 / span 4;
+  }
+  grid-row: 15;
+}
+
+.links.dal {
+  grid-column: col 4 / span 3;
+  grid-row: 16;
+  @include media('>medium') {
+    grid-column: col 6 / span 4;
+    grid-row: 16;
+  }
+  a {
+    display: block;
+  }
+  &:hover {
+    //background: $blue2;
+    transition: all 400ms ease;
+    //a {color: white;}
+  }
+}
+
+.dal__veg {
+  position: relative;
+  // Hiding flown away SVGs
+  //overflow-x: hidden;
+  svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+    transform: translateZ(0.1px) scale(1.2);
+    // Hiding for mobile
+    @include media('<medium') {
+      display: none;
+    }
+  }
+  #dal__chili {
+    height: 6rem;
+    top: 0vmin;
+    left: 35vmin;
+  }
+  #dal__garlic {
+    height: 3rem;
+    top: -30vmin;
+    left: 40vmin;
+    @include media('>medium') {
+      top: -10vmin;
+      left: 20vmin;
+    }
+  }
+  #dal__ginger {
+    height: 3rem;
+    top: 55vmin;
+    left: 30vmin;
+    @include media('>medium') {
+      top: 20vmin;
+      left: 45vmin;
+    }
+  }
+  #dal__knife {
+    height: 6rem;
+    top: 5vmin;
+    left: 45vmin;
+    //
+    @include media('<medium') {
+      display: none;
+    }
+  }
+  #dal__onion {
+    height: 4rem;
+    top: 20vmin;
+    left: -40vmin;
+    @include media('>medium') {
+      top: -15vmin;
+      left: 45vmin;
+    }
+  }
+  #dal__pieces {
+    height: 6rem;
+    top: 30vmin;
+    left: 45vmin;
+    //
+    @include media('<medium') {
+      display: none;
+    }
+  }
+}
+
+.img.dal {
+  position: relative;
+  grid-column: col 1 / span 3;
+  grid-row: 13 / span 2;
+  @include media('>medium') {
+    grid-column: col 3 / span 3;
+    grid-row: 14 / span 3;
+  }
+  .dal__phone {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transform: translateY(5%);
+    // TODO: hide for mobile in a nice way
+    display: none;
+    @include media('>medium') {
+      display: block;
+      width: 60%;
+      transform: translate(15%, -10%);
+    }
+    .dal__phone__phone,
+    #dal__phone__phone {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      z-index: 100;
+    }
+    .dal__phone__stroke {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: -3vmin;
+    }
+    .dal__phone__screen {
+      z-index: 0;
+      width: 88%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -53%);
+    }
+  }
+  .dal__speaker {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    .dal__speaker__speaker {
+      width: 50%;
+      position: absolute;
+      // TODO: combine and move size
+      bottom: 10%;
+      right: 30%;
+      transform: translate(50%, 50%);
+      z-index: 100;
+      @include media('<medium') {
+        width: 70%;
+        bottom: 50%;
+        right: 50%;
+      }
+    }
+    .dal__speaker__sound {
+      width: 60%;
+      position: absolute;
+      bottom: 10%;
+      right: 30%;
+      transform: translate(45%, -50%);
+      @include media('<medium') {
+        width: 75%;
+        transform: translate(45%, -70%);
+        bottom: 50%;
+        right: 50%;
+      }
+    }
+    .dal__speaker__shadow {
+      width: 70%;
+      position: absolute;
+      bottom: 10%;
+      right: 30%;
+      transform: translate(50%, 80%);
+      z-index: 0;
+      @include media('<medium') {
+        width: 80%;
+        transform: translate(50%, 90%);
+        bottom: 50%;
+        right: 50%;
+      }
+    }
+  }
+}
