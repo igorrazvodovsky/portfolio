@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.grid {
+  --overlap: 6rem;
+  display: grid;
+  grid-template-columns:
+    [header definition-start jukebox-img-start]
+    1fr
+    [aux-img-start aux-t-start]
+    1fr
+    1fr
+    [jukebox-t-start]
+    1fr
+    [aux-img-end aux-t-end]
+    1fr
+    1fr
+    [definition-end illustration-start convertiq-img-start convertiq-t-start]
+    1fr
+    1fr
+    1fr
+    [jukebox-t-end]
+    1fr
+    [convertiq-t-end]
+    1fr
+    [convertiq-img-end convertiq-t-end]
+    1fr
+    [illustration-end jukebox-img-end];
+  grid-template-rows:
+    [header]
+    auto
+    [definition]
+    auto
+    [aux-img-start]
+    calc(var(--spacer) * 4)
+    [convertiq-img]
+    auto
+    [convertiq-t]
+    auto
+    [aux-img-end aux-t]
+    auto
+    var(--spacer)
+    [jukebox-t]
+    auto
+    [jukebox-img];
+  grid-auto-rows: minmax(var(--spacer), auto);
+  gap: var(--spacer);
+}
+
+header {
+  grid-column: span 12;
+  grid-row: header;
+  padding: var(--spacer) calc(var(--spacer) * 2) !important;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  .header-links {
+    text-align: right;
+    a {
+      display: inline-block;
+      margin-left: calc(var(--spacer) / 2);
+    }
+  }
+}
+
+.definition {
+  grid-column: 1 / 7;
+  grid-row: definition;
+  padding: var(--spacer) calc(var(--spacer) * 2) !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  .prev {
+    margin-top: 7rem;
+    height: 3rem;
+    width: auto;
+  }
+}
+
+.fig {
+  // background-color: rgba(red, 0.1);
+  position: relative;
+  .inprogress {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 6rem;
+    transform: translate(40%, 4rem);
+  }
+  &--me {
+    grid-column: span 5;
+    grid-row: definition;
+    img {
+      max-height: 40vh;
+    }
+  }
+
+  &--jukebox {
+    grid-column: span 12;
+    grid-row: jukebox-img;
+  }
+
+  &--convertiq {
+    grid-column: convertiq-img;
+    grid-row: convertiq-img;
+
+    img {
+      object-position: left;
+    }
+  }
+
+  &--aux {
+    background-color: #efefef;
+    grid-column: aux-img;
+    grid-row: aux-img;
+    align-self: end;
+  }
+}
+
+.project-description {
+  &--aux {
+    grid-column: aux-t;
+    grid-row: aux-t;
+    z-index: 1;
+  }
+
+  &--convertiq {
+    grid-column: convertiq-t;
+    grid-row: convertiq-t;
+    text-align: right;
+  }
+
+  &--jukebox {
+    grid-column: jukebox-t;
+    grid-row: jukebox-t;
+  }
+}
