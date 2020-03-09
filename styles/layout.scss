@@ -2,6 +2,14 @@ body {
   margin: 0;
 }
 
+.container {
+  min-height: 100vh;
+  transition: all 400ms ease-in-out;
+  &.case {
+    background-color: #e5e5e5;
+  }
+}
+
 .home {
   figure {
     margin: 0;

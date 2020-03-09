@@ -6,9 +6,24 @@
 @import 'layout';
 @import 'type';
 
-* {
+// TODO: Reset?
+html {
   box-sizing: border-box;
 }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+$breakpoints: (
+  small: 320px,
+  medium: 768px,
+  large: 1024px
+);
+
+$black: #000000;
+$color-link: #2d7ffa;
 
 :root {
   --spacer: 24px;
@@ -23,65 +38,8 @@
 a {
   transition: opacity 0.3s ease;
   text-decoration: none;
-  color: #2f80ed;
+  color: $color-link;
   &:hover {
     opacity: 0.5;
-  }
-}
-
-$breakpoints: (
-  small: 320px,
-  medium: 768px,
-  large: 1024px
-);
-
-$black: #333333;
-$blue: #2d7ffa;
-$magenta: #f82b5f;
-$green: #20c933;
-$orange: #ff6f2c;
-$pink: #ff09c3;
-$yellow: #fcb402;
-$blue2: #18bfff;
-$purple: #8a46ff;
-
-$font-family-display: 'Woodkit Solid Letterpress 2';
-$font-family: 'Infini', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-  'Segoe UI Symbol';
-$min_width: 320px;
-$max_width: 1200px;
-// $min_font: 16px;
-// $max_font: 24px; //18
-
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-
-.container {
-  min-height: 100vh;
-  transition: all 400ms ease-in-out;
-  &.case {
-    background-color: #e5e5e5;
-  }
-}
-
-.grid.case {
-  .title {
-    grid-column: col 2 / -1;
-    grid-row: 2;
-  }
-  .description {
-    grid-column: col 3 / span 6;
-    grid-row: 3;
-  }
-  .skills {
-    grid-column: col 9 / span 2;
-    grid-row: 3;
   }
 }

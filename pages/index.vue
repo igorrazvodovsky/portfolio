@@ -3,25 +3,30 @@
     <!-- <figure class="fig fig--me">
       <img src="images/me.png" />
     </figure> -->
-    <figure class="fig fig--jukebox">
-      <jukebox-img />
-    </figure>
-
-    <figure class="fig fig--aux">
-      <img src="~/assets/aux.png" />
-      <img class="inprogress" src="~/assets/inprogress.png" />
-    </figure>
 
     <div class="definition">
-      <div>
+      <h1>
         Friendly designer creating clear, robust, consistent, elegant systems
         that avoid redundancy. Currently working at
         <a href="https://home.kuehne-nagel.com/">Kuehne + Nagel</a>.
         <a class="text--secondary" href>More&nbsp;→</a>
-      </div>
+      </h1>
       <img class="prev" src="~/assets/recent.png" alt="Recent work" />
     </div>
 
+    <!-- AUX -->
+    <figure class="fig fig--aux">
+      <img src="~/assets/aux.png" />
+      <img class="inprogress" src="~/assets/inprogress.png" />
+    </figure>
+    <div class="project-description project-description--aux text--muted">
+      <h3>
+        <span class="text--muted">Dreaming up</span> a new way to
+        listen&nbsp;a&nbsp;book
+      </h3>
+    </div>
+
+    <!-- CONVERTIQ -->
     <nuxt-link to="/convertiq" class="fig fig--convertiq">
       <img src="~/assets/convertiq.png" />
     </nuxt-link>
@@ -34,6 +39,7 @@
       </h3>
     </div>
 
+    <!-- JUKEBOX -->
     <div class="project-description project-description--jukebox">
       <h3>
         <span class="text--muted">Thinking about</span>
@@ -45,12 +51,9 @@
       </p>
     </div>
 
-    <div class="project-description project-description--aux text--muted">
-      <h3>
-        <span class="text--muted">Dreaming up</span> a new way to
-        listen&nbsp;a&nbsp;book
-      </h3>
-    </div>
+    <figure class="fig fig--jukebox">
+      <jukebox-img />
+    </figure>
   </div>
 </template>
 
