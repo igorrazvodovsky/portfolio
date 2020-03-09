@@ -1,10 +1,18 @@
 <template>
   <div class="container" :class="{ case: page !== 'index' }">
     <header>
-      <div>Igor Razvodovsky, User Experience Designer</div>
+      <div class="title">
+        <nuxt-link to="/">Igor Razvodovsky</nuxt-link
+        ><span v-if="page == 'index'">, User Experience&nbsp;Designer</span>
+      </div>
+      <div v-if="page !== 'index'" class="subtitle">
+        Work
+      </div>
       <!-- <a href>Email</a> -->
     </header>
-    <nuxt />
+    <transition name="fade">
+      <nuxt />
+    </transition>
   </div>
 </template>
 

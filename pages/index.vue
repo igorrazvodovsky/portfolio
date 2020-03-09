@@ -9,7 +9,7 @@
         Friendly designer creating clear, robust, consistent, elegant systems
         that avoid redundancy. Currently working at
         <a href="https://home.kuehne-nagel.com/">Kuehne + Nagel</a>.
-        <a class="text--secondary" href>More&nbsp;→</a>
+        <!-- <a class="text--secondary" href>More&nbsp;→</a> -->
       </h1>
       <img class="prev" src="~/assets/recent.png" alt="Recent work" />
     </div>

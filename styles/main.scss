@@ -2,7 +2,7 @@
 @import '_include-media';
 @import '_fluid-type';
 @import '_utility';
-
+@import '_reset';
 @import 'layout';
 @import 'type';
 
@@ -42,4 +42,13 @@ a {
   &:hover {
     opacity: 0.5;
   }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
 }

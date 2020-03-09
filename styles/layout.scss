@@ -3,8 +3,9 @@ body {
 }
 
 .container {
+  background-color: white;
   min-height: 100vh;
-  transition: all 400ms ease-in-out;
+  transition: background-color 0.6s ease;
   &.case {
     background-color: #e5e5e5;
   }
@@ -23,63 +24,67 @@ body {
 }
 
 header {
-  grid-column: span 12;
-  grid-row: header;
-  padding: var(--spacer) calc(var(--spacer) * 2) !important;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  .header-links {
-    text-align: right;
-    a {
-      display: inline-block;
-      margin-left: calc(var(--spacer) / 2);
-    }
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: auto;
+  gap: var(--spacer);
+  .title {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    padding: var(--spacer);
+  }
+  .subtitle {
+    grid-column: 4 / span 3;
+    grid-row: 1;
+    padding: var(--spacer);
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns:
-    [header definition-start jukebox-img-start]
-    1fr
-    [aux-img-start aux-t-start]
-    1fr
-    1fr
-    [jukebox-t-start]
-    1fr
-    [aux-img-end aux-t-end]
-    1fr
-    1fr
-    [definition-end illustration-start convertiq-img-start convertiq-t-start]
-    1fr
-    1fr
-    1fr
-    [jukebox-t-end]
-    1fr
-    [convertiq-t-end]
-    1fr
-    [convertiq-img-end convertiq-t-end]
-    1fr
-    [illustration-end jukebox-img-end];
-  grid-template-rows:
-    [header]
-    auto
-    [definition]
-    auto
-    [aux-img-start]
-    calc(var(--spacer) * 4)
-    [convertiq-img]
-    auto
-    [convertiq-t]
-    auto
-    [aux-img-end aux-t]
-    auto
-    var(--spacer)
-    [jukebox-t]
-    auto
-    [jukebox-img];
   grid-auto-rows: minmax(var(--spacer), auto);
   gap: var(--spacer);
+  &.home {
+    grid-template-columns:
+      [header definition-start jukebox-img-start]
+      1fr
+      [aux-img-start aux-t-start]
+      1fr
+      1fr
+      [jukebox-t-start]
+      1fr
+      [aux-img-end aux-t-end]
+      1fr
+      1fr
+      [definition-end illustration-start convertiq-img-start convertiq-t-start]
+      1fr
+      1fr
+      1fr
+      [jukebox-t-end]
+      1fr
+      [convertiq-t-end]
+      1fr
+      [convertiq-img-end convertiq-t-end]
+      1fr
+      [illustration-end jukebox-img-end];
+    grid-template-rows:
+      [header]
+      auto
+      [definition]
+      auto
+      [aux-img-start]
+      calc(var(--spacer) * 4)
+      [convertiq-img]
+      auto
+      [convertiq-t]
+      auto
+      [aux-img-end aux-t]
+      auto
+      var(--spacer)
+      [jukebox-t]
+      auto
+      [jukebox-img];
+  }
 }
 
 .definition {
@@ -153,5 +158,73 @@ header {
   &--jukebox {
     grid-column: jukebox-t;
     grid-row: jukebox-t;
+  }
+}
+
+// CASES
+.case {
+  .convertiq {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-areas:
+      '.      .       .       title   title   title   .       .       .       .       skills  skills'
+      '.      .       .       desc    desc    desc    desc    desc    .       .       .       .'
+      'img-1  img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1'
+      '.      .       .       .       .       .       .       .       .       .       .       .'
+      '.      .       .       .       .       .       .       img-10  img-10  img-10  img-10  .'
+      '.      .       .       .       .       .       .       .       .       .       .       .'
+      '.      img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   .'
+      '.      .       .       .       .       .       .       .       .       .       .       .'
+      'img-3  img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3'
+      '.      .       .       .       .       .       .       .       .       .       .       .'
+      '.      .       img-4   img-4   img-4   img-4   img-6   img-6   img-7   img-7   .       .'
+      '.      .       img-4   img-4   img-4   img-4   img-5   img-5   img-5   img-5   .       .'
+      '.      .       img-8   img-8   img-9   img-9   img-5   img-5   img-5   img-5   .       .';
+    &-title {
+      grid-area: title;
+    }
+    &-description {
+      grid-area: desc;
+    }
+    &-skills {
+      grid-area: skills;
+    }
+    &-img--1 {
+      grid-area: img-1;
+    }
+    &-img--2 {
+      grid-area: img-2;
+    }
+    &-img--3 {
+      grid-area: img-3;
+    }
+    &-img--4 {
+      grid-area: img-4;
+    }
+    &-img--5 {
+      grid-area: img-5;
+    }
+    &-img--6 {
+      grid-area: img-6;
+    }
+    &-img--7 {
+      grid-area: img-7;
+    }
+    &-img--8 {
+      grid-area: img-8;
+    }
+    &-img--9 {
+      grid-area: img-9;
+    }
+    &-img--10 {
+      grid-area: img-10;
+    }
+    img {
+      max-width: 100%;
+    }
+    &-title,
+    &-description,
+    &-skills {
+      padding: var(--spacer);
+    }
   }
 }
