@@ -31,7 +31,7 @@ header {
   .title {
     grid-column: 1 / span 3;
     grid-row: 1;
-    padding: var(--spacer);
+    padding: var(--spacer) calc(var(--spacer) * 2);
   }
   .subtitle {
     grid-column: 4 / span 3;
@@ -42,65 +42,75 @@ header {
 
 .grid {
   display: grid;
+  grid-template-columns: repeat(12, 1fr);
   grid-auto-rows: minmax(var(--spacer), auto);
   gap: var(--spacer);
   &.home {
-    grid-template-columns:
-      [header definition-start jukebox-img-start]
-      1fr
-      [aux-img-start aux-t-start]
-      1fr
-      1fr
-      [jukebox-t-start]
-      1fr
-      [aux-img-end aux-t-end]
-      1fr
-      1fr
-      [definition-end illustration-start convertiq-img-start convertiq-t-start]
-      1fr
-      1fr
-      1fr
-      [jukebox-t-end]
-      1fr
-      [convertiq-t-end]
-      1fr
-      [convertiq-img-end convertiq-t-end]
-      1fr
-      [illustration-end jukebox-img-end];
-    grid-template-rows:
-      [header]
-      auto
-      [definition]
-      auto
-      [aux-img-start]
-      calc(var(--spacer) * 4)
-      [convertiq-img]
-      auto
-      [convertiq-t]
-      auto
-      [aux-img-end aux-t]
-      auto
-      var(--spacer)
-      [jukebox-t]
-      auto
-      [jukebox-img];
+    grid-template-areas:
+      'def     def     def      def     def     def     .       .       .       .       .       .'
+      '.       .       .        .       .       .       .       .       .       .       .       .'
+      'recent  recent  recent   .       .       .       c-img   c-img   c-img   c-img   c-img   .'
+      '.       a-img   a-img    a-img   .       .       c-img   c-img   c-img   c-img   c-img   .'
+      '.       a-img   a-img    a-img   .       .       c-t     c-t     c-t     c-t     .       .'
+      '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
+      '.       .       .        .       .       .       .       .       .       .       .       .'
+      '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
+      'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img';
+    // grid-template-columns:
+    //   [header definition-start jukebox-img-start]
+    //   1fr
+    //   [aux-img-start aux-t-start]
+    //   1fr
+    //   1fr
+    //   [jukebox-t-start]
+    //   1fr
+    //   [aux-img-end aux-t-end]
+    //   1fr
+    //   1fr
+    //   [definition-end illustration-start convertiq-img-start convertiq-t-start]
+    //   1fr
+    //   1fr
+    //   1fr
+    //   [jukebox-t-end]
+    //   1fr
+    //   [convertiq-t-end]
+    //   1fr
+    //   [convertiq-img-end convertiq-t-end]
+    //   1fr
+    //   [illustration-end jukebox-img-end];
+    // grid-template-rows:
+    //   [header]
+    //   auto
+    //   [definition]
+    //   auto
+    //   [aux-img-start]
+    //   calc(var(--spacer) * 4)
+    //   [convertiq-img]
+    //   auto
+    //   [convertiq-t]
+    //   auto
+    //   [aux-img-end aux-t]
+    //   auto
+    //   var(--spacer)
+    //   [jukebox-t]
+    //   auto
+    //   [jukebox-img];
   }
 }
 
 .definition {
-  grid-column: 1 / 7;
-  grid-row: definition;
+  grid-area: def;
+  // grid-column: 1 / 7;
+  // grid-row: definition;
   padding: var(--spacer) calc(var(--spacer) * 2) !important;
+}
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
-  .prev {
-    margin-top: 7rem;
-    height: 3rem;
-    width: auto;
-  }
+.recent {
+  grid-area: recent;
+  object-position: top;
+  padding: 0 calc(var(--spacer) * 2);
+  min-height: 2rem;
+  margin-bottom: calc(var(--spacer) * 3);
 }
 
 .fig {
@@ -114,50 +124,55 @@ header {
   }
   &--me {
     grid-column: span 5;
-    grid-row: definition;
-    img {
+    grid-area: img-main // grid-row: definition;
+      img {
       max-height: 40vh;
     }
   }
 
   &--jukebox {
     grid-column: span 12;
-    grid-row: jukebox-img;
+    grid-row: j-img;
   }
 
   &--convertiq {
-    grid-column: convertiq-img;
-    grid-row: convertiq-img;
-
+    grid-area: c-img;
+    // grid-column: convertiq-img;
+    // grid-row: convertiq-img;
     img {
-      object-position: left;
+      object-position: right;
+      object-fit: cover;
     }
   }
 
   &--aux {
-    background-color: #efefef;
-    grid-column: aux-img;
-    grid-row: aux-img;
+    grid-area: a-img;
+    // grid-column: aux-img;
+    // grid-row: aux-img;
     align-self: end;
   }
 }
 
 .project-description {
   &--aux {
-    grid-column: aux-t;
-    grid-row: aux-t;
+    grid-area: a-t;
+    // grid-column: aux-t;
+    // grid-row: aux-t;
     z-index: 1;
   }
 
   &--convertiq {
-    grid-column: convertiq-t;
-    grid-row: convertiq-t;
+    grid-area: c-t;
+    // grid-column: convertiq-t;
+    // grid-row: convertiq-t;
     text-align: right;
   }
 
   &--jukebox {
-    grid-column: jukebox-t;
-    grid-row: jukebox-t;
+    grid-area: j-t;
+    // grid-column: jukebox-t;
+    // grid-row: jukebox-t;
+    text-align: center;
   }
 }
 

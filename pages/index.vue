@@ -4,26 +4,32 @@
       <img src="images/me.png" />
     </figure> -->
 
-    <div class="definition">
-      <h1>
-        Friendly designer creating clear, robust, consistent, elegant systems
-        that avoid redundancy. Currently working at
-        <a href="https://home.kuehne-nagel.com/">Kuehne + Nagel</a>.
-        <!-- <a class="text--secondary" href>More&nbsp;→</a> -->
-      </h1>
-      <img class="prev" src="~/assets/recent.png" alt="Recent work" />
-    </div>
-
+    <h1 class="definition">
+      Friendly designer creating clear, robust, consistent, elegant systems that
+      avoid redundancy. Currently working at&nbsp;<a
+        href="https://home.kuehne-nagel.com/"
+        >Kuehne&nbsp;+&nbsp;Nagel</a
+      >.
+      <!-- <a class="text--secondary" href>More&nbsp;→</a> -->
+    </h1>
+    <img class="recent" src="~/assets/recent.png" alt="Recent work" />
     <!-- AUX -->
     <figure class="fig fig--aux">
       <img src="~/assets/aux.png" />
+      <!-- <iframe
+        style="border: none;"
+        width="100%"
+        height="300"
+        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FAZ12HuoJbDaiC9wVDzjilD%2FPortfolio-alt-draft%3Fnode-id%3D0%253A1"
+        allowfullscreen
+      ></iframe> -->
       <img class="inprogress" src="~/assets/inprogress.png" />
     </figure>
     <div class="project-description project-description--aux text--muted">
-      <h3>
+      <h2 class="mb-1">
         <span class="text--muted">Dreaming up</span> a new way to
         listen&nbsp;a&nbsp;book
-      </h3>
+      </h2>
     </div>
 
     <!-- CONVERTIQ -->
@@ -31,24 +37,26 @@
       <img src="~/assets/convertiq.png" />
     </nuxt-link>
     <div class="project-description project-description--convertiq">
-      <h3>
-        <nuxt-link to="/convertiq">
-          <span class="text--muted">Simplifying</span>
-          social media campaign&nbsp;management
-        </nuxt-link>
-      </h3>
+      <h2 class="mb-1">
+        <span class="text--muted">Simplifying</span>
+        social media campaign&nbsp;management
+      </h2>
+      <nuxt-link class="d-block" to="/convertiq">
+        View project &rarr;
+      </nuxt-link>
     </div>
 
     <!-- JUKEBOX -->
     <div class="project-description project-description--jukebox">
-      <h3>
+      <h2 class="mb-1">
         <span class="text--muted">Thinking about</span>
         turning Spotify into&nbsp;Jukebox
-      </h3>
-      <p>
+      </h2>
+      <p class="mb-1">
         A concept investigating the possibility of playing music in public
         places using streaming&nbsp;services.
       </p>
+      <a href="">Read on Medium &rarr;</a>
     </div>
 
     <figure class="fig fig--jukebox">

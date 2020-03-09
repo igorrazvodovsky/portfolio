@@ -7,7 +7,7 @@
       try out a more playful visual approach, as I wanted the app to be warm and
       approachable despite the complexity of the subject.
     </p>
-    <p class="convertiq-skills">UX & UI, a bit of identity</p>
+    <!-- <p class="convertiq-skills">UX & UI, a bit of identity</p> -->
 
     <img class="convertiq-img--1" src="~/assets/convertiq__1.png" />
     <img class="convertiq-img--2" src="~/assets/convertiq__2.png" />
