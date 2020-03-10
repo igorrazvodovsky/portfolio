@@ -18,7 +18,12 @@
     <img class="convertiq-img--7" src="~/assets/convertiq__7s.png" />
     <img class="convertiq-img--8" src="~/assets/convertiq__8s.png" />
     <img class="convertiq-img--9" src="~/assets/convertiq__9s.png" />
-    <img class="convertiq-img--10" src="~/assets/convertiq__10.png" />
+    <!-- <img class="convertiq-img--10" src="~/assets/convertiq__10.mp4" /> -->
+    <video class="convertiq-img--10" autoplay loop>
+      <!-- <source src="/media/examples/flower.webm" type="video/webm" /> -->
+      <source src="~/assets/convertiq__10.mp4" type="video/mp4" />
+      Sorry, your browser doesn't support embedded videos.
+    </video>
   </div>
 </template>
 

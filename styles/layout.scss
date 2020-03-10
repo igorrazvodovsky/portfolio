@@ -146,10 +146,15 @@ header {
   }
 
   &--aux {
+    // background-color: #f5f5f5;
+    background-color: #eeeeee;
     grid-area: a-img;
     // grid-column: aux-img;
     // grid-row: aux-img;
     align-self: end;
+    img {
+      transform: scale(1.2);
+    }
   }
 }
 
@@ -233,7 +238,8 @@ header {
     &-img--10 {
       grid-area: img-10;
     }
-    img {
+    img,
+    video {
       max-width: 100%;
     }
     &-title,
