@@ -6,10 +6,6 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-family: 'Infini', sans-serif;
-  color: var(--text-color);
-}
-
-.container {
   color: rgba(var(--text-color), 0.9);
   &.case {
     --text-color: 255, 255, 255;
@@ -46,4 +42,10 @@ header {
   .title a {
     color: inherit;
   }
+}
+
+figcaption {
+  padding: calc(var(--spacer) / 2);
+  font-size: 14px;
+  color: rgba(var(--text-color), 0.6) !important;
 }

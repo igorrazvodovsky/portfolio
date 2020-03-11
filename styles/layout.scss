@@ -1,14 +1,10 @@
 body {
-  margin: 0;
-}
-
-.container {
   background-color: var(--bg-color);
-  min-height: 100vh;
   transition: background-color 0.6s ease;
   &.case {
     // background-color: #e5e5e5;
     --bg-color: black;
+    // --bg-color: #757575;
     // --bg-color: rgba(203, 165, 152, 1);
   }
 }
@@ -31,12 +27,12 @@ header {
   grid-auto-rows: auto;
   gap: var(--spacer);
   .title {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 4;
     grid-row: 1;
     padding: var(--spacer) calc(var(--spacer) * 2);
   }
   .subtitle {
-    grid-column: 4 / span 3;
+    grid-column: 5 / span 4;
     grid-row: 1;
     padding: var(--spacer);
   }
@@ -185,6 +181,14 @@ header {
 
 // CASES
 .case {
+  header {
+    .title {
+      grid-column: 1 / span 3;
+    }
+    .subtitle {
+      grid-column: 4 / span 3;
+    }
+  }
   .convertiq {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
@@ -196,11 +200,12 @@ header {
       '.      .       .       .       .       .       .       .       .       .       .       .'
       '.      img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   .'
       '.      .       .       .       .       .       .       .       .       .       .       .'
-      'img-3  img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3'
+      '.      img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   .'
       '.      .       .       .       .       .       .       .       .       .       .       .'
       '.      .       img-4   img-4   img-4   img-4   img-6   img-6   img-7   img-7   .       .'
       '.      .       img-4   img-4   img-4   img-4   img-5   img-5   img-5   img-5   .       .'
-      '.      .       img-8   img-8   img-9   img-9   img-5   img-5   img-5   img-5   .       .';
+      '.      .       img-8   img-8   img-9   img-9   img-5   img-5   img-5   img-5   .       .'
+      '.      .       .       .       .       .       .       .       .       .       .       .';
     &-title {
       grid-area: title;
     }
@@ -218,6 +223,17 @@ header {
     }
     &-img--3 {
       grid-area: img-3;
+      display: flex;
+      flex-direction: row;
+      // justify-content: space-between;
+      img {
+        max-height: 50vh;
+        object-fit: contain;
+        filter: invert(1);
+      }
+      figcaption {
+        max-width: 20em;
+      }
     }
     &-img--4 {
       grid-area: img-4;
