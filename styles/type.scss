@@ -1,16 +1,27 @@
+:root {
+  --text-color: 0, 0, 0;
+}
+
 body {
   font-size: 18px;
   line-height: 24px;
   font-family: 'Infini', sans-serif;
-  color: rgba(black, 0.9);
+  color: var(--text-color);
+}
+
+.container {
+  color: rgba(var(--text-color), 0.9);
+  &.case {
+    --text-color: 255, 255, 255;
+  }
 }
 
 .text {
   &--secondary {
-    color: rgba(black, 0.6);
+    color: rgba(var(--text-color), 0.6) !important;
   }
   &--muted {
-    color: rgba(black, 0.3);
+    color: rgba(var(--text-color), 0.3) !important;
   }
 }
 

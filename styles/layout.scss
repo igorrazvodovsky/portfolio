@@ -3,11 +3,13 @@ body {
 }
 
 .container {
-  background-color: white;
+  background-color: var(--bg-color);
   min-height: 100vh;
   transition: background-color 0.6s ease;
   &.case {
-    background-color: #e5e5e5;
+    // background-color: #e5e5e5;
+    --bg-color: black;
+    // --bg-color: rgba(203, 165, 152, 1);
   }
 }
 
