@@ -53,7 +53,9 @@ header {
       '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
       '.       .       .        .       .       .       .       .       .       .       .       .'
       '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
-      'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img';
+      'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img'
+      '.       .       r-img    r-img   r-img   .       .       .       .       .       .       .'
+      '.       .       r-img    r-img   r-img   r-t     r-t     r-t     r-t     .       .       .';
     // grid-template-columns:
     //   [header definition-start jukebox-img-start]
     //   1fr
@@ -192,8 +194,8 @@ header {
   .convertiq {
     grid-template-columns: repeat(12, 1fr);
     grid-template-areas:
-      '.      .       .       title   title   title   .       .       .       .       skills  skills'
-      '.      .       .       desc    desc    desc    desc    desc    .       .       .       .'
+      '.      .       .       title   title   title   .       .       .       .       .       .'
+      '.      .       .       desc    desc    desc    desc    desc    .       meta    meta    meta'
       'img-1  img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1'
       '.      .       .       .       .       .       .       .       .       .       .       .'
       '.      .       .       .       .       .       .       img-10  img-10  img-10  img-10  .'
@@ -202,9 +204,9 @@ header {
       '.      .       .       .       .       .       .       .       .       .       .       .'
       '.      img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   .'
       '.      .       .       .       .       .       .       .       .       .       .       .'
-      '.      .       img-4   img-4   img-4   img-4   img-6   img-6   img-7   img-7   .       .'
-      '.      .       img-4   img-4   img-4   img-4   img-5   img-5   img-5   img-5   .       .'
-      '.      .       img-8   img-8   img-9   img-9   img-5   img-5   img-5   img-5   .       .'
+      '.      .       img-4   img-4   img-4   img-4   img-4   img-6   img-6   img-7   img-7   .'
+      '.      .       img-4   img-4   img-4   img-4   img-4   img-5   img-5   img-5   img-5   .'
+      '.      .       .       .       .       img-8   img-8   img-5   img-5   img-5   img-5   .'
       '.      .       .       .       .       .       .       .       .       .       .       .';
     &-title {
       grid-area: title;
@@ -212,8 +214,8 @@ header {
     &-description {
       grid-area: desc;
     }
-    &-skills {
-      grid-area: skills;
+    &-details {
+      grid-area: meta;
     }
     &-img--1 {
       grid-area: img-1;
@@ -250,9 +252,9 @@ header {
     &-img--8 {
       grid-area: img-8;
     }
-    &-img--9 {
-      grid-area: img-9;
-    }
+    // &-img--9 {
+    //   grid-area: img-9;
+    // }
     &-img--10 {
       grid-area: img-10;
     }
@@ -262,7 +264,7 @@ header {
     }
     &-title,
     &-description,
-    &-skills {
+    &-details {
       padding: var(--spacer);
     }
   }
