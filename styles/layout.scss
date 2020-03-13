@@ -54,8 +54,12 @@ header {
       '.       .       .        .       .       .       .       .       .       .       .       .'
       '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
       'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img'
-      '.       .       r-img    r-img   r-img   .       .       .       .       .       .       .'
-      '.       .       r-img    r-img   r-img   r-t     r-t     r-t     r-t     .       .       .';
+      '.       .       .        .       .       .       .       .       .       .       .       .'
+      '.       .       d-img    d-img   d-img   .       .       .       .       .       .       .'
+      '.       .       d-img    d-img   d-img   d-t     d-t     d-t     d-t     .       .       .'
+      '.       .       d-img    d-img   d-img   .       .       .       .       .       .       .'
+      '.       .       .        .       .       .       .       .       .       .       .       .'
+      'ftr     ftr     ftr      ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr';
     // grid-template-columns:
     //   [header definition-start jukebox-img-start]
     //   1fr
@@ -156,6 +160,9 @@ header {
       transform: scale(1.2);
     }
   }
+  &--dal {
+    grid-area: d-img;
+  }
 }
 
 .project-description {
@@ -165,7 +172,9 @@ header {
     // grid-row: aux-t;
     z-index: 1;
   }
-
+  &--dal {
+    grid-area: d-t;
+  }
   &--convertiq {
     grid-area: c-t;
     // grid-column: convertiq-t;
@@ -178,6 +187,16 @@ header {
     // grid-column: jukebox-t;
     // grid-row: jukebox-t;
     text-align: center;
+  }
+}
+
+footer {
+  padding: var(--spacer) calc(var(--spacer) * 2) !important;
+  grid-area: ftr;
+  display: flex;
+  justify-content: space-between;
+  a {
+    margin-right: 0.5em;
   }
 }
 

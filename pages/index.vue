@@ -20,7 +20,7 @@
         style="border: none;"
         width="100%"
         height="300"
-        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FAZ12HuoJbDaiC9wVDzjilD%2FPortfolio-alt-draft%3Fnode-id%3D0%253A1"
+        src=""
         allowfullscreen
       ></iframe> -->
       <img class="inprogress" src="~/assets/inprogress.png" />
@@ -62,6 +62,55 @@
     <figure class="fig fig--jukebox">
       <jukebox-img />
     </figure>
+
+    <!-- DAL -->
+    <div class="project-description project-description--dal">
+      <h2 class="mb-1">
+        <span class="text--muted">Experimenting with</span>
+        medium for a recipe
+      </h2>
+      <p class="mb-1">
+        A side-project with the goal to create a product that does one job
+        incredibly well and learn a couple of new things along the&nbsp;way.
+      </p>
+      <a
+        class="d-block mb-1"
+        href="https://medium.com/@igorrazvodovsky/searching-for-a-medium-for-a-recipe-c707ccfab23a"
+        >Read the case study &rarr;</a
+      >
+      <a
+        class="d-block"
+        href="https://assistant.google.com/services/a/uid/0000009f815d8acf"
+        >Try with Google Assistant &rarr;</a
+      >
+    </div>
+
+    <figure class="fig fig--dal">
+      <div class="dal__phone">
+        <dal-phone />
+        <img class="dal__phone__screen" src="~/assets/dal__screen.png" />
+      </div>
+      <div class="dal__speaker">
+        <img class="dal__speaker__speaker" src="~/assets/dal__speaker.png" />
+        <img
+          class="dal__speaker__sound"
+          src="~/assets/dal__speaker__sounds.gif"
+        />
+        <img
+          class="dal__speaker__shadow"
+          src="~/assets/dal__speaker__shadow.png"
+        />
+      </div>
+    </figure>
+
+    <footer role="contentinfo">
+      <small>
+        <a href="#">&uarr; Back to top</a>
+        <a href="mailto:igorrazvodovsky@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/igor-razvodovsky/">LinkedIn</a>
+      </small>
+      <small class="text--secondary copyright">&copy; 2020<br /></small>
+    </footer>
   </div>
 </template>
 
@@ -73,7 +122,7 @@ import { mapState } from 'vuex'
 // import DalKnife from '~/assets/dal__knife.svg?inline'
 // import DalChili from '~/assets/dal__chili.svg?inline'
 // import DalPieces from '~/assets/dal__pieces.svg?inline'
-// import DalPhone from '~/assets/dal__phone.svg?inline'
+import DalPhone from '~/assets/dal__phone.svg?inline'
 // import Border from '~/assets/border.svg?inline'
 import JukeboxImg from '~/assets/jukebox__img.svg?inline'
 
@@ -85,7 +134,7 @@ export default {
     // DalKnife,
     // DalChili,
     // DalPieces,
-    // DalPhone,
+    DalPhone,
     // Border,
     JukeboxImg
   },

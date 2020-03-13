@@ -1,10 +1,16 @@
-// @import '../../node_modules/normalize.css/normalize.css';
+$breakpoints: (
+  small: 320px,
+  medium: 768px,
+  large: 1024px
+);
+
 @import '_include-media';
-@import '_fluid-type';
+// @import '_fluid-type';
 @import '_utility';
 @import '_reset';
 @import 'layout';
 @import 'type';
+@import 'dal';
 
 // TODO: Reset?
 html {
@@ -15,12 +21,6 @@ html {
 *:after {
   box-sizing: inherit;
 }
-
-$breakpoints: (
-  small: 320px,
-  medium: 768px,
-  large: 1024px
-);
 
 $black: #000000;
 $color-link: #2d7ffa;
