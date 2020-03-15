@@ -1,7 +1,31 @@
+@font-face {
+  font-family: 'Infini';
+  src: url('/fonts/infini-regular.woff') format('woff');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Infini';
+  src: url('/fonts/infini-bold.woff') format('woff');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Infini';
+  src: url('/fonts/infini-italic.woff') format('woff');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Infini Picto';
+  src: url('/fonts/infini-picto.woff') format('woff');
+}
+
 $breakpoints: (
   small: 320px,
   medium: 768px,
-  large: 1024px
+  large: 1024px,
+  xlarge: 1440px
 );
 
 @import '_include-media';
@@ -48,8 +72,22 @@ a {
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
+  transition-delay: 100ms;
 }
 .fade-enter,
 .fade-leave-to {
+  opacity: 0;
+  transition-delay: 100ms;
+}
+
+.delayed-fade-enter-active,
+.delayed-fade-leave-active {
+  transition: opacity 0s;
+}
+// .delayed-fade-enter-active {
+//   transition-delay: 100ms;
+// }
+.delayed-fade-enter,
+.delayed-fade-leave-to {
   opacity: 0;
 }

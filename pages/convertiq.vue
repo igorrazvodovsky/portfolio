@@ -4,8 +4,8 @@
     <p class="convertiq-description">
       In 2018, I worked with ConvertIQ’s product team to design a tool to make,
       edit and analyze social media campaigns. The project became an opportunity
-      to try out a more playful visual approach, as I wanted the app to be warm
-      and approachable despite the complexity of the subject.
+      to try out a more playful visual approach. I wanted the app to be warm and
+      approachable despite the complexity of the subject.
     </p>
     <!-- <div class="convertiq-details">
       <h3>What I did</h3>
@@ -23,12 +23,12 @@
       <figcaption>Campaign overview</figcaption>
     </figure>
     <figure class="convertiq-img--3">
+      <img src="~/assets/convertiq__3.png" />
       <figcaption>
         The relationships between different campaign parameters are frequently
         obscure & ambiguous. I made an effort to simplify the setup and make the
         campaign creation wizard easier to go through.
       </figcaption>
-      <img src="~/assets/convertiq__3.png" />
     </figure>
     <img class="convertiq-img--4" src="~/assets/convertiq__4.png" />
     <img class="convertiq-img--5" src="~/assets/convertiq__5.png" />
@@ -54,7 +54,7 @@ export default {
   computed: mapState(['page']),
   head() {
     return {
-      title: this.title,
+      // title: this.title,
       bodyAttrs: {
         class: 'case convertiq'
       }

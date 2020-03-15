@@ -17,8 +17,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'stylesheet',
-        href: 'https://fonts.typotheque.com/WF-030133-010048.css'
+        rel: 'stylesheet'
+        // Woodkit
+        // href: 'https://fonts.typotheque.com/WF-030133-010048.css'
       }
     ]
   },

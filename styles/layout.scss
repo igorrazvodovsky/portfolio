@@ -2,10 +2,14 @@ body {
   background-color: var(--bg-color);
   transition: background-color 0.6s ease;
   &.case {
-    // background-color: #e5e5e5;
     --bg-color: black;
-    // --bg-color: #757575;
-    // --bg-color: rgba(203, 165, 152, 1);
+  }
+}
+
+@mixin text-padding {
+  padding: var(--spacer) !important;
+  @include media('>medium') {
+    padding: var(--spacer) calc(var(--spacer) * 2) !important;
   }
 }
 
@@ -23,98 +27,118 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  @include media('>medium') {
+    grid-template-columns: repeat(12, 1fr);
+  }
   grid-auto-rows: auto;
   gap: var(--spacer);
   .title {
-    grid-column: 1 / span 4;
-    grid-row: 1;
-    padding: var(--spacer) calc(var(--spacer) * 2);
+    @include text-padding;
+    grid-column: 1 / -1;
+    @include media('<medium') {
+      text-align: center;
+    }
   }
   .subtitle {
-    grid-column: 5 / span 4;
-    grid-row: 1;
+    display: none;
+  }
+  .subtitle {
     padding: var(--spacer);
+  }
+  @include media('>medium') {
+    .title {
+      grid-column: 1 / span 4;
+      grid-row: 1;
+    }
+    .subtitle {
+      display: block;
+      grid-column: 5 / span 4;
+      grid-row: 1;
+    }
   }
 }
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-auto-rows: minmax(var(--spacer), auto);
+  grid-template-columns: repeat(6, 1fr);
+  @include media('>medium') {
+    grid-template-columns: repeat(12, 1fr);
+  }
+  grid-auto-rows: minmax(calc(var(--spacer) * 2), auto);
   gap: var(--spacer);
-  &.home {
+  @at-root .home & {
     grid-template-areas:
-      'def     def     def      def     def     def     .       .       .       .       .       .'
-      '.       .       .        .       .       .       .       .       .       .       .       .'
-      'recent  recent  recent   .       .       .       c-img   c-img   c-img   c-img   c-img   .'
-      '.       a-img   a-img    a-img   .       .       c-img   c-img   c-img   c-img   c-img   .'
-      '.       a-img   a-img    a-img   .       .       c-t     c-t     c-t     c-t     .       .'
-      '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
-      '.       .       .        .       .       .       .       .       .       .       .       .'
-      '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
-      'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img'
-      '.       .       .        .       .       .       .       .       .       .       .       .'
-      '.       .       d-img    d-img   d-img   .       .       .       .       .       .       .'
-      '.       .       d-img    d-img   d-img   d-t     d-t     d-t     d-t     .       .       .'
-      '.       .       d-img    d-img   d-img   .       .       .       .       .       .       .'
-      '.       .       .        .       .       .       .       .       .       .       .       .'
-      'ftr     ftr     ftr      ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr';
-    // grid-template-columns:
-    //   [header definition-start jukebox-img-start]
-    //   1fr
-    //   [aux-img-start aux-t-start]
-    //   1fr
-    //   1fr
-    //   [jukebox-t-start]
-    //   1fr
-    //   [aux-img-end aux-t-end]
-    //   1fr
-    //   1fr
-    //   [definition-end illustration-start convertiq-img-start convertiq-t-start]
-    //   1fr
-    //   1fr
-    //   1fr
-    //   [jukebox-t-end]
-    //   1fr
-    //   [convertiq-t-end]
-    //   1fr
-    //   [convertiq-img-end convertiq-t-end]
-    //   1fr
-    //   [illustration-end jukebox-img-end];
-    // grid-template-rows:
-    //   [header]
-    //   auto
-    //   [definition]
-    //   auto
-    //   [aux-img-start]
-    //   calc(var(--spacer) * 4)
-    //   [convertiq-img]
-    //   auto
-    //   [convertiq-t]
-    //   auto
-    //   [aux-img-end aux-t]
-    //   auto
-    //   var(--spacer)
-    //   [jukebox-t]
-    //   auto
-    //   [jukebox-img];
+      'def     def     def      def     def     def'
+      '.       .       .        .       .       .'
+      'recent  recent  recent   recent  .       .'
+      'a-img   a-img   a-img    a-img   .       .'
+      '.       a-t     a-t      a-t     a-t     .'
+      '.       .       .        .       .       .'
+      '.       c-img   c-img    c-img   c-img   c-img'
+      'c-t     c-t     c-t      c-t     c-t     .'
+      '.       .       .        .       .       .'
+      '.       j-t     j-t      j-t     j-t     .'
+      'j-img   j-img   j-img    j-img   j-img   j-img'
+      '.       .       .        .       .       .'
+      '.       .       .        d-img   d-img   d-img'
+      '.       d-t     d-t      d-t     d-t     .'
+      '.       .       .        .       .       .';
+    @include media('>medium', '<xlarge') {
+      grid-template-areas:
+        'def     def     def      def     def     def     def     def     .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        'recent  recent  recent   recent  .       .       .       c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   a-img   .       .       c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   a-img   .       c-t     c-t     c-t     c-t     c-t     .'
+        '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        '.       .       .        j-t     j-t     j-t     j-t     j-t     j-t     .       .       .'
+        'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        '.       .       .        d-img    d-img   d-img   .       .       .       .       .       .'
+        '.       .       .        d-img    d-img   d-img   d-t     d-t     d-t     d-t     .       .'
+        '.       .       .        d-img    d-img   d-img   .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        'ftr     ftr     ftr      ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr';
+    }
+    @include media('>=xlarge') {
+      grid-template-areas:
+        'def     def     def      def     def     def     .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        'recent  recent  recent   .       .       .       c-img   c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   .       .       c-img   c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   .       .       c-t     c-t     c-t     c-t     .       .'
+        '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
+        'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        '.       .       .        d-img    d-img   d-img   .       .       .       .       .       .'
+        '.       .       .        d-img    d-img   d-img   d-t     d-t     d-t     d-t     .       .'
+        '.       .       .        d-img    d-img   d-img   .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        'ftr     ftr     ftr      ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr';
+    }
   }
 }
 
 .definition {
   grid-area: def;
-  // grid-column: 1 / 7;
-  // grid-row: definition;
-  padding: var(--spacer) calc(var(--spacer) * 2) !important;
+  // TODO: Better solution?
+  @include text-padding();
 }
 
-.recent {
+img.recent {
   grid-area: recent;
   object-position: top;
-  padding: 0 calc(var(--spacer) * 2);
-  min-height: 2rem;
-  margin-bottom: calc(var(--spacer) * 3);
+  @include text-padding();
+  min-height: 6rem;
+  object-fit: contain;
+  object-position: left;
+  @include media('>medium') {
+    margin-bottom: calc(var(--spacer) * 3);
+  }
 }
 
 .fig {
@@ -135,26 +159,29 @@ header {
   }
 
   &--jukebox {
-    grid-column: span 12;
-    grid-row: j-img;
+    grid-area: j-img;
+    overflow: hidden;
+    img,
+    svg {
+      @include media('<large') {
+        height: 30vmax;
+        transform: translate(-10%, 0);
+      }
+    }
   }
 
   &--convertiq {
     grid-area: c-img;
-    // grid-column: convertiq-img;
-    // grid-row: convertiq-img;
     img {
       object-position: right;
       object-fit: cover;
+      min-height: 180px;
     }
   }
 
   &--aux {
-    // background-color: #f5f5f5;
     background-color: #eeeeee;
     grid-area: a-img;
-    // grid-column: aux-img;
-    // grid-row: aux-img;
     align-self: end;
     img {
       transform: scale(1.2);
@@ -168,8 +195,6 @@ header {
 .project-description {
   &--aux {
     grid-area: a-t;
-    // grid-column: aux-t;
-    // grid-row: aux-t;
     z-index: 1;
   }
   &--dal {
@@ -177,56 +202,75 @@ header {
   }
   &--convertiq {
     grid-area: c-t;
-    // grid-column: convertiq-t;
-    // grid-row: convertiq-t;
     text-align: right;
   }
 
   &--jukebox {
     grid-area: j-t;
-    // grid-column: jukebox-t;
-    // grid-row: jukebox-t;
     text-align: center;
   }
 }
 
 footer {
-  padding: var(--spacer) calc(var(--spacer) * 2) !important;
   grid-area: ftr;
   display: flex;
   justify-content: space-between;
-  a {
-    margin-right: 0.5em;
+  align-items: flex-end;
+  & > * {
+    @include text-padding();
+  }
+  a,
+  span {
+    margin: 0 0.25em;
+    &:first-child {
+      margin-left: 0;
+    }
   }
 }
 
 // CASES
 .case {
   header {
-    .title {
-      grid-column: 1 / span 3;
-    }
-    .subtitle {
-      grid-column: 4 / span 3;
+    @include media('>medium') {
+      .title {
+        grid-column: 1 / span 3;
+      }
+      .subtitle {
+        grid-column: 4 / span 3;
+      }
     }
   }
   .convertiq {
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     grid-template-areas:
-      '.      .       .       title   title   title   .       .       .       .       .       .'
-      '.      .       .       desc    desc    desc    desc    desc    .       meta    meta    meta'
-      'img-1  img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1'
-      '.      .       .       .       .       .       .       .       .       .       .       .'
-      '.      .       .       .       .       .       .       img-10  img-10  img-10  img-10  .'
-      '.      .       .       .       .       .       .       .       .       .       .       .'
-      '.      img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   .'
-      '.      .       .       .       .       .       .       .       .       .       .       .'
-      '.      img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   .'
-      '.      .       .       .       .       .       .       .       .       .       .       .'
-      '.      .       img-4   img-4   img-4   img-4   img-4   img-6   img-6   img-7   img-7   .'
-      '.      .       img-4   img-4   img-4   img-4   img-4   img-5   img-5   img-5   img-5   .'
-      '.      .       .       .       .       img-8   img-8   img-5   img-5   img-5   img-5   .'
-      '.      .       .       .       .       .       .       .       .       .       .       .';
+      'title  title   title   title   title   title'
+      'desc   desc    desc    desc    desc   desc'
+      'img-1  img-1   img-1   img-1   img-1   img-1'
+      'img-10 img-10  img-10  img-10  img-10  img-10'
+      'img-2  img-2   img-2   img-2   img-2   img-2'
+      '.      img-3   img-3   img-3   img-3   .'
+      'img-4  img-4  img-4   img-4    img-4   .'
+      '.      img-5  img-5   img-5    img-5   img-5'
+      '.      .       .       .       .       .';
+    @include media('>medium') {
+      grid-template-columns: repeat(12, 1fr);
+      grid-template-areas:
+        '.      .       .       title   title   title   .       .       .       .       .       .'
+        '.      .       .       desc    desc    desc    desc    desc    .       meta    meta    meta'
+        'img-1  img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1   img-1'
+        '.      .       .       .       .       .       .       .       .       .       .       .'
+        '.      .       .       .       .       .       .       img-10  img-10  img-10  img-10  .'
+        '.      .       .       .       .       .       .       .       .       .       .       .'
+        '.      img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   img-2   .'
+        '.      .       .       .       .       .       .       .       .       .       .       .'
+        '.      img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   img-3   .'
+        '.      .       .       .       .       .       .       .       .       .       .       .'
+        '.      .       img-4   img-4   img-4   img-4   img-4   img-6   img-6   img-7   img-7   .'
+        '.      .       img-4   img-4   img-4   img-4   img-4   img-5   img-5   img-5   img-5   .'
+        '.      .       .       .       .       img-8   img-8   img-5   img-5   img-5   img-5   .'
+        '.      .       .       .       .       .       .       .       .       .       .       .';
+    }
+
     &-title {
       grid-area: title;
     }
@@ -236,46 +280,57 @@ footer {
     &-details {
       grid-area: meta;
     }
-    &-img--1 {
-      grid-area: img-1;
-    }
-    &-img--2 {
-      grid-area: img-2;
-    }
-    &-img--3 {
-      grid-area: img-3;
-      display: flex;
-      flex-direction: row;
-      // justify-content: space-between;
-      img {
-        max-height: 50vh;
-        object-fit: contain;
-        filter: invert(1);
+    &-img {
+      &--1 {
+        grid-area: img-1;
       }
-      figcaption {
-        max-width: 20em;
+      &--2 {
+        grid-area: img-2;
       }
-    }
-    &-img--4 {
-      grid-area: img-4;
-    }
-    &-img--5 {
-      grid-area: img-5;
-    }
-    &-img--6 {
-      grid-area: img-6;
-    }
-    &-img--7 {
-      grid-area: img-7;
-    }
-    &-img--8 {
-      grid-area: img-8;
-    }
-    // &-img--9 {
-    //   grid-area: img-9;
-    // }
-    &-img--10 {
-      grid-area: img-10;
+      &--3 {
+        grid-area: img-3;
+        @include media('>medium') {
+          display: flex;
+          flex-direction: row;
+        }
+        // justify-content: space-between;
+        img {
+          max-height: 50vh;
+          object-fit: contain;
+          filter: invert(1);
+        }
+        figcaption {
+          max-width: 20em;
+          @include text-padding;
+        }
+      }
+      &--4 {
+        grid-area: img-4;
+      }
+      &--5 {
+        grid-area: img-5;
+      }
+      &--6 {
+        grid-area: img-6;
+        @include media('<medium') {
+          display: none;
+        }
+      }
+      &--7 {
+        grid-area: img-7;
+        @include media('<medium') {
+          display: none;
+        }
+      }
+      &--8 {
+        grid-area: img-8;
+        @include media('<medium') {
+          display: none;
+        }
+      }
+      &--10 {
+        grid-area: img-10;
+      }
     }
     img,
     video {

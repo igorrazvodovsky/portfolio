@@ -5,7 +5,8 @@
 body {
   font-size: 18px;
   line-height: 24px;
-  font-family: 'Infini', sans-serif;
+  font-family: 'Infini', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   color: rgba(var(--text-color), 0.9);
   &.case {
     --text-color: 255, 255, 255;
@@ -30,6 +31,9 @@ h1 {
     line-height: 32px;
     font-weight: normal;
   }
+  @include media('<medium') {
+    text-align: center;
+  }
 }
 
 h2 {
@@ -44,6 +48,14 @@ h3 {
   font-weight: normal;
   margin-bottom: 0.5rem;
 }
+
+// h1::first-letter,
+// h2::first-letter,
+// h3::first-letter {
+//   font-family: 'Infini Picto';
+//   display: inline-block;
+//   transform: scale(-1, 1);
+// }
 
 header {
   .title a {

@@ -66,7 +66,7 @@
     <!-- DAL -->
     <div class="project-description project-description--dal">
       <h2 class="mb-1">
-        <span class="text--muted">Experimenting with</span>
+        <span class="text--muted d-block">Experimenting with</span>
         medium for a recipe
       </h2>
       <p class="mb-1">
@@ -102,15 +102,6 @@
         />
       </div>
     </figure>
-
-    <footer role="contentinfo">
-      <small>
-        <a href="#">&uarr; Back to top</a>
-        <a href="mailto:igorrazvodovsky@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/igor-razvodovsky/">LinkedIn</a>
-      </small>
-      <small class="text--secondary copyright">&copy; 2020<br /></small>
-    </footer>
   </div>
 </template>
 
@@ -138,6 +129,13 @@ export default {
     // Border,
     JukeboxImg
   },
-  computed: mapState(['page'])
+  computed: mapState(['page']),
+  head() {
+    return {
+      bodyAttrs: {
+        class: 'home'
+      }
+    }
+  }
 }
 </script>
