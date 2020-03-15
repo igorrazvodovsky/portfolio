@@ -132,6 +132,7 @@ export default {
   computed: mapState(['page']),
   head() {
     return {
+      title: 'Igor Razvodovsky',
       bodyAttrs: {
         class: 'home'
       }

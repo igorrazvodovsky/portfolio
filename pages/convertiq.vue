@@ -54,7 +54,7 @@ export default {
   computed: mapState(['page']),
   head() {
     return {
-      // title: this.title,
+      title: 'Igor / ConvertIQ',
       bodyAttrs: {
         class: 'case convertiq'
       }
