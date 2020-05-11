@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "@nuxtjs/svg": "^0.1.6",
+    "acorn": "^7.2.0",
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
