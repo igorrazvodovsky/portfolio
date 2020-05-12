@@ -152,6 +152,7 @@ img.recent {
   object-position: top;
   @include text-padding();
   min-height: 6rem;
+  height: auto;
   object-fit: contain;
   object-position: left;
   @include media('>medium') {
