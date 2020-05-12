@@ -30,6 +30,9 @@
         <span class="text--muted">Dreaming up</span> a new way to
         listen&nbsp;a&nbsp;book
       </h2>
+      <a href="https://github.com/igorrazvodovsky/aloud" class="d-block">
+        Github &rarr;
+      </a>
     </div>
 
     <!-- CONVERTIQ -->
@@ -132,6 +135,7 @@ export default {
   computed: mapState(['page']),
   head() {
     return {
+      title: 'Igor Razvodovsky',
       bodyAttrs: {
         class: 'home'
       }

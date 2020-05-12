@@ -84,7 +84,7 @@ header {
       '.       .       .        d-img   d-img   d-img'
       '.       d-t     d-t      d-t     d-t     .'
       '.       .       .        .       .       .';
-    @include media('>medium', '<xlarge') {
+    @include media('>medium', '<large') {
       grid-template-areas:
         'def     def     def      def     def     def     def     def     .       .       .       .'
         '.       .       .        .       .       .       .       .       .       .       .       .'
@@ -102,13 +102,31 @@ header {
         '.       .       .        .       .       .       .       .       .       .       .       .'
         'ftr     ftr     ftr      ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr';
     }
-    @include media('>=xlarge') {
+    @include media('>=large', '<xlarge') {
       grid-template-areas:
         'def     def     def      def     def     def     .       .       .       .       .       .'
         '.       .       .        .       .       .       .       .       .       .       .       .'
-        'recent  recent  recent   .       .       .       c-img   c-img   c-img   c-img   c-img   .'
-        '.       a-img   a-img    a-img   .       .       c-img   c-img   c-img   c-img   c-img   .'
-        '.       a-img   a-img    a-img   .       .       c-t     c-t     c-t     c-t     .       .'
+        'recent  recent  recent   .       .       .       .       c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   .       .       .       c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   .       .       .       c-t     c-t     c-t     .       .'
+        '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
+        'j-img   j-img   j-img    j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img   j-img'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        '.       .       .        d-img    d-img   d-img   .       .       .       .       .       .'
+        '.       .       .        d-img    d-img   d-img   d-t     d-t     d-t     d-t     .       .'
+        '.       .       .        d-img    d-img   d-img   .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        'ftr     ftr     ftr      ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr     ftr';
+    }
+    @include media('>=xlarge') {
+      grid-template-areas:
+        'def     def     def      def     .       .       .       .       .       .       .       .'
+        '.       .       .        .       .       .       .       .       .       .       .       .'
+        'recent  recent  recent   .       .       .       .       c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   .       .       .       c-img   c-img   c-img   c-img   .'
+        '.       a-img   a-img    a-img   .       .       .       c-t     c-t     c-t     .       .'
         '.       a-t     a-t      a-t     .       .       .       .       .       .       .       .'
         '.       .       .        .       .       .       .       .       .       .       .       .'
         '.       .       .        .       j-t     j-t     j-t     j-t     .       .       .       .'
