@@ -1,0 +1,65 @@
+// first col in em? in case it's always time
+// rows: title, meta, description, problems, users-title, users, process, ... , results-title
+
+body.formbuilder {
+  font-family: 'Menoe Grotesque Pro';
+  font-size: 16px;
+
+  --gridColumnCount: 12;
+  --gridTemplateColumnsDefault: repeat(var(--gridColumnCount), minmax(0, 1fr));
+
+  main {
+    padding: var(--spacer) calc(var(--spacer) * 2);
+    display: grid;
+    gap: calc(var(--spacer) * 2) var(--spacer);
+    grid-template-columns: var(--gridTemplateColumnsDefault);
+    line-height: 1.33;
+  }
+
+  .meta dt {
+    font-style: italic;
+  }
+
+  // LAYOUT
+
+  h1 {
+    grid-row: 1;
+    grid-column: 3 / span 4;
+  }
+
+  .meta {
+    grid-row: 2;
+    grid-column-start: 2;
+    grid-column-end: 6;
+    display: grid;
+    // gap: var(--spacer);
+    grid-template-columns: 1fr 3fr;
+
+    h4 {
+      font-style: italic;
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+    ul > li {
+      text-indent: -1.25em;
+    }
+    ul > li:before {
+      content: '— ';
+      text-indent: -1em;
+    }
+  }
+
+  figure.hero {
+    grid-row: 1 / span 3;
+    grid-column: 8 / 13;
+  }
+
+  p.description {
+    grid-row: 3;
+    grid-column: 2 / span 6;
+    font-size: 1.5rem;
+  }
+}

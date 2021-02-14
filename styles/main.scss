@@ -35,8 +35,9 @@ $breakpoints: (
 @import 'layout';
 @import 'type';
 @import 'dal';
+@import 'formbuilder';
 
-// TODO: Reset?
+// ? Reset?
 html {
   box-sizing: border-box;
 }
@@ -62,8 +63,9 @@ $color-link: #2d7ffa;
 
 a {
   transition: opacity 0.3s ease;
-  text-decoration: none;
-  color: $color-link;
+  color: inherit;
+  text-decoration: underline rgba(var(--text-color), 0.3);
+  text-underline-offset: 0.1em;
   &:hover {
     opacity: 0.5;
   }

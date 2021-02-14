@@ -57,6 +57,9 @@ header {
       grid-row: 1;
     }
   }
+  a {
+    text-decoration: none;
+  }
 }
 
 .grid {
@@ -143,7 +146,7 @@ header {
 
 .definition {
   grid-area: def;
-  // TODO: Better solution?
+  // ? Is there a better solution?
   @include text-padding();
 }
 
@@ -212,6 +215,9 @@ img.recent {
 }
 
 .project-description {
+  a {
+    text-decoration: none;
+  }
   &--aux {
     grid-area: a-t;
     z-index: 1;

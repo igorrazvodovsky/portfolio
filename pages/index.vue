@@ -7,7 +7,7 @@
     <h1 class="definition">
       Friendly designer creating clear, robust, consistent, elegant systems that
       avoid redundancy. Currently working at&nbsp;<a
-        href="https://home.kuehne-nagel.com/"
+        href="https://en.wikipedia.org/wiki/Kuehne_%2B_Nagel"
         >Kuehne&nbsp;+&nbsp;Nagel</a
       >.
       <!-- <a class="text--secondary" href>More&nbsp;→</a> -->
@@ -27,8 +27,7 @@
     </figure>
     <div class="project-description project-description--aux text--muted">
       <h2 class="mb-1">
-        <span class="text--muted">Dreaming up</span> a new way to
-        listen&nbsp;a&nbsp;book
+        Making an audiobook player
       </h2>
       <a href="https://github.com/igorrazvodovsky/aloud" class="d-block">
         Github &rarr;

@@ -20,8 +20,11 @@
         <a href="#">&uarr; Back to top</a>
         <nuxt-link to="/">Home</nuxt-link>
         <span class="text--muted">•</span>
-        <a href="mailto:igorrazvodovsky@gmail.com">Email</a>
-        <a href="https://www.linkedin.com/in/igor-razvodovsky/">LinkedIn</a>
+        <a href="mailto:igorrazvodovsky@gmail.com" rel="external">Email</a>
+        <a href="https://www.linkedin.com/in/igor-razvodovsky/" rel="external"
+          >LinkedIn</a
+        >
+        <a href="https://dribbble.com/igorraz" rel="external">Dribbble</a>
       </small>
       <small class="text--secondary copyright"
         >&copy;&nbsp;{{ new Date().getFullYear() }}<br

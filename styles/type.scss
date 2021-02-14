@@ -8,6 +8,8 @@ body {
   font-family: 'Infini', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
   color: rgba(var(--text-color), 0.9);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   &.case {
     --text-color: 255, 255, 255;
   }
@@ -25,7 +27,7 @@ body {
 h1 {
   font-size: 36px;
   line-height: 36px;
-  font-weight: bold;
+  font-weight: normal;
   &.definition {
     font-size: 24px;
     line-height: 32px;
