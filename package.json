@@ -1,0 +1,25 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build": "webpack --env.prod"
+  },
+  "dependencies": {
+    "@shoelace-style/shoelace": "^2.0.0-beta.27",
+    "vue": "^3.0.0-rc.9",
+    "vue-router": "^4.0.3"
+  },
+  "devDependencies": {
+    "@vue/compiler-sfc": "^3.0.0-rc.9",
+    "copy-webpack-plugin": "^7.0.0",
+    "css-loader": "^4.2.2",
+    "file-loader": "^6.2.0",
+    "mini-css-extract-plugin": "^0.11.0",
+    "style-loader": "^2.0.0",
+    "url-loader": "^4.0.0",
+    "vue-loader": "^16.0.0-beta.5",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

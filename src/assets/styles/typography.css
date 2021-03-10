@@ -1,0 +1,93 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Infini", "Courier New", Courier, monospace;
+  font-size: 18px;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+.case h2 {
+  font-size: 32px;
+}
+
+.case h3 {
+  font-size: 24px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: normal;
+  letter-spacing: -0.015em;
+}
+
+h4 {
+  /* text-transform: uppercase; */
+  color: var(--text-color-3);
+  margin-bottom: 0.5rem;
+}
+
+h1,
+p {
+  max-width: 70ch;
+}
+
+mark {
+  background-color: hsla(60, 100%, 50%, 0.3);
+  color: var(--text-color-1);
+  opacity: 0.9;
+}
+
+*::selection {
+  /* TODO: Better inversion */
+  background: var(--text-color-1);
+  color: hsla(var(--bg-color), 0.9);
+}
+
+dt {
+  color: var(--text-color-2);
+  margin-top: 0.5rem;
+}
+
+figcaption {
+  padding-top: calc(var(--spacer) / 2);
+  font-size: 16px;
+  color: var(--text-color-2) !important;
+}
+
+figcaption .author {
+  float: right;
+  margin-left: 1rem;
+}
+
+figcaption > * + * {
+  margin-top: 0.5rem;
+}
+
+a.footnote {
+  color: var(--text-color-2);
+  text-decoration: none;
+}
+
+aside.footnote:before {
+  content: var(--foot-note-label);
+  content: 1;
+  position: relative;
+  float: left;
+  /* TODO: margin-left: calc((var(--gridColumnGap) + var(--columnWidth)) * -1); */
+  margin-left: -1.5rem;
+  text-align: right;
+  color: var(--text-color-2);
+  font-weight: 300;
+  font-style: normal;
+  font-size: smaller;
+  font-feature-settings: "tnum";
+}
+
+small {
+  display: block;
+  color: var(--text-color-2);
+}

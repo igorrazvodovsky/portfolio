@@ -1,0 +1,63 @@
+body.convertiq {
+  --bg-color: 0, 0%, 95%;
+}
+
+@media (prefers-color-scheme: light) {
+  body.convertiq img {
+    /* Because page has a similar bg colour */
+    border: 1px solid var(--text-color-3);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.convertiq {
+    --bg-color: 110, 20%, 10%;
+  }
+}
+
+.convertiq #description {
+  grid-row: 2;
+  grid-column: 7 / -1;
+}
+
+.convertiq #meta,
+.convertiq #role {
+  grid-row: 2;
+}
+
+.convertiq #hero {
+  grid-row: auto;
+  grid-column: 1 / -1;
+}
+
+.convertiq #hero img {
+  object-fit: scale-down;
+  height: auto;
+}
+
+.convertiq #users h2 {
+  grid-column: 7 / -1;
+}
+
+.convertiq #users figure:nth-of-type(1) {
+  grid-column: 7 / span 6;
+}
+
+.convertiq #users figure:nth-of-type(1) img {
+  max-height: 20rem;
+  object-fit: cover;
+  width: 100%;
+}
+
+.convertiq #users article {
+  grid-column: 1 / span 6;
+  text-align: right;
+}
+
+.convertiq #process > figure {
+  grid-column: span 4;
+}
+
+.convertiq #process > figure:nth-of-type(1) {
+  grid-column: 1 / -1;
+}

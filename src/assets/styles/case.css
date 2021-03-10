@@ -1,0 +1,12 @@
+#role ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#role ul > li {
+  text-indent: -1.25em;
+}
+#role ul > li:before {
+  content: "— ";
+  text-indent: -1em;
+}
