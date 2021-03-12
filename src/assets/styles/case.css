@@ -1,0 +1,17 @@
+#role ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+#role ul > li {
+  text-indent: -1.25em;
+}
+#role ul > li:before {
+  content: "— ";
+  text-indent: -1em;
+}
+
+.case h1 {
+  font-feature-settings: "liga" 1, "dlig" 1;
+  text-transform: uppercase;
+}
