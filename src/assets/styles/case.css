@@ -10,3 +10,8 @@
   content: "— ";
   text-indent: -1em;
 }
+
+.case h1 {
+  font-feature-settings: "liga" 1, "dlig" 1;
+  text-transform: uppercase;
+}

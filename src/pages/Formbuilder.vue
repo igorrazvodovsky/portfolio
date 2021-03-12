@@ -1,8 +1,3 @@
-<!-- TODO: -->
-<!-- Copyrights -->
-<!-- https://unsplash.com/photos/OGKJr1q3MM4 -->
-<!-- https://unsplash.com/photos/h6gCRTCxM7o -->
-
 <style scoped>
   @import "formbuilder.css";
 </style>
@@ -69,18 +64,16 @@
   <section id="problems">
     <h2>Specific problems solved</h2>
     <article>
-      <h3>Make sure resulting forms are good&nbsp;🙄</h3>
+      <h3>Make sure the resulting forms are good&nbsp;🙄</h3>
       <p>
-        Good forms are notoriously tricky to implement. Our goal was to design
-        this process in a way that don’t requiere the know-how on the user’s
-        part.
+        Good forms are notoriously tricky to implement. Our goal was to design this process in a way that doesn't require the know-how on the user’s part.
       </p>
     </article>
     <article>
       <!-- support the admin in creating the mental model of the end-user searching and filling out the form. -->
       <h3>Help people creating forms think in user-centric terms</h3>
       <p>
-        In addition to intricacies of form design, it was crucial to make the
+        In addition to the intricacies of form design, it was crucial to make the
         form creators see their users' perspective. Embedded
         user-centeredness!
       </p>
@@ -93,11 +86,9 @@
       </p>
     </article>
     <article>
-      <h3>Reducing load on support agents</h3>
+      <h3>Reducing the load on support agents</h3>
       <p>
-        Support can be one of a largest budget items, especially when they
-        operate on a global scale. Form builder helps to shrink that cost by
-        improving agent velocity—an in turn, creating happier employee.
+        Support can be one of the largest budget items, especially when they operate on a global scale. Form builder helps to shrink that cost by improving agent velocity—and in turn, creating happier employees.
       </p>
     </article>
   </section>
@@ -105,8 +96,6 @@
   <section id="users">
     <h2>Who we designed for</h2>
     <figure>
-      <!-- Check images loading in Firefox -->
-      <!-- TODO: alt -->
       <img
         loading="lazy"
         decoding="async"
@@ -137,30 +126,21 @@
         <small class="author">Photo by Amy Hirschi</small>
         <h3>Employee, end-user of the form</h3>
         <p>
-          Has a task and needs support in achieving it. Can be a person or a
-          group's representative. In order to get support needs to find the
-          right way to get it.
+          Has a task and needs support in achieving it. Can be a person or a group's representative. In order to get support, they need to find the right way to get&nbsp;it.
         </p>
       </figcaption>
     </figure>
     <aside id="footnote-3" class="footnote">
       <small>
-        <i>Support</i> here is meant in a general sense and with the emphasis
-        on amount of incomming requests. In some use cases we additionaly
-        differentated between usage by dedicated support specialists or a more
-        general process owner like manager or administrator that does it in
-        addition to something else.
+        <i>Support</i> here is meant in a general sense and with the emphasis on the number of incoming requests. In some use cases, we additionally differentiated between usage by dedicated support specialists or a more general process owner like a manager or administrator that does it in addition to something else.
       </small>
     </aside>
   </section>
 
   <section id="process">
     <!-- <h2>Process highlights</h2> -->
-    <h2>Design highlights</h2>
-    <!-- TODO: -->
-    <!-- Approach -->
-    <!-- Context -->
-    <!-- ? Journey map? Later -->
+      <h2>Design highlights</h2>
+    <!-- TODO: Approach -->
     <article id="process-map">
       <h3>Understanding context</h3>
       <p>
@@ -185,7 +165,7 @@
           alt="Form builder withing the broader context"
         />
         <figcaption>
-          Overview of the end-user journey and form constructor's place within
+          Overview of the end-user journey and form builder's place within
           it.
         </figcaption>
       </figure>
@@ -193,11 +173,7 @@
     <article id="process-topic">
       <h3>Topic definition</h3>
       <p>
-        Finding the right form was one the biggest pain points for the
-        previous reincarnation of the app and our goal was to make it easier
-        to do. To achive this we needed to make sure our users name and
-        organize their forms in a way that their respective users can relate
-        to.
+        Finding the right form was one of the biggest pain points for the previous reincarnation of the app and our goal was to make it easier to do. To achieve this we needed to make sure our users name and organize their forms in a way that their respective users can relate to.
       </p>
       <p>
         The job of defining the topic of the form is divided between its
@@ -205,8 +181,8 @@
         to the form's definition: the immediate "topic" at hand and the
         broader "subject" space within which the process takes place.
         <i>E.g.</i> in "new user in HR system" the "new user" will be a topic
-        and "HR system" – its context that distinguishes it from other forms
-        dedicated to creation of users. It was imporant to built our search to
+        and the "HR system" – its context that distinguishes it from other forms
+        dedicated to the creation of users. It was important to build our search to
         understand different combinations between the two.<a
           class="footnote"
           href="#footnote-1"
@@ -218,7 +194,6 @@
         that reminded the future use we nudged our users to imagine how
         colleagues will look for their form.
       </p>
-      <!-- TODO: Influence of the personal style of the user -->
     </article>
     <figure id="process-topic-fig">
       <img
@@ -239,16 +214,12 @@
         width="1440"
         height="600"
       />
-
-      <!-- <figcaption>
-          While basic configuration
-        </figcaption> -->
     </figure>
     <aside id="footnote-1" class="footnote">
       <small>
-        Another thing that influences topic is <i>composition</i>. When you
-        have a topic that is, lets say geographically devided, you can either
-        create a one bigger form or several smaller ones. The decision can be
+        Another thing that influences the topic is <i>composition</i>. When you
+        have a topic that is, let us say geographically divided, you can either
+        create one bigger form or several smaller ones. The decision can be
         influenced by the subject matter or personal preference.
         <!-- There is little
         one can do about it besides being aware and taking into account. This is
@@ -257,7 +228,7 @@
           <img
             loading="lazy"
             decoding="async"
-            src="../assets/images/formbuilder/composition.png"
+            :src="compositionSrc"
             alt="Different ways of organazing forms"
           />
       </figure>
@@ -368,17 +339,18 @@
     <article id="process-roadmap">
       <h3>Roadmap planning</h3>
       <p>
-        I participated in product roadmap planning cycle by highlighting user
+        I participated in the product roadmap planning cycle by highlighting user
         needs and the state of the team’s current response to those needs:
         gaps, opportunities, and blindspots. Helped team members frame their
-        work around the problems that need to be solved for rather than the
+        work around the problems that need to be solved rather than the
         specific features they want to build.
         <!-- I also needed to  -->
         <!-- Set clear expectations about -->
         <!-- design timing and involvement for any part of the process. -->
+        <!-- TODO: Alongside <em>feature audit</em> to identify which product features are the most and least engaging... -->
       </p>
       <p>
-        <em>Kano modeling </em> was used for prioritisation. Being limited in
+        <em>Kano modelling </em> was used for prioritisation of new features. Being limited in
         resources, our focus was on serving our users' basic expectations, to
         make sure there’s nothing they’re missing. Still, I was always on the
         lookout for inexpensive ways to add a moment of delight.
@@ -388,7 +360,7 @@
       <img
         loading="lazy"
         decoding="async"
-        src="../assets/images/formbuilder/roadmap.png"
+        :src="roadmapSrc"
         alt="Product roadmap"
       />
     </figure>
@@ -400,9 +372,9 @@
     <article>
       <h3><i>for</i> support agents</h3>
       <p>
-        As a result, new form builder improved the overall experience and user
-        satisfaction. User feedback &amp; tests we performed confirmed
-        improved usability. Now people spend less time on support.
+        The new interface improved the overall experience and user
+        satisfaction. User feedback &amp; data we gathered confirmed
+        improved usability.
       </p>
     </article>
     <article>
@@ -411,9 +383,7 @@
         Objective quantitative metrics we collect show that most of our users
         succeed in finding the form from the first attempt. Judging by the
         completion time and a number of errors, form completion also doesn't
-        cause them much distress. Collection of subjective metrics (perceived
-        usability and customer satisfaction) is our next step in this
-        direction.
+        cause them much distress.
       </p>
     </article>
   </section>
@@ -426,6 +396,19 @@ export default {
     }
   },
   computed: {
+    userPrefersDark() {
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    },
+    roadmapSrc() {
+      return this.userPrefersDark
+        ? require('../assets/images/formbuilder/roadmap-d.png')
+        : require('../assets/images/formbuilder/roadmap-l.png')
+    },
+    compositionSrc() {
+      return this.userPrefersDark
+        ? require('../assets/images/formbuilder/composition-d.png')
+        : require('../assets/images/formbuilder/composition-l.png')
+    },
     heroSrc() {
       return this.scrollPosition < 100
         ? require('../assets/images/formbuilder/hero-1.png')

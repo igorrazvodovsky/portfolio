@@ -7,6 +7,7 @@
 @import "case.css";
 
 :root {
+  color-scheme: light dark;
   --bg-color: 0, 0%, 100%;
   --text-color: 0, 0%, 0%;
   --text-color-1: hsla(var(--text-color), 0.9);
@@ -41,6 +42,10 @@ header {
   display: grid;
   gap: 0 calc(var(--spacer) * 2);
   grid-template-rows: min-content;
+  grid-template-columns: 1fr;
+}
+
+.case header {
   grid-template-columns: var(--gridTemplateColumnsDefault);
 }
 
@@ -58,7 +63,6 @@ header > span {
 }
 
 header a {
-  display: block;
   text-decoration: none;
 }
 
@@ -87,17 +91,17 @@ a {
 }
 
 a:hover {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
-article a,
-.card-link-pointer {
+article a {
   display: inline-block;
   text-decoration: underline var(--text-color-3);
 }
 
 a.card-link {
-  text-decoration: none;
+  display: block;
+  width: 100%;
 }
 
 footer {

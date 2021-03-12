@@ -30,7 +30,7 @@
       </dl>
     </article>
     <p id="description">
-      I worked with ConvertIQ’s product team to design a tool to make, edit and analyze social media campaigns.
+      I worked with ConvertIQ’s product team on the initial design & a prototype of a tool to make, edit and analyze social media campaigns.
       The project became an opportunity to try out a more playful visual approach.
       I wanted the app to be warm and approachable despite the complexity of the subject.
     </p>

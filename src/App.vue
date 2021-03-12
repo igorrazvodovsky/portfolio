@@ -1,7 +1,7 @@
 <template>
   <header>
     <div>
-      <router-link to="/">Igor {{ $route.name }}<span v-if="this.$route.path == '/'">Razvodovsky</span></router-link>
+      <router-link to="/">Igor {{ $route.name }}<span v-if="this.$route.path == '/'">Razvodovsky</span></router-link><br>
       <span v-if="this.$route.path == '/'">User Experience Designer</span>
     </div>
     <span v-if="this.$route.path !== '/'">

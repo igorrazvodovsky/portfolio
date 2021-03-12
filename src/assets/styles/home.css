@@ -39,10 +39,10 @@
 /* TODO: Another way? */
 #work article a {
   margin-right: 2rem;
+  text-decoration: none;
 }
 
-#work article a:after,
-.card-link-pointer:after {
+#work article a:not(.card-link):after {
   content: " →";
   position: relative;
   float: right;
@@ -64,6 +64,7 @@
   object-fit: scale-down;
   object-position: center;
   transform: scale(1.2);
+  margin: 0 auto;
 }
 
 #work article#dal img {
@@ -74,6 +75,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -40%);
+}
+
+/* TODO: Fix */
+#work article#dal a.card-link:hover {
+  opacity: 1;
+}
+#work article#dal a.card-link:hover figure {
+  background: hsla(var(--text-color), 0.06);
 }
 
 #work article#dal img#dal-fig-speaker {
@@ -106,5 +115,5 @@
 }
 
 #work article#formbuilder img {
-  object-position: left;
+  object-position: top left;
 }

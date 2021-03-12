@@ -14,7 +14,7 @@ const routes = [
   },
   {
     path: '/formbuilder', component: Formbuilder, meta: {
-      title: 'Form builder - Igor'
+      title: 'Form builder - Igor',
     }
   },
   {

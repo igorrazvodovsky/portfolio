@@ -71,17 +71,6 @@ module.exports = (env = {}) => ({
       __VUE_OPTIONS_API__: 'true',
       __VUE_PROD_DEVTOOLS__: 'false',
     }),
-    new CopyPlugin({
-      patterns: [
-        {
-          from: path.resolve(
-            __dirname,
-            'node_modules/@shoelace-style/shoelace/dist/shoelace/icons'
-          ),
-          to: path.resolve(__dirname, 'dist/icons'),
-        },
-      ],
-    }),
   ],
   devServer: {
     inline: true,
