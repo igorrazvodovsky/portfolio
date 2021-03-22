@@ -1,0 +1,126 @@
+/* TODO: Literata & alignment in icons */
+
+@import "reset.css";
+@import "transitions.css";
+@import "typography.css";
+@import "home.css";
+@import "case.css";
+@import "formbuilder.css";
+@import "convertiq.css";
+
+:root {
+  color-scheme: light dark;
+  --bg-color: 0, 0%, 100%;
+  --text-color: 0, 0%, 0%;
+  --text-color-1: hsla(var(--text-color), 0.9);
+  --text-color-2: hsla(var(--text-color), 0.6);
+  --text-color-3: hsla(var(--text-color), 0.3);
+  --spacer: 24px;
+  --gridColumnCount: 12;
+  --gridTemplateColumnsDefault: repeat(var(--gridColumnCount), minmax(0, 1fr));
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --bg-color: 48, 51, 59; */
+    --bg-color: 220, 10%, 20%;
+    --text-color: 0, 0%, 100%;
+  }
+}
+
+body {
+  padding: 2vmax 4vmax;
+  color: var(--text-color-1);
+  background: hsla(var(--bg-color), 0.9);
+  transition: background-color 0.4s ease;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+header {
+  display: grid;
+  gap: 0 calc(var(--spacer) * 2);
+  grid-template-rows: min-content;
+  grid-template-columns: 1fr;
+}
+
+.case header {
+  grid-template-columns: var(--gridTemplateColumnsDefault);
+}
+
+header div {
+  grid-column: span 2;
+}
+
+header div > span {
+  color: var(--text-color-2);
+}
+
+header > span {
+  grid-column: 3 / span 4;
+  color: var(--text-color-3);
+}
+
+header a {
+  text-decoration: none;
+}
+
+img,
+video {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+section {
+  margin: 7vmax 0;
+}
+
+section#header {
+  margin-top: 0;
+}
+
+/* Links */
+
+a {
+  transition: opacity 0.3s ease;
+  color: inherit;
+  text-decoration: underline var(--text-color-3);
+  text-underline-offset: 0.1em;
+}
+
+a:hover {
+  opacity: 0.6;
+}
+
+article a {
+  display: inline-block;
+  text-decoration: underline var(--text-color-3);
+}
+
+a.card-link {
+  display: block;
+  width: 100%;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+footer > * {
+  margin-right: 0.5rem;
+}
+footer small > * {
+  margin-right: 0.5em;
+}
+
+hr {
+  color: transparent;
+  height: 7vmax;
+}

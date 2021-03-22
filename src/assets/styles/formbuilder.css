@@ -1,0 +1,272 @@
+/* rows: title, meta, description, problems, users-title, users, process, ... , results-title */
+
+/* // font-family: 'Menoe Grotesque Pro', 'Courier Pro', monospace; */
+/* // font-size: 16px; */
+
+/* // --screenSmall: 320px */
+/* // --screenMedium: 768px; */
+/* // --screenLarge: 1024px; */
+/* // --screenXLarge: 1440px; */
+
+/* main {
+    padding: var(--spacer) calc(var(--spacer) * 2);
+    line-height: 1.5;
+  } */
+
+@media (prefers-color-scheme: light) {
+  body.formbuilder {
+    --bg-color: 60, 17%, 95%;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body.formbuilder {
+    --bg-color: 30, 20%, 10%;
+  }
+}
+
+/* Full width everything on mobile */
+@media screen and (max-width: 768px) {
+  :root {
+    --gridColumnCount: 1;
+    --spacer: 1rem;
+  }
+  section article,
+  section h1,
+  section h2,
+  section figure,
+  section p,
+  section aside {
+    grid-column: 1 / -1 !important;
+    grid-row: auto !important;
+  }
+}
+
+section {
+  display: grid;
+  gap: calc(var(--spacer) * 2);
+  grid-template-rows: min-content;
+  grid-template-columns: var(--gridTemplateColumnsDefault);
+}
+
+section#header {
+  grid-template-rows: auto auto 1fr;
+}
+
+.case h1 {
+  grid-row: 1;
+  grid-column: 3 / span 4;
+  margin-bottom: 10vh;
+  max-width: 20ch;
+  line-height: 1.2;
+}
+
+.case article p,
+.case article h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+aside.footnote > * + * {
+  margin-top: 1rem;
+}
+aside.footnote img {
+  max-width: 50%;
+}
+
+img {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+}
+
+#meta,
+#role {
+  grid-row: 3;
+}
+#meta {
+  grid-column: 2 / auto;
+}
+
+#meta article + article {
+  margin-top: 1rem;
+}
+
+#role {
+  grid-column: 3 / span 4;
+}
+
+figure#hero {
+  grid-row: 1 / span 3;
+  grid-column: 8 / -1;
+}
+
+figure#hero img {
+  background-color: rgba(255, 255, 255, 0.1);
+  object-position: left;
+  object-fit: cover;
+  height: 945px;
+}
+
+#description {
+  grid-row: 2;
+  grid-column: 2 / span 4;
+  font-size: var(--step-1);
+}
+
+#problems h2 {
+  grid-column: 2 / -1;
+}
+#problems p {
+  color: var(--text-color-2);
+}
+#problems article {
+  grid-column-end: span 4;
+}
+#problems article:nth-of-type(1) {
+  grid-column-start: 2;
+}
+#problems article:nth-of-type(3) {
+  grid-column-start: 2;
+}
+
+#users h2 {
+  grid-column: 5 / -1;
+}
+#users figure {
+  grid-row: 2;
+}
+#users figure:nth-of-type(1) {
+  grid-column: 5 / span 4;
+}
+#users figure:nth-of-type(2) {
+  grid-column: 9 / span 4;
+}
+#users aside.footnote {
+  align-self: end;
+  grid-row: 2;
+  grid-column: 1 / span 3;
+  --foot-note-label: "1";
+}
+
+/* PROCESS */
+
+#process {
+  --foot-note-label: "0";
+}
+
+/* ??? */
+#process article:nth-of-type(2) figure {
+  min-height: 15rem;
+}
+
+#process h2 {
+  grid-column: 3 / -1;
+}
+#process article {
+  grid-column-end: span 5;
+}
+article#process-map {
+  grid-column: 3 / -1;
+  grid-row: 2;
+}
+
+article#process-map figcaption {
+  text-align: right;
+}
+
+article#process-topic {
+  grid-row: 3;
+}
+
+figure#process-topic-fig {
+  grid-column: 1 / -4;
+  grid-row: 4;
+}
+
+figure#process-topic-fig img {
+  height: auto;
+}
+
+figure#process-config-fig {
+  grid-column: 1 / -4;
+  grid-row: 5;
+}
+
+figure#process-config-fig img {
+  height: auto;
+}
+
+article#process-config,
+article#process-roadmap,
+article#process-topic {
+  grid-column: 3 / -4;
+}
+
+article#process-config {
+  align-self: last baseline;
+  grid-row: 6;
+}
+article#process-config-details {
+  grid-column: 3 / span 9;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: calc(var(--spacer) * 2);
+}
+
+/* TODO: Make better */
+article#process-config-details figure {
+  margin: 0;
+}
+article#process-config-details figure:last-of-type {
+  grid-column: span 2;
+}
+
+figure#process-roadmap-fig {
+  grid-column: 1/3;
+  grid-row: 8;
+}
+
+@media screen and (max-width: 768px) {
+  figure#process-roadmap-fig {
+    display: none;
+  }
+}
+
+figure#process-roadmap-fig img {
+  max-width: 70%;
+  float: right;
+  margin: 3.5rem 0;
+}
+
+aside.footnote:nth-of-type(1) {
+  align-self: end;
+  grid-row: 3;
+  grid-column: 10 / -1;
+  --foot-note-label: "2";
+}
+aside.footnote:nth-of-type(2) {
+  align-self: start;
+  grid-row: 8;
+  grid-column: 10 / -1;
+  --foot-note-label: "3";
+}
+
+/* RESULTS */
+
+#results h2 {
+  grid-column: 7 / -1;
+}
+#results article {
+  grid-column-end: span 4;
+}
+#results article:nth-of-type(1) {
+  grid-column-start: 3;
+}
+
+@media (prefers-color-scheme: light) {
+  figure#process-roadmap-fig img,
+  aside.footnote img {
+    mix-blend-mode: darken;
+  }
+}

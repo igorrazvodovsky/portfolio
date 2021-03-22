@@ -1,0 +1,119 @@
+#work,
+#etc {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 1fr);
+  gap: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  #work,
+  #etc {
+    grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+  }
+}
+
+#work h2,
+#etc h2 {
+  grid-column: 1/-1;
+}
+
+#work article h3,
+#etc article h3 {
+  margin: 1rem 0;
+}
+
+#work figure,
+#etc figure {
+  width: 100%;
+  min-height: 20rem;
+  background: hsla(var(--text-color), 0.1);
+  position: relative;
+}
+
+#work figure img:first-child {
+  object-fit: cover;
+  height: 30vh;
+  min-height: 20rem;
+}
+
+/* TODO: Another way? */
+#work article a {
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+#work article a:not(.card-link):after {
+  content: " →";
+  position: relative;
+  float: right;
+  margin-right: -1.5rem;
+  width: 1rem;
+  color: var(--text-color-2);
+  font-feature-settings: "tnum";
+}
+
+#work article a + a {
+  margin: 0;
+}
+
+#work article#convertiq img {
+  object-position: right;
+}
+
+#work article#aloud img:first-child {
+  object-fit: scale-down;
+  object-position: center;
+  transform: scale(1.2);
+  margin: 0 auto;
+}
+
+#work article#dal img {
+  object-fit: unset;
+  height: auto;
+  min-height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%);
+}
+
+/* TODO: Fix */
+#work article#dal a.card-link:hover {
+  opacity: 1;
+}
+#work article#dal a.card-link:hover figure {
+  background: hsla(var(--text-color), 0.06);
+}
+
+#work article#dal img#dal-fig-speaker {
+  z-index: 1;
+}
+
+#work article#dal img#dal-fig-sound {
+  z-index: 2;
+  transform: translate(-55%, -140%);
+  mix-blend-mode: darken;
+}
+
+@media (prefers-color-scheme: dark) {
+  #work article#dal img#dal-fig-sound {
+    mix-blend-mode: luminosity;
+  }
+}
+
+#work article#dal img#dal-fig-shadow {
+  transform: translate(-50%, 12%);
+  mix-blend-mode: multiply;
+}
+
+#work article .inprogress {
+  object-fit: unset;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(1rem, 3rem);
+}
+
+#work article#formbuilder img {
+  object-position: top left;
+}
