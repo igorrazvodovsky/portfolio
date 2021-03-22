@@ -125,10 +125,6 @@
 
 </template>
 
-<style>
-  @import "convertiq.css";
-</style>
-
 <script>
 export default {
   data() {
