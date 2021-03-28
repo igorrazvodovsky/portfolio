@@ -1,13 +1,5 @@
 /* rows: title, meta, description, problems, users-title, users, process, ... , results-title */
 
-/* // font-family: 'Menoe Grotesque Pro', 'Courier Pro', monospace; */
-/* // font-size: 16px; */
-
-/* // --screenSmall: 320px */
-/* // --screenMedium: 768px; */
-/* // --screenLarge: 1024px; */
-/* // --screenXLarge: 1440px; */
-
 /* main {
     padding: var(--spacer) calc(var(--spacer) * 2);
     line-height: 1.5;
@@ -105,6 +97,7 @@ figure#hero img {
   background-color: rgba(255, 255, 255, 0.1);
   object-position: left;
   object-fit: cover;
+  background-size: cover;
   height: 945px;
 }
 

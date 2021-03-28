@@ -7,22 +7,7 @@
         <code>audio</code> element.
       </audio> -->
     <figure id="hero">
-      <img
-        v-if="this.scrollPosition < 100"
-        src="../assets/images/formbuilder/hero-1.png"
-        alt="People working"
-        width="1260"
-        height="945"
-        decoding="async"
-      />
-      <img
-        v-else
-        src="../assets/images/formbuilder/hero-2.png"
-        alt="People working"
-        width="1260"
-        height="945"
-        decoding="async"
-      />
+      <img :src="imgHero" width="1260" height="945" decoding="async" />
     </figure>
     <article id="meta">
       <article>
@@ -71,15 +56,17 @@
     <article>
       <h3>Make sure the resulting forms are good&nbsp;🙄</h3>
       <p>
-        Good forms are notoriously tricky to implement. Our goal was to design this process in a way that doesn't require the know-how on the user’s part.
+        Good forms are notoriously tricky to implement. Our goal was to design
+        this process in a way that doesn't require the know-how on the user’s
+        part.
       </p>
     </article>
     <article>
       <!-- support the admin in creating the mental model of the end-user searching and filling out the form. -->
       <h3>Help people creating forms think in user-centric terms</h3>
       <p>
-        In addition to the intricacies of form design, it was crucial to make the
-        form creators see their users' perspective. Embedded
+        In addition to the intricacies of form design, it was crucial to make
+        the form creators see their users' perspective. Embedded
         user-centeredness!
       </p>
     </article>
@@ -93,7 +80,9 @@
     <article>
       <h3>Reducing the load on support agents</h3>
       <p>
-        Support can be one of the largest budget items, especially when they operate on a global scale. Form builder helps to shrink that cost by improving agent velocity—and in turn, creating happier employees.
+        Support can be one of the largest budget items, especially when they
+        operate on a global scale. Form builder helps to shrink that cost by
+        improving agent velocity—and in turn, creating happier employees.
       </p>
     </article>
   </section>
@@ -110,9 +99,11 @@
 
       <figcaption>
         <small class="author">Photo by Brooke Cagle</small>
-        <h3
-          >Support agent, form&nbsp;creator<a class="footnote" href="#footnote-3"><sup>1</sup></a></h3
-        >
+        <h3>
+          Support agent, form&nbsp;creator<a class="footnote" href="#footnote-3"
+            ><sup>1</sup></a
+          >
+        </h3>
         <p>
           Are responsible for creating, sustaining and improving a particular
           process, as well as, being responsible for the outcomes of the
@@ -131,36 +122,42 @@
         <small class="author">Photo by Amy Hirschi</small>
         <h3>Employee, end-user of the form</h3>
         <p>
-          Has a task and needs support in achieving it. Can be a person or a group's representative. In order to get support, they need to find the right way to get&nbsp;it.
+          Has a task and needs support in achieving it. Can be a person or a
+          group's representative. In order to get support, they need to find the
+          right way to get&nbsp;it.
         </p>
       </figcaption>
     </figure>
     <aside id="footnote-3" class="footnote">
       <small>
-        <i>Support</i> here is meant in a general sense and with the emphasis on the number of incoming requests. In some use cases, we additionally differentiated between usage by dedicated support specialists or a more general process owner like a manager or administrator that does it in addition to something else.
+        <i>Support</i> here is meant in a general sense and with the emphasis on
+        the number of incoming requests. In some use cases, we additionally
+        differentiated between usage by dedicated support specialists or a more
+        general process owner like a manager or administrator that does it in
+        addition to something else.
       </small>
     </aside>
   </section>
 
   <section id="process">
     <!-- <h2>Process highlights</h2> -->
-      <h2>Design highlights</h2>
+    <h2>Design highlights</h2>
     <!-- TODO: Approach -->
     <article id="process-map">
       <h3>Understanding context</h3>
       <p>
-        The application of which the constructor is a part of is only a phase
-        in the more general journey people in the company embark on when they
-        need support with something. Acknowledgement of this by the team was
+        The application of which the constructor is a part of is only a phase in
+        the more general journey people in the company embark on when they need
+        support with something. Acknowledgement of this by the team was
         important for a better understanding of where our users come from and
         what happens after they fill out their forms.
       </p>
       <p>
         We built our team's understanding of the territory by mapping out the
-        broader context. That helped achieve clarity and alignment around
-        goals for the project, expectations, and potential dependencies and
-        concerns. <i>Stakeholder interviews</i> further developed &amp;
-        broadened this understanding.
+        broader context. That helped achieve clarity and alignment around goals
+        for the project, expectations, and potential dependencies and concerns.
+        <i>Stakeholder interviews</i> further developed &amp; broadened this
+        understanding.
       </p>
       <figure>
         <img
@@ -170,24 +167,26 @@
           alt="Form builder withing the broader context"
         />
         <figcaption>
-          Overview of the end-user journey and form builder's place within
-          it.
+          Overview of the end-user journey and form builder's place within it.
         </figcaption>
       </figure>
     </article>
     <article id="process-topic">
       <h3>Topic definition</h3>
       <p>
-        Finding the right form was one of the biggest pain points for the previous reincarnation of the app and our goal was to make it easier to do. To achieve this we needed to make sure our users name and organize their forms in a way that their respective users can relate to.
+        Finding the right form was one of the biggest pain points for the
+        previous reincarnation of the app and our goal was to make it easier to
+        do. To achieve this we needed to make sure our users name and organize
+        their forms in a way that their respective users can relate to.
       </p>
       <p>
         The job of defining the topic of the form is divided between its
-        <i>title</i> and the combination of <i>tags</i>. There are two parts
-        to the form's definition: the immediate "topic" at hand and the
-        broader "subject" space within which the process takes place.
-        <i>E.g.</i> in "new user in HR system" the "new user" will be a topic
-        and the "HR system" – its context that distinguishes it from other forms
-        dedicated to the creation of users. It was important to build our search to
+        <i>title</i> and the combination of <i>tags</i>. There are two parts to
+        the form's definition: the immediate "topic" at hand and the broader
+        "subject" space within which the process takes place. <i>E.g.</i> in
+        "new user in HR system" the "new user" will be a topic and the "HR
+        system" – its context that distinguishes it from other forms dedicated
+        to the creation of users. It was important to build our search to
         understand different combinations between the two.<a
           class="footnote"
           href="#footnote-1"
@@ -231,20 +230,12 @@
         something user should decide by themselves. -->
         <figure aria-hidden="true">
           <img
-            v-if="this.userPrefersDark"
             loading="lazy"
             decoding="async"
-            src="../assets/images/formbuilder/composition-d.png"
+            :src="imgComposition"
             alt="Different ways of organazing forms"
           />
-          <img
-            v-else
-            loading="lazy"
-            decoding="async"
-            src="../assets/images/formbuilder/composition-l.png"
-            alt="Different ways of organazing forms"
-          />
-      </figure>
+        </figure>
       </small>
     </aside>
     <article id="process-config">
@@ -252,8 +243,8 @@
         <h3>Progressive disclosure in question configuration</h3>
         <p>
           Processes our colleagues support vary greatly in complexity and this
-          reflected directly in the complexity of their forms. Mostly they are
-          a simple combination of two to three simple questions but once in a
+          reflected directly in the complexity of their forms. Mostly they are a
+          simple combination of two to three simple questions but once in a
           while, you come across something less straightforward.
           <!-- About stakeholder interviews + zoom img -->
         </p>
@@ -270,9 +261,7 @@
           width="360"
           height="360"
         />
-        <figcaption>
-          Selecting the block type.
-        </figcaption>
+        <figcaption>Selecting the block type.</figcaption>
       </figure>
       <figure>
         <img
@@ -292,8 +281,8 @@
           >. <i>Input field</i> becomes <i>Text</i>;
           <i>Checkbox</i>&mdash;<i>Yes/No</i>; <i>Date picker</i> becomes
           <i>Date</i>. Additionally, <i>choices</i> were rendered either as
-          <i>radio buttons, checkboxes</i> or <i>dropdown menu</i> based on
-          the number of options.
+          <i>radio buttons, checkboxes</i> or <i>dropdown menu</i> based on the
+          number of options.
         </figcaption>
       </figure>
       <figure>
@@ -306,8 +295,8 @@
           height="360"
         />
         <figcaption>
-          When an answer option is known to be the most frequently selected
-          one, it is helpful to select it by default.<a
+          When an answer option is known to be the most frequently selected one,
+          it is helpful to select it by default.<a
             class="footnote"
             href="#footnote-2"
             ><sup>3</sup></a
@@ -323,9 +312,7 @@
           width="360"
           height="360"
         />
-        <figcaption>
-          Adding an explanation.
-        </figcaption>
+        <figcaption>Adding an explanation.</figcaption>
       </figure>
       <figure>
         <img
@@ -336,52 +323,44 @@
           height="360"
         />
         <figcaption>
-          Questions differ in complexity. Some answer themselves. Others
-          benefit from examples, descriptions and&nbsp;nudges.
+          Questions differ in complexity. Some answer themselves. Others benefit
+          from examples, descriptions and&nbsp;nudges.
         </figcaption>
       </figure>
     </article>
     <aside id="footnote-2" class="footnote">
       <small>
-        Defaults are a powerful yet dangerous thing. People tend to stick to
-        the defaults and this can coax them down a particular path. We did our
-        best to caution our users about this danger.
+        Defaults are a powerful yet dangerous thing. People tend to stick to the
+        defaults and this can coax them down a particular path. We did our best
+        to caution our users about this danger.
       </small>
     </aside>
     <!-- TODO: Front-line collaboration -->
     <article id="process-roadmap">
       <h3>Roadmap planning</h3>
       <p>
-        I participated in the product roadmap planning cycle by highlighting user
-        needs and the state of the team’s current response to those needs:
+        I participated in the product roadmap planning cycle by highlighting
+        user needs and the state of the team’s current response to those needs:
         gaps, opportunities, and blindspots. Helped team members frame their
-        work around the problems that need to be solved rather than the
-        specific features they want to build.
+        work around the problems that need to be solved rather than the specific
+        features they want to build.
         <!-- I also needed to  -->
         <!-- Set clear expectations about -->
         <!-- design timing and involvement for any part of the process. -->
         <!-- TODO: Alongside <em>feature audit</em> to identify which product features are the most and least engaging... -->
       </p>
       <p>
-        <em>Kano modelling </em> was used for prioritisation of new features. Being limited in
-        resources, our focus was on serving our users' basic expectations, to
-        make sure there’s nothing they’re missing. Still, I was always on the
-        lookout for inexpensive ways to add a moment of delight.
+        <em>Kano modelling </em> was used for prioritisation of new features.
+        Being limited in resources, our focus was on serving our users' basic
+        expectations, to make sure there’s nothing they’re missing. Still, I was
+        always on the lookout for inexpensive ways to add a moment of delight.
       </p>
     </article>
     <figure aria-hidden="true" id="process-roadmap-fig">
       <img
-        v-if="this.userPrefersDark"
         loading="lazy"
         decoding="async"
-        src="../assets/images/formbuilder/roadmap-d.png"
-        alt="Product roadmap"
-      />
-      <img
-        v-else
-        loading="lazy"
-        decoding="async"
-        src="../assets/images/formbuilder/roadmap-l.png"
+        :src="imgRoadmap"
         alt="Product roadmap"
       />
     </figure>
@@ -393,9 +372,8 @@
     <article>
       <h3><i>for</i> support agents</h3>
       <p>
-        The new interface improved the overall experience and user
-        satisfaction. User feedback &amp; data we gathered confirmed
-        improved usability.
+        The new interface improved the overall experience and user satisfaction.
+        User feedback &amp; data we gathered confirmed improved usability.
       </p>
     </article>
     <article>
@@ -410,28 +388,52 @@
   </section>
 </template>
 <script>
+import imgUrlHero1 from '../assets/images/formbuilder/hero-1.png'
+import imgUrlHero2 from '../assets/images/formbuilder/hero-2.png'
+import imgUrlCompositionD from '../assets/images/formbuilder/composition-d.png'
+import imgUrlCompositionL from '../assets/images/formbuilder/composition-l.png'
+import imgUrlRoadmapD from '../assets/images/formbuilder/composition-d.png'
+import imgUrlRoadmapL from '../assets/images/formbuilder/composition-l.png'
+
 export default {
   data() {
     return {
-      scrollPosition: null
+      scrollPosition: null,
     }
   },
   computed: {
     userPrefersDark() {
-      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
-    }
+      return (
+        window.matchMedia &&
+        window.matchMedia('(prefers-color-scheme: dark)').matches
+      )
+    },
+    imgHero() {
+      return this.scrollPosition < 100 ? imgUrlHero1 : imgUrlHero2
+    },
+    imgComposition() {
+      return this.userPrefersDark ? imgUrlCompositionD : imgUrlCompositionL
+    },
+    imgRoadmap() {
+      return this.userPrefersDark ? imgUrlRoadmapD : imgUrlRoadmapL
+    },
   },
   mounted() {
-    window.addEventListener('scroll', this.updateScroll);
-    document.body.classList.add('case', 'formbuilder');
+    window.addEventListener('scroll', this.updateScroll)
+    document.body.classList.add('case', 'formbuilder')
   },
-  unmounted () {
-    document.body.classList.remove('case', 'formbuilder');
-},
+  unmounted() {
+    document.body.classList.remove('case', 'formbuilder')
+  },
   methods: {
     updateScroll() {
       this.scrollPosition = window.scrollY
-    }
-  }
+    },
+  },
 }
 </script>
+<style>
+.formbuilder figure#hero img {
+  background-image: url(../assets/images/formbuilder/hero-1.png);
+}
+</style>

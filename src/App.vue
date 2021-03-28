@@ -42,7 +42,7 @@ export default {
   },
   watch: {
     '$route' (to, from) {
-      document.title = to.meta.title || 'Your Website'
+      document.title = to.meta.title || 'Igor Razvodovsky'
     }
   }
 }

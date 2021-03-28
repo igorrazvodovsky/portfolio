@@ -5,7 +5,7 @@
     <!-- clear; robust; ... -->
   </h1>
   <section id="work">
-    <!-- Rcent -->
+    <!-- Recent -->
     <h2>Some work</h2>
     <article id="aloud">
       <a href="https://github.com/igorrazvodovsky/aloud" class="card-link">
@@ -14,17 +14,9 @@
             decoding="async"
             width="450"
             height ="450"
-            src="../assets/images/home/aloud.png"
+            :src="imgAloud"
             alt="Aloud project preview"
             />
-          <img
-            class="inprogress"
-            decoding="async"
-            src="../assets/images/home/inprogress.png"
-            alt="Project is in progress"
-            width="176"
-            height="110"
-          />
         </figure>
       </a>
       <h3>Making an audiobook player</h3>
@@ -113,3 +105,17 @@
     </article>
   </section>
 </template>
+<script>
+import imgUrlAloudLight from '../assets/images/home/aloud.png';
+import imgUrlAloudDark from '../assets/images/home/aloud-d.png';
+export default {
+  computed: {
+    userPrefersDark() {
+      return window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+    },
+    imgAloud() {
+      return this.userPrefersDark ? imgUrlAloudDark : imgUrlAloudLight;
+    }
+  }
+}
+</script>
