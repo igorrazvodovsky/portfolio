@@ -1,12 +1,12 @@
 /* TODO: Literata & alignment in icons */
 
-@import "reset.css";
-@import "transitions.css";
-@import "typography.css";
-@import "home.css";
-@import "case.css";
-@import "formbuilder.css";
-@import "convertiq.css";
+@import 'reset.css';
+@import 'transitions.css';
+@import 'typography.css';
+@import 'home.css';
+@import 'case.css';
+@import 'formbuilder.css';
+@import 'convertiq.css';
 
 :root {
   color-scheme: light dark;
@@ -97,7 +97,6 @@ a:hover {
 }
 
 article a {
-  display: inline-block;
   text-decoration: underline var(--text-color-3);
 }
 

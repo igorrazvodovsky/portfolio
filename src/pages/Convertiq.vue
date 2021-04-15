@@ -40,9 +40,65 @@
       <figcaption>Account dashboard</figcaption>
     </figure>
   </section>
-
+  <section id="research">
+    <h2>Research</h2>
+    <article>
+      <p>
+        I often start with the <em>literature review</em>&mdash;it usually
+        provides a great start in building a
+        <a href="https://www.researchskills.net/craft-skills/conceptual-model"
+          >conceptual model</a
+        >. Avery Swartz's
+        <a href="https://www.seeyouontheinternet.com/"
+          ><em>See You on the Internet</em></a
+        >
+        and Jason McDonald's
+        <a
+          href="https://www.goodreads.com/book/show/32781410-social-media-marketing-workbook"
+          ><em>Social Media Marketing Workbook</em></a
+        >
+        were useful in both understanding the basics of the subject and getting
+        the general idea of what users can be facing.
+      </p>
+    </article>
+    <article>
+      <p>
+        To learn more about users I watched a selection of YouTube videos<a
+          class="footnote"
+          href="#footnote-1"
+          ><sup>1</sup></a
+        >
+        where people share their experiences planning, creating and managing ad
+        campaigns for their businesses. I selected a wide array of clips
+        featuring people from various backgrounds and with different technology
+        skills.
+      </p>
+      <p>
+        Despite some shortcoming<a class="footnote" href="#footnote-2"
+          ><sup>2</sup></a
+        >
+        this proved to be a low-cost and enormously insightful way of getting to
+        know our users. We were able to identify different strategies people use
+        in campaign management, language they use when speaking about the
+        subject and mental model of the way it works.
+      </p>
+      <aside id="footnote-1" class="footnote">
+        <small>
+          Although watching Youtube doesn’t seem like proper research, some of
+          these clips were similar in quality to what you can get in the
+          think-aloud 1:1 moderated lab testing.
+        </small>
+      </aside>
+      <aside id="footnote-2" class="footnote">
+        <small>
+          My main concern lied with the edited nature of these reports but I was
+          hoping to find some useful common features in their stories.
+        </small>
+      </aside>
+    </article>
+  </section>
   <section id="process">
-    <!-- <h2>Design highlights</h2> -->
+    <h2>Design highlights</h2>
     <figure>
       <img
         loading="lazy"
@@ -149,32 +205,32 @@ export default {
   },
   computed: {
     imgStep1() {
-      return this.wizardStepPosition[0] > -window.innerHeight * 0.3
+      return this.wizardStepPosition[0] > -window.innerHeight * 0.5
         ? imgUrlStep
         : imgUrlStep1
     },
     imgStep2() {
-      return this.wizardStepPosition[0] > -window.innerHeight * 0.4
+      return this.wizardStepPosition[0] > -window.innerHeight * 0.6
         ? imgUrlStep
         : imgUrlStep2
     },
     imgStep3() {
-      return this.wizardStepPosition[0] > -window.innerHeight * 0.5
+      return this.wizardStepPosition[0] > -window.innerHeight * 0.7
         ? imgUrlStep
         : imgUrlStep3
     },
     imgStep4() {
-      return this.wizardStepPosition[0] > -window.innerHeight * 0.6
+      return this.wizardStepPosition[0] > -window.innerHeight * 0.8
         ? imgUrlStep
         : imgUrlStep4
     },
     imgStep5() {
-      return this.wizardStepPosition[0] > -window.innerHeight * 0.7
+      return this.wizardStepPosition[0] > -window.innerHeight * 0.9
         ? imgUrlStep
         : imgUrlStep5
     },
     imgStep6() {
-      return this.wizardStepPosition[0] > -window.innerHeight * 0.8
+      return this.wizardStepPosition[0] > -window.innerHeight * 1
         ? imgUrlStep
         : imgUrlStep6
     },

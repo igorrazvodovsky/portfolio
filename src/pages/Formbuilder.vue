@@ -392,8 +392,8 @@ import imgUrlHero1 from '../assets/images/formbuilder/hero-1.png'
 import imgUrlHero2 from '../assets/images/formbuilder/hero-2.png'
 import imgUrlCompositionD from '../assets/images/formbuilder/composition-d.png'
 import imgUrlCompositionL from '../assets/images/formbuilder/composition-l.png'
-import imgUrlRoadmapD from '../assets/images/formbuilder/composition-d.png'
-import imgUrlRoadmapL from '../assets/images/formbuilder/composition-l.png'
+import imgUrlRoadmapD from '../assets/images/formbuilder/roadmap-d.png'
+import imgUrlRoadmapL from '../assets/images/formbuilder/roadmap-l.png'
 
 export default {
   data() {

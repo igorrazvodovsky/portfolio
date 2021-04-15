@@ -40,16 +40,17 @@
 #work article a {
   margin-right: 2rem;
   text-decoration: none;
+  display: inline-block;
 }
 
 #work article a:not(.card-link):after {
-  content: " →";
+  content: ' →';
   position: relative;
   float: right;
   margin-right: -1.5rem;
   width: 1rem;
   color: var(--text-color-2);
-  font-feature-settings: "tnum";
+  font-feature-settings: 'tnum';
 }
 
 #work article a + a {
