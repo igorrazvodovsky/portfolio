@@ -1,10 +1,8 @@
 <template>
   <h1>
     Senior designer creating clear, robust, consistent, elegant solutions that
-    avoid redundancy. Currently working on a better employee experience at
-    <a href="https://en.wikipedia.org/wiki/Kuehne_%2B_Nagel"
-      >Kuehne&nbsp;+&nbsp;Nagel</a
-    >.
+    avoid redundancy. Currently working on industrial manufacturing sales
+    automation at <a href="https://www.tacton.com/">Tacton</a>.
     <!-- Before that... -->
     <!-- clear; robust; ... -->
   </h1>
