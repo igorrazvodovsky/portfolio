@@ -5,6 +5,9 @@ import './assets/styles/style.css';
 import Home from './pages/Home.vue';
 import Formbuilder from './pages/Formbuilder.vue';
 import Convertiq from './pages/Convertiq.vue';
+import { ConnectedDots } from './dots.js'
+
+customElements.define("connected-dots", ConnectedDots);
 
 const routes = [
   {
