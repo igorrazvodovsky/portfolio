@@ -1,18 +1,22 @@
 <template>
   <h1>
-    Senior designer creating clear, robust, consistent, elegant solutions that
-    avoid redundancy. Currently working on a better employee experience at
-    <a href="https://en.wikipedia.org/wiki/Kuehne_%2B_Nagel"
-      >Kuehne&nbsp;+&nbsp;Nagel</a
-    >.
+    User experience designer. Currently working on industrial manufacturing sales automation at <a href="https://www.tacton.com/">Tacton</a>.
     <!-- Before that... -->
     <!-- clear; robust; ... -->
   </h1>
   <section id="work">
     <!-- Recent -->
-    <h2>Some work</h2>
+    <!-- <h2>Some work</h2> -->
+    <article id="pattern-playground">
+      <figure>
+        <connected-dots></connected-dots>
+      </figure>
+      <h3><a href="https://igors-pattern-playground.netlify.app/">Pattern playground</a></h3>
+      <p>Experiments in various approaches to organizing and composing design systems.</p>
+
+    </article>
     <article id="aloud">
-      <a href="https://github.com/igorrazvodovsky/aloud" class="card-link">
+
         <figure>
           <img
             decoding="async"
@@ -22,13 +26,10 @@
             alt="Aloud project preview"
           />
         </figure>
-      </a>
-      <h3>Making an audiobook player</h3>
-      <p>Personal project and playground for learning&nbsp;things</p>
-      <a href="https://github.com/igorrazvodovsky/aloud">Github</a>
+      <h3><a href="https://github.com/igorrazvodovsky/aloud">Making an audiobook player</a></h3>
+      <p>Personal project and playground for learning&nbsp;things.</p>
     </article>
     <article id="formbuilder">
-      <router-link to="/formbuilder" class="card-link">
         <figure>
           <img
             decoding="async"
@@ -38,9 +39,7 @@
             alt="Form builder project preview"
           />
         </figure>
-      </router-link>
-      <h3>Guiding people in making forms</h3>
-      <router-link to="/formbuilder">View details</router-link>
+      <h3><router-link to="/formbuilder">Guiding people in making forms</router-link></h3>
     </article>
     <article id="convertiq">
       <router-link to="/convertiq" class="card-link">
@@ -54,8 +53,7 @@
           />
         </figure>
       </router-link>
-      <h3>Simplifying social media campaign management</h3>
-      <router-link to="/convertiq">View details</router-link>
+      <h3><router-link to="/convertiq">Simplifying social media campaign management</router-link></h3>
     </article>
     <article>
       <a
@@ -72,16 +70,13 @@
           />
         </figure>
       </a>
-      <h3>Thinking about turning Spotify into Jukebox</h3>
+      <h3><a href="https://uxdesign.cc/turning-spotify-into-jukebox-c6f0ae031284">Thinking about turning Spotify into Jukebox</a></h3>
       <p>
         A concept investigating the possibility of playing music in public
         places using streaming services.
       </p>
-      <a href="https://uxdesign.cc/turning-spotify-into-jukebox-c6f0ae031284"
-        >Read on Medium</a
-      >
     </article>
-    <article id="dal">
+    <!-- <article id="dal">
       <a
         href="https://medium.com/@igorrazvodovsky/searching-for-a-medium-for-a-recipe-c707ccfab23a"
         class="card-link"
@@ -122,7 +117,7 @@
       <a href="https://assistant.google.com/services/a/uid/0000009f815d8acf"
         >Try with Google Assistant</a
       >
-    </article>
+    </article> -->
   </section>
 </template>
 <script>

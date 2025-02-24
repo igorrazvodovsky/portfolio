@@ -88,7 +88,7 @@ section#header {
 a {
   transition: opacity 0.3s ease;
   color: inherit;
-  text-decoration: underline var(--text-color-3);
+  /* text-decoration: underline var(--text-color-3); */
   text-underline-offset: 0.1em;
 }
 
@@ -97,7 +97,7 @@ a:hover {
 }
 
 article a {
-  text-decoration: underline var(--text-color-3);
+  /* text-decoration: underline var(--text-color-3); */
 }
 
 a.card-link {

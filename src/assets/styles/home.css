@@ -36,14 +36,20 @@
   min-height: 20rem;
 }
 
-/* TODO: Another way? */
-#work article a {
-  margin-right: 2rem;
-  text-decoration: none;
-  display: inline-block;
+#work article {
+  position: relative;
 }
 
-#work article a:not(.card-link):after {
+#work article a {
+}
+
+#work article a::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+}
+
+/* #work article a:not(.card-link):after {
   content: ' →';
   position: relative;
   float: right;
@@ -51,7 +57,7 @@
   width: 1rem;
   color: var(--text-color-2);
   font-feature-settings: 'tnum';
-}
+} */
 
 #work article a + a {
   margin: 0;
@@ -59,6 +65,16 @@
 
 #work article#convertiq img {
   object-position: right;
+}
+
+#work article#pattern-playground figure {
+  background: oklch(0% 0 0 / 3%);
+}
+
+@media (prefers-color-scheme: dark) {
+  #work article#pattern-playground figure {
+    background: oklch(100% 0 0 / 3%);
+  }
 }
 
 #work article#aloud img:first-child {

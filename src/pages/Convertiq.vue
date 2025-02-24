@@ -40,6 +40,32 @@
       <figcaption>Account dashboard</figcaption>
     </figure>
   </section>
+  <section id="users">
+    <h2>Who we designed for</h2>
+    <figure>
+      <img
+        loading="lazy"
+        decoding="async"
+        src="../assets/images/convertiq/user.jpeg"
+        alt="People working"
+      />
+      <figcaption>
+        <small class="author"
+          >Photo by <a href="https://unsplash.com/@cikstefan"
+            >Štefan Štefančík</a
+          >
+          on
+          <a href="https://unsplash.com/photos/w_Mj-SsE1mI">Unsplash</a></small
+        >
+        <h3>Entrepreneur, small business owner</h3>
+        <p>
+          John is a ceramist. He sells his work through Etsy, Instagram and a
+          personal website. Until now he relied on word of mouth but recently he
+          started to wonder if he should make a Facebook ad.
+        </p>
+      </figcaption>
+    </figure>
+  </section>
   <section id="research">
     <h2>Research</h2>
     <article>
