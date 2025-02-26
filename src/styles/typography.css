@@ -1,0 +1,151 @@
+/* @font-face {
+  font-family: "Compagnon";
+  src: url("../fonts/Compagnon-Roman.otf");
+} */
+
+html {
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  /* font-family: "Alegreya Sans", system-ui, sans-serif; */
+  color: oklch(0% 0 0 / 90%);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+h1 {
+  /* TODO: Min width */
+  max-width: 70%;
+  /* font-style: italic; */
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 110%;
+  /* letter-spacing: -0.015em; */
+  letter-spacing: -0.025em;
+}
+
+h2 {
+  grid-column: 1/-1;
+  font-size: 2rem;
+}
+
+h5,
+h4,
+.text-muted {
+  color: oklch(0% 0 0 / 30%);
+}
+
+h4 {
+  margin-block-end: 0.5rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.lead {
+  text-wrap: balance;
+}
+
+.lead {
+  max-width: 60ch;
+  font-size: larger;
+}
+
+/* Baseline for default links */
+a {
+  /* Relatively sized thickness and offset */
+  text-decoration-thickness: max(0.05em, 1px);
+  text-underline-offset: 0.15em;
+
+  color: oklch(0% 0 0 / 60%);
+  text-decoration-color: oklch(0% 0 0 / 30%);
+}
+
+a:hover {
+  color: oklch(0% 0 0 / 90%);
+  text-decoration-color: oklch(0% 0 0 / 60%);
+}
+
+a.footnote {
+  font-weight: normal;
+  font-size: smaller;
+  text-decoration: none;
+}
+
+.color-muted {
+  color: oklch(0% 0 0 / 30%);
+}
+
+small {
+  color: oklch(0% 0 0 / 60%);
+}
+
+article {
+  --flow-space: 0.5em;
+}
+
+figcaption {
+  color: oklch(0% 0 0 / 60%);
+  margin-block-start: 0.25rem;
+  --flow-space: 0.5em;
+}
+
+figcaption {
+  font-size: smaller;
+}
+
+dt {
+  color: oklch(0% 0 0 / 60%);
+}
+
+dt {
+  margin-block-start: 0.5rem;
+}
+
+#meta,
+#role {
+  font-size: smaller;
+}
+
+p {
+  max-width: 60ch;
+}
+
+mark {
+  background-color: oklch(96.8% 0.211 109.77 / 30%);
+}
+
+.footnote {
+  position: relative;
+}
+
+.footnote:hover {
+}
+
+.footnote::before {
+  position: absolute;
+  /* top: calc(var(--at-large) * var(--asides-padding-top)); */
+  top: 0.25em;
+  left: -2.25rem;
+  width: 2rem;
+  text-align: right;
+  font-size: smaller;
+  color: oklch(0% 0 0 / 30%);
+  transition: opacity 0.2s 0.2s linear;
+  white-space: nowrap;
+  /* opacity: var(--is-active, 1) var(--not-active, 0); */
+}
+
+#footnote-1::before {
+  content: "1. ";
+}
+
+#footnote-2::before {
+  content: "2. ";
+}
+
+#footnote-3::before {
+  content: "3. ";
+}

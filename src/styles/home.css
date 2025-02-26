@@ -1,0 +1,18 @@
+#work figure img:first-child {
+  object-fit: cover;
+  min-height: 100%;
+}
+
+#work article#aloud figure {
+  overflow: visible;
+}
+
+#work article#aloud img:first-child {
+  object-fit: scale-down;
+  object-position: center center;
+  transform: scale(1.2);
+}
+
+#work article#formbuilder img:first-child {
+  object-position: left top;
+}

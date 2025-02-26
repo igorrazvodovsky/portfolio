@@ -1,0 +1,5 @@
+main#lighting {
+  section#solution > article {
+    grid-column: 1/-1;
+  }
+}

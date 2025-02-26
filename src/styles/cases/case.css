@@ -1,0 +1,14 @@
+.case {
+  h1 {
+    font-weight: 500;
+  }
+
+  .case-header {
+    display: grid;
+    gap: 4vmax;
+    grid-template-rows: min-content;
+    grid-template-columns: var(--gridTemplateColumnsDefault);
+    grid-template-rows: auto auto 1fr;
+    margin: 4vmax 0;
+  }
+}

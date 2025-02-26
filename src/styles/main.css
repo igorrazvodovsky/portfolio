@@ -1,0 +1,30 @@
+@import "reset.css";
+@import "layout.css";
+@import "typography.css";
+@import "home.css";
+@import "./cases/case.css";
+@import "./cases/lighting.css";
+@import "./cases/formbuilder.css";
+@import "./cases/convertiq.css";
+
+:root {
+  --accent: 136, 58, 234;
+  --accent-light: 224, 204, 250;
+  --accent-dark: 49, 10, 101;
+  --accent-gradient: linear-gradient(
+    45deg,
+    rgb(var(--accent)),
+    rgb(var(--accent-light)) 30%,
+    white 60%
+  );
+  --debug: oklch(63% 0.25 30 / 30%);
+  --radius-xs: 0.25rem;
+  --radius-s: 0.5rem;
+  --radius-m: clamp(0.25rem, 0.5vw + 0.15rem, 0.75rem);
+  --radius-l: 0.75rem;
+}
+
+/* @view-transition {
+  navigation: auto;
+}
+ */
