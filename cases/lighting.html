@@ -9,49 +9,346 @@
   <body id="lighting" class="case">
     <header>
       <a href="./">Igors</a>
-      <!-- <span>worked on </span> -->
-      <!-- TODO: type, e.g. worked on, thinking about -->
+      <span class="text-muted">worked on</span>
     </header>
-    <header id="">
-      <h1>Case study template</h1>
-      <p class="lead">What is it about.</p>
+    <header class="flow">
+      <h1>Making light work</h1>
+      <p class="lead">
+        Designing a management system for outdoor lighting that helps save
+        energy and reduce maintenance costs.
+      </p>
+      <section id="meta" class="layout-grid case__meta">
+        <article>
+          <h5>Year</h5>
+          <p>2021</p>
+        </article>
+        <article>
+          <h5>Duration</h5>
+          <p>300h</p>
+        </article>
+        <article>
+          <h5>Role</h5>
+          <p>Research, ideation, validation, prototyping.</p>
+        </article>
+      </section>
+      <figure>
+        <img src="/src/images/lighting/dashboard.png" alt="Dashboard" />
+      </figure>
     </header>
     <main class="flow">
-      <!-- year, role, team, type? -->
-      <!-- img -->
-      <section>
+      <section id="problems" class="layout-grid">
         <h2>Problems solved</h2>
         <article>
-          <h3>Problem</h3>
-          <p>...</p>
+          <h3>Data visualisation</h3>
+          <p>
+            Developing clear visual representations of system status, energy
+            usage, and maintenance needs that enable quick decision-making.
+          </p>
+        </article>
+        <article>
+          <h3>Alert prioritisation</h3>
+          <p>
+            Designing notification systems that highlight critical issues
+            without causing alert fatigue.
+          </p>
+        </article>
+        <article>
+          <h3>Mobile accessibility</h3>
+          <p>
+            Ensuring the system works effectively across devices for field
+            technicians.
+          </p>
+        </article>
+        <article>
+          <h3>Workflow optimisation</h3>
+          <p>
+            Mapping and streamlining maintenance processes to reduce response
+            times and simplify routine tasks.
+          </p>
+        </article>
+        <article>
+          <h3>Data collection and analysis</h3>
+          <p>
+            Reports on lighting usage, energy consumption, and environmental
+            conditions to inform decision-making.
+          </p>
+        </article>
+        <article>
+          <h3>Scale and growth</h3>
+          <p>
+            Suitable for use in cities of different sizes: from towns to
+            metropolitan areas.
+          </p>
         </article>
       </section>
-      <section>
+
+      <section id="users" class="layout-grid">
         <h2>Who we designed for</h2>
-        <article>
-          <h3></h3>
-          <p>...</p>
+        <!-- Designing a smart city lighting control system involves understanding a diverse -->
+        <!-- group of users who interact with the system in various ways. -->
+        <div class="layout-grid__col-all color-muted">
+          <h3>Primary users</h3>
+          <p>People who work with the system directly.</p>
+        </div>
+
+        <article class="flow">
+          <h4>City planners and analysts</h4>
+          <p>
+            Optimise city lighting for energy efficiency, cost savings, and
+            enhanced public safety.
+          </p>
+          <!-- <h5>Needs</h5>
+        <p>
+          Access to raw data and advanced analytics, integration with other city
+          data systems.
+        </p>
+        <h5>Key tasks</h5>
+        <p>
+          Analyzing usage patterns, optimizing lighting schedules, predicting
+          maintenance needs.
+        </p> -->
+        </article>
+
+        <article class="flow">
+          <h4>Operations administrators</h4>
+          <p>
+            Ensure the lighting infrastructure is functional and
+            well-maintained.
+          </p>
+          <!-- <h5>Needs</h5>
+        <p>Intuitive dashboard for monitoring and control.</p>
+        <h5>Key tasks</h5>
+        <p>
+          Monitoring system status, diagnosing issues, scheduling maintenance,
+          analyzing and setting lighting patterns, planning upgrades or
+          maintenance.
+        </p> -->
+        </article>
+
+        <article class="flow">
+          <h4>Maintenance technicians</h4>
+          <p>Perform repairs.</p>
+          <!-- <h5>Needs</h5>
+        <p>
+          Easy-to-use mobile interface, access to historical maintenance data,
+          GPS-based fault location.
+        </p> -->
+        </article>
+
+        <div class="layout-grid__col-all color-muted">
+          <h3>Secondary users</h3>
+          <p>
+            People who set the goals of the system and/or depend on it in some
+            ways.
+          </p>
+        </div>
+
+        <article class="flow color-muted">
+          <h4>Urban designers and architects</h4>
+          <p>Integrate smart lighting with broader urban design projects.</p>
+          <!-- Key Tasks: Planning lighting schemes that complement urban aesthetics, ensuring
+        the lighting supports public spaces. Needs: Flexible lighting controls,
+        data on lighting performance, tools for visualizing lighting impact on urban
+        spaces. -->
+        </article>
+
+        <article class="flow color-muted">
+          <h4>Environmental analyst</h4>
+          <p>Minimize environmental impact and promote sustainability.</p>
+        </article>
+
+        <article class="flow color-muted">
+          <h4>Community members</h4>
+          <p>
+            Benefit from improved lighting for safety, convenience, and quality
+            of life.
+          </p>
+          <!-- <h5>Needs</h5>
+        Transparency about lighting policies and initiatives, ways to provide input
+        and feedback. -->
+        </article>
+
+        <article class="flow color-muted">
+          <h4>Policy makers and government officials</h4>
+          <p>
+            Develop and implement policies that leverage smart lighting for
+            broader city benefits.
+          </p>
+          <!-- <h5>Needs</h5>
+        <p>High-level performance reports, cost-benefit analyses.</p>
+        <h5>Key tasks</h5>
+        <p>
+          Setting regulations, evaluating system performance, allocating
+          budgets.
+        </p> -->
         </article>
       </section>
-      <section>
-        <h2>Design highlights</h2>
+
+      <!-- <section id="discovery" class="layout-grid">
+        <h2>Discovery spotlight</h2>
+
         <article>
-          <h3></h3>
+          <h3>Literature review</h3>
           <p>...</p>
         </article>
-      </section>
-      <section>
-        <h2>Outcomes</h2>
+
         <article>
-          <h3></h3>
-          <p>...</p>
+          <h3>Lightning system lifecycle stages</h3>
+          <p>
+            User needs can be divided into two categories: system setup and
+            maintenance.
+          </p>
+        </article>
+      </section> -->
+
+      <section id="solution" class="layout-grid">
+        <h2>Solution highlights</h2>
+
+        <article class="layout-grid">
+          <div class="flow">
+            <h3>Navigating lighting infrastructure</h3>
+            <p>
+              The system offers dual visualization of street lights – both as an
+              organized hierarchical list and on an interactive map. Each
+              display method provides real-time status monitoring to accommodate
+              different user needs.
+            </p>
+          </div>
+
+          <div class="flow">
+            <h3>Map style</h3>
+            <p>
+              Unlike regular maps that emphasize roads and landmarks, lighting
+              management maps prioritize the lighting infrastructure itself as
+              the primary visual element. The base map is simplified to remove
+              details irrelevant to lighting management.
+            </p>
+          </div>
+        </article>
+        <article class="layout-grid">
+          <figure>
+            <img
+              style="object-fit: none"
+              src="/src/images/lighting/map-1.png"
+              alt="Districts"
+            />
+            <figcaption>Districsts</figcaption>
+          </figure>
+          <figure>
+            <img
+              style="object-fit: none"
+              src="/src/images/lighting/map-2.png"
+              alt="Areas"
+            />
+            <figcaption>Areas</figcaption>
+          </figure>
+          <figure>
+            <img
+              style="object-fit: none"
+              src="/src/images/lighting/map-3.png"
+              alt="Street"
+            />
+            <figcaption>Streets</figcaption>
+          </figure>
+        </article>
+        <article>
+          <figure>
+            <img
+              src="/src/images/lighting/map.png"
+              alt="Example of devices displayed on a map"
+            />
+          </figure>
+        </article>
+
+        <article class="flow">
+          <h3>Energy profiles</h3>
+          <p>
+            Adaptive brightness schedules automatically adjust illumination
+            levels based on time of day, season, local sunset/sunrise times, and
+            amount of traffic. Custom dimming patterns can be set for different
+            urban zones (residential, commercial, industrial, parks). Energy
+            consumption parameters set the maximum and minimum power thresholds
+            based on municipal policies. Profile can also represent a special
+            event override for temporary lighting requirements (festivals,
+            emergencies, construction).
+          </p>
+
+          <p>
+            Profiles are created and managed independently, then assigned to
+            specific areas or individual devices, ensuring they can be reused
+            across multiple locations.
+          </p>
+          <figure>
+            <img src="/src/images/lighting/profile.png" alt="Profile example" />
+          </figure>
+          <!-- smoothened dimming functionality for extra energy savings. (Up to <10% more energy saving)! -->
+        </article>
+
+        <!-- <article class="flow">
+          <h3>Dashboards</h3>
+          <p>
+            The control panel has been optimized for two main stages of the
+            system life cycle: setup and maintenance.
+          </p>
+          <figure>
+            <img src="/src/images/lighting/dashboard.png" alt="Dashboard" />
+          </figure>
+        </article> -->
+
+        <article class="flow">
+          <h3>Metric visualisation</h3>
+          <!-- <p>time and space...</p> -->
+          <figure>
+            <img src="/src/images/lighting/env-sensor.png" alt="Example" />
+          </figure>
+          <figure>
+            <img
+              src="/src/images/lighting/sc-metrics.png"
+              alt="Segment controller and its metrics"
+            />
+          </figure>
+        </article>
+
+        <article class="flow">
+          <h3>Reports</h3>
+          <!-- <p>...</p> -->
+          <figure>
+            <img src="/src/images/lighting/report.png" alt="Report example" />
+          </figure>
         </article>
       </section>
-      <section>
+
+      <!-- <section id="outcomes" class="layout-grid">
+      <h2>Outcomes</h2>
+      <article>
+        <h3>Lower maintenance costs</h3>
+        <p>...</p>
+      </article>
+    </section> -->
+
+      <section id="takeaways" class="layout-grid">
         <h2>Personal takeaways</h2>
-        <article>
-          <h3></h3>
-          <p>...</p>
+        <article class="flow">
+          <h3>IoT ecosystem knowledge</h3>
+          <p>
+            Practical experience with sensors, connectivity options, power
+            constraints, and data management in real-world Internet of Things
+            applications.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Scalability challenges</h3>
+          <p>
+            Insights into designing solutions that can scale from small pilot
+            projects to citywide implementations.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Long lifecycle considerations</h3>
+          <p>
+            Designing for products with 10+ year lifespans, including
+            maintainability, durability, and future upgradability.
+          </p>
         </article>
       </section>
     </main>

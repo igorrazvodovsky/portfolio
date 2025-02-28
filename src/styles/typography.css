@@ -28,13 +28,17 @@ h2 {
   font-size: 2rem;
 }
 
+h4 {
+  font-weight: 600;
+}
+
 h5,
-h4,
 .text-muted {
   color: oklch(0% 0 0 / 30%);
 }
 
-h4 {
+h4,
+h5 {
   margin-block-end: 0.5rem;
 }
 

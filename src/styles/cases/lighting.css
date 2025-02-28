@@ -1,5 +1,13 @@
-main#lighting {
+#lighting main {
   section#solution > article {
     grid-column: 1/-1;
   }
 }
+
+#lighting header + header {
+  --flow-space: 4vmax;
+}
+
+/* #lighting #meta article:last-child {
+  text-align: right;
+} */

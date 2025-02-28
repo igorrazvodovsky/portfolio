@@ -7,6 +7,10 @@
   overflow: visible;
 }
 
+#work article#lighting figure img {
+  object-fit: none;
+}
+
 #work article#aloud img:first-child {
   object-fit: scale-down;
   object-position: center center;

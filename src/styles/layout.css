@@ -9,10 +9,6 @@ header {
   padding-block: 1em;
 }
 
-header > * {
-  display: block;
-}
-
 body#home header:has(> *:nth-child(2)) {
   display: flex;
   justify-content: space-between;
@@ -72,6 +68,7 @@ section#work {
     a {
       display: block;
       font-weight: 500;
+      text-wrap: balance;
     }
 
     a::before {
@@ -94,7 +91,7 @@ section#work {
     }
 
     /* TODO: old work fades away */
-    &:nth-last-of-type(1) {
+    /* &:nth-last-of-type(1) {
       opacity: 0.2;
     }
     &:nth-last-of-type(2) {
@@ -102,7 +99,7 @@ section#work {
     }
     &:nth-last-of-type(3) {
       opacity: 0.6;
-    }
+    } */
   }
 }
 
@@ -128,7 +125,7 @@ section#work {
 
 .flex-layout-grid {
   --flex-grid-min: var(--layout-column-min, 20rem);
-  --flex-grid-gap: var(--layout-gap, 3vmax);
+  --flex-grid-gap: var(--layout-gap, 2vmax);
 
   gap: var(--flex-grid-gap);
   display: flex;
@@ -162,11 +159,12 @@ section#work {
   top: 0;
   left: 0;
   z-index: 1;
+  transition: border 0.2s ease-in-out;
   /* box-shadow: 0 0 0 1px oklch(0% 0 0 / 10%) */
 }
 
-article:hover figure:before {
-  border-color: oklch(0% 0 0 / 20%);
+#home article:hover figure:before {
+  border-color: oklch(0% 0 0 / 30%);
   /* border-width: 2px; */
 }
 
