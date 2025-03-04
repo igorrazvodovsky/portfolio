@@ -1,6 +1,7 @@
 #work figure img:first-child {
   object-fit: cover;
   min-height: 100%;
+  height: 100%;
 }
 
 #work article#aloud figure {
