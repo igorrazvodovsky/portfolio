@@ -25,11 +25,11 @@ header small {
 
 main {
   --flow-space: 4vmax;
-  padding: 8vmax 4vmax;
+  padding: 4vmax;
 }
 
 #home main {
-  --flow-space: 10vmax;
+  --flow-space: 4vmax;
 }
 
 #home article {
