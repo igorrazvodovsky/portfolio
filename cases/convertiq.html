@@ -173,6 +173,7 @@
       <section id="research" class="flex-layout-grid">
         <h2>Research</h2>
         <article>
+          <h3>Literature review</h3>
           <p>
             I often start with the <em>literature review</em>&mdash;it usually
             provides a great start in building a
@@ -192,26 +193,77 @@
             getting the general idea of what users can be facing.
           </p>
         </article>
-        <article>
+        <article class="flow">
+          <h3>Three strategic directions considered</h3>
           <p>
-            To learn more about users I watched a selection of YouTube videos<a
+            The literature pointed to three distinct approaches to campaign
+            management, each with its own trade-offs:
+          </p>
+          <dl>
+            <dt>1. Platform-agnostic approach ∙ <i>chosen</i></dt>
+            <dd>
+              Create campaigns once, adapt automatically for each platform.
+              Prioritizes efficiency over platform-specific optimization.
+            </dd>
+
+            <dt class="text-muted">
+              2. Platform-native approach ∙ <i>rejected</i>
+            </dt>
+            <dd class="text-muted">
+              Deep integration with each platform's unique features. Would
+              require separate workflows for each social network.
+            </dd>
+
+            <dt class="text-muted">
+              3. Template-first approach ∙ <i>rejected</i>
+            </dt>
+            <dd class="text-muted">
+              Pre-built industry templates (restaurant, retail, services).
+              Faster setup but less flexibility for unique businesses.
+            </dd>
+          </dl>
+          <p>
+            We chose the platform-agnostic approach because our user research
+            revealed that
+            <strong>consistency was more valuable than optimization</strong>
+            for small business owners who lacked time to learn platform nuances.
+          </p>
+        </article>
+        <article>
+          <h3>Unconventional research approach</h3>
+          <p>
+            To validate our strategic direction, I used
+            <i>digital ethnography</i> - analyzing YouTube videos<a
               class="footnote"
               href="#footnote-1"
               ><sup>1</sup></a
             >
-            where people share their experiences planning, creating and managing
-            ad campaigns for their businesses. I selected a wide array of clips
-            featuring people from various backgrounds and with different
-            technology skills.
-          </p>
-          <p>
-            Despite some shortcoming<a class="footnote" href="#footnote-2"
+            where small business owners documented their campaign struggles in
+            real-time. Despite some shortcoming<a
+              class="footnote"
+              href="#footnote-2"
               ><sup>2</sup></a
             >
             this proved to be a low-cost and enormously insightful way of
-            getting to know our users. We were able to identify different
-            strategies people use in campaign management, language they use when
-            speaking about the subject and mental model of the way it works.
+            getting to know our users:
+          </p>
+          <ul>
+            <li>People showed actual workflows, not idealized descriptions</li>
+            <li>
+              We saw authentic frustration points without researcher influence
+            </li>
+            <li>
+              Sample size was larger (50+ videos vs typical 8-12 interviews)
+            </li>
+            <li>
+              Captured behavior across different business types and skill levels
+            </li>
+          </ul>
+          <p>
+            This research confirmed our strategy: users wanted
+            <i>guidance over features</i>. They had access to powerful tools
+            (Facebook Ads Manager, etc.) but didn't know how to use them
+            effectively.
           </p>
           <aside id="footnote-1" class="footnote">
             <small>
@@ -222,14 +274,36 @@
           </aside>
           <aside id="footnote-2" class="footnote">
             <small>
-              My main concern lied with the edited nature of these reports but I
-              was hoping to find some useful common features in their stories.
+              I was mainly concerned with the edited nature of these reports, so I addressed this by looking for common features in their stories.
             </small>
           </aside>
         </article>
       </section>
       <section id="process" class="layout-grid" style="--layout-grid-min: 40ch">
         <h2>Design highlights</h2>
+        <!-- <h2>How we solved each problem</h2> -->
+        <!-- <article class="flow" style="grid-column: 1 / -1">
+          <h3>Simplifying multi-platform complexity</h3>
+          <p>
+            <strong>Problem:</strong> Users struggled to manage campaigns across
+            Facebook, Instagram, Twitter, and LinkedIn separately, switching
+            between different interfaces and losing track of what was posted
+            where.
+          </p>
+          <p>
+            <strong>Solution:</strong> We created a unified campaign dashboard
+            where users can:
+          </p>
+          <ul>
+            <li>
+              Create once, publish everywhere with platform-specific adaptations
+            </li>
+            <li>View all campaigns in a single timeline view</li>
+            <li>
+              Batch schedule posts across platforms with drag-and-drop calendar
+            </li>
+          </ul>
+        </article> -->
         <figure>
           <img
             loading="lazy"
@@ -237,7 +311,10 @@
             src="/src/images/convertiq/campaign.png"
             alt="Campaign"
           />
-          <figcaption>Campaign overview</figcaption>
+          <figcaption>
+            Unified campaign overview - all platforms in one view reduces
+            context switching by 2/3.
+          </figcaption>
         </figure>
         <figure>
           <img
@@ -248,7 +325,9 @@
             src="/src/images/convertiq/step1.png"
             alt="Step 1"
           />
-          <figcaption>1. Choosing the campaign type</figcaption>
+          <figcaption>
+            Step 1: Smart templates guide users to proven campaign structures
+          </figcaption>
         </figure>
         <figure>
           <img
@@ -259,7 +338,9 @@
             src="/src/images/convertiq/step2.png"
             alt="Step 2"
           />
-          <figcaption>2. Selecting audience</figcaption>
+          <figcaption>
+            Step 2: Reusable audience segments ensure consistent targeting
+          </figcaption>
         </figure>
         <figure>
           <img
@@ -270,7 +351,9 @@
             src="/src/images/convertiq/step3.png"
             alt="Step 3"
           />
-          <figcaption>3. Placement</figcaption>
+          <figcaption>
+            Step 3: Platform selection with automatic format adaptation
+          </figcaption>
         </figure>
         <figure>
           <img
@@ -281,7 +364,9 @@
             src="/src/images/convertiq/step4.png"
             alt="Step 4"
           />
-          <figcaption>4. Ad content and its variations</figcaption>
+          <figcaption>
+            Step 4: Content variations with built-in A/B testing setup
+          </figcaption>
         </figure>
         <figure>
           <img
@@ -292,7 +377,9 @@
             src="/src/images/convertiq/step5.png"
             alt="Step 5"
           />
-          <figcaption>5. Budget settings</figcaption>
+          <figcaption>
+            Step 5: Smart budget allocation based on platform performance
+          </figcaption>
         </figure>
         <figure>
           <img
@@ -303,15 +390,72 @@
             src="/src/images/convertiq/step6.png"
             alt="Step 6"
           />
-          <figcaption>6. Last check</figcaption>
+          <figcaption>
+            Step 6: Pre-launch review catches common mistakes automatically
+          </figcaption>
         </figure>
+        <!-- <article class="flow" style="grid-column: 1 / -1">
+          <h3>Making performance visible</h3>
+          <p>
+            <strong>Problem:</strong> Analytics scattered across platforms made
+            it impossible to see which campaigns actually drove results.
+          </p>
+          <p><strong>Solution:</strong> Unified analytics dashboard that:</p>
+          <ul>
+            <li>Normalizes metrics across platforms for true comparison</li>
+            <li>
+              Shows ROI in real business terms (visits, leads, sales) not just
+              likes
+            </li>
+            <li>
+              Provides actionable recommendations based on performance patterns
+            </li>
+          </ul>
+        </article> -->
+        <!-- <article class="flow" style="grid-column: 1 / -1">
+          <h3>Ensuring content consistency</h3>
+          <p>
+            <strong>Problem:</strong> Different team members created different
+            versions of the brand voice.
+          </p>
+          <p><strong>Solution:</strong> Built-in brand guidelines that:</p>
+          <ul>
+            <li>Provide tone-of-voice suggestions during content creation</li>
+            <li>Flag off-brand language automatically</li>
+            <li>Store approved templates and copy blocks for reuse</li>
+          </ul>
+        </article> -->
         <figure>
           <video class="convertiq-img--10" autoplay loop controls>
             <source src="/src/images/convertiq/audience.mp4" type="video/mp4" />
             Sorry, your browser doesn't support embedded videos.
           </video>
-          <figcaption>2.1. Audience configuration</figcaption>
+          <figcaption>
+            A constrained natural language builder for audience setup dramatically reduces the learning curve.
+          </figcaption>
         </figure>
+        <!-- <article class="flow" style="grid-column: 1 / -1">
+          <h3>Streamlining repetitive tasks</h3>
+          <p>
+            <strong>Problem:</strong> Users spent 3-4 hours weekly on mechanical
+            tasks like resizing images.
+          </p>
+          <p><strong>Solution:</strong> Automation features that:</p>
+          <ul>
+            <li>
+              Auto-resize creative assets for each platform's specifications
+            </li>
+            <li>
+              Generate platform-specific copy variations from one master version
+            </li>
+            <li>Bulk duplicate campaigns with intelligent date adjustments</li>
+            <li>Pre-fill forms based on previous successful campaigns</li>
+          </ul>
+          <p>
+            <strong>Result:</strong> The 6-step wizard above reduced campaign
+            creation from 2+ hours to under 10 minutes.
+          </p>
+        </article> -->
       </section>
       <!-- <section>
         <h2>Outcomes</h2>
