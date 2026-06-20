@@ -84,8 +84,16 @@
 
       <section id="users" class="layout-grid">
         <h2>Who we designed for</h2>
-        <!-- Designing a smart city lighting control system involves understanding a diverse -->
-        <!-- group of users who interact with the system in various ways. -->
+        <div class="layout-grid__col-all flow">
+          <p class="lead">
+            Two primary users hold different mental models, and most of the
+            design work sits in the hand-off between them.
+          </p>
+          <p>
+            The control-room operator works <em>top-down</em> — policy → zone → schedule →
+            group → luminaire. The field technician works <em>bottom-up</em> — ticket → module → pole → proof of repair. A fault has to travel from one world to the other and back: detected, triaged, dispatched, fixed, verified, closed.
+          </p>
+        </div>
         <div class="layout-grid__col-all color-muted">
           <h3>Primary users</h3>
           <p>People who work with the system directly.</p>
@@ -200,6 +208,46 @@
           </p>
         </article>
       </section> -->
+
+      <section id="domain" class="layout-grid">
+        <h2>Modelling the domain</h2>
+        <div class="layout-grid__col-all flow">
+          <p>
+            Before any screens, the work was to settle what the system is made
+            of. The industry has a standards-backed vocabulary you can lift
+            rather than invent: the <a href="https://www.talq.com/">TALQ Smart City Protocol</a> models the world as
+            <em>Device → Function → Attribute/Event</em>, addressed by
+            <em>Groups</em> and driven by <em>Services</em>; <a href="https://www.dali-alliance.org/d4i/">D4i</a> defines the
+            luminaire, energy and diagnostics data each device reports; <a href="https://www.en-standard.eu/csn-en-13201-1-4-road-lighting/">EN 13201</a>
+            supplies the lighting-class taxonomy. Anchoring the information architecture to these future-proofs the data model.
+          </p>
+          <p>
+            But a technical standard only takes you so far. TALQ describes devices and the data they report; it says nothing about whose job a fault becomes. So the model adds an operational layer on top of the standard: task, crew, etc. as entities. The two layers meet at the operator-to-technician seam. The standard-informed technical layer tells you a luminaire reports a comms failure and the operational layer guides the decison of how this becomes a unit of work.
+          </p>
+        </div>
+        <article class="flow">
+          <h3>Asset layer</h3>
+          <p>
+            Pole, bracket, luminaire, driver and controller — the physical
+            things, each with a catalogue type carrying wattage, colour
+            temperature, socket and warranty attributes.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Control layer</h3>
+          <p>
+            Groups, zones and segments as the targets of commands; schedules and
+            dimming profiles as reusable programs assigned to them.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Runtime layer</h3>
+          <p>
+            Telemetry and faults — dimming failure, comms loss, voltage
+            anomalies, the "day burner" lit in daylight.
+          </p>
+        </article>
+      </section>
 
       <section id="solution" class="layout-grid">
         <h2>Solution highlights</h2>
@@ -317,14 +365,48 @@
           </figure>
         </article>
       </section>
-
-      <!-- <section id="outcomes" class="layout-grid">
-      <h2>Outcomes</h2>
-      <article>
-        <h3>Lower maintenance costs</h3>
-        <p>...</p>
-      </article>
-    </section> -->
+<!-- 
+      <section id="outcomes" class="layout-grid">
+        <h2>What the design targets</h2>
+        <div class="layout-grid__col-all flow">
+          <p>
+            The big savings from smart lighting, energy and maintenance both, come from the hardware and from running the network well. The system's job is narrower: making "running it well" something an operator can actually do.
+          </p>
+        </div>
+        <article class="flow">
+          <h3>Alarm load</h3>
+          <p>
+            Keeping the steady-state alarm rate manageable by prioritising and
+            grouping signals, and separating informational from action-required.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Fault to repair</h3>
+          <p>
+            A fault travels cleanly from detection to closure — triaged into a
+            work order, dispatched, fixed, verified — with nothing rekeyed at
+            the operator-to-technician hand-off.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Set once, reuse</h3>
+          <p>
+            Lighting policy lives in schedules and dimming profiles, set once
+            and assigned to whole zones or device groups. Changing how a
+            district lights at midnight is then one edit, not a walk through
+            every luminaire.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Right light, not more light</h3>
+          <p>
+            Letting operators set and defend lighting to policy — level, place,
+            time — rather than defaulting to maximum brightness on the assumption
+            that brighter is safer.
+          </p>
+        </article>
+      </section> 
+-->
 
       <section id="takeaways" class="layout-grid">
         <h2>Personal takeaways</h2>
