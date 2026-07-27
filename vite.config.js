@@ -12,6 +12,7 @@ export default defineConfig({
         convertiq: resolve(__dirname, 'cases/convertiq.html'),
         formbuilder: resolve(__dirname, 'cases/formbuilder.html'),
         lighting: resolve(__dirname, 'cases/lighting.html'),
+        'pattern-playground': resolve(__dirname, 'notes/pattern-playground.html'),
       },
     },
   },

@@ -1,0 +1,7 @@
+/* Shared note layout. Notes borrow the case header composition (.case-header)
+   — the genre differs in spine, not in chrome. Per-note compositions, if any,
+   live in notes/<slug>.css. */
+
+.note h1 {
+  font-weight: 500;
+}

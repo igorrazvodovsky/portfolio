@@ -6,6 +6,8 @@
 @import "./cases/lighting.css";
 @import "./cases/formbuilder.css";
 @import "./cases/convertiq.css";
+@import "./notes/note.css";
+@import "./notes/pattern-playground.css";
 
 :root {
   --debug: oklch(63% 0.25 30 / 30%);
