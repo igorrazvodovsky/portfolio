@@ -66,39 +66,30 @@
       </figure>
     </header>
     <main class="flow">
-      <section id="problems" class="layout-grid">
-        <h2>Problems solved</h2>
-        <article>
-          <h3>Enable non-designers to produce well-structured&nbsp;forms</h3>
-          <p>
-            Good forms are notoriously tricky to get right. The goal was to bake
-            that craft into the tool, so creating one wouldn't require the know-how on the user’s part.
+      <section id="problem" class="layout-grid">
+        <h2>Problem</h2>
+        <div class="layout-grid__col-all flow">
+          <p class="lead">
+            Good forms are notoriously tricky to get right — and in a large
+            organisation, the people making them are not designers.
           </p>
-        </article>
-        <article>
-          <!-- support the admin in creating the mental model of the end-user searching and filling out the form. -->
-          <h3>Help people creating forms think in user-centric terms</h3>
           <p>
-            In addition to the intricacies of form design, it was crucial to
-            make the form creators see their users' perspective. Embedded
-            user-centeredness!
+            Form quality decides two things at once: whether employees find the
+            right form and get the help they came for, and how much work each
+            request creates for the agents behind it. At global scale, support
+            can be one of the largest budget items — and a form that can't be
+            found or understood becomes emails, calls and rounds of clarification, 
+            the slow and expensive kind of support.
           </p>
-        </article>
-        <article>
-          <h3>Ensure discoverability</h3>
           <p>
-            Navigation had to support all the variety of things and concepts
-            that can be found in a large multinational organisation.
+            So the builder had to do more than collect fields. It had to bake
+            form-design craft into the tool itself, keep creators thinking in
+            their users' terms, and give the organisation shared means of
+            categorisation — a company-wide vocabulary for all the things and
+            concepts it contains, which is what makes forms findable in the
+            first place.
           </p>
-        </article>
-        <article>
-          <h3>Reducing the load on support agents</h3>
-          <p>
-            Support can be one of the largest budget items, especially when they
-            operate on a global scale. Form builder helps to shrink that cost by
-            improving agent velocity—and in turn, creating happier employees.
-          </p>
-        </article>
+        </div>
       </section>
 
       <section id="users" class="layout-grid">
@@ -149,10 +140,8 @@
         </figure>
       </section>
 
-      <section id="process" class="layout-canvas">
-        <!-- <h2>Process highlights</h2> -->
-        <h2>Design highlights</h2>
-        <!-- TODO: Approach -->
+      <section id="approach" class="layout-canvas">
+        <h2>Approach</h2>
         <article id="process-map" class="flow">
           <h3>Strategic reframe: from data collection to user assistance</h3>
           <p>
@@ -206,12 +195,6 @@
             differently by region, the same word carrying different meanings
             between departments. Search had to absorb that variance rather than
             impose one canonical vocabulary on everyone.
-          </p>
-          <p>
-            By prompting creators with "What will users search for?" instead of
-            "Name your form", we changed the question in the creator's head. The ambition was to change how the person
-            building the form thinks — designing the conditions for good forms one
-            level up from the form itself.
           </p>
         </article>
         <aside id="footnote-2" class="footnote">
@@ -277,16 +260,8 @@
               height="360"
             />
             <figcaption>
-              Form element names are chosen according to expected input, not UI
-              it will be rendered with.
-              <mark
-                >Not what user will see but what you expect from them in
-                return</mark
-              >. <i>Input field</i> becomes <i>Text</i>;
-              <i>Checkbox</i>&mdash;<i>Yes/No</i>; <i>Date picker</i> becomes
-              <i>Date</i>. Additionally, <i>choices</i> were rendered either as
-              <i>radio buttons, checkboxes</i> or <i>dropdown menu</i> based on
-              the number of options.
+              Form element names follow the expected input, not the widget they
+              render with.
             </figcaption>
           </figure>
           <figure>
@@ -299,17 +274,8 @@
               height="360"
             />
             <figcaption>
-              When an answer option is known to be the most frequently selected
-              one, it is helpful to select it by default. But defaults are
-              tricky things - they're super useful but can be risky too. People
-              tend to stick with whatever's already selected, which can nudge
-              them down a certain path. We made sure to warn our users about
-              this.
-              <!-- <a
-                class="footnote"
-                href="#footnote-3"
-                ><sup>3</sup></a
-              > -->
+              When one answer is known to be the most frequently selected, it
+              can be made the default.
             </figcaption>
           </figure>
           <figure>
@@ -337,13 +303,6 @@
             </figcaption>
           </figure>
         </article>
-        <!-- <aside id="footnote-3" class="footnote">
-          <small>
-            Defaults are a powerful yet dangerous thing. People tend to stick to
-            the defaults and this can coax them down a particular path. We did
-            our best to caution our users about this danger.
-          </small>
-        </aside> -->
         <!-- TODO: Front-line collaboration -->
         <article id="process-roadmap" class="flow">
           <h3>Roadmap planning</h3>
@@ -353,10 +312,6 @@
             needs: gaps, opportunities, and blindspots. Helped team members
             frame their work around the problems that need to be solved rather
             than the specific features they want to build.
-            <!-- I also needed to  -->
-            <!-- Set clear expectations about -->
-            <!-- design timing and involvement for any part of the process. -->
-            <!-- TODO: Alongside <em>feature audit</em> to identify which product features are the most and least engaging... -->
           </p>
           <p>
             <em>Kano modelling </em> was used for prioritisation of new
@@ -365,33 +320,57 @@
             missing.
           </p>
         </article>
-        <!-- <figure aria-hidden="true" id="process-roadmap-fig">
-          <img
-            loading="lazy"
-            decoding="async"
-            src="/src/images/formbuilder/roadmap-l.png"
-            alt="Product roadmap"
-          />
-        </figure> -->
         <!-- TODO: Integration details -->
       </section>
 
-      <section id="results" class="layout-grid">
-        <h2>Outcomes</h2>
+      <section id="decisions" class="layout-grid">
+        <h2>Key decisions</h2>
+        <article class="flow">
+          <h3>Ask what users will search for</h3>
+          <p>
+            Creators are prompted with "What will users search for?" instead of
+            "Name your form". The ambition was to change how the person
+            building the form thinks — designing the conditions for good forms
+            one level up from the form itself.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Name inputs by the answer, not the widget</h3>
+          <p>
+            Not what the user will see, but what you expect from them in
+            return: <i>Input field</i> becomes <i>Text</i>, <i>Checkbox</i>
+            becomes <i>Yes/No</i>, <i>Date picker</i> becomes <i>Date</i>.
+            Whether choices render as radio buttons, checkboxes or a dropdown
+            is the system's call, based on the number of options.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Defaults, with a warning</h3>
+          <p>
+            Pre-selecting the most frequent answer speeds a form up — but
+            people tend to stick with whatever's already selected, which can
+            nudge them down a certain path. The builder lets creators set
+            defaults and cautions them about the risk in the same breath.
+          </p>
+        </article>
+      </section>
+
+      <section id="impact" class="layout-grid">
+        <h2>Impact</h2>
         <article class="flow">
           <h3><i>for</i> support agents</h3>
           <p>
-            The new interface improved the overall experience and user
-            satisfaction. User feedback &amp; data we gathered confirmed
-            improved usability.
+            The new interface improved the overall experience: usability
+            testing and product analytics both confirmed better usability and
+            higher satisfaction than the previous version.
           </p>
         </article>
         <article class="flow">
           <h3><i>for</i> the rest of the employees</h3>
           <p>
-            Metrics and feedback told a pretty good story - most users found appropriate 
-            forms right away on their first try. Looking at how quickly they filled
-            them out and how many mistakes they made, we could also see that the resulting forms were easier to understand and complete.
+            Most users found the appropriate form on their first try. Faster
+            completion and fewer mistakes showed the resulting forms were
+            easier to understand and fill&nbsp;out.
           </p>
         </article>
       </section>

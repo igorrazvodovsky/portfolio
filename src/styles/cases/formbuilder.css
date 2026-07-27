@@ -44,10 +44,10 @@
   }
 }
 
-/* Design highlights: prose in the inset measure, its footnote in the margin,
+/* Approach: prose in the inset measure, its footnote in the margin,
    figures breaking out to the left. */
 @media (width >= 64em) {
-  #formbuilder #process {
+  #formbuilder #approach {
     #process-topic {
       grid-column: inset;
     }

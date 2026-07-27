@@ -58,36 +58,22 @@
       </figure>
     </header>
     <main class="flow">
-      <section class="layout-grid">
-        <h2>Problems solved</h2>
-        <article class="flow">
-          <h3>Complexity of multi-platform management</h3>
-          <p>
-            Allowing users to create, schedule, and monitor campaigns across
-            multiple social networks from a single interface.
+      <section id="problem" class="layout-grid">
+        <h2>Problem</h2>
+        <div class="layout-grid__col-all flow">
+          <p class="lead">
+            Small business owners know social media is critical for growth.
+            What they lack is time and know-how — the tools they already have
+            are powerful; using them well is a profession in itself.
           </p>
-        </article>
-        <article class="flow">
-          <h3>Performance visibility</h3>
           <p>
-            Providing comprehensive analytics that track campaign performance
-            across platforms with unified metrics and reporting.
+            In practice that means switching between platforms with different
+            formats, metrics and vocabularies, trying to keep the brand voice
+            consistent across all of them, losing hours weekly to mechanical
+            work like resizing assets — and still having no unified view of
+            what actually performs.
           </p>
-        </article>
-        <article class="flow">
-          <h3>Content consistency challenges</h3>
-          <p>
-            Ensuring brand voice and visual identity remain consistent across
-            different platforms and campaign elements.
-          </p>
-        </article>
-        <article class="flow">
-          <h3>Time inefficiency</h3>
-          <p>
-            Streamlining workflows through batch scheduling, content libraries,
-            and templates to reduce the time spent on repetitive tasks.
-          </p>
-        </article>
+        </div>
       </section>
       <section id="users" class="layout-grid">
         <h2>Who we designed for</h2>
@@ -100,7 +86,7 @@
           />
           <figcaption class="flow">
             <small class="author"
-              >Photo by <a href="https://unsplash.com/@cikstefan"
+              >Photo by <a href="https://unsplash.com/@cikstefan"
                 >Štefan Štefančík</a
               >,
               <a href="https://unsplash.com/photos/w_Mj-SsE1mI"
@@ -125,7 +111,7 @@
           />
           <figcaption class="flow">
             <small class="author"
-              >Photo by <a href="https://unsplash.com/@cikstefan"
+              >Photo by <a href="https://unsplash.com/@cikstefan"
                 >Andrej Lišakov</a
               >,
               <a
@@ -152,7 +138,7 @@
           />
           <figcaption class="flow">
             <small class="author"
-              >Photo by <a href="https://unsplash.com/@lishakov"
+              >Photo by <a href="https://unsplash.com/@lishakov"
                 >Andrej Lišakov</a
               >,
               <a
@@ -170,9 +156,9 @@
           </figcaption>
         </figure>
       </section>
-      <section id="research" class="flex-layout-grid">
-        <h2>Research</h2>
-        <article>
+      <section id="approach" class="layout-grid" style="--layout-grid-min: 40ch">
+        <h2>Approach</h2>
+        <article class="flow">
           <h3>Literature review</h3>
           <p>
             I often start with the <em>literature review</em>&mdash;it usually
@@ -194,42 +180,6 @@
           </p>
         </article>
         <article class="flow">
-          <h3>Three strategic directions considered</h3>
-          <p>
-            The literature pointed to three distinct approaches to campaign
-            management, each with its own trade-offs:
-          </p>
-          <dl>
-            <dt>1. Platform-agnostic approach ∙ <i>chosen</i></dt>
-            <dd>
-              Create campaigns once, adapt automatically for each platform.
-              Prioritizes efficiency over platform-specific optimization.
-            </dd>
-
-            <dt class="text-muted">
-              2. Platform-native approach ∙ <i>rejected</i>
-            </dt>
-            <dd class="text-muted">
-              Deep integration with each platform's unique features. Would
-              require separate workflows for each social network.
-            </dd>
-
-            <dt class="text-muted">
-              3. Template-first approach ∙ <i>rejected</i>
-            </dt>
-            <dd class="text-muted">
-              Pre-built industry templates (restaurant, retail, services).
-              Faster setup but less flexibility for unique businesses.
-            </dd>
-          </dl>
-          <p>
-            We chose the platform-agnostic approach because our user research
-            revealed that
-            <strong>consistency was more valuable than optimization</strong>
-            for small business owners who lacked time to learn platform nuances.
-          </p>
-        </article>
-        <article>
           <h3>Unconventional research approach</h3>
           <p>
             To validate our strategic direction, I used
@@ -278,32 +228,7 @@
             </small>
           </aside>
         </article>
-      </section>
-      <section id="process" class="layout-grid" style="--layout-grid-min: 40ch">
-        <h2>Design highlights</h2>
-        <!-- <h2>How we solved each problem</h2> -->
-        <!-- <article class="flow" style="grid-column: 1 / -1">
-          <h3>Simplifying multi-platform complexity</h3>
-          <p>
-            <strong>Problem:</strong> Users struggled to manage campaigns across
-            Facebook, Instagram, Twitter, and LinkedIn separately, switching
-            between different interfaces and losing track of what was posted
-            where.
-          </p>
-          <p>
-            <strong>Solution:</strong> We created a unified campaign dashboard
-            where users can:
-          </p>
-          <ul>
-            <li>
-              Create once, publish everywhere with platform-specific adaptations
-            </li>
-            <li>View all campaigns in a single timeline view</li>
-            <li>
-              Batch schedule posts across platforms with drag-and-drop calendar
-            </li>
-          </ul>
-        </article> -->
+        <h3 class="layout-grid__col-all">Design highlights</h3>
         <figure>
           <img
             loading="lazy"
@@ -312,8 +237,8 @@
             alt="Campaign"
           />
           <figcaption>
-            Unified campaign overview - all platforms in one view reduces
-            context switching by 2/3.
+            Unified campaign overview — all platforms in one view means less
+            context switching.
           </figcaption>
         </figure>
         <figure>
@@ -394,37 +319,6 @@
             Step 6: Pre-launch review catches common mistakes automatically
           </figcaption>
         </figure>
-        <!-- <article class="flow" style="grid-column: 1 / -1">
-          <h3>Making performance visible</h3>
-          <p>
-            <strong>Problem:</strong> Analytics scattered across platforms made
-            it impossible to see which campaigns actually drove results.
-          </p>
-          <p><strong>Solution:</strong> Unified analytics dashboard that:</p>
-          <ul>
-            <li>Normalizes metrics across platforms for true comparison</li>
-            <li>
-              Shows ROI in real business terms (visits, leads, sales) not just
-              likes
-            </li>
-            <li>
-              Provides actionable recommendations based on performance patterns
-            </li>
-          </ul>
-        </article> -->
-        <!-- <article class="flow" style="grid-column: 1 / -1">
-          <h3>Ensuring content consistency</h3>
-          <p>
-            <strong>Problem:</strong> Different team members created different
-            versions of the brand voice.
-          </p>
-          <p><strong>Solution:</strong> Built-in brand guidelines that:</p>
-          <ul>
-            <li>Provide tone-of-voice suggestions during content creation</li>
-            <li>Flag off-brand language automatically</li>
-            <li>Store approved templates and copy blocks for reuse</li>
-          </ul>
-        </article> -->
         <figure>
           <video class="convertiq-img--10" autoplay loop controls>
             <source src="/src/images/convertiq/audience.mp4" type="video/mp4" />
@@ -434,47 +328,92 @@
             A constrained natural language builder for audience setup dramatically reduces the learning curve.
           </figcaption>
         </figure>
-        <!-- <article class="flow" style="grid-column: 1 / -1">
-          <h3>Streamlining repetitive tasks</h3>
-          <p>
-            <strong>Problem:</strong> Users spent 3-4 hours weekly on mechanical
-            tasks like resizing images.
-          </p>
-          <p><strong>Solution:</strong> Automation features that:</p>
-          <ul>
-            <li>
-              Auto-resize creative assets for each platform's specifications
-            </li>
-            <li>
-              Generate platform-specific copy variations from one master version
-            </li>
-            <li>Bulk duplicate campaigns with intelligent date adjustments</li>
-            <li>Pre-fill forms based on previous successful campaigns</li>
-          </ul>
-          <p>
-            <strong>Result:</strong> The 6-step wizard above reduced campaign
-            creation from 2+ hours to under 10 minutes.
-          </p>
-        </article> -->
       </section>
-      <!-- <section>
-        <h2>Outcomes</h2>
-        <article>
-          <h3></h3>
-          <p>...</p>
+      <section id="decisions" class="layout-grid">
+        <h2>Key decisions</h2>
+        <article class="flow layout-grid__col-all">
+          <h3>Three strategic directions considered</h3>
+          <p>
+            The literature pointed to three distinct approaches to campaign
+            management, each with its own trade-offs:
+          </p>
+          <dl>
+            <dt>1. Platform-agnostic approach ∙ <i>chosen</i></dt>
+            <dd>
+              Create campaigns once, adapt automatically for each platform.
+              Prioritizes efficiency over platform-specific optimization.
+            </dd>
+
+            <dt class="text-muted">
+              2. Platform-native approach ∙ <i>rejected</i>
+            </dt>
+            <dd class="text-muted">
+              Deep integration with each platform's unique features. Would
+              require separate workflows for each social network.
+            </dd>
+
+            <dt class="text-muted">
+              3. Template-first approach ∙ <i>rejected</i>
+            </dt>
+            <dd class="text-muted">
+              Pre-built industry templates (restaurant, retail, services).
+              Faster setup but less flexibility for unique businesses.
+            </dd>
+          </dl>
+          <p>
+            We chose the platform-agnostic approach because our user research
+            revealed that
+            <strong>consistency was more valuable than optimization</strong>
+            for small business owners who lacked time to learn platform nuances.
+          </p>
         </article>
-      </section> -->
-      <!-- <section>
-        <h2>Personal takeaways</h2>
-        <article>
+      </section>
+      <section id="impact" class="layout-grid">
+        <h2>Impact</h2>
+        <div class="layout-grid__col-all flow">
+          <p>
+            The engagement ended at the initial design and an integration
+            prototype — before the product could be validated in use. The
+            measure here is what the design targets:
+          </p>
+        </div>
+        <article class="flow">
+          <h3>Minutes, not afternoons</h3>
+          <p>
+            Campaign creation compressed into a guided six-step flow —
+            templates, reusable audiences, automatic format adaptation — so
+            making a campaign costs minutes rather than a lost afternoon.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Know-how built in</h3>
+          <p>
+            Users had access to powerful tools but not the profession behind
+            them. Proven campaign structures and a pre-launch review that
+            catches common mistakes encode the guidance the research showed was
+            missing.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Consistency without vigilance</h3>
+          <p>
+            Create once, adapt per platform automatically — brand voice and
+            formats stay consistent without anyone having to police them.
+          </p>
+        </article>
+      </section>
+      <section id="learnings" class="layout-grid">
+        <h2>Learnings</h2>
+        <article class="flow">
           <h3>Material Design themability</h3>
           <p>
-            Material Design's approach to theming offers a surprisingly flexible
-            system for customizing visual elements. In this case the focus was
-            on color system with bold, distinctive palettes.
+            Material Design's approach to theming offers a surprisingly
+            flexible system for customising visual elements. In this case the
+            focus was on the colour system with bold, distinctive palettes —
+            in service of the warm, playful direction the project called for.
           </p>
         </article>
-      </section> -->
+      </section>
     </main>
     <script type="module" src="/src/main.js"></script>
   </body>
