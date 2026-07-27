@@ -13,10 +13,13 @@ header small {
   }
 }
 
+main {
+  --flow-space: 1em;
+  padding: var(--space-gutter);
+}
+
 section#work {
-  /* &:has(:hover) article:not(:hover) {
-    opacity: 60%;
-  } */
+  --flow-space: var(--space-gutter);
 
   article {
     --flow-space: 0.5em;

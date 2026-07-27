@@ -159,21 +159,3 @@ mark {
 #footnote-3::before {
   content: "3. ";
 }
-
-section#expertise {
-  ul {
-    list-style: none;
-    padding-inline-start: 0;
-    font-size: smaller;
-    color: oklch(0% 0 0 / 60%);
-
-    strong {
-      color: oklch(0% 0 0 / 90%);
-      font-weight: normal;
-    }
-
-    li + li {
-      margin-block-start: 0.5em;
-    }
-  }
-}

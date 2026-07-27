@@ -1,0 +1,53 @@
+/* =============================================================================
+   Inline progressive disclosure
+
+   A keyword that grows the sentence it sits in. The affordance is a dashed rule
+   — the long-standing convention for a word that opens rather than navigates.
+   The page's links are a thin *solid* grey underline, so the two never read as
+   the same thing. It's a border rather than text-decoration: dashed, because a
+   border draws longer, better-separated dashes at this size, where the text
+   decoration renders dense enough to pass for a solid line.
+
+   Every rule is scoped to [aria-expanded], which only exists once reveal.js has
+   upgraded the trigger. Before that a trigger renders as plain emphasised prose.
+   ========================================================================== */
+
+.reveal {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: inherit;
+}
+
+.reveal[aria-expanded] {
+  cursor: pointer;
+  border-block-end: 1px dashed oklch(0% 0 0 / 30%);
+  transition: border-color 0.2s ease-out, background-color 0.2s ease-out;
+
+  &:hover,
+  &:focus-visible {
+    border-block-end-color: oklch(0% 0 0 / 60%);
+    /* background-color: oklch(96.8% 0.211 109.77 / 50%); */
+    /* box-shadow: 0 0 0 0.15em oklch(96.8% 0.211 109.77 / 50%); */
+    /* border-radius: 0.1em; */
+  }
+}
+
+/* Opened: the rule fades back, so whatever is still closed stays the louder
+   cue — and the word remains marked as the thing that closes it again. */
+.reveal[aria-expanded="true"] {
+  border-block-end-color: oklch(0% 0 0 / 20%);
+}
+
+/* The revealed run. `hidden` rather than hidden="until-found": the latter maps
+   to content-visibility, which has no effect on a non-atomic inline box, and an
+   inline-block would stop the revealed sentence wrapping with its paragraph. */
+.reveal-target {
+  transition: opacity 0.2s ease-out, display 0.2s allow-discrete;
+
+  @starting-style {
+    opacity: 0;
+  }
+}
