@@ -1,26 +1,24 @@
-#convertiq {
-  h1 {
-    grid-row: 1;
-    grid-column: 2 / -1;
-  }
+/* Header composition. Below this width every child spans `full`. */
+@media (width > 48em) {
+  #convertiq .case-header {
+    h1 {
+      grid-row: 1;
+      grid-column: 2 / -1;
+    }
 
-  #meta {
-    grid-row: 2;
-    grid-column: 1 / auto;
-  }
+    #meta {
+      grid-row: 2;
+      grid-column: 1 / auto;
+    }
 
-  #role {
-    rid-row: 2;
-    grid-column: 2 / span 4;
-  }
+    #role {
+      grid-row: 2;
+      grid-column: 2 / span 4;
+    }
 
-  .lead {
-    grid-row: 2;
-    grid-column: 7 / -1;
-  }
-
-  #hero {
-    grid-row: auto;
-    grid-column: 1 / -1;
+    .lead {
+      grid-row: 2;
+      grid-column: 7 / -1;
+    }
   }
 }

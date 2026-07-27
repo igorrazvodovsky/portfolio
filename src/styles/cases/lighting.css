@@ -1,13 +1,10 @@
-#lighting main {
-  section#solution > article {
-    grid-column: 1/-1;
-  }
+/* Approach is a mixed section: each article sets its own internal layout, so
+   they all span the full width of the section grid. */
+#lighting #approach > article {
+  grid-column: 1 / -1;
 }
 
+/* The title block breathes at the page scale rather than the prose scale. */
 #lighting header + header {
-  --flow-space: 4vmax;
+  --flow-space: var(--space-gutter);
 }
-
-/* #lighting #meta article:last-child {
-  text-align: right;
-} */

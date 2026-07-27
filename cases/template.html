@@ -12,43 +12,103 @@
       <span class="text-muted">worked on</span>
       <!-- TODO: type, e.g. worked on, thinking about -->
     </header>
-    <header id="">
+    <!--
+      .layout-canvas gives the header twelve addressable columns. Children span
+      the full width until you place them from the case's own stylesheet,
+      inside a min-width query — see cases/formbuilder.css.
+    -->
+    <header class="case-header layout-canvas">
       <h1>Case study template</h1>
       <p class="lead">What is it about.</p>
+      <!-- meta: year, duration, role. Role dl covers methods — don't repeat it in Tech stack. -->
+      <!-- hero img -->
     </header>
     <main class="flow">
-      <!-- year, role, team, type? -->
-      <!-- img -->
-      <section>
-        <h2>Problems solved</h2>
+      <!--
+        Format: problem–approach–impact is the invariant h2 spine.
+        Everything else is optional — include a section only when the case has
+        something real to put in it. Flavourful names live at h3 level inside
+        the spine sections, never as h2s.
+
+        Sections use .layout-grid: an intrinsic row whose column count comes
+        from the available width. Its lines are not addressable — use
+        .layout-grid__col-all to span everything, and swap the section to
+        .layout-canvas if it needs real placement.
+      -->
+      <section id="problem" class="layout-grid">
+        <h2>Problem</h2>
+        <!--
+          One central tension, not a grid of feature-shaped "problems".
+          Say whose problem it is and what breaks if it stays unsolved.
+        -->
         <article>
-          <h3>Problem</h3>
           <p>...</p>
         </article>
       </section>
-      <section>
+      <!-- Optional -->
+      <section id="users" class="layout-grid">
         <h2>Who we designed for</h2>
         <article>
           <h3></h3>
           <p>...</p>
         </article>
       </section>
-      <section>
-        <h2>Design highlights</h2>
+      <!-- Optional. Real limits: lifecycle, scale, environment, org. Not humblebrags. -->
+      <section id="constraints" class="layout-grid">
+        <h2>Constraints</h2>
         <article>
           <h3></h3>
           <p>...</p>
         </article>
       </section>
-      <section>
-        <h2>Outcomes</h2>
+      <section id="approach" class="layout-grid">
+        <h2>Approach</h2>
+        <!-- h3 subsections keep their flavour: "Modelling the domain",
+             "Research", "Design highlights", etc. -->
         <article>
           <h3></h3>
           <p>...</p>
         </article>
       </section>
-      <section>
-        <h2>Personal takeaways</h2>
+      <!-- Optional. Strongest form: chosen/rejected with the rejected options
+           muted (see convertiq's "Three strategic directions"). A decision
+           without a foregone alternative is just a description. -->
+      <section id="decisions" class="layout-grid">
+        <h2>Key decisions</h2>
+        <article>
+          <h3></h3>
+          <p>...</p>
+        </article>
+      </section>
+      <!-- Optional. For AI-era prototyping and production-ready UI work.
+           Tools that shaped the outcome, not an inventory. -->
+      <section id="stack" class="layout-grid">
+        <h2>Tech stack</h2>
+        <article>
+          <h3></h3>
+          <p>...</p>
+        </article>
+      </section>
+      <section id="impact" class="layout-grid">
+        <h2>Impact</h2>
+        <!--
+          Three registers — pick deliberately, don't mix by accident:
+          1. Measured: hard numbers, only when actually measured.
+          2. Structural: a decision, commitment, or change the work caused.
+          3. Intent: "what the design targets" — for engagements too short
+             or too old to validate. Name the limitation in one line, then
+             state the targets with confidence.
+          Never force a metric onto direction work; a manufactured number
+          reads as hollow.
+        -->
+        <article>
+          <h3></h3>
+          <p>...</p>
+        </article>
+      </section>
+      <!-- Optional -->
+      <section id="learnings" class="layout-grid">
+        <h2>Learnings</h2>
         <article>
           <h3></h3>
           <p>...</p>

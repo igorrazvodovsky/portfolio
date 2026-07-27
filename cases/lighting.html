@@ -36,64 +36,35 @@
       </figure>
     </header>
     <main class="flow">
-      <section id="problems" class="layout-grid">
-        <h2>Problems solved</h2>
-        <article>
-          <h3>Data visualisation</h3>
-          <p>
-            Developing clear visual representations of system status, energy
-            usage, and maintenance needs that enable quick decision-making.
+      <section id="problem" class="layout-grid">
+        <h2>Problem</h2>
+        <div class="layout-grid__col-all flow">
+          <p class="lead">
+            The big savings from smart lighting — energy and maintenance both —
+            come partly from the hardware and partly from running the network
+            well. The system's job is narrower: making "running it well"
+            something an operator can actually do.
           </p>
-        </article>
-        <article>
-          <h3>Alert prioritisation</h3>
           <p>
-            Designing notification systems that highlight critical issues
-            without causing alert fatigue.
+            Two primary users hold different mental models, and most of the
+            design work sits in the hand-off between them. The control-room
+            operator works <em>top-down</em> — policy → zone → schedule → group
+            → luminaire. The field technician works <em>bottom-up</em> — ticket
+            → module → pole → proof of repair. A fault has to travel from one
+            world to the other and back: detected, triaged, dispatched, fixed,
+            verified, closed.
           </p>
-        </article>
-        <article>
-          <h3>Mobile accessibility</h3>
           <p>
-            Ensuring the system works effectively across devices for field
-            technicians.
+            Around that seam sit the familiar control-room problems: surfacing
+            status without drowning operators in alerts, visualising energy and
+            usage data clearly enough to inform decisions, and keeping
+            maintenance workflows short.
           </p>
-        </article>
-        <article>
-          <h3>Workflow optimisation</h3>
-          <p>
-            Mapping and streamlining maintenance processes to reduce response
-            times and simplify routine tasks.
-          </p>
-        </article>
-        <article>
-          <h3>Data collection and analysis</h3>
-          <p>
-            Reports on lighting usage, energy consumption, and environmental
-            conditions to inform decision-making.
-          </p>
-        </article>
-        <article>
-          <h3>Scale and growth</h3>
-          <p>
-            Suitable for use in cities of different sizes: from towns to
-            metropolitan areas.
-          </p>
-        </article>
+        </div>
       </section>
 
       <section id="users" class="layout-grid">
         <h2>Who we designed for</h2>
-        <div class="layout-grid__col-all flow">
-          <p class="lead">
-            Two primary users hold different mental models, and most of the
-            design work sits in the hand-off between them.
-          </p>
-          <p>
-            The control-room operator works <em>top-down</em> — policy → zone → schedule →
-            group → luminaire. The field technician works <em>bottom-up</em> — ticket → module → pole → proof of repair. A fault has to travel from one world to the other and back: detected, triaged, dispatched, fixed, verified, closed.
-          </p>
-        </div>
         <div class="layout-grid__col-all color-muted">
           <h3>Primary users</h3>
           <p>People who work with the system directly.</p>
@@ -105,16 +76,6 @@
             Optimise city lighting for energy efficiency, cost savings, and
             enhanced public safety.
           </p>
-          <!-- <h5>Needs</h5>
-        <p>
-          Access to raw data and advanced analytics, integration with other city
-          data systems.
-        </p>
-        <h5>Key tasks</h5>
-        <p>
-          Analyzing usage patterns, optimizing lighting schedules, predicting
-          maintenance needs.
-        </p> -->
         </article>
 
         <article class="flow">
@@ -123,24 +84,11 @@
             Ensure the lighting infrastructure is functional and
             well-maintained.
           </p>
-          <!-- <h5>Needs</h5>
-        <p>Intuitive dashboard for monitoring and control.</p>
-        <h5>Key tasks</h5>
-        <p>
-          Monitoring system status, diagnosing issues, scheduling maintenance,
-          analyzing and setting lighting patterns, planning upgrades or
-          maintenance.
-        </p> -->
         </article>
 
         <article class="flow">
           <h4>Maintenance technicians</h4>
           <p>Perform repairs.</p>
-          <!-- <h5>Needs</h5>
-        <p>
-          Easy-to-use mobile interface, access to historical maintenance data,
-          GPS-based fault location.
-        </p> -->
         </article>
 
         <div class="layout-grid__col-all color-muted">
@@ -154,15 +102,11 @@
         <article class="flow color-muted">
           <h4>Urban designers and architects</h4>
           <p>Integrate smart lighting with broader urban design projects.</p>
-          <!-- Key Tasks: Planning lighting schemes that complement urban aesthetics, ensuring
-        the lighting supports public spaces. Needs: Flexible lighting controls,
-        data on lighting performance, tools for visualizing lighting impact on urban
-        spaces. -->
         </article>
 
         <article class="flow color-muted">
           <h4>Environmental analyst</h4>
-          <p>Minimize environmental impact and promote sustainability.</p>
+          <p>Minimise environmental impact and promote sustainability.</p>
         </article>
 
         <article class="flow color-muted">
@@ -171,9 +115,6 @@
             Benefit from improved lighting for safety, convenience, and quality
             of life.
           </p>
-          <!-- <h5>Needs</h5>
-        Transparency about lighting policies and initiatives, ways to provide input
-        and feedback. -->
         </article>
 
         <article class="flow color-muted">
@@ -182,92 +123,105 @@
             Develop and implement policies that leverage smart lighting for
             broader city benefits.
           </p>
-          <!-- <h5>Needs</h5>
-        <p>High-level performance reports, cost-benefit analyses.</p>
-        <h5>Key tasks</h5>
-        <p>
-          Setting regulations, evaluating system performance, allocating
-          budgets.
-        </p> -->
         </article>
       </section>
 
-      <!-- <section id="discovery" class="layout-grid">
-        <h2>Discovery spotlight</h2>
-
-        <article>
-          <h3>Literature review</h3>
-          <p>...</p>
-        </article>
-
-        <article>
-          <h3>Lightning system lifecycle stages</h3>
+      <section id="constraints" class="layout-grid">
+        <h2>Constraints</h2>
+        <article class="flow">
+          <h3>Decade-long lifecycles</h3>
           <p>
-            User needs can be divided into two categories: system setup and
-            maintenance.
+            Lighting hardware stays in the ground for 10+ years. The design had
+            to assume maintainability, durability and future upgradability
+            rather than a typical software refresh cycle.
           </p>
         </article>
-      </section> -->
+        <article class="flow">
+          <h3>Towns to metropolitan areas</h3>
+          <p>
+            The same system had to hold up from a few hundred luminaires to
+            citywide networks — without small deployments inheriting big-city
+            complexity.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Field conditions</h3>
+          <p>
+            Technicians work outdoors, on mobile devices. Anything they need has to work in that
+            context.
+          </p>
+        </article>
+      </section>
 
-      <section id="domain" class="layout-grid">
-        <h2>Modelling the domain</h2>
-        <div class="layout-grid__col-all flow">
+      <section id="approach" class="layout-grid">
+        <h2>Approach</h2>
+
+        <article class="flow">
+          <h3>Modelling the domain</h3>
           <p>
             Before any screens, the work was to settle what the system is made
             of. The industry has a standards-backed vocabulary you can lift
-            rather than invent: the <a href="https://www.talq.com/">TALQ Smart City Protocol</a> models the world as
-            <em>Device → Function → Attribute/Event</em>, addressed by
-            <em>Groups</em> and driven by <em>Services</em>; <a href="https://www.dali-alliance.org/d4i/">D4i</a> defines the
-            luminaire, energy and diagnostics data each device reports; <a href="https://www.en-standard.eu/csn-en-13201-1-4-road-lighting/">EN 13201</a>
-            supplies the lighting-class taxonomy. Anchoring the information architecture to these future-proofs the data model.
+            rather than invent: the
+            <a href="https://www.talq.com/">TALQ Smart City Protocol</a> models
+            the world as <em>Device → Function → Attribute/Event</em>, addressed
+            by <em>Groups</em> and driven by <em>Services</em>;
+            <a href="https://www.dali-alliance.org/d4i/">D4i</a> defines the
+            luminaire, energy and diagnostics data each device reports;
+            <a
+              href="https://www.en-standard.eu/csn-en-13201-1-4-road-lighting/"
+              >EN 13201</a
+            >
+            supplies the lighting-class taxonomy.
           </p>
           <p>
-            But a technical standard only takes you so far. TALQ describes devices and the data they report; it says nothing about whose job a fault becomes. So the model adds an operational layer on top of the standard: task, crew, etc. as entities. The two layers meet at the operator-to-technician seam. The standard-informed technical layer tells you a luminaire reports a comms failure and the operational layer guides the decison of how this becomes a unit of work.
+            But a technical standard only takes you so far. TALQ describes
+            devices and the data they report; it says nothing about whose job a
+            fault becomes. The model therefore ended up in three layers — two
+            grounded in the standards, one added on top.
           </p>
-        </div>
-        <article class="flow">
-          <h3>Asset layer</h3>
-          <p>
-            Pole, bracket, luminaire, driver and controller — the physical
-            things, each with a catalogue type carrying wattage, colour
-            temperature, socket and warranty attributes.
-          </p>
+          <div class="layout-grid">
+            <div class="flow">
+              <h4>Asset layer</h4>
+              <p>
+                Pole, bracket, luminaire, driver and controller — the physical
+                things, each with a catalogue type carrying wattage, colour
+                temperature, socket and warranty attributes.
+              </p>
+            </div>
+            <div class="flow">
+              <h4>Control layer</h4>
+              <p>
+                Groups, zones and segments as the targets of commands;
+                schedules and dimming profiles as reusable programs assigned to
+                them.
+              </p>
+            </div>
+            <div class="flow">
+              <h4>Runtime layer</h4>
+              <p>
+                Telemetry and faults — dimming failure, comms loss, voltage
+                anomalies, the "day burner" lit in daylight.
+              </p>
+            </div>
+          </div>
         </article>
-        <article class="flow">
-          <h3>Control layer</h3>
-          <p>
-            Groups, zones and segments as the targets of commands; schedules and
-            dimming profiles as reusable programs assigned to them.
-          </p>
-        </article>
-        <article class="flow">
-          <h3>Runtime layer</h3>
-          <p>
-            Telemetry and faults — dimming failure, comms loss, voltage
-            anomalies, the "day burner" lit in daylight.
-          </p>
-        </article>
-      </section>
-
-      <section id="solution" class="layout-grid">
-        <h2>Solution highlights</h2>
 
         <article class="layout-grid">
           <div class="flow">
             <h3>Navigating lighting infrastructure</h3>
             <p>
-              The system offers dual visualization of street lights – both as an
-              organized hierarchical list and on an interactive map. Each
-              display method provides real-time status monitoring to accommodate
-              different user needs.
+              The system offers dual visualisation of street lights – both as
+              an organised hierarchical list and on an interactive map. Each
+              display method provides real-time status monitoring to
+              accommodate different user needs.
             </p>
           </div>
 
           <div class="flow">
             <h3>Map style</h3>
             <p>
-              Unlike regular maps that emphasize roads and landmarks, lighting
-              management maps prioritize the lighting infrastructure itself as
+              Unlike regular maps that emphasise roads and landmarks, lighting
+              management maps prioritise the lighting infrastructure itself as
               the primary visual element. The base map is simplified to remove
               details irrelevant to lighting management.
             </p>
@@ -280,7 +234,7 @@
               src="/src/images/lighting/map-1.png"
               alt="Districts"
             />
-            <figcaption>Districsts</figcaption>
+            <figcaption>Districts</figcaption>
           </figure>
           <figure>
             <img
@@ -312,19 +266,13 @@
           <h3>Energy profiles</h3>
           <p>
             Adaptive brightness schedules automatically adjust illumination
-            levels based on time of day, season, local sunset/sunrise times, and
-            amount of traffic. Custom dimming patterns can be set for different
-            urban zones (residential, commercial, industrial, parks). Energy
-            consumption parameters set the maximum and minimum power thresholds
-            based on municipal policies. Profile can also represent a special
-            event override for temporary lighting requirements (festivals,
-            emergencies, construction).
-          </p>
-
-          <p>
-            Profiles are created and managed independently, then assigned to
-            specific areas or individual devices, ensuring they can be reused
-            across multiple locations.
+            levels based on time of day, season, local sunset/sunrise times,
+            and amount of traffic. Custom dimming patterns can be set for
+            different urban zones (residential, commercial, industrial, parks).
+            Energy consumption parameters set the maximum and minimum power
+            thresholds based on municipal policies. Profile can also represent
+            a special event override for temporary lighting requirements
+            (festivals, emergencies, construction).
           </p>
           <figure>
             <img src="/src/images/lighting/profile.png" alt="Profile example" />
@@ -365,19 +313,54 @@
           </figure>
         </article>
       </section>
-<!-- 
-      <section id="outcomes" class="layout-grid">
-        <h2>What the design targets</h2>
+
+      <section id="decisions" class="layout-grid">
+        <h2>Key decisions</h2>
+        <article class="flow">
+          <h3>Adopt, don't invent the language</h3>
+          <p>
+            The information architecture is anchored to TALQ, D4i and EN 13201
+            rather than a house ontology. A bespoke model might have fit the
+            first release more snugly; the standards future-proof the data
+            model and keep the door open to other vendors' hardware.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>An operational layer on top of the standard</h3>
+          <p>
+            The standards stop at devices and data, so the model adds tasks and
+            crews as first-class entities. The two layers meet at the
+            operator-to-technician seam: the technical layer says a luminaire
+            reports a comms failure, the operational layer decides how that
+            becomes a unit of work.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Policy as reusable programs</h3>
+          <p>
+            Schedules and dimming profiles are created and managed
+            independently, then assigned to zones, groups or individual devices
+            — rather than configured per luminaire. Changing how a district
+            lights at midnight is one edit, not a walk through every device.
+          </p>
+        </article>
+      </section>
+
+      <section id="impact" class="layout-grid">
+        <h2>Impact</h2>
         <div class="layout-grid__col-all flow">
           <p>
-            The big savings from smart lighting, energy and maintenance both, come from the hardware and from running the network well. The system's job is narrower: making "running it well" something an operator can actually do.
+            A short, fixed-scope engagement doesn't leave room to validate a system like
+            this in deployment, so the measure is what the design
+            targets — the operator behaviours.
           </p>
         </div>
         <article class="flow">
           <h3>Alarm load</h3>
           <p>
             Keeping the steady-state alarm rate manageable by prioritising and
-            grouping signals, and separating informational from action-required.
+            grouping signals, and separating informational from
+            action-required.
           </p>
         </article>
         <article class="flow">
@@ -389,27 +372,17 @@
           </p>
         </article>
         <article class="flow">
-          <h3>Set once, reuse</h3>
-          <p>
-            Lighting policy lives in schedules and dimming profiles, set once
-            and assigned to whole zones or device groups. Changing how a
-            district lights at midnight is then one edit, not a walk through
-            every luminaire.
-          </p>
-        </article>
-        <article class="flow">
           <h3>Right light, not more light</h3>
           <p>
             Letting operators set and defend lighting to policy — level, place,
-            time — rather than defaulting to maximum brightness on the assumption
-            that brighter is safer.
+            time — rather than defaulting to maximum brightness on the
+            assumption that brighter is safer.
           </p>
         </article>
-      </section> 
--->
+      </section>
 
-      <section id="takeaways" class="layout-grid">
-        <h2>Personal takeaways</h2>
+      <section id="learnings" class="layout-grid">
+        <h2>Learnings</h2>
         <article class="flow">
           <h3>IoT ecosystem knowledge</h3>
           <p>
@@ -419,17 +392,12 @@
           </p>
         </article>
         <article class="flow">
-          <h3>Scalability challenges</h3>
+          <h3>Standards as design material</h3>
           <p>
-            Insights into designing solutions that can scale from small pilot
-            projects to citywide implementations.
-          </p>
-        </article>
-        <article class="flow">
-          <h3>Long lifecycle considerations</h3>
-          <p>
-            Designing for products with 10+ year lifespans, including
-            maintainability, durability, and future upgradability.
+            Industry standards turned out to be a source of information
+            architecture, not just compliance — a vocabulary the users' tools
+            and vendors already speak, free to adopt and cheaper to maintain
+            than a custom ontology.
           </p>
         </article>
       </section>

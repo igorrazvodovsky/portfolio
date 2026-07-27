@@ -1,14 +1,29 @@
-.case {
-  h1 {
-    font-weight: 500;
-  }
+/* Shared case-study layout. Per-case compositions live in cases/<slug>.css. */
 
-  .case-header {
-    display: grid;
-    gap: 4vmax;
-    grid-template-rows: min-content;
-    grid-template-columns: var(--gridTemplateColumnsDefault);
-    grid-template-rows: auto auto 1fr;
-    margin: 4vmax 0;
-  }
+.case h1 {
+  font-weight: 500;
+}
+
+/* Pairs with .layout-canvas in the markup: the header is a composition, so it
+   wants addressable columns. Individual cases place their own children inside
+   a min-width query; everything spans `full` until then. */
+.case-header {
+  --layout-canvas-gap: var(--space-gutter);
+
+  grid-template-rows: auto auto 1fr;
+  margin-block: var(--space-gutter);
+}
+
+.case__meta {
+  --layout-grid-min: 20ch;
+  font-size: smaller;
+}
+
+.case img,
+.case video {
+  object-fit: contain;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-m);
+  border: 1px inset oklch(0% 0 0 / 10%);
 }

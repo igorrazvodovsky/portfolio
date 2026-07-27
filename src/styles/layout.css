@@ -1,115 +1,74 @@
+/* =============================================================================
+   Layout system
+
+   Two grid primitives, deliberately kept apart:
+
+   .layout-grid    An intrinsically wrapping row. The browser decides how many
+                   columns fit, so its lines are NOT addressable — never place
+                   a child here with `grid-column: 2 / -1`, because line 2 and
+                   line -1 mean something different at every viewport width.
+   .layout-canvas  A fixed twelve-column editorial canvas with named lines, for
+                   compositions that do need specific placement.
+
+   Media queries can't read custom properties, so the two breakpoints are
+   written out at each use site:
+     48em (768px)  the canvas opens up to twelve columns; case headers compose
+     64em (1024px) in-page canvas compositions, which need more width than a
+                   header block does before an inset measure is worth having
+   ========================================================================== */
+
 :root {
-  --gridColumnCount: 12;
-  --gridTemplateColumnsDefault: repeat(var(--gridColumnCount), minmax(0, 1fr))
-    [last-line];
+  /* Spacing. Viewport-relative, as the design has always been — collected here
+     so the scale is legible and adjustable in one place. */
+  --space-gutter: 4vmax; /* page padding, and the rhythm between sections */
+  --space-gap: 3vw; /* between the columns of a grid row */
+  --space-gap-flex: 2vmax;
+  --space-block: var(--space-gap); /* a nested block sitting inside prose */
+  --space-prose: 0.5em; /* the default flow rhythm */
 }
 
+/* -----------------------------------------------------------------------------
+   Page shell
+   -------------------------------------------------------------------------- */
+
 header {
-  padding-inline: 4vmax;
+  padding-inline: var(--space-gutter);
   padding-block: 1em;
 }
 
-body#home header:has(> *:nth-child(2)) {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-}
-
-header small {
-  display: flex;
-  gap: 1ch;
-  a:not([class]) {
-    color: oklch(0% 0 0 / 30%);
-  }
-}
-
 main {
-  --flow-space: 4vmax;
-  padding: 4vmax;
+  --flow-space: var(--space-gutter);
+  padding: var(--space-gutter);
 }
 
-#home main {
-  --flow-space: 4vmax;
-}
-
-#home article {
-  --flow-space: 0.5em;
-}
-
-section#work {
-  display: grid;
-
-  h2 {
-    grid-column: 1/-1;
-  }
-
-  /* &:has(:hover) article:not(:hover) {
-    opacity: 60%;
-  } */
-
-  article {
-    position: relative;
-    &:hover {
-      opacity: 100% !important;
-    }
-
-    &,
-    * {
-      transition-property: opacity, border-color, color, border-width;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-out;
-    }
-
-    p {
-      font-size: smaller;
-      color: oklch(0% 0 0 / 60%);
-    }
-
-    a {
-      display: block;
-      font-weight: 500;
-      text-wrap: balance;
-    }
-
-    a::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-    }
-
-    small {
-      color: oklch(0% 0 0 / 30%);
-    }
-
-    figure {
-      /* background: oklch(0% 0 0 / 5%); */
-      /* border: 1px solid oklch(0% 0 0 / 10%); */
-      /* aspect-ratio: 16/9; */
-      aspect-ratio: 1;
-      border-radius: var(--radius-l);
-      pointer-events: none;
-    }
-
-    /* TODO: old work fades away */
-    /* &:nth-last-of-type(1) {
-      opacity: 0.2;
-    }
-    &:nth-last-of-type(2) {
-      opacity: 0.4;
-    }
-    &:nth-last-of-type(3) {
-      opacity: 0.6;
-    } */
-  }
-}
+/* -----------------------------------------------------------------------------
+   Flow — vertical rhythm between siblings. An element asks for its own spacing
+   by declaring --flow-space on itself.
+   -------------------------------------------------------------------------- */
 
 .flow > * + * {
-  margin-block-start: var(--flow-space, 0.5em);
+  margin-block-start: var(--flow-space, var(--space-prose));
 }
+
+/* A grid nested inside prose is a sub-block rather than a paragraph, so it
+   wants more air. Sections are excluded — their rhythm is the page rhythm
+   declared on <main>. */
+.flow > :is(.layout-grid, .layout-canvas):not(section) {
+  --flow-space: var(--space-block);
+
+  /* ...without leaking the larger value down into the block's own contents. */
+  > * {
+    --flow-space: var(--space-prose);
+  }
+}
+
+/* -----------------------------------------------------------------------------
+   .layout-grid — an intrinsically wrapping row of equal columns
+   -------------------------------------------------------------------------- */
 
 .layout-grid {
   --layout-grid-min: 22ch;
-  --layout-grid-gap: 3vw;
+  --layout-grid-gap: var(--space-gap);
 
   display: grid;
   grid-template-columns: repeat(
@@ -119,87 +78,75 @@ section#work {
   gap: var(--layout-grid-gap);
 }
 
+/* Spanning every column is the one placement that stays meaningful when the
+   column count is unknown. */
+.layout-grid > h2,
 .layout-grid__col-all {
-  grid-column: 1/-1;
+  grid-column: 1 / -1;
 }
 
-.flex-layout-grid {
-  --flex-grid-min: var(--layout-column-min, 20rem);
-  --flex-grid-gap: var(--layout-gap, 2vmax);
+/* -----------------------------------------------------------------------------
+   .layout-canvas — a twelve-column editorial canvas
 
-  gap: var(--flex-grid-gap);
+     full   edge to edge
+     inset  the middle six columns — a comfortable measure for body text
+     aside  the right-hand margin, for footnotes and marginalia
+
+   Children span `full` by default and compositions are opted into inside a
+   min-width query, so nothing has to be undone on small screens.
+   -------------------------------------------------------------------------- */
+
+.layout-canvas {
+  --layout-canvas-gap: var(--space-gap);
+
+  display: grid;
+  gap: var(--layout-canvas-gap);
+
+  /* One column until there is width worth composing in, with every name
+     collapsed onto it — so `inset` and `aside` degrade to full width on their
+     own, and no placement has to be undone. */
+  grid-template-columns:
+    [full-start inset-start aside-start] minmax(0, 1fr)
+    [aside-end inset-end full-end];
+}
+
+@media (width > 48em) {
+  .layout-canvas {
+    grid-template-columns:
+      [full-start] repeat(3, minmax(0, 1fr))
+      [inset-start] repeat(6, minmax(0, 1fr))
+      [inset-end aside-start] repeat(3, minmax(0, 1fr)) [aside-end full-end];
+  }
+}
+
+.layout-canvas > * {
+  grid-column: full;
+}
+
+/* Adopt the parent canvas's columns, so nested content keeps the same lines
+   (and the same names) instead of starting a grid of its own. */
+.layout-canvas--subgrid {
+  grid-template-columns: subgrid;
+}
+
+/* -----------------------------------------------------------------------------
+   .flex-layout-grid — like .layout-grid, except a short last row stretches to
+   fill the width instead of leaving a hole.
+   -------------------------------------------------------------------------- */
+
+.flex-layout-grid {
+  --flex-grid-min: 20rem;
+  --flex-grid-gap: var(--space-gap-flex);
+
   display: flex;
   flex-wrap: wrap;
+  gap: var(--flex-grid-gap);
 
   > * {
     flex: 1 1 var(--flex-grid-min);
-    /* background: var(--debug); */
   }
 
-  h2 {
+  > h2 {
     flex-basis: 100%;
-  }
-}
-
-#home figure {
-  position: relative;
-  border-radius: var(--radius-l);
-  box-sizing: border-box;
-  overflow: hidden;
-  margin-block: 1em;
-}
-
-#home figure:before {
-  border: 1px inset oklch(0% 0 0 / 10%);
-  border-radius: var(--radius-l);
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: border 0.2s ease-in-out;
-  /* box-shadow: 0 0 0 1px oklch(0% 0 0 / 10%) */
-}
-
-#home article:hover figure:before {
-  border-color: oklch(0% 0 0 / 30%);
-  /* border-width: 2px; */
-}
-
-.case__meta {
-  --layout-grid-min: 20ch;
-  font-size: smaller;
-}
-
-.case img,
-.case video {
-  object-fit: contain;
-  max-width: 100%;
-  height: auto;
-  border-radius: var(--radius-m);
-  border: 1px inset oklch(0% 0 0 / 10%);
-}
-
-/* Full width everything on mobile */
-@media screen and (max-width: 768px) {
-  :root {
-    --gridColumnCount: 1;
-    --spacer: 1rem;
-  }
-  body.case {
-    header article,
-    section article,
-    header h1,
-    section h2,
-    section figure,
-    section p,
-    section aside,
-    .lead,
-    figure#hero {
-      grid-column: 1 / -1 !important;
-      grid-row: auto !important;
-    }
   }
 }
