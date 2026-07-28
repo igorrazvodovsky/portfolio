@@ -1,3 +1,8 @@
+
+#home {
+  --measure-page: 1040px;
+}
+
 body#home header:has(> *:nth-child(2)) {
   display: flex;
   justify-content: space-between;
@@ -13,111 +18,108 @@ header small {
   }
 }
 
+/* Unscoped on purpose: case and note pages have relied on this rhythm and
+   padding since before the home page had a feed. */
 main {
   --flow-space: 1em;
   padding: var(--space-gutter);
 }
 
-section#work {
+body#home main {
+  max-width: var(--measure-page);
+}
+
+#work {
   --flow-space: var(--space-gutter);
+}
 
-  article {
-    --flow-space: 0.5em;
-    position: relative;
+#work > article {
+  --flow-space: var(--space-gutter);
+}
 
-    &:hover {
-      opacity: 100% !important;
-    }
+#work > article > * {
+  --flow-space: 0.75em;
+}
 
-    &,
-    * {
-      transition-property: opacity, border-color, color, border-width;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-out;
-    }
+#work small {
+  display: block;
+  color: oklch(0% 0 0 / 45%);
+}
 
-    p {
-      font-size: smaller;
-      color: oklch(0% 0 0 / 60%);
-    }
+#work p > a {
+  font-weight: 500;
+  color: oklch(0% 0 0 / 90%);
+  text-decoration-color: transparent;
+  transition: text-decoration-color 0.2s ease-out;
+}
 
-    a {
-      display: block;
-      font-weight: 500;
-      text-wrap: balance;
-    }
+#work p > a:hover {
+  text-decoration-color: oklch(0% 0 0 / 60%);
+}
 
-    a::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-    }
+#work .entry__media {
+  --layout-grid-min: 20rem;
+  --flow-space: 1.5em;
+}
 
-    small {
-      color: oklch(0% 0 0 / 30%);
-    }
+#work .entry__media img {
+  width: 100%;
+}
 
-    figure {
-      /* aspect-ratio: 16/9; */
-      aspect-ratio: 1;
-      border-radius: var(--radius-l);
-      pointer-events: none;
-    }
+#work .entry__media--narrow {
+  max-width: 24rem;
+}
 
-    /* TODO: old work fades away */
-    /* &:nth-last-of-type(1) {
-      opacity: 0.2;
-    }
-    &:nth-last-of-type(2) {
-      opacity: 0.4;
-    }
-    &:nth-last-of-type(3) {
-      opacity: 0.6;
-    } */
+#work .entry__media--triptych {
+  --layout-grid-min: 100%;
+  --triptych-ratio: 16 / 9;
+}
+
+@media (width > 48em) {
+  #work .entry__media--triptych {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    --triptych-ratio: 1;
   }
+}
+
+#work .entry__media--triptych figure {
+  aspect-ratio: var(--triptych-ratio);
+}
+
+#work .entry__media--triptych img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#work .entry__media--crop figure {
+  aspect-ratio: var(--entry-media-ratio, 16 / 9);
+}
+
+#work .entry__media--crop img {
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--entry-media-position, center);
 }
 
 #home figure {
   position: relative;
   border-radius: var(--radius-l);
-  box-sizing: border-box;
   overflow: hidden;
-  margin-block: 1em;
 }
 
-#home figure:before {
+#home figure::before {
   border: 1px inset oklch(0% 0 0 / 10%);
   border-radius: var(--radius-l);
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 1;
-  transition: border 0.2s ease-in-out;
 }
 
-#home article:hover figure:before {
-  border-color: oklch(0% 0 0 / 30%);
-}
+/* TODO: old work fades away.
 
-#work figure img:first-child {
-  object-fit: cover;
-  min-height: 100%;
-  height: 100%;
-}
-
-#work article#aloud figure {
-  overflow: visible;
-}
-
-#work article#aloud img:first-child {
-  object-fit: scale-down;
-  object-position: center center;
-  transform: scale(1.2);
-}
-
-#work article#formbuilder img:first-child {
-  object-position: left top;
-}
+   #work > article:nth-last-of-type(1) { opacity: 0.2; }
+   #work > article:nth-last-of-type(2) { opacity: 0.4; }
+   #work > article:nth-last-of-type(3) { opacity: 0.6; }
+   #work > article:hover { opacity: 1; }
+*/
