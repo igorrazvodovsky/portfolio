@@ -1,0 +1,3 @@
+# Case study format
+
+Case pages follow an invariant h2 spine — **Problem → Approach → Impact** — plus optional h2 sections used only when there's real content for them: Who we designed for, Constraints, Key decisions, Tech stack, Learnings. Flavourful names ("Modelling the domain", "Research") live at h3 level inside Approach, never as h2s. Impact has three registers — measured numbers, structural results (a decision or commitment the work caused), or intent ("what the design targets", for engagements too short or old to validate); pick one deliberately and never force a metric onto direction work. See `cases/template.html` for section order and guidance comments.

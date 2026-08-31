@@ -14,7 +14,6 @@
   }
 }
 
-/* Header composition. Below this width every child spans `full`. */
 @media (width > 48em) {
   #formbuilder .case-header {
     h1 {
@@ -44,8 +43,6 @@
   }
 }
 
-/* Approach: prose in the inset measure, its footnote in the margin,
-   figures breaking out to the left. */
 @media (width >= 64em) {
   #formbuilder #approach {
     #process-topic {
@@ -66,7 +63,6 @@
       grid-column: inset-start / full-end;
     }
 
-    /* Subgrid: the nine columns spanned above, three to a figure. */
     #process-config-details > figure {
       grid-column: span 3;
     }

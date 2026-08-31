@@ -13,13 +13,18 @@
         <div>User experience designer</div>
       </div>
       <small>
+        
+        <a href="https://docs.google.com/document/d/1SbcnK2QaPkCRV-GF862ycyemAIG4xcn2HO_RYkgIK-g/edit?usp=sharing" rel="external">CV</a>
         <a href="mailto:igorrazvodovsky@gmail.com" rel="external">Email</a>
-        <a href="https://www.linkedin.com/in/igor-razvodovsky/" rel="external"
+        <a href="https://www.linkedin.com/in/igors-razvodovskis/" rel="external"
           >LinkedIn</a
+        >
+        <a href="https://github.com/igorrazvodovsky/" rel="external"
+          >GitHub</a
         >
       </small>
     </header>
-    <main class="flow">
+    <main class="flow layout-canvas">
       <p>
         My work centres on
         <button type="button" class="reveal" aria-controls="reveal-knowledge"
@@ -68,61 +73,168 @@
         <button type="button" class="reveal" aria-controls="reveal-material"
           ><em>material</em></button
         ><span class="reveal-target" id="reveal-material">
-          reshaping what products can fundamentally do for&nbsp;users</span
+          reshaping what software can fundamentally do for&nbsp;users</span
         >.
       </p>
-      <section id="work" class="flow">
-        <article class="flow">
+      <section id="work" class="flow layout-canvas layout-canvas--subgrid">
+        <article id="practice" class="flow layout-canvas layout-canvas--subgrid">
           <small>August 2026</small>
           <p>
-            <a href="#">AI-native design practice</a> — How I design when AI is
-            part of the medium, the interface, and the making&nbsp;process.
+            <a href="/notes/ai-native-design-practice.html"
+              >AI-native design practice</a
+            >
+            — How I design when AI is part of the medium, the interface, and the
+            making&nbsp;process.
           </p>
         </article>
-        <article class="flow">
+        <!-- <article class="flow">
           <small>July 2026</small>
           <p>
             <a href="#">Conceptual modelling for a product-as-a-service</a> —
             Pairing conceptual modelling with Jobs to Be Done...
           </p>
-        </article>
-        <article class="flow">
+        </article> -->
+        <article id="configurator" class="flow layout-canvas layout-canvas--subgrid">
           <small>June 2026</small>
           <p>
-            <a href="#">Embedding complex nonlinear workflow in a chat</a> —
-            Exploring whether a chat interface can support configuration of
-            complex industrial products with thousands of parts, variants, and
-            context-specific requirements.
+            <a href="/cases/conversational-configuration.html"
+              >A negotiation over a living document</a
+            >
+            — Exploring whether conversation can configure a complex
+            industrial product: chat plus a synchronized living document,
+            over a constraint solver.
           </p>
-        </article>
-        <article id="playground" class="flow">
-          <small>2025 · Ongoing</small>
-          <p>
-            <a href="/notes/pattern-playground.html">Pattern playground</a> — A
-            personal collection of interaction patterns: fifteen years of
-            learnings, kept where they can compound.
-          </p>
-          <div class="entry__media layout-grid">
+          <!-- Composed row: three square shots of the conversation across the
+               top, the document and the render beneath them as one shorter
+               band. Placement is in home.css under #configurator.
+               TODO: the third top-row figure is a placeholder — replace it
+               with a real <figure><img></figure> when the shot is made. -->
+          <div
+            class="entry__media layout-canvas layout-canvas--subgrid"
+          >
             <figure>
-              <connected-dots rows="3"></connected-dots>
+              <img
+                decoding="sync"
+                width="800"
+                height="600"
+                src="/src/images/home/config-1.png"
+                alt="The chat opening a configuration: after two tool calls, the assistant asks for building context — building type, region and code regime, installation type, and a usage profile whose options carry monthly prices"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="800"
+                height="600"
+                src="/src/images/home/config-2.png"
+                alt="The same chat after a revision: the assistant records that the project now reads as a residential new build in Europe with low usage rather than the hotel first mentioned"
+              />
+            </figure>
+            <figure class="placeholder" aria-hidden="true"></figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1600"
+                height="1100"
+                src="/src/images/home/config-4.png"
+                alt="The agreement document open at its platform schedule: platform and drive type marked as chosen by you, energy package and class marked as proposed, with a note on which drive rates which class"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1100"
+                height="1100"
+                src="/src/images/home/config-3.png"
+                alt="A render of the configured car: two side-opening door panels, and a landing door with a vision panel and a call button"
+              />
             </figure>
           </div>
         </article>
-        <article class="flow">
+        <article id="playground" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2025 · Ongoing</small>
+          <p>
+            <a href="/notes/pattern-playground.html">Pattern playground</a> — A personal design-system-adjacent playground for developing the longer-term ideas.
+          </p>
+          <div
+            class="entry__media entry__media--triptych layout-canvas layout-canvas--subgrid"
+          >
+            <figure>
+              <img
+                decoding="sync"
+                width="1760"
+                height="1320"
+                src="/src/images/home/pp-1.png"
+                alt="The whole graph, zoomed out: coloured pattern dots and hollow ones, drawn as a single loose cloud of overlapping links"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="660"
+                src="/src/images/home/pp-2.png"
+                alt="Zoomed in on Suggestion, with the rest of the graph faded behind it: Autofill, Delegation, Prompt, Next-best action and a dozen other neighbours named"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="660"
+                src="/src/images/home/pp-3.png"
+                alt="Zoomed in on Saving, the rest faded the same way, and a smaller neighbourhood: Undo, Form, Deletion, Action consequences, Editing in place, Draft and publish"
+              />
+            </figure>
+          </div>
+        </article>
+        <!-- <article id="user-needs" class="flow layout-canvas layout-canvas--subgrid">
           <small>2024</small>
           <p>
-            <a href="#">Cascading user needs</a> — A method for surfacing and
-            structuring user needs in B2B2B contexts, and using them to guide
-            product discovery.
+            <a href="/cases/cascading-user-needs.html">Cascading user needs</a>
+            — A model of who a B2B product serves and whose needs wait on whose, feeding discovery and prioritisation .
           </p>
-        </article>
-        <article id="lighting" class="flow">
+           <div
+            class="entry__media entry__media--triptych layout-canvas layout-canvas--subgrid"
+          >
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="680"
+                src="/src/images/home/need-1.png"
+                alt="Sketch of a customer saying “I want to configure a product myself…”"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="680"
+                src="/src/images/home/need-2.png"
+                alt="Sketch of a salesperson saying “I need to configure a product for a customer”"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="680"
+                src="/src/images/home/need-3.png"
+                alt="Sketch of a modeller saying “I need to shape product configuration flow so that it works for everyone”"
+              />
+            </figure>
+          </div> 
+        </article> -->
+        <article id="lighting" class="flow layout-canvas layout-canvas--subgrid">
           <small>2021</small>
           <p>
             <a href="/cases/lighting.html">Making light work</a> — Designing a
             management system for large-scale outdoor lighting networks.
           </p>
-          <div class="entry__media entry__media--triptych layout-grid">
+          <div
+            class="entry__media entry__media--quadriptych layout-canvas layout-canvas--subgrid"
+          >
             <figure>
               <img
                 decoding="sync"
@@ -150,9 +262,10 @@
                 alt="Street level, where individual luminaires and a fault appear"
               />
             </figure>
+            <figure class="placeholder" aria-hidden="true"></figure>
           </div>
         </article>
-        <article id="aloud" class="flow">
+        <article id="aloud" class="flow layout-canvas layout-canvas--subgrid">
           <small>2020</small>
           <p>
             <a href="https://github.com/igorrazvodovsky/aloud"
@@ -160,38 +273,73 @@
             >
             — Personal project and playground for learning.
           </p>
-          <div class="entry__media entry__media--narrow layout-grid">
+          <!-- Composed row: the sketch at six columns, the two screens it
+               became filling the other six as a pair. Placement is in home.css
+               under #aloud. -->
+          <div class="entry__media layout-canvas layout-canvas--subgrid">
             <figure>
               <img
                 decoding="sync"
                 width="900"
                 height="900"
                 src="/src/images/home/aloud.png"
-                alt="Aloud project preview"
+                alt="Pencil sketch of the player: a book pane above, navigation and a categories list beneath it"
               />
             </figure>
+            <div class="layout-grid">
+              <figure>
+                <img
+                  decoding="sync"
+                  width="591"
+                  height="1280"
+                  src="/src/images/home/aloud-mobile-1.jpg"
+                  alt="The player mid-chapter: Alice's Adventures in Wonderland, a scrubber at 4:33 of 13:07, and a pause button between skip controls"
+                />
+              </figure>
+              <figure>
+                <img
+                  decoding="sync"
+                  width="1302"
+                  height="976"
+                  src="/src/images/home/aloud-mobile-3.png"
+                  alt="iPhone audio widget"
+                />
+              </figure>
+            </div>
           </div>
         </article>
-        <article id="formbuilder" class="flow">
+        <article id="formbuilder" class="flow layout-canvas layout-canvas--subgrid">
           <small>2019</small>
           <p>
             <a href="/cases/formbuilder.html">Guiding people in making forms</a>
             — Letting non-designers build well-structured, findable forms, so
             employees get the help they came for.
           </p>
-          <div class="entry__media layout-grid">
+          <!-- Composed row: the summary sentence at eight columns, the
+               question detail it guides at the other four. Placement is in
+               home.css under #formbuilder. -->
+          <div class="entry__media layout-canvas layout-canvas--subgrid">
             <figure>
               <img
                 decoding="sync"
                 width="1600"
                 height="820"
                 src="/src/images/home/formbuilder.png"
-                alt="Form builder project preview"
+                alt="A form stated back as a numbered sentence: who will need it, what it connects to, where it submits, how many questions it asks and which fields they map to"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="720"
+                height="720"
+                src="/src/images/formbuilder/config-4.png"
+                alt="One question opened up in the builder: a helper text field under Company code explaining what each letter of the code stands for, and a hint that it will be shown under the input"
               />
             </figure>
           </div>
         </article>
-        <article id="convertiq" class="flow">
+        <article id="convertiq" class="flow layout-canvas layout-canvas--subgrid">
           <small>2018</small>
           <p>
             <a href="/cases/convertiq.html"
@@ -212,7 +360,7 @@
             </figure>
           </div>
         </article>
-        <article id="jukebox" class="flow">
+        <article id="jukebox" class="flow layout-canvas layout-canvas--subgrid">
           <small>2017</small>
           <p>
             <a

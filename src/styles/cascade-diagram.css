@@ -1,0 +1,17 @@
+/* <cascade-diagram> sets its own aspect-ratio once it has measured itself, but
+   that ratio lives in the shadow stylesheet and so doesn't exist until the
+   module has run. In the case header the element is above the fold, where an
+   unsized box would collapse and then shove the page down on hydration. This
+   reserves roughly the proportions the element resolves to, so the first paint
+   is already the right shape. Keep the two roughly in step. */
+cascade-diagram {
+  display: block;
+  aspect-ratio: 1325 / 491;
+}
+
+/* Narrow, the band gap bottoms out and the drawing turns squarer. */
+@media (width < 48em) {
+  cascade-diagram {
+    aspect-ratio: 6 / 5;
+  }
+}

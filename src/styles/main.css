@@ -2,18 +2,23 @@
 @import "layout.css";
 @import "typography.css";
 @import "reveal.css";
+@import "cascade-diagram.css";
 @import "home.css";
 @import "./cases/case.css";
 @import "./cases/lighting.css";
 @import "./cases/formbuilder.css";
 @import "./cases/convertiq.css";
+@import "./cases/cascading-user-needs.css";
+@import "./cases/conversational-configuration.css";
 @import "./notes/note.css";
 @import "./notes/pattern-playground.css";
 
 :root {
   --debug: oklch(63% 0.25 30 / 30%);
-  --radius-m: clamp(0.25rem, 0.5vw + 0.15rem, 0.75rem);
-  --radius-l: 0.75rem;
+  /* --radius-m: clamp(0.25rem, 0.5vw + 0.15rem, 0.75rem); */
+  /* --radius-l: 0.75rem; */
+  --radius-m: 0;
+  --radius-l: 0;
 }
 
 /* @view-transition {

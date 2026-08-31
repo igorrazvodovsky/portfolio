@@ -1,8 +1,8 @@
 import './styles/main.css'
-import { ConnectedDots } from './dots.js'
+import { CascadeDiagram } from './cascade-diagram.js'
 import { initReveals } from './reveal.js'
 
-customElements.define("connected-dots", ConnectedDots);
+customElements.define("cascade-diagram", CascadeDiagram);
 
 initReveals();
 

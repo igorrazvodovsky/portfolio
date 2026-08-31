@@ -1,6 +1,5 @@
-
 #home {
-  --measure-page: 1040px;
+  --page-width: 68rem;
 }
 
 body#home header:has(> *:nth-child(2)) {
@@ -11,30 +10,22 @@ body#home header:has(> *:nth-child(2)) {
 
 header small {
   display: flex;
-  gap: 1ch;
+  gap: 2ch;
 
   a:not([class]) {
     color: oklch(0% 0 0 / 30%);
   }
 }
 
-/* Unscoped on purpose: case and note pages have relied on this rhythm and
-   padding since before the home page had a feed. */
-main {
-  --flow-space: 1em;
-  padding: var(--space-gutter);
-}
-
 body#home main {
-  max-width: var(--measure-page);
+  max-width: var(--page-width);
+  row-gap: 0;
 }
 
-#work {
-  --flow-space: var(--space-gutter);
-}
-
+#work,
 #work > article {
   --flow-space: var(--space-gutter);
+  row-gap: 0;
 }
 
 #work > article > * {
@@ -49,12 +40,6 @@ body#home main {
 #work p > a {
   font-weight: 500;
   color: oklch(0% 0 0 / 90%);
-  text-decoration-color: transparent;
-  transition: text-decoration-color 0.2s ease-out;
-}
-
-#work p > a:hover {
-  text-decoration-color: oklch(0% 0 0 / 60%);
 }
 
 #work .entry__media {
@@ -67,28 +52,141 @@ body#home main {
 }
 
 #work .entry__media--narrow {
-  max-width: 24rem;
-}
-
-#work .entry__media--triptych {
-  --layout-grid-min: 100%;
-  --triptych-ratio: 16 / 9;
+  max-width: var(--entry-media-width, 24rem);
 }
 
 @media (width > 48em) {
   #work .entry__media--triptych {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
     --triptych-ratio: 1;
   }
-}
 
-#work .entry__media--triptych figure {
-  aspect-ratio: var(--triptych-ratio);
+  
+  #work .entry__media--triptych > figure {
+    grid-column: span 4;
+  }
+
+  #work .entry__media--quadriptych > figure {
+    grid-column: span 3;
+  }
 }
 
 #work .entry__media--triptych img {
   height: 100%;
   object-fit: cover;
+}
+
+#configurator {
+  --placeholder-ratio: 4 / 3;
+}
+
+#configurator .entry__media > figure {
+  grid-column: 1 / -1;
+}
+
+@media (width > 48em) {
+  #configurator .entry__media > figure:nth-child(1) {
+    grid-column: 1 / span 4;
+    grid-row: 1;
+  }
+
+  #configurator .entry__media > figure:nth-child(2) {
+    grid-column: 5 / span 4;
+    grid-row: 1;
+  }
+
+  #configurator .entry__media > figure:nth-child(3) {
+    grid-column: 9 / span 4;
+    grid-row: 1;
+  }
+
+  #configurator .entry__media > figure:nth-child(4) {
+    grid-column: 1 / span 8;
+    grid-row: 2;
+    aspect-ratio: 1600 / 640;
+  }
+
+  #configurator .entry__media > figure:nth-child(4) img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #configurator .entry__media > figure:nth-child(5) {
+    grid-column: 9 / span 4;
+    grid-row: 2;
+  }
+
+  #configurator .entry__media > figure:nth-child(5) img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#lighting .entry__media img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+
+#aloud .entry__media > * {
+  grid-column: 1 / -1;
+}
+
+#aloud .entry__media .layout-grid {
+  --layout-grid-min: 6rem;
+}
+
+#aloud .entry__media img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#aloud .entry__media .layout-grid > figure:nth-child(2) {
+  align-self: start;
+}
+
+#aloud .entry__media .layout-grid > figure:nth-child(2) img {
+  height: auto;
+}
+
+@media (width > 48em) {
+  #aloud .entry__media > * {
+    grid-column: span 6;
+  }
+}
+
+#formbuilder .entry__media > figure {
+  grid-column: 1 / -1;
+  align-self: start;
+}
+
+@media (width > 48em) {
+  #formbuilder .entry__media > figure:nth-child(1) {
+    grid-column: full-start / span 8;
+    align-self: stretch;
+  }
+
+  #formbuilder .entry__media > figure:nth-child(1) img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #formbuilder .entry__media > figure:nth-child(2) {
+    grid-column: span 4;
+  }
+
+}
+
+#work .placeholder {
+  aspect-ratio: var(--placeholder-ratio, 4 / 3);
+  /* background-color: oklch(0% 0 0 / 3%); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L100 100 M100 0 L0 100' stroke='%23000' stroke-opacity='0.2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
 }
 
 #work .entry__media--crop figure {
@@ -108,7 +206,7 @@ body#home main {
 }
 
 #home figure::before {
-  border: 1px inset oklch(0% 0 0 / 10%);
+  border: 1px solid oklch(0% 0 0 / 10%);
   border-radius: var(--radius-l);
   content: "";
   position: absolute;

@@ -10,6 +10,8 @@ html {
   color: oklch(0% 0 0 / 90%);
   font-size: 20px;
   line-height: 1.4;
+
+  --measure: 45ch;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,20 +19,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  /* TODO: Min width */
-  max-width: 70%;
+  max-width: 20ch;
   /* font-style: italic; */
   font-weight: 400;
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 1.2rem + 3.2vw, 3rem);
   /* letter-spacing: -0.015em; */
   letter-spacing: -0.025em;
 }
 
 h2 {
   font-size: 2rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
 }
 
 h4 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+h5 {
+  font-size: 0.75rem;
   font-weight: 600;
 }
 
@@ -39,7 +52,10 @@ h5,
   color: oklch(0% 0 0 / 30%);
 }
 
-h4,
+/* h5 owns the gap under itself because the blocks it labels — the case and
+   note meta grids — are not .flow, so nothing else is spacing them. h4 is
+   always inside a .flow and had the same declaration, where it only ever
+   collapsed under the larger flow margin. */
 h5 {
   margin-block-end: 0.5rem;
 }
@@ -59,7 +75,7 @@ h1 span, h2 span {
 }
 
 .lead {
-  max-width: 60ch;
+  max-width: var(--measure);
   font-size: larger;
 }
 
@@ -71,6 +87,7 @@ a {
 
   color: oklch(0% 0 0 / 60%);
   text-decoration-color: oklch(0% 0 0 / 30%);
+  transition: text-decoration-color 0.2s ease-out;
 }
 
 a:hover {
@@ -98,19 +115,13 @@ article {
 
 figcaption {
   color: oklch(0% 0 0 / 60%);
+  font-size: smaller;
   margin-block-start: 0.25rem;
   --flow-space: 0.5em;
 }
 
-figcaption {
-  font-size: smaller;
-}
-
 dt {
   color: oklch(0% 0 0 / 60%);
-}
-
-dt {
   margin-block-start: 0.5rem;
 }
 
@@ -120,7 +131,19 @@ dt {
 }
 
 p {
-  max-width: 60ch;
+  max-width: var(--measure);
+}
+
+p,
+li,
+dd,
+figcaption {
+  overflow-wrap: break-word;
+}
+
+ul:not([class]),
+ol:not([class]) {
+  max-width: calc(var(--measure) + 1.2em);
 }
 
 mark {

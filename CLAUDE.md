@@ -4,84 +4,80 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Commands
 
-### Development
-- `npm run dev` - Start Vite development server with hot reload
-- `npm run build` - Build the project for production
-- `npm run preview` - Preview the production build locally
+- `npm run dev` — start the Vite dev server with hot reload
+- `npm run build` — build for production
+- `npm run preview` — serve the production build locally
+
+There are no tests, linters or CI in this repository.
 
 ### Adding a new page
+
 Notes are the default genre for new writing; case studies are the long-form exception.
 
-1. Copy `notes/template.html` to `notes/<slug>.html` (or `cases/template.html` to `cases/<slug>.html`) and edit content.
-2. Register the new page in `vite.config.js` under `build.rollupOptions.input` — pages not listed there are excluded from the production build. Templates stay unregistered.
-3. Add a page-specific stylesheet in `src/styles/notes/<slug>.css` or `src/styles/cases/<slug>.css` only if the page needs one; shared layout lives in `note.css` / `case.css`.
+1. Copy `cases/template.html` to `cases/<slug>.html` and edit content. There is no note template — start a note from an existing one, `notes/pattern-playground.html` being the shorter of the two.
+2. Register the page in `vite.config.js` under `build.rollupOptions.input` — pages not listed there are excluded from the production build. `cases/template.html` stays unregistered.
+3. Add a page-specific stylesheet in `src/styles/notes/<slug>.css` or `src/styles/cases/<slug>.css` only if the page needs one, and `@import` it from `src/styles/main.css`; shared layout lives in `note.css` / `case.css`.
 4. Put images in `src/images/<slug>/`.
 5. Add an entry to the feed in `index.html` — newest first.
 
 ### Genres
-Two page genres, one feed. `/notes/` holds shorter, dated progress reports and slice-of-life pieces about work in flight; `/cases/` holds the longer retrospective case studies. The site is *not* a blog: there is no second index, no Work/Notes split, no tags or pagination. Genre widening happens in what entries are, not in navigation.
 
-### Note format
-Notes are progress reports and do *not* take the case spine. Two invariants: the page opens with a `.lead` saying what the work is and why it's live, and closes with an h2 `Where it stands` giving the honest current state. In between, two or three h2s named after the actual work ("What I'm after", "What I tried", "What surprised me"). Register is present and provisional — unresolved endings are fine, manufactured conclusions are not. If a note outgrows a few screens it either wants to become a case study or wants splitting into two dated notes. See `notes/template.html`.
-
-### Case study format
-Case pages follow an invariant h2 spine — **Problem → Approach → Impact** — plus optional h2 sections used only when there's real content for them: Who we designed for, Constraints, Key decisions, Tech stack, Learnings. Flavourful names ("Modelling the domain", "Research") live at h3 level inside Approach, never as h2s. Impact has three registers — measured numbers, structural results (a decision or commitment the work caused), or intent ("what the design targets", for engagements too short or old to validate); pick one deliberately and never force a metric onto direction work. See `cases/template.html` for section order and guidance comments.
+Two page genres, one feed. `/notes/` holds shorter, dated progress reports and slice-of-life pieces about work in flight; `/cases/` holds the longer retrospective case studies. The site is *not* a blog: there is no second index, no Work/Notes split, no tags or pagination. Genre widening happens in what entries are, not in navigation. The spine each genre takes is documented in `cases/CLAUDE.md` and `notes/CLAUDE.md`.
 
 ### Home feed format
+
 `section#work` in `index.html` is one chronological column, newest first, genres mixed. An entry is:
 
 ```html
-<article class="flow">
+<article id="<slug>" class="flow layout-canvas layout-canvas--subgrid">
   <small>June 2026</small>
   <p><a href="…">Title</a> — one or two sentences.</p>
-  <div class="entry__media layout-grid">…figures…</div>
+  <div class="entry__media layout-canvas layout-canvas--subgrid">…figures…</div>
 </article>
 ```
 
-The title is a link *inside* the sentence, not a heading above it. The media row is optional — an imageless entry is a normal entry, not a gap. Because the row is a `.layout-grid`, one figure fills the width and two sit side by side, stacking when there isn't room. By default images keep their intrinsic proportions, so tall, short and square all work. Entries are not cards: no box, no whole-entry hit area.
+The title is a link *inside* the sentence, not a heading above it. Entries are not cards: no box, no whole-entry hit area. The media row is optional — an imageless entry is a normal entry, not a gap.
 
-A square or portrait source run out to the full page measure will tower over the feed. Two modifiers on `.entry__media` decide how to spend it — pick per entry:
+The entry's `id` is what its composition is keyed off in `home.css` (`#configurator`, `#aloud`, `#formbuilder` each place their own figures), so give every entry one even when it has no images yet.
 
-- `entry__media--narrow` — keep the proportions, cap the width at `24rem`.
-- `entry__media--crop` — keep the width, crop to a band. The figure takes the aspect ratio and the image covers it, so nothing is baked into the file. Tune with `--entry-media-ratio` (default `16 / 9`) and `--entry-media-position` (default `center`, an `object-position`) in `home.css`.
+A media row is dealt out one of two ways, and the choice is the whole decision:
 
-`entry__media--triptych` is for three images that are one picture — a sequence, not a gallery. It is the whole row or a stack, never two-and-an-orphan: three across above `48em`, stacked below, and stacked they crop to bands so the entry costs ~570px instead of ~2800px. The lighting entry uses it for the case's own city → district → street zoom.
+- `.layout-grid` — intrinsic, equal columns, as many as fit. Right whenever the figures carry equal weight.
+- `.layout-canvas .layout-canvas--subgrid` — the page's twelve columns again, for a row whose figures are not equal. Place them mobile-first: `1 / -1` in the base rule, spans inside a `@media (width > 48em)` query, because the canvas is a single column below that and a `span 4` there spills into implicit columns.
+
+`entry__media--triptych` and `--quadriptych` are the canonical repeats — three or four figures that are one picture, a sequence rather than a gallery. Each is the whole row or a stack, never two-and-an-orphan. `entry__media--narrow` (cap the width) and `--crop` (keep the width, crop to a band via `--entry-media-ratio` / `--entry-media-position`) exist in `home.css` for square or portrait sources that would otherwise tower over the feed; nothing uses them at the moment. Width is spent in columns and shape in aspect ratios, so `--crop` composes with either row type.
 
 The em dash after the title is structural, so a description must not contain one of its own — a second dash makes it impossible to tell which one separates title from summary. Use a colon or a comma instead.
 
-Get the `width`/`height` attributes right — for uncropped images they drive the reserved aspect ratio, where the old square thumbnails made them cosmetic. (Under `--crop` the figure reserves the box instead, so the attributes only matter for the decode.) Check with `sips -g pixelWidth -g pixelHeight <file>`.
+Get the `width`/`height` attributes right — for uncropped images they drive the reserved aspect ratio. (Where the figure reserves a box of its own, the attributes only matter for the decode.) Check with `sips -g pixelWidth -g pixelHeight <file>`.
 
 ## Architecture
 
-This is a UX portfolio website built with vanilla JavaScript and Vite as the build tool. The project follows a multi-page architecture with separate HTML pages for case studies.
+A UX portfolio site: vanilla JavaScript, Vite, one HTML file per page. No framework — don't reach for React, Vue or a component library. Modern CSS (custom properties, `clamp()`, grid, subgrid, `oklch()`) does the work that JavaScript would do elsewhere.
 
-### Key Components
+*Multi-page setup.* The index page is a chronological feed; each note and case is its own HTML file, and each is a separate entry point in `vite.config.js`. Forgetting step 2 above is the usual way a page ends up missing from a build.
 
-**Multi-page Setup**: The site consists of a main index page — a chronological feed — plus individual pages under `/notes/` and `/cases/`. Each page is configured as a separate entry point in `vite.config.js`.
+*One JS entry.* Every page loads `/src/main.js` and nothing else. It imports `src/styles/main.css`, registers the `<cascade-diagram>` custom element and calls `initReveals()`. A page that needs behaviour gets it from there.
 
-**Entry points**: `src/main.js` is the single JS entry, loaded by every page. It also imports `src/styles/main.css`.
+*One CSS bundle.* `src/styles/main.css` `@import`s every stylesheet in the project, page-specific ones included, so all CSS ships to all pages. Page rules must therefore be scoped — by `body#<slug>` on the home page and notes, by `.case` / `.note` for genre-wide rules. An unscoped selector in `cases/lighting.css` will hit the feed too. Feed entry ids reuse case slugs — `#lighting` names both an entry in the feed and `<body id="lighting">` on the case page — so home rules keyed off an entry id belong under `#work` or `body#home`.
 
-**Styling Architecture**: CSS is organized modularly:
-- Global styles in `src/styles/` (reset, layout, typography)
-- Page-specific styles (home.css, case-specific CSS files)
-- CSS custom properties for theming (colors, radii)
+*Behaviour.* A custom element is the house convention: `src/cascade-diagram.js` is a shadow-DOM element that measures itself with a `ResizeObserver` and draws in real CSS pixels rather than scaling a fixed viewBox. `src/reveal.js` is the deliberate exception, and says why in its header comment — a trigger and the text it reveals are separated by prose that has no business being wrapped in anything, so `aria-controls` links them instead. Both ship working without JS: the reveal markup is expanded until the script collapses it, and `cascade-diagram.css` states a fallback aspect ratio for the element the JS has yet to size.
 
-**Layout system** (`src/styles/layout.css`): two grid primitives that must not be mixed up.
+### Layout system
 
-- `.layout-grid` — an *intrinsic* row: `repeat(auto-fit, minmax(…, 1fr))` decides the column count from the available width. Its lines are therefore **not addressable**; never write `grid-column: 2 / -1` on a child, because line 2 and line -1 land somewhere different at every viewport width. The only meaningful placement is spanning everything, via `.layout-grid__col-all`. This is the default for card-like section content.
-- `.layout-canvas` — a *fixed* twelve-column editorial canvas with named lines, for compositions that need real placement (case headers, formbuilder's Design highlights). Names: `full` (edge to edge), `inset` (the middle six columns — a comfortable measure), `aside` (the right-hand margin, for footnotes). `.layout-canvas--subgrid` adopts the parent canvas's columns.
+`src/styles/layout.css` holds two grid primitives that must not be mixed up.
+
+- `.layout-grid` — an *intrinsic* row: `repeat(auto-fit, minmax(…, 1fr))` decides the column count from the available width. Its lines are therefore *not addressable*; never write `grid-column: 2 / -1` on a child, because line 2 and line -1 land somewhere different at every viewport width. The only meaningful placement is spanning everything, via `.layout-grid__col-all`.
+- `.layout-canvas` — a *fixed* twelve-column editorial canvas with named lines, for compositions that need real placement (case headers, the home feed, formbuilder's design highlights). Names: `full` (edge to edge), `inset` (the middle six columns — a comfortable measure), `aside` (the right-hand margin, for footnotes). `.layout-canvas--subgrid` adopts the parent canvas's columns, which is how a feed entry's figures line up with the entry above it.
 - `.flex-layout-grid` — like `.layout-grid`, except a short last row stretches to fill instead of leaving a hole.
 
-The canvas is a single column below `48em`, with every line name collapsed onto it, so `inset` and `aside` degrade to full width by themselves. Compositions are therefore always written **mobile-first**, inside a min-width query — nothing is ever undone with `!important`. Placement belongs in the case's stylesheet, not in an inline `style` attribute.
+The canvas is a single column below `48em`, with every line name collapsed onto it, so `inset` and `aside` degrade to full width by themselves. Compositions are therefore always written *mobile-first*, inside a min-width query — nothing is ever undone with `!important`. Placement belongs in the page's stylesheet, not in an inline `style` attribute.
 
-Vertical rhythm is `.flow`, which reads `--flow-space` off each child; an element asks for its own spacing by declaring `--flow-space` on itself. Spacing tokens (`--space-gutter`, `--space-gap`, `--space-block`, `--space-prose`) live in `layout.css`.
+Vertical rhythm is `.flow`, which reads `--flow-space` off each child; an element asks for its own spacing by declaring `--flow-space` on itself. A canvas that also carries flow children sets `row-gap: 0`, because a row gap would add to every `--flow-space` rather than replace it. The `--space-*` tokens live in `layout.css`; the reading measure is held by `p { max-width }`, not by the canvas.
 
-**Asset Organization**: Images are organized by feature/case in `src/images/`, with subdirectories for each case study (convertiq, formbuilder, lighting).
+## Writing style
 
-### Development Patterns
-
-**No Framework Dependencies**: This is a vanilla JavaScript project - avoid suggesting React, Vue, or other framework-specific solutions.
-
-**CSS-First Approach**: The project uses modern CSS features extensively (custom properties, clamp(), grid, etc.) rather than JavaScript for layout and styling.
-
-**Web Standards**: The project uses native web APIs (Web Components, Shadow DOM) rather than external libraries.
+- Banned phrases: "load-bearing", "worth stating plainly", "full stop",
+  "carry the argument", "the trap", "isn't just X — it's Y".
+- No punchy fragments for drama. Write complete sentences.
+- Do not build to a turn of phrase. State the claim directly.

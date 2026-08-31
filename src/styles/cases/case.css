@@ -1,12 +1,7 @@
-/* Shared case-study layout. Per-case compositions live in cases/<slug>.css. */
-
 .case h1 {
   font-weight: 500;
 }
 
-/* Pairs with .layout-canvas in the markup: the header is a composition, so it
-   wants addressable columns. Individual cases place their own children inside
-   a min-width query; everything spans `full` until then. */
 .case-header {
   --layout-canvas-gap: var(--space-gutter);
 

@@ -11,6 +11,11 @@ ol[class] {
   padding: 0;
 }
 
+ul:not([class]),
+ol:not([class]) {
+  padding-inline-start: 1.2em;
+}
+
 /* Remove default margin */
 body,
 h1,
@@ -53,7 +58,6 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
-  content-visibility: auto;
 }
 
 /* Natural flow and rhythm in articles by default */
