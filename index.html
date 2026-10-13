@@ -26,18 +26,8 @@
     </header>
     <main class="flow layout-canvas">
       <p>
-        My work centres on
-        <button type="button" class="reveal" aria-controls="reveal-knowledge"
-          >knowledge representation</button
-        >
-        — making it explicit enough to steer and ground AI systems.
-        <span class="reveal-target" id="reveal-knowledge"
-          >Sometimes that knowledge is a product's domain: its concepts, tasks,
-          and user needs. Sometimes it's design practice itself: the patterns
-          and judgement behind how I&nbsp;work.</span
-        >
-        Currently I'm exploring this through conceptual modelling,
-        product discovery automation, and automated UI&nbsp;generation.
+        I <button type="button" class="reveal" aria-controls="reveal-model">model</button> the work people do, design and prototype the software around it, and find out what AI systems can do once both are&nbsp;explicit.
+        <span class="reveal-target" id="reveal-model">Sometimes the model is of a domain: its concepts, tasks, and user needs. Sometimes it's design practice itself: the patterns and judgement behind how I&nbsp;work.</span>
       </p>
       <p>
         Most recently, I worked on industrial sales automation
@@ -77,7 +67,7 @@
         >.
       </p>
       <section id="work" class="flow layout-canvas layout-canvas--subgrid">
-        <article id="practice" class="flow layout-canvas layout-canvas--subgrid">
+        <!-- <article id="practice" class="flow layout-canvas layout-canvas--subgrid">
           <small>August 2026</small>
           <p>
             <a href="/notes/ai-native-design-practice.html"
@@ -86,7 +76,7 @@
             — How I design when AI is part of the medium, the interface, and the
             making&nbsp;process.
           </p>
-        </article>
+        </article> -->
         <!-- <article class="flow">
           <small>July 2026</small>
           <p>
@@ -97,18 +87,13 @@
         <article id="configurator" class="flow layout-canvas layout-canvas--subgrid">
           <small>June 2026</small>
           <p>
-            <a href="/cases/conversational-configuration.html"
+            <a href="/cases/conversational-self-service.html"
               >A negotiation over a living document</a
             >
-            — Exploring whether conversation can configure a complex
-            industrial product: chat plus a synchronized living document,
-            over a constraint solver.
+            — Design for agentive tools that help buy complex industrial equipment in a self-service context.
+
+
           </p>
-          <!-- Composed row: three square shots of the conversation across the
-               top, the document and the render beneath them as one shorter
-               band. Placement is in home.css under #configurator.
-               TODO: the third top-row figure is a placeholder — replace it
-               with a real <figure><img></figure> when the shot is made. -->
           <div
             class="entry__media layout-canvas layout-canvas--subgrid"
           >
@@ -117,20 +102,31 @@
                 decoding="sync"
                 width="800"
                 height="600"
-                src="/src/images/home/config-1.png"
-                alt="The chat opening a configuration: after two tool calls, the assistant asks for building context — building type, region and code regime, installation type, and a usage profile whose options carry monthly prices"
+                src="/src/images/conversational-self-service/attribution.png"
+                alt=""
               />
             </figure>
             <figure>
-              <img
-                decoding="sync"
-                width="800"
-                height="600"
-                src="/src/images/home/config-2.png"
-                alt="The same chat after a revision: the assistant records that the project now reads as a residential new build in Europe with low usage rather than the hotel first mentioned"
-              />
+              <video
+                width="1198"
+                height="2000"
+                poster="/src/images/conversational-self-service/chat-exchange-poster.png"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-label="Screen recording of a chat exchange with the seller's agent"
+              >
+                <source
+                  src="/src/images/conversational-self-service/chat-exchange.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="/src/images/conversational-self-service/chat-exchange.mp4"
+                  type="video/mp4"
+                />
+              </video>
             </figure>
-            <figure class="placeholder" aria-hidden="true"></figure>
             <figure>
               <img
                 decoding="sync"
@@ -145,7 +141,7 @@
                 decoding="sync"
                 width="1100"
                 height="1100"
-                src="/src/images/home/config-3.png"
+                src="/src/images/home/elevator.jpeg"
                 alt="A render of the configured car: two side-opening door panels, and a landing door with a vision panel and a call button"
               />
             </figure>
@@ -232,9 +228,24 @@
             <a href="/cases/lighting.html">Making light work</a> — Designing a
             management system for large-scale outdoor lighting networks.
           </p>
-          <div
-            class="entry__media entry__media--quadriptych layout-canvas layout-canvas--subgrid"
-          >
+          <!-- Composed row: the video at half the canvas across two rows,
+               the four stills two by two beside it. Placement is in
+               home.css under #lighting. -->
+          <div class="entry__media layout-canvas layout-canvas--subgrid">
+            <figure>
+              <video
+                width="1440"
+                height="900"
+                poster="/src/images/lighting/profile-poster.png"
+                autoplay
+                muted
+                loop
+                playsinline
+                aria-label="Screen recording of the lighting management system"
+              >
+                <source src="/src/images/lighting/profile.mp4" type="video/mp4" />
+              </video>
+            </figure>
             <figure>
               <img
                 decoding="sync"
@@ -249,7 +260,7 @@
                 decoding="sync"
                 width="700"
                 height="700"
-                src="/src/images/lighting/map-2.png"
+                src="/src/images/lighting/thumb-report.png"
                 alt="The same map zoomed to one district, showing its areas"
               />
             </figure>
@@ -262,7 +273,15 @@
                 alt="Street level, where individual luminaires and a fault appear"
               />
             </figure>
-            <figure class="placeholder" aria-hidden="true"></figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1104"
+                height="828"
+                src="/src/images/lighting/device-and-task.png"
+                alt="Street level, where individual luminaires and a fault appear"
+              />
+            </figure>
           </div>
         </article>
         <article id="aloud" class="flow layout-canvas layout-canvas--subgrid">
@@ -273,39 +292,37 @@
             >
             — Personal project and playground for learning.
           </p>
-          <!-- Composed row: the sketch at six columns, the two screens it
-               became filling the other six as a pair. Placement is in home.css
-               under #aloud. -->
+          <!-- Composed row: the web player at half the canvas, the two phone
+               shots at a quarter each, all hanging from the same top line.
+               Placement is in home.css under #aloud. -->
           <div class="entry__media layout-canvas layout-canvas--subgrid">
             <figure>
               <img
                 decoding="sync"
-                width="900"
-                height="900"
-                src="/src/images/home/aloud.png"
-                alt="Pencil sketch of the player: a book pane above, navigation and a categories list beneath it"
+                width="3024"
+                height="1898"
+                src="/src/images/home/aloud-web.png"
+                alt="The web player, dark: chapter title and elapsed time above, a play button in the middle, Alice's Adventures in Wonderland by Lewis Carroll below it, table of contents and bookmarks turned sideways in the margins"
               />
             </figure>
-            <div class="layout-grid">
-              <figure>
-                <img
-                  decoding="sync"
-                  width="591"
-                  height="1280"
-                  src="/src/images/home/aloud-mobile-1.jpg"
-                  alt="The player mid-chapter: Alice's Adventures in Wonderland, a scrubber at 4:33 of 13:07, and a pause button between skip controls"
-                />
-              </figure>
-              <figure>
-                <img
-                  decoding="sync"
-                  width="1302"
-                  height="976"
-                  src="/src/images/home/aloud-mobile-3.png"
-                  alt="iPhone audio widget"
-                />
-              </figure>
-            </div>
+            <figure>
+              <img
+                decoding="sync"
+                width="591"
+                height="1280"
+                src="/src/images/home/aloud-mobile-1.jpg"
+                alt="The same player on a phone, light: a scrubber at 3:21 of 13:07 and a pause button between skip controls"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1302"
+                height="976"
+                src="/src/images/home/aloud-mobile-3.png"
+                alt="The iOS now-playing widget: chapter, author, a scrubber counting down, and skip-ten controls either side of pause"
+              />
+            </figure>
           </div>
         </article>
         <article id="formbuilder" class="flow layout-canvas layout-canvas--subgrid">

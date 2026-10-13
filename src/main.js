@@ -1,8 +1,5 @@
 import './styles/main.css'
-import { CascadeDiagram } from './cascade-diagram.js'
 import { initReveals } from './reveal.js'
-
-customElements.define("cascade-diagram", CascadeDiagram);
 
 initReveals();
 

@@ -2,14 +2,13 @@
 @import "layout.css";
 @import "typography.css";
 @import "reveal.css";
-@import "cascade-diagram.css";
 @import "home.css";
 @import "./cases/case.css";
 @import "./cases/lighting.css";
 @import "./cases/formbuilder.css";
 @import "./cases/convertiq.css";
 @import "./cases/cascading-user-needs.css";
-@import "./cases/conversational-configuration.css";
+@import "./cases/conversational-self-service.css";
 @import "./notes/note.css";
 @import "./notes/pattern-playground.css";
 

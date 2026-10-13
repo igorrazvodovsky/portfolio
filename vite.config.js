@@ -1,22 +1,22 @@
+import { globSync } from 'node:fs'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
+// Every page is an entry point. Keys keep the folder so a case and a note can share a slug.
+const pages = globSync(['index.html', 'cases/*.html', 'notes/*.html'], {
+  cwd: __dirname,
+  exclude: ['cases/template.html'],
+})
+
 export default defineConfig({
   build: {
     rollupOptions: {
-      input: {
-        main: resolve(__dirname, 'index.html'),
-        convertiq: resolve(__dirname, 'cases/convertiq.html'),
-        formbuilder: resolve(__dirname, 'cases/formbuilder.html'),
-        lighting: resolve(__dirname, 'cases/lighting.html'),
-        'cascading-user-needs': resolve(__dirname, 'cases/cascading-user-needs.html'),
-        'conversational-configuration': resolve(__dirname, 'cases/conversational-configuration.html'),
-        'pattern-playground': resolve(__dirname, 'notes/pattern-playground.html'),
-        'ai-native-design-practice': resolve(__dirname, 'notes/ai-native-design-practice.html'),
-      },
+      input: Object.fromEntries(
+        pages.map((path) => [path.replace(/\.html$/, ''), resolve(__dirname, path)]),
+      ),
     },
   },
 })

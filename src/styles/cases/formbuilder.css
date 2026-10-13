@@ -59,6 +59,7 @@
     }
 
     #process-config,
+    #process-defaults,
     #process-config-details {
       grid-column: inset-start / full-end;
     }

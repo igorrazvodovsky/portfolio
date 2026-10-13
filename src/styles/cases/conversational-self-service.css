@@ -1,0 +1,304 @@
+/* The title and the lead share the first row, the lead set against the
+   title's last line; the meta items are short enough to sit side by side in
+   one row across the canvas below them. The meta adopts the canvas columns,
+   three to an item, so the third item starts on the lead's line. The screenshot
+   is wide and dense, so it takes the whole canvas below rather than a half
+   beside the text. */
+@media (width > 48em) {
+  #conversational-self-service .case-header {
+    h1 {
+      grid-row: 1;
+      grid-column: 1 / span 6;
+    }
+
+    .lead {
+      grid-row: 1;
+      grid-column: 7 / -1;
+      align-self: end;
+      /* Trimmed to its baseline, as the title is, so their last lines meet. */
+      text-box: trim-end cap alphabetic;
+    }
+
+    #meta {
+      grid-row: 2;
+      grid-column: full;
+      margin-block-start: var(--space-row);
+      grid-template-columns: subgrid;
+      column-gap: normal;
+
+      > * {
+        grid-column: span 3;
+      }
+    }
+
+    figure#hero {
+      grid-row: 3;
+      grid-column: full;
+    }
+  }
+}
+
+/* The approach lead carries a footnote in the margin, placed as in Context;
+   the details below it take the whole canvas. */
+@media (width > 48em) {
+  #conversational-self-service #approach > article:first-of-type {
+    grid-column: full-start / inset-end;
+  }
+
+  #conversational-self-service #approach > #footnote-3 {
+    grid-column: aside;
+    grid-row: 2;
+  }
+}
+
+/* The concept model is unreadable at phone width, and the paragraph
+   before it stands without it, so narrow screens skip the figure until
+   it has a layout of its own. On wider screens it takes nine columns from
+   the left edge, under the paragraph that introduces it, which starts on
+   the same edge. */
+#conversational-self-service .concepts {
+  display: none;
+  grid-column: full;
+  margin-inline: 0;
+
+  img {
+    border: 0;
+    border-radius: 0;
+  }
+
+  figcaption {
+    /* text-align: end; */
+    text-wrap: pretty;
+    margin-block: 1rem;
+  }
+
+  @media (width > 48em) {
+    display: block;
+    grid-column: full-start / inset-end;
+  }
+}
+
+/* The configurator's checks are prose only, and hold the inset columns
+   that the text of every detail section below them takes. */
+@media (width > 48em) {
+  #conversational-self-service #checks {
+    grid-column: inset;
+  }
+}
+
+/* Run-time shaping holds the inset columns, as the text of the agent
+   flows below it does, so the two sections share a left edge. Its
+   footnote takes the aside columns, and auto-placement puts it on the
+   article's row. */
+@media (width > 48em) {
+  #conversational-self-service #run-time {
+    grid-column: inset;
+  }
+
+  #conversational-self-service #approach > #footnote-4 {
+    grid-column: aside;
+  }
+}
+
+/* Agent-to-agent flows are stacked as formbuilder's approach is: every
+   block sits on a row of its own. The text holds the centre, in the inset
+   columns, and the figures step out of it to either side, nine columns
+   wide: the first against the left edge (full-start / inset-end), the
+   second against the right (inset-start / full-end). The article adopts
+   the section's columns and keeps its flow rhythm, so it drops the row
+   gap. */
+#conversational-self-service #agent-flows {
+  row-gap: 0;
+}
+
+/* A figure in these articles, and a paragraph after one, starts a new
+   block, so each asks for block spacing rather than the prose default:
+   the gap formbuilder's figures get from the canvas row gap. */
+#conversational-self-service :is(#chat, #agent-flows) > figure,
+#conversational-self-service :is(#chat, #agent-flows) > figure + p {
+  --flow-space: var(--space-block);
+}
+
+@media (width > 48em) {
+  #conversational-self-service #agent-flows {
+    > :is(h3, p) {
+      grid-column: inset;
+    }
+
+    #agent-flows-desktop {
+      grid-column: full-start / inset-end;
+    }
+
+    #agent-flows-chrome {
+      grid-column: inset-start / full-end;
+    }
+  }
+}
+
+#conversational-self-service .record {
+  --figure-line: oklch(0% 0 0 / 20%);
+  --flow-space: var(--space-block);
+  margin-inline: 0;
+  max-width: 56rem;
+  font-size: 0.875rem;
+}
+
+#conversational-self-service .record pre {
+  width: fit-content;
+  max-width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--figure-line);
+  border-radius: var(--radius-m);
+  padding: 1em 1.25em;
+  color: oklch(0% 0 0 / 60%);
+  font-size: 0.75rem;
+  line-height: 1.7;
+}
+
+#conversational-self-service .record code {
+  font: inherit;
+}
+
+#conversational-self-service .record figcaption {
+  --flow-space: var(--space-prose);
+  margin-block-start: 1rem;
+  max-width: 60ch;
+  color: oklch(0% 0 0 / 60%);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+}
+
+#conversational-self-service .record__muted {
+  color: oklch(0% 0 0 / 40%);
+}
+
+#conversational-self-service .record__strong {
+  color: oklch(0% 0 0 / 90%);
+}
+
+/* Drawn in tldraw like the concept model, and treated the same way: it is
+   unreadable at phone width and the themes below stand without it, so
+   narrow screens skip it. */
+#conversational-self-service .job-map {
+  --flow-space: var(--space-block);
+  display: none;
+  margin-inline: 0;
+
+  img {
+    padding: 1rem 1rem 0 1rem;
+    border-radius: 0;
+  }
+
+  figcaption {
+    text-wrap: pretty;
+  }
+
+  @media (width > 48em) {
+    display: block;
+  }
+}
+
+/* Themes adopt the problem section's intrinsic tracks through a subgrid,
+   one theme to a track, and leave the fourth track empty, as the tech stack
+   does; the rule that does it is with the stack's, below. The query
+   container is the section rather than the themes, because containment
+   would stop the themes being a subgrid. The themes keep their flow
+   rhythm, so they drop the row gap. */
+#conversational-self-service #problem {
+  container-type: inline-size;
+}
+
+#conversational-self-service .themes {
+  display: grid;
+  grid-template-columns: subgrid;
+  row-gap: 0;
+
+  > * {
+    grid-column: 1 / -1;
+  }
+}
+
+/* The list sits under the heading in a .flow, so it asks for block
+   spacing rather than the prose default. */
+#conversational-self-service .themes__list {
+  --flow-space: var(--space-block);
+
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: var(--space-row) var(--space-gap);
+}
+
+/* Context is prose with a footnote in the margin: the heading and the
+   article start one column in, and the article takes the canvas up to the
+   inset's end, closer to the note in the aside columns. Problem's heading
+   and opening prose step in by the same column. Its section is an
+   intrinsic grid with no column lines to name, so the step is a margin of
+   one canvas column and its gap. */
+@media (width > 48em) {
+  #conversational-self-service #context > h2 {
+    grid-column: 2 / -1;
+  }
+
+  #conversational-self-service #context > article {
+    grid-column: 2 / inset-end;
+  }
+
+  #conversational-self-service #problem > :is(h2, div:first-of-type) {
+    margin-inline-start: calc((100% - 11 * var(--space-gap)) / 12 + var(--space-gap));
+  }
+
+  #conversational-self-service #context > aside.footnote {
+    grid-column: aside;
+    grid-row: 2;
+  }
+}
+
+/* The chat article adopts the section's columns. It keeps its flow
+   rhythm, so it drops the row gap. */
+#conversational-self-service #chat {
+  row-gap: 0;
+}
+
+/* Laid out as the agent flows below it: the text holds the inset columns
+   and the figures step out of it to either side, the canvas screenshot
+   nine columns against the left edge, the card six against the right. */
+@media (width > 48em) {
+  #conversational-self-service #chat {
+    > :is(h3, p) {
+      grid-column: inset;
+    }
+
+    > figure {
+      grid-column: full-start / inset-end;
+    }
+
+    > #chat-card {
+      grid-column: 7 / -1;
+    }
+  }
+}
+
+/* The stack keeps the tracks every Impact grid gets, so its columns line up
+   with the sections above. Where those tracks number four, five tools would
+   fill the last one; starting every fourth tool back on line 1 holds the row
+   at three and leaves the fourth column empty, as Impact's three items do.
+   The query is the width at which four 22ch columns and their gaps fit, so
+   narrower grids keep their ordinary flow. Line 1 is the only line of an
+   intrinsic grid that is the same at every width. */
+#conversational-self-service #stack {
+  container-type: inline-size;
+}
+
+@container (width >= calc(4 * 22ch + 3 * 3vw)) {
+  #conversational-self-service :is(#stack, .themes__list) > article:nth-of-type(3n + 1) {
+    grid-column-start: 1;
+  }
+
+  /* The themes' footnote takes the emptied fourth track, beside the row
+     whose theme cites it. Narrower, it follows the themes across the
+     whole width. */
+  #conversational-self-service .themes__list > #footnote-2 {
+    grid-column: 4;
+    grid-row: 2;
+  }
+}
