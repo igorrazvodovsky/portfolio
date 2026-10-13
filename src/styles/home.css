@@ -6,115 +6,289 @@ body#home header:has(> *:nth-child(2)) {
 
 header small {
   display: flex;
-  gap: 1ch;
+  gap: 2ch;
 
   a:not([class]) {
     color: oklch(0% 0 0 / 30%);
   }
 }
 
-section#work {
-  /* &:has(:hover) article:not(:hover) {
-    opacity: 60%;
-  } */
+body#home main {
+  row-gap: 0;
+}
 
-  article {
-    --flow-space: 0.5em;
-    position: relative;
+#work,
+#work > article {
+  --flow-space: var(--space-gutter);
+  row-gap: 0;
+}
 
-    &:hover {
-      opacity: 100% !important;
-    }
+#work > article > * {
+  --flow-space: 0.75em;
+}
 
-    &,
-    * {
-      transition-property: opacity, border-color, color, border-width;
-      transition-duration: 0.2s;
-      transition-timing-function: ease-out;
-    }
+#work small {
+  display: block;
+  color: oklch(0% 0 0 / 45%);
+}
 
-    p {
-      font-size: smaller;
-      color: oklch(0% 0 0 / 60%);
-    }
+#work p > a {
+  font-weight: 500;
+  color: oklch(0% 0 0 / 90%);
+}
 
-    a {
-      display: block;
-      font-weight: 500;
-      text-wrap: balance;
-    }
+#work .entry__media {
+  --layout-grid-min: 20rem;
+  --flow-space: 1.5em;
+}
 
-    a::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-    }
+#work .entry__media img {
+  width: 100%;
+}
 
-    small {
-      color: oklch(0% 0 0 / 30%);
-    }
+#work .entry__media--narrow {
+  max-width: var(--entry-media-width, 24rem);
+}
 
-    figure {
-      /* aspect-ratio: 16/9; */
-      aspect-ratio: 1;
-      border-radius: var(--radius-l);
-      pointer-events: none;
-    }
-
-    /* TODO: old work fades away */
-    /* &:nth-last-of-type(1) {
-      opacity: 0.2;
-    }
-    &:nth-last-of-type(2) {
-      opacity: 0.4;
-    }
-    &:nth-last-of-type(3) {
-      opacity: 0.6;
-    } */
+@media (width > 48em) {
+  #work .entry__media--triptych {
+    --triptych-ratio: 1;
   }
+
+  
+  #work .entry__media--triptych > figure {
+    grid-column: span 4;
+  }
+
+  #work .entry__media--quadriptych > figure {
+    grid-column: span 3;
+  }
+}
+
+#work .entry__media--triptych img {
+  height: 100%;
+  object-fit: cover;
+}
+
+#configurator .entry__media > figure {
+  grid-column: 1 / -1;
+}
+
+#configurator .entry__media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* The attribution screenshot is nudged out of its frame, so the source
+   popover hangs over the border. The figure stops clipping so the overhang
+   shows, and the image sits above the border so the line does not cross
+   the popover. */
+#configurator .entry__media > figure:nth-child(1) {
+  overflow: visible;
+}
+
+#configurator .entry__media > figure:nth-child(1) img {
+  position: relative;
+  z-index: 2;
+  translate: 0 -1rem;
+}
+
+@media (width > 48em) {
+  #configurator .entry__media > figure:nth-child(1) {
+    grid-column: 5 / span 4;
+    grid-row: 1;
+  }
+
+  #configurator .entry__media > figure:nth-child(2) {
+    grid-column: 1 / span 4;
+    grid-row: 1 / span 2;
+  }
+
+  #configurator .entry__media > figure:nth-child(2) :is(img, video) {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+    object-position: top left;
+  }
+
+  #configurator .entry__media > figure:nth-child(3) {
+    grid-column: 5 / span 8;
+    grid-row: 2;
+    aspect-ratio: 1600 / 640;
+  }
+
+  #configurator .entry__media > figure:nth-child(3) img {
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  #configurator .entry__media > figure:nth-child(4) {
+    grid-column: 9 / span 4;
+    grid-row: 1;
+    aspect-ratio: 4 / 3;
+  }
+
+  #configurator .entry__media > figure:nth-child(4) img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+#lighting .entry__media img {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+#work #lighting .entry__media > figure {
+  grid-column: 1 / -1;
+}
+
+#work #lighting .entry__media video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (width > 48em) {
+  #work #lighting .entry__media > figure {
+    grid-column: span 3;
+  }
+
+  /* The video takes the left half across both rows at its own ratio and
+     sets their height; the stills, two by two on the right, crop to fit. */
+  #work #lighting .entry__media > figure:nth-child(1) {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 2;
+  }
+
+  #work #lighting .entry__media > figure:not(:first-child) {
+    aspect-ratio: auto;
+  }
+
+  #work #lighting .entry__media > figure img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    aspect-ratio: auto;
+  }
+
+  /* The device panel reads from its tabs down; the maps are centred on
+     their markers, so they keep the default centre crop. */
+  #work #lighting .entry__media > figure:nth-child(5) img {
+    object-position: top;
+  }
+}
+
+
+#aloud .entry__media > figure {
+  grid-column: 1 / -1;
+}
+
+@media (width > 48em) {
+  /* Four figures at their own ratios, hanging from one top line: the web
+     player at half the canvas, the phone beside it, the widget and the early
+     sketch stacked in the last quarter. The bottom edge is ragged on purpose. */
+  #aloud .entry__media > figure {
+    align-self: start;
+  }
+
+  #aloud .entry__media > figure:nth-child(1) {
+    grid-column: 1 / span 6;
+    grid-row: 1 / span 2;
+  }
+
+  #aloud .entry__media > figure:nth-child(2) {
+    grid-column: 7 / span 3;
+    grid-row: 1 / span 2;
+  }
+
+  #aloud .entry__media > figure:nth-child(3) {
+    grid-column: 10 / span 3;
+    grid-row: 1;
+  }
+
+  #aloud .entry__media > figure:nth-child(4) {
+    grid-column: 10 / span 3;
+    grid-row: 2;
+  }
+}
+
+/* The sketch is paper, not a screen: it is drawn larger than its frame and
+   spills past the border on every side rather than being clipped to it. */
+#aloud .entry__media > figure:nth-child(4) {
+  overflow: visible;
+}
+
+#aloud .entry__media > figure:nth-child(4) img {
+  transform: scale(1.15);
+}
+
+#formbuilder .entry__media > figure {
+  grid-column: 1 / -1;
+  align-self: start;
+}
+
+@media (width > 48em) {
+  #formbuilder .entry__media > figure:nth-child(1) {
+    grid-column: full-start / span 8;
+    align-self: stretch;
+  }
+
+  #formbuilder .entry__media > figure:nth-child(1) img {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #formbuilder .entry__media > figure:nth-child(2) {
+    grid-column: span 4;
+  }
+
+}
+
+#work .placeholder {
+  aspect-ratio: var(--placeholder-ratio, 4 / 3);
+  /* background-color: oklch(0% 0 0 / 3%); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cpath d='M0 0 L100 100 M100 0 L0 100' stroke='%23000' stroke-opacity='0.2' vector-effect='non-scaling-stroke'/%3E%3C/svg%3E");
+  background-size: 100% 100%;
+}
+
+#work .entry__media--crop figure {
+  aspect-ratio: var(--entry-media-ratio, 16 / 9);
+}
+
+#work .entry__media--crop img {
+  height: 100%;
+  object-fit: cover;
+  object-position: var(--entry-media-position, center);
 }
 
 #home figure {
   position: relative;
   border-radius: var(--radius-l);
-  box-sizing: border-box;
   overflow: hidden;
-  margin-block: 1em;
 }
 
-#home figure:before {
-  border: 1px inset oklch(0% 0 0 / 10%);
+#home figure::before {
+  border: 1px solid oklch(0% 0 0 / 10%);
   border-radius: var(--radius-l);
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
+  inset: 0;
   z-index: 1;
-  transition: border 0.2s ease-in-out;
 }
 
-#home article:hover figure:before {
-  border-color: oklch(0% 0 0 / 30%);
-}
+/* TODO: old work fades away.
 
-#work figure img:first-child {
-  object-fit: cover;
-  min-height: 100%;
-  height: 100%;
-}
-
-#work article#aloud figure {
-  overflow: visible;
-}
-
-#work article#aloud img:first-child {
-  object-fit: scale-down;
-  object-position: center center;
-  transform: scale(1.2);
-}
-
-#work article#formbuilder img:first-child {
-  object-position: left top;
-}
+   #work > article:nth-last-of-type(1) { opacity: 0.2; }
+   #work > article:nth-last-of-type(2) { opacity: 0.4; }
+   #work > article:nth-last-of-type(3) { opacity: 0.6; }
+   #work > article:hover { opacity: 1; }
+*/

@@ -1,12 +1,9 @@
-/* The hero borrows the home card's chrome, since it's the same illustration
-   arriving from the same place. */
 #pattern-playground figure#hero {
-  aspect-ratio: 1;
+  align-self: start;
   border-radius: var(--radius-l);
   overflow: hidden;
 }
 
-/* Header composition. Below this width every child spans `full`. */
 @media (width > 48em) {
   #pattern-playground .case-header {
     h1 {
@@ -26,7 +23,7 @@
 
     figure#hero {
       grid-row: 1 / span 3;
-      grid-column: 8 / -1;
+      grid-column: 7 / -1;
     }
   }
 }

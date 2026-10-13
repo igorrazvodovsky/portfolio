@@ -1,0 +1,8102 @@
+{
+	"tldrawFileFormatVersion": 1,
+	"schema": {
+		"schemaVersion": 2,
+		"sequences": {
+			"com.tldraw.store": 5,
+			"com.tldraw.asset": 1,
+			"com.tldraw.camera": 1,
+			"com.tldraw.document": 2,
+			"com.tldraw.instance": 26,
+			"com.tldraw.instance_page_state": 5,
+			"com.tldraw.page": 1,
+			"com.tldraw.instance_presence": 6,
+			"com.tldraw.pointer": 1,
+			"com.tldraw.shape": 4,
+			"com.tldraw.user": 1,
+			"com.tldraw.asset.image": 6,
+			"com.tldraw.asset.video": 5,
+			"com.tldraw.asset.bookmark": 2,
+			"com.tldraw.shape.arrow": 8,
+			"com.tldraw.shape.bookmark": 2,
+			"com.tldraw.shape.draw": 5,
+			"com.tldraw.shape.embed": 4,
+			"com.tldraw.shape.frame": 1,
+			"com.tldraw.shape.geo": 12,
+			"com.tldraw.shape.group": 0,
+			"com.tldraw.shape.highlight": 4,
+			"com.tldraw.shape.image": 5,
+			"com.tldraw.shape.line": 5,
+			"com.tldraw.shape.note": 13,
+			"com.tldraw.shape.text": 4,
+			"com.tldraw.shape.video": 4,
+			"com.tldraw.binding.arrow": 1
+		}
+	},
+	"records": [
+		{
+			"id": "shape:qUYYYtzHcINPpQhmQbfGF",
+			"typeName": "shape",
+			"type": "text",
+			"x": 20,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b0b6tr",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Outside the performer's hands",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"lastActivityTimestamp": 0,
+			"meta": {},
+			"id": "pointer:pointer",
+			"typeName": "pointer"
+		},
+		{
+			"id": "shape:wEtxsf5aQ_GX74VTwIduG",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 2710,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0XS7Wl",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "s7",
+				"b": "s5",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -1294.8,
+					"y": 0
+				},
+				"bend": 90,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"name": "",
+			"color": "#FF802B",
+			"imageUrl": "",
+			"meta": {},
+			"id": "user:58AfaXfFfsjQaeXqh74ic",
+			"typeName": "user"
+		},
+		{
+			"id": "shape:zPSJdwJwv6aqvHK6gMPIs",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 980,
+			"y": 640,
+			"rotation": 0,
+			"index": "aHJKb",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s4m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Disqualify equipment that cannot reach the required duty."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:l4h-Tww7WUi5_4rPBcx8h",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1871,
+			"y": 545.3333333333334,
+			"rotation": 0,
+			"index": "b0aD3v",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2090.3153333333335,
+				"cy": 560
+			},
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 240.68800000000007,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "each attempt calls for"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:Ohw_mX6Cyu1HVGwjGcW3B",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 720,
+			"rotation": 0,
+			"index": "ahDqv",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Express environmental limits as ride-quality and energy figures."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:F1y0RTNf2ZheS8YwbZLAK",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1869.808574908348,
+			"y": 454.37084210402367,
+			"rotation": 0,
+			"index": "b12fOA",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1876.4752415750147,
+				"cy": 467.704175437357
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "2",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:U9FHFjNl0_u3TLYdvS57q",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 20,
+			"y": 670,
+			"rotation": 0,
+			"index": "a6nyr",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Estimate the building's population."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:sVZp3nOz0su_RtDddDQmd",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2600,
+			"y": 144,
+			"rotation": 0,
+			"index": "b1fqOI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "solid",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2JYA": {
+						"id": "a2JYA",
+						"index": "a2JYA",
+						"x": 0,
+						"y": -14
+					},
+					"a36Lj": {
+						"id": "a36Lj",
+						"index": "a36Lj",
+						"x": 660,
+						"y": -14
+					},
+					"a4G5v": {
+						"id": "a4G5v",
+						"index": "a4G5v",
+						"x": 660,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:Bscpwn6eCBKITYarg0TOV",
+			"typeName": "shape",
+			"type": "text",
+			"x": 980,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0UZWA",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s4"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "4  Narrow",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Reduce the field of possible equipment."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:xI7_5_X-6IYENtje-pIjw",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1720.3333333333333,
+			"y": 735.6666666666666,
+			"rotation": 0,
+			"index": "b17hCf",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1727,
+				"cy": 749
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "7",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:yaoTK6Sg1ciHsnQKVNfZ9",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2960,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b10zhL",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Partly served."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:HWStUdRz_WOwt1XdZhb9P",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 780,
+			"rotation": 0,
+			"index": "adKwE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Retrieve a comparable earlier scheme."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:Ursx0GVIt1omdCz7WEaua",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 20,
+			"y": 720,
+			"rotation": 0,
+			"index": "aaNvj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Decide what level of service the building should offer."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:neyAlGjIKUbwpX7-j4Vqw",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 20,
+			"y": 590,
+			"rotation": 0,
+			"index": "aZmmI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Estimate the building's population."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:cV3eb7mJDYwDXp1Tmp0Sv",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1943.3333333333335,
+			"y": 1406,
+			"rotation": 0,
+			"index": "b0C9iI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:I_kZPI2JGudg4535ZCbcL",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:o_pd-ufjIyl_ytk60EpYM",
+			"toId": "shape:DTJe7sqMfaG3TfGoDFVDz",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:QQodaNFLRSWIjLEHsqUlq",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1871,
+			"y": 515.3333333333334,
+			"rotation": 0,
+			"index": "b0Ztev",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2120.9283333333333,
+				"cy": 530
+			},
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 307.48,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "repeated, in whatever order"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:on21kneFTivupjwJCOdL3",
+			"typeName": "shape",
+			"type": "line",
+			"x": 0,
+			"y": 1340,
+			"rotation": 0,
+			"index": "b1PvUc",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a28Tr": {
+						"id": "a28Tr",
+						"index": "a28Tr",
+						"x": 3577.698668684762,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:JyZjvSOSrCLN602RRtDeM",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2226.858091758319,
+			"y": 885.2465373085591,
+			"rotation": 0,
+			"index": "b15eVA",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2233.5247584249855,
+				"cy": 898.5798706418925
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "5",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:27fuF8yqaOUmkkomHI5iT",
+			"typeName": "shape",
+			"type": "text",
+			"x": 980,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b0w0YE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Partly served."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:hnSGkfjpXbQou8HIfANDU",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 670,
+			"rotation": 0,
+			"index": "aDqz9",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Express accessibility as a car type."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:VKv73wP0I0HjmnLKeTQ42",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2620,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b0z2Sn",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 245.45454545454544,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Not served."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:8n7_qs5MtuwzVBNg0rHy1",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2620,
+			"y": 1420,
+			"rotation": 0,
+			"index": "b0J5ZI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g8",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 300,
+				"h": 200,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "A session-shaped tool has no record of what was approved and no cost model for perturbation."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:JIqjwntYX6yIx_kGfud6c",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2940,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1cLcQ",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2aYE": {
+						"id": "a2aYE",
+						"index": "a2aYE",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:9nnU3PMC2NxZEGEE5dOAm",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1234,
+			"y": 416,
+			"rotation": 0,
+			"index": "awiVX",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:nNiZI51Fp0Ux2-7cuVJWG",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1626.6666666666667,
+			"y": 1420,
+			"rotation": 0,
+			"index": "b09jMU",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g3",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Drawbacks/The quantities in the requirement are not attributes of the offering"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 306.6666666666667,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The quantities in the requirement are not attributes of the offering"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:j6t7cobyYk5PNWvjO9YWa",
+			"typeName": "shape",
+			"type": "text",
+			"x": 981.3333333333334,
+			"y": 1410.6666666666667,
+			"rotation": 0,
+			"index": "b1Astj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 988,
+				"cy": 1424
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "1",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:_NLpMzcIAqW5eI9Fctwyv",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 20,
+			"y": 430,
+			"rotation": 0,
+			"index": "aYJhn",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Determine who will move through the building, and when."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:NRBA4u0oiYWMeXl4uAVZr",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1745.3976666666667,
+			"y": 95.33333333333333,
+			"rotation": 0,
+			"index": "b0faO2",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1780,
+				"cy": 110
+			},
+			"props": {
+				"color": "grey",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 75.49600000000001,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Middle"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "binding:NpfUvWfMX5yHESQCgFZCG",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:ugAuJcpFVoeLC4iAZmOsV",
+			"toId": "shape:zPSJdwJwv6aqvHK6gMPIs",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:zjjg7nWqoN2OtAuWVVBSx",
+			"typeName": "shape",
+			"type": "text",
+			"x": 20,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b0vmAj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Stages 1\u20133: served by traffic-analysis packages, the architect's model and code registers."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:page",
+			"typeName": "camera"
+		},
+		{
+			"id": "shape:MfI9KxbRZzlxxIKwO9D7j",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 590,
+			"rotation": 0,
+			"index": "agkGr",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Express accessibility as a car type."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:PILY030EMEWC7yPFQHzxI",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:G3w93iyuoIXwwFd10VghQ",
+			"toId": "shape:7Qpgb5sDAfVklmtPlFVss",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.9,
+					"y": 1
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:irXJ-m86ZdYdGHuWKhi26",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2950,
+			"y": 218,
+			"rotation": 0,
+			"index": "b1ibOj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "black",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2y5v": {
+						"id": "a2y5v",
+						"index": "a2y5v",
+						"x": 0,
+						"y": -14
+					},
+					"a3A7Q": {
+						"id": "a3A7Q",
+						"index": "a3A7Q",
+						"x": 300,
+						"y": -14
+					},
+					"a4nk2": {
+						"id": "a4nk2",
+						"index": "a4nk2",
+						"x": 300,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:lM5dWCA75LGfV5FMKSS3u",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2960,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0oFtv",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s8"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "8  Close",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Commit and hand over."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:Z2nl14dS4kicHNVdAaLQq",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2300,
+			"y": 670,
+			"rotation": 0,
+			"index": "aJFIz",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Reconcile the selection with the other parties' objectives."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:nfpl7wojkN9FSHkS19jng",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 860,
+			"rotation": 0,
+			"index": "aAZ0r",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Retrieve a comparable earlier scheme."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:htx4CUN0QcEB6n7qMg8bA",
+			"typeName": "shape",
+			"type": "text",
+			"x": 980,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0kNxb",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s4"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "4  Narrow",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Reduce the field of possible equipment."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:8kkUIXQnAfKdowgLvKffi",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 510,
+			"rotation": 0,
+			"index": "aC8VI",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Express service level as interval and handling capacity."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:xWTLqT-Dfu4kXQofngrWe",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1616.6666666666667,
+			"y": 1406,
+			"rotation": 0,
+			"index": "b0AChA",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:whnxY0hVaLVqo2xMxTxDF",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2620,
+			"y": 430,
+			"rotation": 0,
+			"index": "aoH8v",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s7m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Revise the selection when a constraint changes"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 300,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Revise the selection when a constraint changes"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:KELy8bFR6qGxXq8EQ0jeI",
+			"typeName": "shape",
+			"type": "line",
+			"x": 960,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1Y45U",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2z8R": {
+						"id": "a2z8R",
+						"index": "a2z8R",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:3bYqmyah8CnsRFrpTRzuU",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 2806,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0XJRbd",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "s7",
+				"b": "s3",
+				"dash": "dashed"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "dashed",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -2006,
+					"y": 0
+				},
+				"bend": 160,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "occasionally"
+								}
+							]
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:ugAuJcpFVoeLC4iAZmOsV",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 1610,
+			"y": 880,
+			"rotation": 0,
+			"index": "b1QSoM",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "s5m2",
+				"b": "s4m1",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -490,
+					"y": -170
+				},
+				"bend": 80.53725623888766,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "product range"
+								}
+							]
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:ACO12K_OVWDUQ-x2gTbKl",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1376,
+			"y": 825,
+			"rotation": 0,
+			"index": "aQSxX",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m2",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Establish the source of a limitation"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Establish the source of a limitation"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:PoRxnEW0wAmHLDuAGZ_cV",
+			"typeName": "shape",
+			"type": "line",
+			"x": 960,
+			"y": 144,
+			"rotation": 0,
+			"index": "b1eqCr",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "solid",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2CcI": {
+						"id": "a2CcI",
+						"index": "a2CcI",
+						"x": 0,
+						"y": -14
+					},
+					"a3mCA": {
+						"id": "a3mCA",
+						"index": "a3mCA",
+						"x": 1640,
+						"y": -14
+					},
+					"a4kmj": {
+						"id": "a4kmj",
+						"index": "a4kmj",
+						"x": 1640,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:oKEkh8Dp2bauA8TWMhKJw",
+			"typeName": "shape",
+			"type": "text",
+			"x": 0,
+			"y": 0,
+			"rotation": 0,
+			"index": "b0dIrE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 655.585,
+				"cy": 20
+			},
+			"props": {
+				"color": "black",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 1048.9360000000001,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Establish what vertical transportation a building will get, on terms the parties will commit to.",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.25,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:OWH8ijS2ietZR_KEcRa_o",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 3214,
+			"y": 416,
+			"rotation": 0,
+			"index": "b04WNb",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:5s-2QkovJB2-AczVB3kqn",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2300,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b0yIZr",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Partly served."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:gLmwbhqwenkrNhsIvKA2c",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1626.6666666666667,
+			"y": 1580,
+			"rotation": 0,
+			"index": "b0FiOU",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g6",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Drawbacks/The requirement is neutral, the offering is one supplier's"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 306.6666666666667,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The requirement is neutral, the offering is one supplier's"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:OpivRxzxfrKuqj6kw_Vl6",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1991.5247584249855,
+			"y": 894.5798706418925,
+			"rotation": 0,
+			"index": "aul1n",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m3",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Identify an acceptable substitute"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Identify an acceptable substitute"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:_ZMnYjXH_n9VNbKpnJu-X",
+			"typeName": "shape",
+			"type": "line",
+			"x": 0,
+			"y": 144,
+			"rotation": 0,
+			"index": "b1dOZE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "solid",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a278f": {
+						"id": "a278f",
+						"index": "a278f",
+						"x": 0,
+						"y": -14
+					},
+					"a3JvQ": {
+						"id": "a3JvQ",
+						"index": "a3JvQ",
+						"x": 960,
+						"y": -14
+					},
+					"a4JL6": {
+						"id": "a4JL6",
+						"index": "a4JL6",
+						"x": 960,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:PtQQtJSD9tYoLjFzTe_Km",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1953.3333333333335,
+			"y": 1420,
+			"rotation": 0,
+			"index": "b0BEnz",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g4",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Drawbacks/Derivation runs opposite to the performer's direction"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 306.6666666666667,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Derivation runs opposite to the performer's direction"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:_quRDoeDTGiqu5KRW2ySo",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:q4-J0-SJ82jPrQL4F_c7u",
+			"toId": "shape:V6Q9SOF_RrxTVRVqJ27EQ",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:CCdNdKbb6hes_2x8Jq-No",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2960,
+			"y": 430,
+			"rotation": 0,
+			"index": "ap3Tn",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s8m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Communicate the selection to those who must act on it"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Communicate the selection to those who must act on it"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:_GG9G-CMiEXsWtwUVadou",
+			"typeName": "shape",
+			"type": "text",
+			"x": 660,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0TvQv",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "3  Prepare",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Turn the objective into measurable targets."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "binding:iFP6yUFPzTjT63YSBe47i",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:wEtxsf5aQ_GX74VTwIduG",
+			"toId": "shape:quN4uTR-4J3bvh0G85Qao",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.49999999999999983,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "center"
+			}
+		},
+		{
+			"id": "binding:yi4ZLHKPdMlfn2RvuF95N",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:3bYqmyah8CnsRFrpTRzuU",
+			"toId": "shape:_GG9G-CMiEXsWtwUVadou",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:vVt72vNZQ-X3QbY1MxTDR",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 910,
+			"rotation": 0,
+			"index": "aejVv",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m3",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Obtain the site's actual condition, which is often unknown until inspected."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:page",
+			"pageId": "page:page",
+			"typeName": "instance_page_state"
+		},
+		{
+			"id": "shape:pmJAsswlDHgAGLJXEgfrL",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 880,
+			"rotation": 0,
+			"index": "aibH2",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m3",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Separate what is negotiable from what is not."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:TXdrcdrH-yeAMl3vCVJ9y",
+			"typeName": "shape",
+			"type": "text",
+			"x": 3014.170666666667,
+			"y": 169.33333333333334,
+			"rotation": 0,
+			"index": "b0tExz",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 3100,
+				"cy": 184
+			},
+			"props": {
+				"color": "black",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 187.26399999999998,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "and here, in part",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:qHpkkuYGInuBlT5OQZnt1",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 960,
+			"rotation": 0,
+			"index": "aFkzo",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m3",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Separate what is negotiable from what is not."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:I2MhbguvfXh4anJ8Z4hng",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 982.140625,
+			"y": 1440,
+			"rotation": 0,
+			"index": "aT0Ej",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "a:Architect",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "dashed",
+				"url": "",
+				"w": 275,
+				"h": 170.00000000000003,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Architect",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Controls core position, shaft footprint and floor-to-floor heights"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:N1T9ogM62JMwc0f-wZLQk",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 430,
+			"rotation": 0,
+			"index": "af2E6",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Express service level as interval and handling capacity."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:7ivfhVvlZHaQZalNBKDxo",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1980,
+			"y": 435.3333333333333,
+			"rotation": 0,
+			"index": "b0pDej",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2120.9283333333333,
+				"cy": 450
+			},
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 307.48,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "repeated, in whatever order"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:0OOiWHczbBdswerglp3m6",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1991.524758424985,
+			"y": 580.4201293581075,
+			"rotation": 0,
+			"index": "asyTX",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m1",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Hold the building's dimensions fixed"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Hold the building's dimensions fixed"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:biBlmgAA8umq1Ymh5rW5o",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1300,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0lAMf",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 785.4545454545454,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "5  Reconcile",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Make the targets and the givens agree with what is actually available. Not a lookup: five distinct moves."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:tVwkACEm_2aFdnrMYying",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1902.4752415750147,
+			"y": 449.704175437357,
+			"rotation": 0,
+			"index": "ayji6",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:yE-qRidUNiwAfFMurMheb",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2960,
+			"y": 670,
+			"rotation": 0,
+			"index": "aNb2I",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s8m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 80,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Commit to a supplier."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:5ovI3_yGNV3XGHjfG1Svc",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1301.3333333333333,
+			"y": 1410.6666666666667,
+			"rotation": 0,
+			"index": "b1BOcz",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1308,
+				"cy": 1424
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "2",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:MWLz3ylld237ci6HjS3jm",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 510,
+			"rotation": 0,
+			"index": "a8rqv",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Gather the shaft geometry, travel and floor-to-floor heights."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:ESQhXcFICZbo4yPrh2rRN",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1301.3333333333333,
+			"y": 1570.6666666666667,
+			"rotation": 0,
+			"index": "b1EnQj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1308,
+				"cy": 1584
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "5",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:DTJe7sqMfaG3TfGoDFVDz",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2960,
+			"y": 1440,
+			"rotation": 0,
+			"index": "aWvMU",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "a:A survey finds the pit shallower than the drawings claimed",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "dashed",
+				"url": "",
+				"w": 300,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "A survey finds the pit shallower than the drawings claimed"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:_q3CpNfunDrSMn9oryWfy",
+			"typeName": "shape",
+			"type": "text",
+			"x": 340,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0iqwz",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "2  Locate",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Gather the givens."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "page:p2",
+			"typeName": "page",
+			"name": "As current means serve it",
+			"index": "a2LiQ",
+			"meta": {}
+		},
+		{
+			"id": "shape:rjzdaAX3IvwQHiZ9NZXuT",
+			"typeName": "shape",
+			"type": "line",
+			"x": 970,
+			"y": 218,
+			"rotation": 0,
+			"index": "b1hw7z",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "black",
+				"dash": "solid",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2PUP": {
+						"id": "a2PUP",
+						"index": "a2PUP",
+						"x": 0,
+						"y": -14
+					},
+					"a3j3E": {
+						"id": "a3j3E",
+						"index": "a3j3E",
+						"x": 1300,
+						"y": -14
+					},
+					"a4edj": {
+						"id": "a4edj",
+						"index": "a4edj",
+						"x": 1300,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:PwJC8777LTUN0IHSF7ePG",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2610,
+			"y": 1406,
+			"rotation": 0,
+			"index": "b0KFtr",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:ccfXMGdlDKuvOp_l7U_E6",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2960,
+			"y": 510,
+			"rotation": 0,
+			"index": "aMtEI",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s8m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Communicate the selection to those who must act on it"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Communicate the selection to those who must act on it"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:L2XC43kWk76rt-3FqA24J",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1943.3333333333335,
+			"y": 1566,
+			"rotation": 0,
+			"index": "b0Iyn6",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:hkmisU108J6-7EMHVWD2i",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2280,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1oxzB",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2pME": {
+						"id": "a2pME",
+						"index": "a2pME",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:pe4-0DvhYe142LY9KGd1o",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2215.5247584249855,
+			"y": 880.5798706418925,
+			"rotation": 0,
+			"index": "b00sFQ",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:xRIcFra-g8cG97WOv6A2M",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:o_pd-ufjIyl_ytk60EpYM",
+			"toId": "shape:7Qpgb5sDAfVklmtPlFVss",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.6,
+					"y": 1
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:z3v2YWDb0n02TV6hIbige",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 430,
+			"rotation": 0,
+			"index": "ab7Uw",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Gather the shaft geometry, travel and floor-to-floor heights."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:nchgNcEpMSgxDJOONup1b",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 20,
+			"y": 510,
+			"rotation": 0,
+			"index": "a55Lv",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Determine who will move through the building, and when."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:PKzravDxJm29_VwGck9N3",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2950,
+			"y": 1406,
+			"rotation": 0,
+			"index": "b0MrA2",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:x6O2EtnSEEJSI5kCyxTmd",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1485,
+			"y": 745,
+			"rotation": 0,
+			"index": "atQrI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m2",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Establish the source of a limitation"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Establish the source of a limitation"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:mSSh3MObySO0dwznUpt83",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2300,
+			"y": 830,
+			"rotation": 0,
+			"index": "aK8rI",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Confirm the price and the service terms."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:-GsbS_SxbkqFjyHxIviRW",
+			"typeName": "shape",
+			"type": "text",
+			"x": 3225.3333333333335,
+			"y": 420.6666666666667,
+			"rotation": 0,
+			"index": "b19GOf",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 3232,
+				"cy": 434
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "9",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:fSOPZ747oSUuqV6rxyw_F",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1300,
+			"y": 1360,
+			"rotation": 0,
+			"index": "b0xQhU",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 785.4545454545454,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Poorly served."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:tFDq1QkIhh9sLqouNnZew",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 660,
+			"y": 800,
+			"rotation": 0,
+			"index": "aEdI2",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Express environmental limits as ride-quality and energy figures."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:Ww5fAzH35CYH2zOv0aN6d",
+			"typeName": "shape",
+			"type": "line",
+			"x": 320,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1kZA6",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a26bv": {
+						"id": "a26bv",
+						"index": "a26bv",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:ZNamCmN6DrlU1FAsdobqT",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 590,
+			"rotation": 0,
+			"index": "ac6XM",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Retrieve the rules in force for this jurisdiction at this date."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:V6Q9SOF_RrxTVRVqJ27EQ",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1303,
+			"y": 1440,
+			"rotation": 0,
+			"index": "aUzLUV",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "a:The manufacturer's application engineer",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "dashed",
+				"url": "",
+				"w": 300,
+				"h": 310,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The manufacturer's application engineer",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The person who is, today, the constraint solver: they hold the tacit knowledge of which combinations are buildable, compliant and priceable"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:IshbSRt4QjF6IguqQISDz",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 980,
+			"y": 510,
+			"rotation": 0,
+			"index": "aGgYv",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s4m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Narrow the field of possible equipment"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Narrow the field of possible equipment"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:l8aj1bEEYXxdNZQ8i-TVU",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1882.5247584249855,
+			"y": 974.5798706418925,
+			"rotation": 0,
+			"index": "aRPlr",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m3",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Identify an acceptable substitute"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Identify an acceptable substitute"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:HdgNTDDog-Nd2OjcVmR-N",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 980,
+			"y": 430,
+			"rotation": 0,
+			"index": "ajUhT",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s4m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Narrow the field of possible equipment"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Narrow the field of possible equipment"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:6NlKbrsMA_DiTV-k5fWAk",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1628,
+			"y": 1410.6666666666667,
+			"rotation": 0,
+			"index": "b1CMmr",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1634.6666666666667,
+				"cy": 1424
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "3",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:CZ2kb3UmkJyAQL6txFoGK",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 1663.4752415750147,
+			"y": 964.5798706418925,
+			"rotation": 0,
+			"index": "a3cMj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": null,
+				"b": null,
+				"dash": "dashed"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "none",
+				"dash": "dashed",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 506.5247584249853,
+					"y": -164.57987064189263
+				},
+				"bend": -366.5247584249852,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:VLX8ZadWitIcViNVcoJr0",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2961.3333333333335,
+			"y": 1410.6666666666667,
+			"rotation": 0,
+			"index": "b1I28j",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2968,
+				"cy": 1424
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "9",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:tFYItP_SCgbHtSdtcQpOE",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2300,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0WbnI",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "6  Validate",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Establish that the selection will stand."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:0WcJOOivqVjq8y3tZOW7K",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2960,
+			"y": 1420,
+			"rotation": 0,
+			"index": "b0LSz7",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g9",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The configuration is state inside a session."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:OC8JhmRV71GQNCHIsUurU",
+			"typeName": "shape",
+			"type": "text",
+			"x": 0,
+			"y": 1836.6666666666667,
+			"rotation": 0,
+			"index": "b1Jmub",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 765.9766666666666,
+				"cy": 1850
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 1378.7579999999998,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Red: where current means fall short, from Drawbacks of current means.md and the micro-job notes. Brackets: where a configuration surface is used, from Job map.md."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:bd9RAfbk9fAWKAkHE41bL",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2620,
+			"y": 1440,
+			"rotation": 0,
+			"index": "aVgpb",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "a:General contractor and quantity surveyor",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "dashed",
+				"url": "",
+				"w": 300,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "General contractor and quantity surveyor",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Hold the subcontract and drive value engineering"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:QkVRL785O_8yDJrnzZXbh",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 20,
+			"y": 800,
+			"rotation": 0,
+			"index": "a7FbX",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Decide what level of service the building should offer."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:-abWUmgHqcXDQxDID2Ucq",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:NFWoB9vQWZeGZna5ZsH5c",
+			"toId": "shape:I2MhbguvfXh4anJ8Z4hng",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:_o5Nnn6kpb_FiJtA9pBov",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2910.1266666666666,
+			"y": 95.33333333333333,
+			"rotation": 0,
+			"index": "b0gBeQ",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2930,
+				"cy": 110
+			},
+			"props": {
+				"color": "grey",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 43.36000000000001,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "End"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:DNiInmZ0vjNIYVEdMc8cx",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 2770,
+			"y": 1525,
+			"rotation": 0,
+			"index": "b1T9Sr",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "a:General contractor and quantity surveyor",
+				"b": "s7m0",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -60,
+					"y": -875
+				},
+				"bend": 77.44576644209532,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "budget pressure"
+								}
+							]
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:gOrmkS9BZcypHrLVbLqd2",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1678.4752415750147,
+			"y": 996.295824562643,
+			"rotation": 0,
+			"index": "avlRU",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m4",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Preserve competition among suppliers"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Preserve competition among suppliers"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:q4-J0-SJ82jPrQL4F_c7u",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 1500,
+			"y": 880,
+			"rotation": 0,
+			"index": "b1SyRr",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "s5m2",
+				"b": "a:The manufacturer's application engineer",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -160,
+					"y": 715
+				},
+				"bend": 85.6444294835765,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "vendor's model"
+								}
+							]
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "binding:nkH7BpEV3iZ0HPZesdDTu",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:q4-J0-SJ82jPrQL4F_c7u",
+			"toId": "shape:ACO12K_OVWDUQ-x2gTbKl",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:hzqLsJkQ7-4O9txKYWTIJ",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 670,
+			"rotation": 0,
+			"index": "a9tuE",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Retrieve the rules in force for this jurisdiction at this date."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:HOwQNT5g1Yv2a1DT_fImv",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1954.6666666666667,
+			"y": 1570.6666666666667,
+			"rotation": 0,
+			"index": "b1GdEI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1961.3333333333335,
+				"cy": 1584
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "7",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:58U9fRWyIpZrtnVs8ayLu",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2226.8580917583186,
+			"y": 571.0867960247741,
+			"rotation": 0,
+			"index": "b148dj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2233.524758424985,
+				"cy": 584.4201293581075
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "4",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:NFWoB9vQWZeGZna5ZsH5c",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 1500,
+			"y": 880,
+			"rotation": 0,
+			"index": "b1RN9M",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "s5m2",
+				"b": "a:Architect",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -480,
+					"y": 645
+				},
+				"bend": 143.26446925719603,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "code"
+								}
+							]
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:zgBA1HqK6NTLhVFWfpXnZ",
+			"typeName": "shape",
+			"type": "text",
+			"x": 271.59766666666667,
+			"y": 169.33333333333334,
+			"rotation": 0,
+			"index": "b0rXsn",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 480,
+				"cy": 184
+			},
+			"props": {
+				"color": "grey",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 454.696,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Done before any supplier's tool is opened"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:J2nZtSYJlRjVAITkn2yao",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 2061,
+			"y": 880,
+			"rotation": 0,
+			"index": "a2GDM",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": null,
+				"b": null,
+				"dash": "dashed"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "none",
+				"dash": "dashed",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -506.5247584249853,
+					"y": 164.5798706418925
+				},
+				"bend": -193.47524157501473,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:wldN64mhmKLYe8MDpoxjl",
+			"typeName": "shape",
+			"type": "line",
+			"x": 640,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1XM0M",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2xUw": {
+						"id": "a2xUw",
+						"index": "a2xUw",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:BrKWFrq9WWrJvJIdl9ztl",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2600,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1bTh6",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2if2": {
+						"id": "a2if2",
+						"index": "a2if2",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:8fJ-VYiRFimI4PYIFmdaZ",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1300,
+			"y": 1420,
+			"rotation": 0,
+			"index": "b07QUc",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g2",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Drawbacks/The offering is grouped by assembly, the requirement by clause"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 306.6666666666667,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The offering is grouped by assembly, the requirement by clause"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:BgHa1S4pFlMIb18E0KcQ2",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2621.3333333333335,
+			"y": 1410.6666666666667,
+			"rotation": 0,
+			"index": "b1HKOj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2628,
+				"cy": 1424
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "8",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:gS0TG05hMOH-8kIm5sfCT",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2940,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1qO5f",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2J2I": {
+						"id": "a2J2I",
+						"index": "a2J2I",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:qe2WPRlGLUDuCOZ84AuAb",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 970,
+			"y": 1406,
+			"rotation": 0,
+			"index": "b06d7U",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:tIQRKXenlFhYnhVk6I8_o",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2300,
+			"y": 430,
+			"rotation": 0,
+			"index": "alWwj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Verify compliance against the rules in force."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:6zj27oN782wuNueJnqMxN",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 980,
+			"y": 560,
+			"rotation": 0,
+			"index": "aknVr",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s4m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Disqualify equipment that cannot reach the required duty."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:quN4uTR-4J3bvh0G85Qao",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2620,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0XGSA",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s7"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 245.45454545454544,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "7  Adjust",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Revise when a constraint changes."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:h1wMv7zdL66WB_sOpZsNc",
+			"typeName": "shape",
+			"type": "line",
+			"x": 1280,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1ZrrX",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2b3b": {
+						"id": "a2b3b",
+						"index": "a2b3b",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "binding:p0B5T3w6fvFTEWkfUimIX",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:3bYqmyah8CnsRFrpTRzuU",
+			"toId": "shape:quN4uTR-4J3bvh0G85Qao",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.49999999999999983,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "center"
+			}
+		},
+		{
+			"id": "shape:wFTY21AXBJC4Ay22qUfd-",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1954.6666666666667,
+			"y": 1410.6666666666667,
+			"rotation": 0,
+			"index": "b1DK1z",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1961.3333333333335,
+				"cy": 1424
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "4",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:jJi5AzFhb5-AmV9j140NY",
+			"typeName": "shape",
+			"type": "text",
+			"x": 20,
+			"y": 1280,
+			"rotation": 0,
+			"index": "b0uzAw",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null
+			},
+			"props": {
+				"color": "grey",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Where current means fall short",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:3yfhwhTIOEznzrxSXxGzN",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1569.4752415750147,
+			"y": 543.704175437357,
+			"rotation": 0,
+			"index": "aOlO2",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Match the requirement to what is available"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Match the requirement to what is available"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:s9r8ukeg7_uJfNSZ47v5b",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1980,
+			"y": 465.3333333333333,
+			"rotation": 0,
+			"index": "b0qDKE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2090.3153333333335,
+				"cy": 480
+			},
+			"props": {
+				"color": "violet",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 240.68800000000007,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "each attempt calls for"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:7Qpgb5sDAfVklmtPlFVss",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2620,
+			"y": 510,
+			"rotation": 0,
+			"index": "aLCTA",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s7m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Revise the selection when a constraint changes"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 300,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Revise the selection when a constraint changes"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:JEL34lwyUzgE_2jn4amfl",
+			"typeName": "shape",
+			"type": "line",
+			"x": 640,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1lfyM",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2LpU": {
+						"id": "a2LpU",
+						"index": "a2LpU",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:ORPojODkRdZuBGUHMZuKF",
+			"typeName": "shape",
+			"type": "text",
+			"x": 340,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0SyNX",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "2  Locate",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Gather the givens."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:QNeJBeGGCttKT1KBHqgqd",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2300,
+			"y": 750,
+			"rotation": 0,
+			"index": "annT2",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6m2",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Confirm the price and the service terms."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:dJz9ZCoC5eWTwnKOrf85k",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1290,
+			"y": 1566,
+			"rotation": 0,
+			"index": "b0EBa6",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:XrhlY4lIeFypsOcPdJDDm",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1953.3333333333335,
+			"y": 1580,
+			"rotation": 0,
+			"index": "b0Howb",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g7",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 306.6666666666667,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The tool returns one kind of message for all three, in model terms."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:a_b8fRQ0vG-SuV4i5hwrk",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2960,
+			"y": 590,
+			"rotation": 0,
+			"index": "aq4NM",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s8m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 80,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Commit to a supplier."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:jF-l7Yi8t6TtCMxCzV8_3",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:G3w93iyuoIXwwFd10VghQ",
+			"toId": "shape:P1vcABXlk2pN7yJ194hax",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"x": 0,
+			"y": 0,
+			"z": 1,
+			"meta": {},
+			"id": "camera:page:p2",
+			"typeName": "camera"
+		},
+		{
+			"id": "shape:2W8X5xUZlgyeJAUaefS4J",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2300,
+			"y": 510,
+			"rotation": 0,
+			"index": "aIzZ3",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6m0",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Verify compliance against the rules in force."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:8fBQimvOf9rNwXONoXU4c",
+			"typeName": "shape",
+			"type": "line",
+			"x": 0,
+			"y": 218,
+			"rotation": 0,
+			"index": "b1gKxE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "solid",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2Peb": {
+						"id": "a2Peb",
+						"index": "a2Peb",
+						"x": 0,
+						"y": -14
+					},
+					"a3gJr": {
+						"id": "a3gJr",
+						"index": "a3gJr",
+						"x": 960,
+						"y": -14
+					},
+					"a4qzs": {
+						"id": "a4qzs",
+						"index": "a4qzs",
+						"x": 960,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:RGX93hbSqF8f85UXQ1r10",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2280,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1ahvn",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a27PQ": {
+						"id": "a27PQ",
+						"index": "a27PQ",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:77Aw7arj4g61mz6sXZpsG",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1913.808574908348,
+			"y": 986.9624912293096,
+			"rotation": 0,
+			"index": "b16DUg",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1920.4752415750147,
+				"cy": 1000.295824562643
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "6",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:zIv7FhJNl3hD76d4ripef",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2905.3333333333335,
+			"y": 420.6666666666667,
+			"rotation": 0,
+			"index": "b18wRU",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 2912,
+				"cy": 434
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "8",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:OYG38iVixME0KSPuovrES",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1300,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0VYWv",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 785.4545454545454,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "5  Reconcile",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Make the targets and the givens agree with what is actually available. Not a lookup: five distinct moves."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "binding:M6M8n0_NQTD0P3dzLBhxa",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:NFWoB9vQWZeGZna5ZsH5c",
+			"toId": "shape:ACO12K_OVWDUQ-x2gTbKl",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:b1hohtbNl9wyRY4LEg4Ea",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1290,
+			"y": 1406,
+			"rotation": 0,
+			"index": "b08QLM",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:TGMyYWSKIWoW6SAAFA43P",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:ugAuJcpFVoeLC4iAZmOsV",
+			"toId": "shape:ACO12K_OVWDUQ-x2gTbKl",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:vXGFEIa1UVEL7Dh0TvMKe",
+			"typeName": "shape",
+			"type": "line",
+			"x": 1280,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1ntsX",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2Jy2": {
+						"id": "a2Jy2",
+						"index": "a2Jy2",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "page:page",
+			"typeName": "page",
+			"name": "The job",
+			"index": "a1",
+			"meta": {}
+		},
+		{
+			"id": "document:document",
+			"typeName": "document",
+			"gridSize": 10,
+			"name": "",
+			"meta": {}
+		},
+		{
+			"id": "shape:CBUkLuPNvetpCGqvQ5oMe",
+			"typeName": "shape",
+			"type": "text",
+			"x": 20,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0RxnM",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "1  Define",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Determine what the building's transport has to achieve."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:P1vcABXlk2pN7yJ194hax",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 3280,
+			"y": 1440,
+			"rotation": 0,
+			"index": "aXet2",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "a:A code edition changes between specification and award",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "dashed",
+				"url": "",
+				"w": 300,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "A code edition changes between specification and award"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:e3PAxD-s6xvELplEtEp8k",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 1554.4752415750147,
+			"y": 1044.5798706418925,
+			"rotation": 0,
+			"index": "a1",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": null,
+				"b": null,
+				"dash": "dashed"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "none",
+				"dash": "dashed",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": 506.5247584249853,
+					"y": -164.57987064189263
+				},
+				"bend": -366.5247584249852,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:XHOd0hXhxOCbiFXCVaGp2",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2215.524758424985,
+			"y": 566.4201293581075,
+			"rotation": 0,
+			"index": "azE4b",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:yoPEIUJSrtXI_chzFbpoW",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 980,
+			"y": 1420,
+			"rotation": 0,
+			"index": "b05QJE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 230,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The catalogue is organised by the vendor's product lines, whose names carry no meaning outside the vendor."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"followingUserId": null,
+			"opacityForNextShape": 1,
+			"stylesForNextShape": {},
+			"brush": null,
+			"scribbles": [],
+			"cursor": {
+				"type": "default",
+				"rotation": 0
+			},
+			"isFocusMode": false,
+			"exportBackground": true,
+			"isDebugMode": false,
+			"isToolLocked": false,
+			"screenBounds": {
+				"x": 0,
+				"y": 0,
+				"w": 1080,
+				"h": 720
+			},
+			"insets": [
+				false,
+				false,
+				false,
+				false
+			],
+			"zoomBrush": null,
+			"isGridMode": false,
+			"isPenMode": false,
+			"chatMessage": "",
+			"isChatting": false,
+			"highlightedUserIds": [],
+			"isFocused": false,
+			"devicePixelRatio": 2,
+			"isCoarsePointer": false,
+			"isHoveringCanvas": null,
+			"openMenus": [],
+			"isChangingStyle": false,
+			"isReadonly": false,
+			"meta": {},
+			"duplicateProps": null,
+			"cameraState": "idle",
+			"id": "instance:instance",
+			"currentPageId": "page:page",
+			"typeName": "instance"
+		},
+		{
+			"id": "shape:uTii9NVmxftcEjMfe_Fd1",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1709,
+			"y": 731,
+			"rotation": 0,
+			"index": "b02eNb",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:SlDbv1lSCrWs_OjejTot1",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 340,
+			"y": 990,
+			"rotation": 0,
+			"index": "aBZZI",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s2m3",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Obtain the site's actual condition, which is often unknown until inspected."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:_7ndwUde3Om7TckjEC7Oj",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1616.6666666666667,
+			"y": 1566,
+			"rotation": 0,
+			"index": "b0G5jn",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "binding:Xnj7Xea8qs74OSdEGO7Iu",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:DNiInmZ0vjNIYVEdMc8cx",
+			"toId": "shape:bd9RAfbk9fAWKAkHE41bL",
+			"meta": {},
+			"props": {
+				"terminal": "start",
+				"normalizedAnchor": {
+					"x": 0.5,
+					"y": 0.5
+				},
+				"isExact": false,
+				"isPrecise": false,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:sO-NNNONhj1BHClnTshKB",
+			"typeName": "shape",
+			"type": "line",
+			"x": 320,
+			"y": 330,
+			"rotation": 0,
+			"index": "b1WNtA",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2kT2": {
+						"id": "a2kT2",
+						"index": "a2kT2",
+						"x": 0,
+						"y": 1460
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "binding:3z__q1JqfSSOCl3RBm1K4",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:DNiInmZ0vjNIYVEdMc8cx",
+			"toId": "shape:7Qpgb5sDAfVklmtPlFVss",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.3,
+					"y": 1
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:MpE2XduD4Hg5Sz3rl6W4N",
+			"typeName": "shape",
+			"type": "line",
+			"x": 2600,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1pZ1U",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2hD2": {
+						"id": "a2hD2",
+						"index": "a2hD2",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:8Pk26NwkgONqPuziBFVye",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2300,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0mLvI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "6  Validate",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Establish that the selection will stand."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "binding:ICFGlkbpbjh_a2TUY16e0",
+			"typeName": "binding",
+			"type": "arrow",
+			"fromId": "shape:wEtxsf5aQ_GX74VTwIduG",
+			"toId": "shape:OYG38iVixME0KSPuovrES",
+			"meta": {},
+			"props": {
+				"terminal": "end",
+				"normalizedAnchor": {
+					"x": 0.12,
+					"y": 0
+				},
+				"isExact": false,
+				"isPrecise": true,
+				"snap": "none"
+			}
+		},
+		{
+			"id": "shape:_YM1Rd5fu7BDJMVQLNEYn",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2300,
+			"y": 590,
+			"rotation": 0,
+			"index": "amRXj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s6m1",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 280,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "grey",
+				"fill": "none",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Reconcile the selection with the other parties' objectives."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:eELVrWigqiufuxgiptwli",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2960,
+			"y": 350,
+			"rotation": 0,
+			"index": "b0YH7M",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s8"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "8  Close",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Commit and hand over."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:G3w93iyuoIXwwFd10VghQ",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 3430,
+			"y": 1510,
+			"rotation": 0,
+			"index": "b1V6eM",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "a:A code edition changes between specification and award",
+				"b": "s7m0",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -540,
+					"y": -860
+				},
+				"bend": -62.440136187480384,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:w7SGxiLOTv02n3fTVS5z7",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1882.524758424985,
+			"y": 660.4201293581075,
+			"rotation": 0,
+			"index": "aPTY2",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m1",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Hold the building's dimensions fixed"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 110,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Hold the building's dimensions fixed"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:o_pd-ufjIyl_ytk60EpYM",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 3110,
+			"y": 1510,
+			"rotation": 0,
+			"index": "b1UKAQ",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": "a:A survey finds the pit shallower than the drawings claimed",
+				"b": "s7m0",
+				"dash": "solid"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "black",
+				"fill": "none",
+				"dash": "solid",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -310,
+					"y": -860
+				},
+				"bend": 5.343457014622632,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		},
+		{
+			"id": "shape:SYfkbG0Pb9fve0DnX_JqP",
+			"typeName": "shape",
+			"type": "line",
+			"x": 960,
+			"y": 250,
+			"rotation": 0,
+			"index": "b1m7e6",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2PKj": {
+						"id": "a2PKj",
+						"index": "a2PKj",
+						"x": 0,
+						"y": 1540
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:GN7KLOreosIbdwg9nHjiB",
+			"typeName": "shape",
+			"type": "line",
+			"x": 0,
+			"y": 1260,
+			"rotation": 0,
+			"index": "b1jBrz",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"props": {
+				"color": "grey",
+				"dash": "dashed",
+				"size": "s",
+				"spline": "line",
+				"points": {
+					"a1": {
+						"id": "a1",
+						"index": "a1",
+						"x": 0,
+						"y": 0
+					},
+					"a2QIr": {
+						"id": "a2QIr",
+						"index": "a2QIr",
+						"x": 3260,
+						"y": 0
+					}
+				},
+				"scale": 1.2222222222222223
+			}
+		},
+		{
+			"id": "shape:lKmr3o0UtE_uD3gwxvzl1",
+			"typeName": "shape",
+			"type": "text",
+			"x": 660,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0j3Ij",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s3"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "3  Prepare",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Turn the objective into measurable targets."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:uM4f8SmJY8ryyua82Q_zk",
+			"typeName": "shape",
+			"type": "text",
+			"x": 2620,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0nbSE",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s7"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 245.45454545454544,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "7  Adjust",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Revise when a constraint changes."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:zOeFiCpQosktOhkUmk_uK",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1913.808574908348,
+			"y": 454.37084210402367,
+			"rotation": 0,
+			"index": "b13d9M",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1920.4752415750147,
+				"cy": 467.704175437357
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "3",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:XqzghxfzDnuUnxiDvCQG2",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1300,
+			"y": 1580,
+			"rotation": 0,
+			"index": "b0DUlR",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "g5",
+				"link": null
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 306.6666666666667,
+				"h": 170,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "The model has a distance metric over its own attributes \u2014 nearest available value."
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:_j_04PjRChYSvA03dpor2",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1569.4752415750147,
+			"y": 1076.295824562643,
+			"rotation": 0,
+			"index": "aS9HI",
+			"parentId": "page:page",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m4",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Preserve competition among suppliers"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Preserve competition among suppliers"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:uosBJ8craAY27RnpYWes_",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1858.4752415750147,
+			"y": 449.704175437357,
+			"rotation": 0,
+			"index": "axuOM",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:x0O9RlZulHMXnn3Do1kkh",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1628,
+			"y": 1570.6666666666667,
+			"rotation": 0,
+			"index": "b1F5Sj",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1634.6666666666667,
+				"cy": 1584
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "6",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"editingShapeId": null,
+			"croppingShapeId": null,
+			"selectedShapeIds": [],
+			"hoveredShapeId": null,
+			"erasingShapeIds": [],
+			"hintingShapeIds": [],
+			"focusedGroupId": null,
+			"meta": {},
+			"id": "instance_page_state:page:p2",
+			"pageId": "page:p2",
+			"typeName": "instance_page_state"
+		},
+		{
+			"id": "shape:VgtVM7E5N_FkML7VCMc2r",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1434.3456666666666,
+			"y": 169.33333333333334,
+			"rotation": 0,
+			"index": "b0sQbA",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1620,
+				"cy": 184
+			},
+			"props": {
+				"color": "black",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 405.0640000000001,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "A configuration surface is used here",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:ZCEfK-RBFTc12A0RJvn0o",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1902.4752415750147,
+			"y": 982.295824562643,
+			"rotation": 0,
+			"index": "b01ntQ",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:LISY1VI91pPar9oS1oLrO",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 1678.4752415750147,
+			"y": 463.704175437357,
+			"rotation": 0,
+			"index": "armAM",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s5m0",
+				"link": "Projects/Conversational self-service/Illustrative domain \u2014 Vertical transportation/Job map/Match the requirement to what is available"
+			},
+			"props": {
+				"geo": "rectangle",
+				"dash": "solid",
+				"url": "",
+				"w": 250,
+				"h": 140,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "semi",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Match the requirement to what is available"
+								}
+							]
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:whS5aT_qLWl2_zCs7pD3T",
+			"typeName": "shape",
+			"type": "text",
+			"x": 429.3926666666667,
+			"y": 95.33333333333333,
+			"rotation": 0,
+			"index": "b0eh8A",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 480,
+				"cy": 110
+			},
+			"props": {
+				"color": "grey",
+				"size": "m",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 110.41600000000001,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Beginning"
+								}
+							]
+						}
+					]
+				},
+				"scale": 0.9166666666666666,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:D1oGEcO7dxTqMsnCHc6Zn",
+			"typeName": "shape",
+			"type": "geo",
+			"x": 2894,
+			"y": 416,
+			"rotation": 0,
+			"index": "b03Upy",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"link": null
+			},
+			"props": {
+				"geo": "ellipse",
+				"dash": "solid",
+				"url": "",
+				"w": 36,
+				"h": 36,
+				"growY": 0,
+				"scale": 1.2222222222222223,
+				"flipX": false,
+				"flipY": false,
+				"labelColor": "black",
+				"color": "red",
+				"fill": "fill",
+				"size": "s",
+				"font": "sans",
+				"align": "start",
+				"verticalAlign": "middle",
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				}
+			}
+		},
+		{
+			"id": "shape:vmfe2fNReAT0KuYii6UIY",
+			"typeName": "shape",
+			"type": "text",
+			"x": 20,
+			"y": 270,
+			"rotation": 0,
+			"index": "b0h0JI",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": "s1"
+			},
+			"props": {
+				"color": "black",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 229.09090909090907,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "1  Define",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "Determine what the building's transport has to achieve."
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.2222222222222223,
+				"autoSize": false
+			}
+		},
+		{
+			"id": "shape:ZdQhG7frfo5ud9gu50FuK",
+			"typeName": "shape",
+			"type": "text",
+			"x": 1245.3333333333333,
+			"y": 420.6666666666667,
+			"rotation": 0,
+			"index": "b11im2",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"key": null,
+				"cx": 1252,
+				"cy": 434
+			},
+			"props": {
+				"color": "white",
+				"size": "s",
+				"font": "sans",
+				"textAlign": "start",
+				"w": 12,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph",
+							"content": [
+								{
+									"type": "text",
+									"text": "1",
+									"marks": [
+										{
+											"type": "bold"
+										}
+									]
+								}
+							]
+						}
+					]
+				},
+				"scale": 1.1111111111111112,
+				"autoSize": true
+			}
+		},
+		{
+			"id": "shape:BkevSR9O7aFIEDOLtZQpU",
+			"typeName": "shape",
+			"type": "arrow",
+			"x": 2170,
+			"y": 800,
+			"rotation": 0,
+			"index": "a4DPA",
+			"parentId": "page:p2",
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {
+				"a": null,
+				"b": null,
+				"dash": "dashed"
+			},
+			"props": {
+				"kind": "arc",
+				"labelColor": "black",
+				"color": "violet",
+				"fill": "none",
+				"dash": "dashed",
+				"size": "s",
+				"arrowheadStart": "none",
+				"arrowheadEnd": "arrow",
+				"font": "sans",
+				"start": {
+					"x": 0,
+					"y": 0
+				},
+				"end": {
+					"x": -506.5247584249853,
+					"y": 164.5798706418925
+				},
+				"bend": -193.47524157501473,
+				"richText": {
+					"type": "doc",
+					"content": [
+						{
+							"type": "paragraph"
+						}
+					]
+				},
+				"labelPosition": 0.5,
+				"scale": 1.2222222222222223,
+				"elbowMidPoint": 0.5
+			}
+		}
+	]
+}

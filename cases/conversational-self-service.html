@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Igors Razvodovskis</title>
+  </head>
+  <body id="conversational-self-service" class="case">
+    <header>
+      <a href="./">Igors</a>
+      <span class="text-muted">worked on</span>
+    </header>
+    <header class="case-header layout-canvas">
+      <h1>A negotiation over a living document</h1>
+      <p class="lead">
+        Designing how people and AI agents divide the work of configuring complex industrial equipment, with the configuration as a document they all revise together.
+      </p>
+      <section id="meta" class="layout-grid case__meta">
+        <article>
+          <h5>Year</h5>
+          <p>2026</p>
+        </article>
+        <article>
+          <h5>Role</h5>
+          <p>Discovery, interaction design, prototyping.</p>
+        </article>
+        <article>
+          <h5>Project objective</h5>
+          <p>Self-service configuration that non-experts can use, explored through an agent-based prototype.</p>
+        </article>
+        <article>
+          <h5>Outcome</h5>
+          <p>Input to product strategy.</p>
+        </article>
+      </section>
+      <figure id="hero">
+        <img
+          src="/src/images/conversational-self-service/hero.png"
+          width="3024"
+          height="1898"
+          decoding="async"
+          alt="The workspace: a chat column on the left, and on the right the service agreement rendered as a document, with outcome terms above and the derived platform schedule below"
+        />
+        <figcaption>
+          This and other figures are showing configuration of an elevator service agreement, but elevators are only the example. The design assumes nothing about the product or the customer, and is meant for any manufacturer of industrial equipment that sells through self-service.
+        </figcaption>
+      </figure>
+    </header>
+    <main class="flow">
+      <section id="context" class="layout-canvas">
+        <h2>Context</h2>
+        <article class="flow">
+          <p>
+            <a href="https://tacton.com/">Tacton</a> sells CPQ (Configure, Price, Quote) software, which holds a manufacturer's product logic: which options can be combined, what a configuration costs and who may approve a price. Two of its strategic bets, <a href="https://www.tacton.com/use-case/omnichannel-selling/">omnichannel selling</a> and <a href="https://www.tacton.com/use-case/customer-self-service/">customer self-service</a>, put that logic in front of partners and buyers rather than only the sales team.<a class="footnote" href="#footnote-1"><sup>1</sup></a>
+          </p>
+          <p>
+            In self-service that logic usually reaches buyers as <em>guided selling</em>: the buyer is led through the configuration step by step on the manufacturer's website or portal, answering the questions the configurator puts to them. It puts a tool built around the sales team's knowledge in front of people who don't have that knowledge.
+          </p>
+        </article>
+        <aside id="footnote-1" class="footnote">
+          <small>
+            The project gives both bets an agentic entry point. Its scenarios are drawn from <a href="https://www.tacton.com/use-case/solution-selling/">solution selling</a>, where the buyer is getting a solution rather than a single product, and carry <a href="https://www.tacton.com/buyer-engagement-platform/environmental-footprint/">environmental footprint</a> data, partly to stress-test the design against a harder sale, and partly so that one prototype exercises several of strategic themes at once.
+          </small>
+        </aside>
+      </section>
+      <section id="problem" class="layout-grid">
+        <h2>Problem</h2>
+        <div class="layout-grid__col-all flow">
+          <p>
+            A buyer using a self-service configurator for a complex industrial product arrives with a situation and is asked instead for parameters, in the model's vocabulary and in an order fixed at design time. The product model has no inherent sequence; the form-based UIs freeze one sequence and one representation, regardless of what the buyer already knows, which decisions matter to them, and which the solver could settle on their behalf. The result is that self-service works for buyers who already speak the configurator's language, and everyone else gets frustrated to various degrees.
+          </p>
+          <p>
+            Closing that gap is translation work, and today a person does it: the dealer or the manufacturer's application engineer, who holds the buyer's situation and the product in one head and leaves no record of how one became the other. Handing that work to an agent does not remove the person; it puts the buyer in a negotiation with a counterparty that can settle some things and not others, and makes it matter more that what they settle reaches the next party intact. The first four themes below are the gap between the buyer and the model. The last two are what it costs to share the work of closing it.
+          </p>
+        </div>
+        <figure class="job-map layout-grid__col-all">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/src/images/conversational-self-service/job-map.svg"
+            width="3584"
+            height="1601"
+            alt="A job map of specifying a building's lifts. Eight stages run left to right in columns: Define, Locate, Prepare, Narrow, Reconcile, Validate, Adjust, Close, with the steps of each stacked beneath it. Reconcile, the widest column, holds five violet steps arranged in a cycle and repeated in whatever order each attempt calls for: match the requirement to what is available, hold the building's dimensions fixed, identify an acceptable substitute, preserve competition among suppliers, establish the source of a limitation. Narrow, Adjust and Close each hold one violet step too. From Adjust, an arrow loops back to Reconcile, and a dashed one labelled occasionally loops back to Prepare. Below a dashed line, outside the performer's hands, sit the parties and events that push in: the architect, who controls the core position, shaft footprint and floor-to-floor heights, and the manufacturer's application engineer, who today holds the tacit knowledge of which combinations are buildable, compliant and priceable, both reached from establishing the source of a limitation, labelled code and vendor's model; and the general contractor and quantity surveyor, a survey that finds the pit shallower than the drawings claimed, and a code edition that changes between specification and award, all pointing at revising the selection in Adjust, the first labelled budget pressure."
+          />
+          <figcaption>
+            <small>One of the models built during discovery to understand what buying and configuring look like from the buyer's side. It maps the job of specifying a building's lifts, so its stages and parties are particular to elevators. The themes below are written for configurable equipment in general.</small>
+          </figcaption>
+        </figure>
+        
+        <section class="themes layout-grid__col-all flow">
+          <h3>Themes</h3>
+          <div class="themes__list">
+            <article class="flow">
+              <h4>Buyers think in outcomes; configurators ask for technical specs</h4>
+              <p>
+                Buyers arrive with functional goals such as throughput, service level and ride quality, while configurators demand physical parameters like motor types and dimensions. Bridging that gap requires deep engineering knowledge, leaving non-experts stuck without human assistance.
+              </p>
+            </article>
+            <article class="flow">
+              <h4>Linear forms force an author's sequence onto non-linear decisions</h4>
+              <p>
+                Step-by-step forms impose a fixed sequence based on how a product is built. Real buyers work opportunistically, starting with what they already know. When a later choice conflicts with an earlier one, recovering requires frustrating manual backtracking.
+              </p>
+            </article>
+            <article class="flow">
+              <h4>Information architecture reflects manufacturing, not user domains</h4>
+              <p>
+                Fields are grouped by physical assemblies (doors, motors, cabs) rather than evaluation criteria. Buyers assess projects by discipline, such as accessibility, safety, energy or commercial terms, and have to hunt across disconnected mechanical sections to verify a single concern.
+              </p>
+            </article>
+            <article class="flow">
+              <h4>Decisions are provisional and span months, not single sessions</h4>
+              <p>
+                Real specifications rely on estimates, ranges, and pending surveys that evolve over months. Traditional configurators demand exact, committed values upfront, failing to accommodate provisional states, progressive refinement, or late-stage external changes.
+              </p>
+            </article>
+            <article class="flow">
+              <h4>Self-service requires expert validation, not human replacement</h4>
+              <p>
+                Buyers prefer exploring independently online, but still rely on sales reps to validate recommendations before committing.<a class="footnote" href="#footnote-2"><sup>2</sup></a> Self-service tools must allow users to resolve what they can alone, then hand off cleanly to human experts without restarting the process.
+              </p>
+            </article>
+            <article class="flow">
+              <h4>Configurations capture final values but lose intent and provenance</h4>
+              <p>
+                Configurators export flat parameter lists that strip out context: what the buyer chose, what defaulted, and what the solver auto-filled. When handed to sales reps, reviewers, or AI agents, no one can distinguish deliberate trade-offs from unnoticed defaults.
+              </p>
+            </article>
+            <aside id="footnote-2" class="footnote layout-grid__col-all">
+              <small>
+                Gartner’s B2B buyer surveys show 67% of buyers now prefer a rep-free experience (up from 61% a year earlier) and 70% prefer a fully digital, self-service purchase. Yet 69% still want a sales rep to validate AI-generated insights, and buyers are split almost evenly on whether generative AI or sellers are the likelier source of misleading information (51% vs 49%). Confidence matters commercially: confident buyers are twice as likely to report a high-quality deal. (Gartner press releases, <a href="https://www.gartner.com/en/newsroom/press-releases/2025-06-25-gartner-sales-survey-finds-61-percent-of-b2b-buyers-prefer-a-rep-free-buying-experience">June 2025</a>, <a href="https://www.gartner.com/en/newsroom/press-releases/2026-03-09-gartner-sales-survey-finds-67-percent-of-b2b-buyers-prefer-a-rep-free-experience">March 2026</a> and <a href="https://www.gartner.com/en/newsroom/press-releases/2026-05-20-gartner-survey-finds-sixty-nine-percent-of-b-two-b-buyers-turn-to-sales-reps-to-validate-ai-generated-insights">May 2026</a>.)
+              </small>
+            </aside>
+          </div>
+        </section>
+      </section>
+
+      <section id="users" class="layout-grid">
+        <h2>Who we designed for</h2>
+        <div class="layout-grid__col-all">
+          <p>
+            Omnichannel selling and self-service put the product model in front of the people sales used to stand between. <mark>Any of them may arrive with an AI tool of their own</mark> and delegate part of the
+            work to it, so the design targets that pairing, a person and their agent acting as one party. The rest of the case calls whichever of them is working on the document <i>the buyer</i>.
+          </p>
+        </div>
+        <figure>
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/src/images/conversational-self-service/user-buyer.jpeg"
+            width="2250"
+            height="1500"
+            alt="A man standing with his arms crossed on the floor of the plant he runs, machinery and stock behind him"
+          />
+          <figcaption class="flow">
+            <small class="author"
+              >Photo by
+              <a href="https://unsplash.com/@christoshiet">Christopher De los ríos</a>,
+              <a
+                href="https://unsplash.com/photos/a-man-standing-in-a-factory-with-his-arms-crossed-_nkk-Jv56Pc"
+                >Unsplash</a
+              ></small
+            >
+            <h3>The owner</h3>
+            <p>
+              The party that owns the problem and the budget, deciding on
+              equipment that someone else will run. Knows their own situation
+              intimately and the product weakly.
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/src/images/conversational-self-service/user-representative.jpeg"
+            width="2250"
+            height="1500"
+            alt="A man marking up a technical drawing at a desk with a pencil and a ruler"
+          />
+          <figcaption class="flow">
+            <small class="author"
+              >Photo by
+              <a href="https://unsplash.com/@d_mccullough">Daniel McCullough</a>,
+              <a
+                href="https://unsplash.com/photos/an-architect-working-on-a-draft-with-a-pencil-and-ruler-HtBlQdxfG9k"
+                >Unsplash</a
+              ></small
+            >
+            <h3>The owner's representative</h3>
+            <p>
+              A consulting engineer, procurement specialist or in-house
+              specifier acting for the owner. Knows the requirement in technical
+              terms, and may hold a spec written against a competitor's
+              vocabulary.
+            </p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/src/images/conversational-self-service/user-intermediary.jpeg"
+            width="2250"
+            height="1500"
+            alt="A man filling in a document at a trade stand counter spread with product literature, an attendant beside him"
+          />
+          <figcaption class="flow">
+            <small class="author"
+              >Photo by <a href="https://unsplash.com/@bluext">blue sky</a>,
+              <a
+                href="https://unsplash.com/photos/man-signs-document-at-a-service-counter-eLnrrITCy6Q"
+                >Unsplash</a
+              ></small
+            >
+            <h3>The intermediary</h3>
+            <p>
+              A dealer, distributor, agent or OEM integrator. Knows the domain
+              and often several manufacturers' products, and knows <i>this</i>
+              model less well than sales does.
+            </p>
+          </figcaption>
+        </figure>
+      </section>
+
+      <section id="approach" class="layout-canvas">
+        <h2>Approach</h2>
+        <article class="flow">
+          <!-- <h3>Central idea: agent-translator</h3> -->
+          <!-- collaboration over a living document -->
+          <p class="lead">
+            Treat the configuration as a living document that people and agents edit together, not as a form to fill in or a chat to follow. The document can be changed from any point, and each value in it stays tied to the requirement it answers. Chat is one way to work on the document, editing it directly is another, and the buyer's own AI tool is a third; all three make the same changes.<a class="footnote" href="#footnote-3"><sup>3</sup></a>
+          </p>
+        </article>
+        <aside id="footnote-3" class="footnote">
+          <small>
+            The title borrows the term <a href="https://en.wikipedia.org/wiki/Living_document">living document</a>, a document that is revised continually rather than finished. The configuration is one in that sense, because the owner, their representative and the seller keep revising it over months. It differs in that the document takes part in its own revision.
+          </small>
+        </aside>
+
+        <article class="flow">
+          <p>
+            Underneath the document is a model of the parts it is built from, designed with Daniel Jackson's <a href="https://essenceofsoftware.com/">concept design</a>: each part has one user-facing purpose. Early on it showed that several problems I had listed separately were one missing thing: a link between a requirement as the buyer stated it and the values that answer it.
+          </p>
+        </article>
+
+        <figure class="concepts">
+          <img
+            loading="lazy"
+            decoding="async"
+            src="/src/images/conversational-self-service/concepts.svg"
+            width="3764"
+            height="2012"
+            alt="A concept diagram in ten boxes, one per concept, each a small graph of the concept's state with its actions in pointing at what they change."
+          />
+          <figcaption>
+            <small>The main parts of the design, and how an action in one sets off an action in another.</small>
+          </figcaption>
+        </figure>
+
+        <article id="checks" class="flow">
+          <h3>Every change goes through the configurator</h3>
+          <p>
+            A configurator's product logic is what makes configuration an unusually good place for an AI agent. In most products built on a language model there is nothing to check the model's output against, so the person has to verify every answer themselves. A configurator is a constraint engine that existed before any agent: it decides which combinations can be built and what they cost, and it gives the same answer every time. An agent working on top of it cannot offer what the product cannot do or make up a price, which leaves it the work language models are good at: interpreting what the buyer means, explaining and proposing.
+          </p>
+          <p>
+            Whoever makes a change, the buyer, their agent or the seller's agent, the configurator checks it before anything else happens. A change it can build lands in the document; one it cannot is kept as asked, marked as not buildable, and turned into a question for the buyer. The refusal names the rule, so the buyer can check the rule instead of taking the agent's word for it. The buyer's question changes from "is this right?" to "is this what I asked for?", and the rest of the design is built to answer that second question. The guarantee covers what can be built and what it costs. Numbers worked out from the buyer's words, such as a travel height from a storey count, come from a stated method the buyer can inspect, not from the language model.
+          </p>
+        </article>
+        <article id="chat" class="flow layout-canvas layout-canvas--subgrid">
+          <h3>How the document talks</h3>
+          <p>
+            The document holds the buyer's requirements in their own words, the values that answer each one, and the price, the carbon estimate and anything waiting on the buyer's decision. The chat is how the document talks and listens: the buyer says what they want in their own words, and the seller's agent answers from what the seller publishes about the product and changes the document when asked. The chat can sit beside the document, float over it or take the whole screen, depending on how much talking the moment needs.
+          </p>
+          <p>
+            What goes in the chat is decided by one question: could you delete the conversation and still have everything you need to check? What the buyer has to check is a fact, and it lives in the document: what was asked for, what answers it, who set it and what is still open. The chat carries what they need to understand it: what the agent took their words to mean, why a rule refused something, which of two options costs less to give up. The chat doesn't repeat the document; when a reply mentions a value, it links to it.
+          </p>
+          <figure aria-hidden="true">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/src/images/conversational-self-service/canvas.png"
+              width="3024"
+              height="1898"
+            />
+            <figcaption>
+              The document records that it cannot be built as asked rather than hiding the conflict, and the question of what gives way waits in the document until the buyer answers it, wherever the conversation has moved on to.
+            </figcaption>
+          </figure>
+          <p>
+            A conflict shows the two working together. Configuration is not linear, and a later choice can undo one made minutes earlier. When a new value collides with earlier decisions, the buyer doesn't search back through the conversation for them. The question comes with the earlier decisions it would undo, each option saying what gives way ("Rated speed 1.6 m/s → not yet decided"), and "7 more terms follow" holds the knock-on effects until they are wanted.
+          </p>
+          <!-- <p>
+            The question is a fact, so it stays in the document until it is answered. The chat is where the user can ask why before choosing.
+          </p> -->
+        </article>
+
+        <article id="run-time" class="flow">
+          <h3>Shaping the flow at run time</h3>
+          <p>
+            Normally a designer researches the users and shapes the configurator at design time: one order of questions, one grouping, one vocabulary, chosen for a typical user. Here a language model does that shaping for each user while they work, turning whatever they bring into fields, explanations and views.
+          </p>
+          <p>
+            Chat is the obvious case. Less obvious is the buyer's own paperwork. A buyer can drop in the brief or tender they were given, and the agent reads each requirement in it and maps it onto the product: "the assistant read RFQ 2026‑04.pdf, 'a bed must fit, with a porter', as 1250 kg". The requirement keeps its wording and its source, so the buyer can see where a value came from and correct the reading.<a class="footnote" href="#footnote-4"><sup>4</sup></a>
+          </p>
+          <p>
+            The same goes for how the document is shown. Working through requirements one by one, it helps to see each with the values that answer it. Reviewing the offer as a service agreement calls for a different slice of the same data: terms, schedules, what the buyer has to provide. Sometimes the useful view is just what's still open. The buyer can ask for any of these in a sentence, and none of them had to be laid out in advance.
+          </p>
+        </article>
+        <aside id="footnote-4" class="footnote">
+          <small>
+            The mapping also runs the other way: asked why 630 kg isn't possible, the agent puts the configurator's rule into the buyer's terms.
+          </small>
+        </aside>
+
+        <article id="agent-flows" class="flow layout-canvas layout-canvas--subgrid">
+          <h3>The buyer's own agent</h3>
+          <p>
+            A buyer may arrive with an AI assistant of their own and hand it part of the job. Their assistant can do more than the seller's agent: it can know the buyer's other projects, their budget and their correspondence with the consultant, and it can work across tools the seller never sees. The page offers it the same moves the buyer has on the document, so it can file a brief, read requirements from it, answer questions and request a quote. How much it does is the buyer's call, made in their own assistant: "Settle the details yourself where the brief doesn't care, and bring me the judgement calls."
+          </p>
+          <figure id="agent-flows-desktop" aria-hidden="true">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/src/images/conversational-self-service/claude-desktop.png"
+              width="3024"
+              height="1898"
+            />
+            <figcaption>
+              The buyer's own Claude, asked to get an offer against their brief and bring back only the judgement calls.
+            </figcaption>
+          </figure>
+          <p>
+            The document says who did what: "you asked for this" about the buyer's choices, and "your agent asked for this" about their assistant's. Anything that changed while the buyer wasn't looking stays marked until they look. When the assistant talks to the seller's agent, the seller's agent knows it isn't the buyer speaking, so a decision that belongs to the buyer goes back to them instead of being settled between two agents. The assistant reports back in the buyer's own app, so where the app supports it, the document comes along beside its reply and every item links back to the page. That way its retelling can't blur "this followed from that" into "this was chosen". What it works out on its own stays outside the configurator. In the screenshot, it multiplies the offer by six cars and estimates a lifetime cost with a formula of its own.
+          </p>
+          <figure id="agent-flows-chrome">
+            <img
+              loading="lazy"
+              decoding="async"
+              src="/src/images/conversational-self-service/claude-chrome.png"
+              width="3024"
+              height="1898"
+              alt="The prototype's elevator service agreement on the left, its operative terms filled in; on the right, the Claude side panel, asked to fill in the form from an attached requirements PDF, summarises each term it set and why"
+            />
+            <figcaption>
+              A browser agent filling in the document from a requirements PDF.
+            </figcaption>
+          </figure>
+          <p>
+            A browser agent is a different and smaller case. Many browsers now come with an assistant built in, such as Gemini in Chrome, Copilot in Edge, Dia, or the Claude extension in the screenshot, and a buyer may prefer the one they already use over the seller's chat. It works the page the way a person does, clicking and typing, and the page can't tell the two apart, so the document will say "you asked for this" about values the buyer never looked at. These assistants run on many different models, as the buyer's own agent may too, and none of them is the one the seller tested with. That is one more reason the facts that matter live in the document and every change goes through the configurator.
+          </p>
+        </article>
+
+        <!-- <article class="layout-grid">
+          <h2>Details</h2>
+          <figure class="placeholder">
+            <figcaption>
+              Provenance of assignments. 
+            </figcaption>
+          </figure>
+          <figure class="placeholder">
+            <figcaption>
+              Input-output mapping.
+            </figcaption>
+          </figure>
+          <figure class="placeholder">
+            <figcaption>
+              Representating uncertainty. 
+            </figcaption>
+          </figure>
+          <figure class="placeholder">
+            <figcaption>
+              Handoff willingness. If a customer asks for a human agent, the bot should immediately honor that request. Beyond explicit requests, chatbots should offer to escalate when they can no longer answer effectively or when the user shows signs of frustration or extra effort (e.g., repeatedly rephrasing the same question).
+            </figcaption>
+          </figure>
+          <figure class="placeholder">
+            <figcaption>
+              Flexibility. Sometimes users ask chatbots questions related to the product or service, but that don’t fit neatly into configuration/negotiation workflows. It is important to provide agent with enough context to answer questions that are outside the scope of the configuration, and to be able to handle unexpected requests gracefully.
+            </figcaption>
+          </figure>
+            <figure class="placeholder">
+            <figcaption>
+              Proactivity. Anticipating needs and suggesting next steps...
+            </figcaption>
+          </figure>
+        </article> -->
+
+      </section>
+
+      <!-- Impact goes here. Parked from Context, for Impact:
+      <p> The market defines the product the same way. <a href="https://www.gartner.com/en/documents/7363630">Gartner's 2026 critical capabilities report for CPQ</a> counts headless APIs for catalogue search, configuration, pricing, proposals and orders as part of the product, with entry points for self-service and agentic interfaces, and in its model CPQ keeps ownership of commercial behaviour when another application owns the screen. That division of ownership is the one the approach below assumes. </p>
+      -->
+
+      <section id="stack" class="layout-grid">
+        <h2>Tech stack</h2>
+        <div class="layout-grid__col-all flow">
+          <p>
+            Separately from any business and design objectives, I used the project to learn about the capabilities and limitations of some of the emerging tooling.
+          </p>
+        </div>
+        <article class="flow">
+          <h3><a href="https://docs.copilotkit.ai/">CopilotKit</a></h3>
+          <p>
+            The chat surface, where a question from the agent pauses its run as a card that takes the same choices as the document.
+          </p>
+        </article>
+        <article class="flow">
+          <h3><a href="https://a2ui.org/specification/">A2UI</a></h3>
+          <p>
+            Cards built from addresses into the configuration, so the agent arranges an offer but never writes a figure.
+          </p>
+        </article>
+        <article class="flow">
+          <h3><a href="https://docs.langchain.com/oss/python/langgraph/overview">LangGraph</a></h3>
+          <p>
+            One configuration state shared by the chat and the document, so a refusal, a repair or an undo reads the same on either side.
+          </p>
+        </article>
+        <article class="flow">
+          <h3><a href="https://docs.ag-ui.com/">AG-UI</a></h3>
+          <p>
+            Streams the document's state alongside the agent's words, so the document updates while the agent is still explaining.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>MCP & <a href="https://developer.chrome.com/docs/ai/webmcp">WebMCP</a></h3>
+          <p>
+            The configurator's capabilities exposed to the user's own assistant, so they can set a term, price a change or request a repair from it.
+          </p>
+        </article>
+      </section>
+
+      <section id="learnings" class="layout-canvas">
+        <h2>Reflections</h2>
+        <article class="flow">
+          <h3>Conversation-first approach</h3>
+          <p>
+            I started by writing scenarios as dialogue between a buyer and the seller's agent. This worked like mobile-first does in practice: begin with the form that can hold the least, and let the places where it falls short show where the design needs to grow. A dialogue could not keep several requirements in view at once, show where a value came from, or keep a question open while the conversation moved on. Each of those became part of the underlying model, and the model got its own representations, each for a different part of it: requirements with their values, the agreement as it prints, what is still open. The conversation remained as one of those representations, not as the whole design.
+          </p>
+        </article>
+        <article class="flow">
+          <h3>Cross-product interactions</h3>
+          <p>
+            Design work has always reached past the product boundary, since people use any tool alongside everything else they have. In this project that wider ecology came to the front, because of what agentic tools now let people do. A buyer can bring their own assistant to the page, hand it part of the job, and have it report back in an app the seller never sees. A manufacturer can build parts of this experience themselves, which is easier than it used to be, or buy them. Seeing that changed what the discovery was about. The question stopped being which features the product needs and became which capabilities have to exist for the experience to work, and which of those belong in the product. One hypothesis that came out of it was to put more weight on what the configurator exposes to other tools than on the surfaces it owns.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

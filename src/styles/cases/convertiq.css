@@ -1,4 +1,3 @@
-/* Header composition. Below this width every child spans `full`. */
 @media (width > 48em) {
   #convertiq .case-header {
     h1 {

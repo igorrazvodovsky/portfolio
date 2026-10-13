@@ -8,192 +8,410 @@
   </head>
   <body id="home">
     <header>
-      <a href="./">Igors Razvodovskis</a>
+      <div>
+        <a href="./">Igors Razvodovskis</a>
+        <div>User experience designer</div>
+      </div>
       <small>
+        
+        <a href="https://docs.google.com/document/d/1SbcnK2QaPkCRV-GF862ycyemAIG4xcn2HO_RYkgIK-g/edit?usp=sharing" rel="external">CV</a>
         <a href="mailto:igorrazvodovsky@gmail.com" rel="external">Email</a>
-        <a href="https://www.linkedin.com/in/igor-razvodovsky/" rel="external"
+        <a href="https://www.linkedin.com/in/igors-razvodovskis/" rel="external"
           >LinkedIn</a
+        >
+        <a href="https://github.com/igorrazvodovsky/" rel="external"
+          >GitHub</a
         >
       </small>
     </header>
-    <main class="flow">
-      <h1>
-        User experience designer.
-        <!-- , focused on helping people <a href="">build their own tools</a>. -->
-        Currently working on industrial manufacturing sales automation at
-        <a href="https://www.tacton.com/">Tacton</a>.
-      </h1>
-      <section id="expertise" class="layout-grid">
-        <article>
-          As an <strong>individual contributor</strong>, my strengths are:
-          <ul>
-            <li>
-              <strong>Strategy and conceptualisation</strong>: Exploring
-              innovative directions, uncovering user needs, and turning
-              strategic visions into practical design outcomes.
-            </li>
-            <li>
-              <strong>Prototyping and testing</strong>: Translating concepts
-              into tangible, interactive prototypes and using iterative
-              experiments to quickly refine user&nbsp;experiences.
-            </li>
-          </ul>
-        </article>
-        <article>
-          As a <strong>team collaborator</strong>, I specialise in three
-          key&nbsp;areas:
-          <ul>
-            <li>
-              <strong>Process</strong>: Defining, aligning, and optimising
-              purposeful design activities throughout the development cycle.
-            </li>
-            <li>
-              <strong>Systems thinking</strong>: Creating robust, scalable
-              design systems and flexible, reusable patterns that improve
-              efficiency and maintain consistency.
-            </li>
-            <li>
-              <strong>Reflective practice</strong>: Cultivating a team culture
-              of continuous learning and improvement by embedding structured
-              reflection, critique, and knowledge-sharing into everyday
-              workflows.
-            </li>
-          </ul>
-        </article>
-        <article>
-          AI cuts across both of the above, in two complementary&nbsp;directions:
-          <ul>
-            <li>
-              <strong>Design tool</strong>: Reshaping how I research,
-              prototype, and&nbsp;synthesise.
-            </li>
-            <li>
-              <strong>Design material</strong>: Reshaping what products can
-              fundamentally do for&nbsp;users.
-            </li>
-          </ul>
-        </article>
-      </section>
-      <section id="work" class="layout-grid">
-        <h2>Highlights</h2>
-        <!-- <span> and thoughts</span>-->
-        <!-- <article class="flow">
-        <figure></figure>
-        <small>Design process, 2024</small>
-        <a href="">Mess managment as alternative to problem&nbsp;solving</a>
-        <p>Embracing the complexity and ...</p>
-      </article> -->
-        <!-- <article class="flow">
-        <figure></figure>
-        <small>Pattern, 2024</small>
-        <a href="">UI for rules</a>
-        <p>Constrained natural language builder as a pattern.</p>
-      </article> -->
-        <!-- <article class="flow">
-        <figure></figure>
-        <small>Design process, 2023</small>
-        <a href="">Cascading user needs</a>
-        <p>...</p>
-      </article> -->
-        <article class="flow">
-          <figure>
-            <connected-dots></connected-dots>
-          </figure>
-          <small>Note, ongoing</small>
-          <a href="/notes/pattern-playground.html">Pattern playground</a>
+    <main class="flow layout-canvas">
+      <p>
+        I <button type="button" class="reveal" aria-controls="reveal-model">model</button> the work people do, design and prototype the software around it, and find out what AI systems can do once both are&nbsp;explicit.
+        <span class="reveal-target" id="reveal-model">Sometimes the model is of a domain: its concepts, tasks, and user needs. Sometimes it's design practice itself: the patterns and judgement behind how I&nbsp;work.</span>
+      </p>
+      <p>
+        Most recently, I worked on industrial sales automation
+        at <a href="https://www.tacton.com/">Tacton</a>. Before that, I was at
+        <a href="https://www.kuehne-nagel.com/">Kuehne+Nagel</a>, where I
+        designed everyday workflow tools for&nbsp;employees.
+      </p>
+      <p id="expertise">
+        As an <em>individual contributor</em>, I'm
+        <button type="button" class="reveal" aria-controls="reveal-early"
+          >strongest early</button
+        >.
+        <span class="reveal-target" id="reveal-early"
+          >That's conceptual modelling, uncovering user needs, exploring
+          directions, and turning strategy into concrete design.</span
+        >
+        I work by making — prototypes and quick experiments. As a
+        <em>team collaborator</em>, I shape
+        <button type="button" class="reveal" aria-controls="reveal-practice"
+          >how design happens</button
+        >.
+        <span class="reveal-target" id="reveal-practice"
+          >That means fitting design work into the development cycle, building
+          design systems and reusable patterns, and making reflection and
+          critique part of everyday&nbsp;work.</span
+        >
+        AI cuts across both — as a
+        <button type="button" class="reveal" aria-controls="reveal-tool"
+          ><em>tool</em></button
+        ><span class="reveal-target" id="reveal-tool">
+          reshaping how I research, prototype, and synthesise</span
+        >, and as a
+        <button type="button" class="reveal" aria-controls="reveal-material"
+          ><em>material</em></button
+        ><span class="reveal-target" id="reveal-material">
+          reshaping what software can fundamentally do for&nbsp;users</span
+        >.
+      </p>
+      <section id="work" class="flow layout-canvas layout-canvas--subgrid">
+        <!-- <article id="practice" class="flow layout-canvas layout-canvas--subgrid">
+          <small>August 2026</small>
           <p>
-            A personal collection of interaction patterns — fifteen years of
-            learnings, kept where they can compound.
+            <a href="/notes/ai-native-design-practice.html"
+              >AI-native design practice</a
+            >
+            — How I design when AI is part of the medium, the interface, and the
+            making&nbsp;process.
           </p>
-        </article>
-        <article id="lighting" class="flow">
-          <figure>
-            <img
-              decoding="sync"
-              width="1128"
-              height="400"
-              src="/src/images/home/lighting.png"
-              alt="Smart lighting project preview"
-            />
-          </figure>
-          <small>Case, 2021</small>
-          <a href="/cases/lighting.html">Making light work</a>
+        </article> -->
+        <!-- <article class="flow">
+          <small>July 2026</small>
           <p>
-            Designing large-scale outdoor lighting networks managment system.
+            <a href="#">Conceptual modelling for a product-as-a-service</a> —
+            Pairing conceptual modelling with Jobs to Be Done...
           </p>
-        </article>
-        <article id="formbuilder" class="flow">
-          <figure>
-            <img
-              decoding="sync"
-              width="800"
-              height="410"
-              src="/src/images/home/formbuilder.png"
-              alt="Form builder project preview"
-            />
-          </figure>
-          <small>Case, 2019</small>
-          <a href="/cases/formbuilder.html">Guiding people in making forms</a>
+        </article> -->
+        <article id="configurator" class="flow layout-canvas layout-canvas--subgrid">
+          <small>June 2026</small>
           <p>
-            Letting non-designers build well-structured, findable forms — so
+            <a href="/cases/conversational-self-service.html"
+              >A negotiation over a living document</a
+            >
+            — Design for agentive tools that help buy complex industrial equipment in a self-service context.
+
+
+          </p>
+          <div
+            class="entry__media layout-canvas layout-canvas--subgrid"
+          >
+            <figure>
+              <img
+                decoding="sync"
+                width="800"
+                height="600"
+                src="/src/images/conversational-self-service/attribution.webp"
+                alt=""
+              />
+            </figure>
+            <figure>
+              <video
+                width="1198"
+                height="2000"
+                poster="/src/images/conversational-self-service/chat-exchange-poster.webp"
+                preload="none"
+                controls
+                data-autoplay
+                muted
+                loop
+                playsinline
+                aria-label="Screen recording of a chat exchange with the seller's agent"
+              >
+                <source
+                  src="/src/images/conversational-self-service/chat-exchange.webm"
+                  type="video/webm"
+                />
+                <source
+                  src="/src/images/conversational-self-service/chat-exchange.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1600"
+                height="1100"
+                src="/src/images/home/config-4.webp"
+                alt="The agreement document open at its platform schedule: platform and drive type marked as chosen by you, energy package and class marked as proposed, with a note on which drive rates which class"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1408"
+                height="768"
+                src="/src/images/home/elevator.avif"
+                alt="A render of the configured car: two side-opening door panels, and a landing door with a vision panel and a call button"
+              />
+            </figure>
+          </div>
+        </article>
+        <article id="playground" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2025 · Ongoing</small>
+          <p>
+            <a href="/notes/pattern-playground.html">Pattern playground</a> — A personal design-system-adjacent playground for developing the longer-term ideas.
+          </p>
+          <div
+            class="entry__media entry__media--triptych layout-canvas layout-canvas--subgrid"
+          >
+            <figure>
+              <img
+                decoding="sync"
+                width="1760"
+                height="1320"
+                src="/src/images/home/pp-1.webp"
+                alt="The whole graph, zoomed out: coloured pattern dots and hollow ones, drawn as a single loose cloud of overlapping links"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="660"
+                src="/src/images/home/pp-2.webp"
+                alt="Zoomed in on Suggestion, with the rest of the graph faded behind it: Autofill, Delegation, Prompt, Next-best action and a dozen other neighbours named"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="660"
+                src="/src/images/home/pp-3.webp"
+                alt="Zoomed in on Saving, the rest faded the same way, and a smaller neighbourhood: Undo, Form, Deletion, Action consequences, Editing in place, Draft and publish"
+              />
+            </figure>
+          </div>
+        </article>
+        <!-- <article id="user-needs" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2024</small>
+          <p>
+            <a href="/cases/cascading-user-needs.html">Cascading user needs</a>
+            — A model of who a B2B product serves and whose needs wait on whose, feeding discovery and prioritisation .
+          </p>
+           <div
+            class="entry__media entry__media--triptych layout-canvas layout-canvas--subgrid"
+          >
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="680"
+                src="/src/images/home/need-1.png"
+                alt="Sketch of a customer saying “I want to configure a product myself…”"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="680"
+                src="/src/images/home/need-2.png"
+                alt="Sketch of a salesperson saying “I need to configure a product for a customer”"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="880"
+                height="680"
+                src="/src/images/home/need-3.png"
+                alt="Sketch of a modeller saying “I need to shape product configuration flow so that it works for everyone”"
+              />
+            </figure>
+          </div> 
+        </article> -->
+        <article id="lighting" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2021</small>
+          <p>
+            <a href="/cases/lighting.html">Making light work</a> — Designing a
+            management system for large-scale outdoor lighting networks.
+          </p>
+          <!-- Composed row: the video at half the canvas across two rows,
+               the four stills two by two beside it. Placement is in
+               home.css under #lighting. -->
+          <div class="entry__media layout-canvas layout-canvas--subgrid">
+            <figure>
+              <video
+                width="1440"
+                height="900"
+                poster="/src/images/lighting/profile-poster.webp"
+                preload="none"
+                controls
+                data-autoplay
+                muted
+                loop
+                playsinline
+                aria-label="Screen recording of the lighting management system"
+              >
+                <source src="/src/images/lighting/profile.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1400"
+                height="1400"
+                src="/src/images/lighting/map-1.webp"
+                alt="Lighting map at city scale, districts labelled with luminaire counts"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1104"
+                height="828"
+                src="/src/images/lighting/thumb-report.webp"
+                alt="Last quarter's energy report: consumption, economy and hours worked as totals, then the same figures per area"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="700"
+                height="700"
+                src="/src/images/lighting/map-3.webp"
+                alt="Street level: numbered luminaires along a road, one selected and one flagged with a fault"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1104"
+                height="828"
+                src="/src/images/lighting/device-and-task.webp"
+                alt="A device panel: a high-priority ticket for lost communication, and the profile the device inherits from its area"
+              />
+            </figure>
+          </div>
+        </article>
+        <article id="aloud" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2020</small>
+          <p>
+            <a href="https://github.com/igorrazvodovsky/aloud"
+              >Building audiobook player</a
+            >
+            — Personal project and playground for learning.
+          </p>
+          <!-- Composed row: the web player at half the canvas, the phone
+               beside it, the widget and the early sketch stacked in the last
+               quarter, all at their own ratios and hanging from the same top
+               line. Placement is in home.css under #aloud. -->
+          <div class="entry__media layout-canvas layout-canvas--subgrid">
+            <figure>
+              <img
+                decoding="sync"
+                width="3024"
+                height="1898"
+                src="/src/images/home/aloud-web.webp"
+                alt="The web player, dark: chapter title and elapsed time above, a play button in the middle, Alice's Adventures in Wonderland by Lewis Carroll below it, table of contents and bookmarks turned sideways in the margins"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="591"
+                height="1280"
+                src="/src/images/home/aloud-mobile-1.jpg"
+                alt="The same player on a phone, light: a scrubber at 3:21 of 13:07 and a pause button between skip controls"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="1302"
+                height="976"
+                src="/src/images/home/aloud-mobile-3.webp"
+                alt="The iOS now-playing widget: chapter, author, a scrubber counting down, and skip-ten controls either side of pause"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="900"
+                height="900"
+                src="/src/images/home/aloud-sketch.webp"
+                alt="An early ink sketch of the player: a play triangle in a tall frame, book info circled beneath it, navigation and a categories list drawn to the side"
+              />
+            </figure>
+          </div>
+        </article>
+        <article id="formbuilder" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2019</small>
+          <p>
+            <a href="/cases/formbuilder.html">Guiding people in making forms</a>
+            — Letting non-designers build well-structured, findable forms, so
             employees get the help they came for.
           </p>
+          <!-- Composed row: the summary sentence at eight columns, the
+               question detail it guides at the other four. Placement is in
+               home.css under #formbuilder. -->
+          <div class="entry__media layout-canvas layout-canvas--subgrid">
+            <figure>
+              <img
+                decoding="sync"
+                width="1600"
+                height="820"
+                src="/src/images/home/formbuilder.png"
+                alt="A form stated back as a numbered sentence: who will need it, what it connects to, where it submits, how many questions it asks and which fields they map to"
+              />
+            </figure>
+            <figure>
+              <img
+                decoding="sync"
+                width="720"
+                height="720"
+                src="/src/images/formbuilder/config-4.png"
+                alt="One question opened up in the builder: a helper text field under Company code explaining what each letter of the code stands for, and a hint that it will be shown under the input"
+              />
+            </figure>
+          </div>
         </article>
-        <article id="aloud" class="flow">
-          <figure>
-            <img
-              decoding="sync"
-              width="450"
-              height="450"
-              src="/src/images/home/aloud.png"
-              alt="Aloud project preview"
-            />
-          </figure>
-          <small>Personal, 2020</small>
-          <a href="https://github.com/igorrazvodovsky/aloud"
-            >Building audiobook player</a
-          >
-          <p>Personal project and playground for learning.</p>
-        </article>
-
-        <article id="convertiq" class="flow">
-          <figure>
-            <img
-              decoding="sync"
-              width="1128"
-              height="400"
-              src="/src/images/home/convertiq.png"
-              alt="ConvertIQ project preview"
-            />
-          </figure>
-          <small>Case, 2018</small>
-          <a href="/cases/convertiq.html"
-            >Simplifying social media campaign management</a
-          >
+        <article id="convertiq" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2018</small>
           <p>
-            Initial design and prototype of a campaign tool for small
+            <a href="/cases/convertiq.html"
+              >Simplifying social media campaign management</a
+            >
+            — Initial design and prototype of a campaign tool for small
             businesses. Guidance over features.
           </p>
+          <div class="entry__media layout-grid">
+            <figure>
+              <img
+                decoding="sync"
+                width="2256"
+                height="800"
+                src="/src/images/home/convertiq.png"
+                alt="ConvertIQ project preview"
+              />
+            </figure>
+          </div>
         </article>
-        <article id="jukebox" class="flow">
-          <figure>
-            <img
-              decoding="sync"
-              width="1128"
-              height="400"
-              src="/src/images/home/jukebox.svg"
-              alt="Jukebox project preview"
-            />
-          </figure>
-          <small>Case, 2017</small>
-          <a
-            href="https://uxdesign.cc/turning-spotify-into-jukebox-c6f0ae031284"
-            >Thinking about turning Spotify into jukebox</a
-          >
+        <article id="jukebox" class="flow layout-canvas layout-canvas--subgrid">
+          <small>2017</small>
           <p>
-            A concept investigating the playing music in public places using
+            <a
+              href="https://uxdesign.cc/turning-spotify-into-jukebox-c6f0ae031284"
+              >Thinking about turning Spotify into jukebox</a
+            >
+            — A concept investigating the playing music in public places using
             streaming services.
           </p>
+          <div class="entry__media layout-grid">
+            <figure>
+              <img
+                decoding="sync"
+                width="1200"
+                height="202"
+                src="/src/images/home/jukebox.svg"
+                alt="Jukebox project preview"
+              />
+            </figure>
+          </div>
         </article>
       </section>
     </main>

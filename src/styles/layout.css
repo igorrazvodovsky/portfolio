@@ -1,35 +1,12 @@
-/* =============================================================================
-   Layout system
-
-   Two grid primitives, deliberately kept apart:
-
-   .layout-grid    An intrinsically wrapping row. The browser decides how many
-                   columns fit, so its lines are NOT addressable — never place
-                   a child here with `grid-column: 2 / -1`, because line 2 and
-                   line -1 mean something different at every viewport width.
-   .layout-canvas  A fixed twelve-column editorial canvas with named lines, for
-                   compositions that do need specific placement.
-
-   Media queries can't read custom properties, so the two breakpoints are
-   written out at each use site:
-     48em (768px)  the canvas opens up to twelve columns; case headers compose
-     64em (1024px) in-page canvas compositions, which need more width than a
-                   header block does before an inset measure is worth having
-   ========================================================================== */
-
 :root {
-  /* Spacing. Viewport-relative, as the design has always been — collected here
-     so the scale is legible and adjustable in one place. */
-  --space-gutter: 4vmax; /* page padding, and the rhythm between sections */
+  --space-gutter: 4vmax; /* page padding */
+  --space-section: max(2.5rem, var(--space-gutter)); /* between two sections */
   --space-gap: 3vw; /* between the columns of a grid row */
+  --space-row: max(1.5rem, var(--space-gap)); /* between its rows */
   --space-gap-flex: 2vmax;
-  --space-block: var(--space-gap); /* a nested block sitting inside prose */
+  --space-block: var(--space-row); /* a nested block sitting inside prose */
   --space-prose: 0.5em; /* the default flow rhythm */
 }
-
-/* -----------------------------------------------------------------------------
-   Page shell
-   -------------------------------------------------------------------------- */
 
 header {
   padding-inline: var(--space-gutter);
@@ -37,38 +14,38 @@ header {
 }
 
 main {
-  --flow-space: var(--space-gutter);
+  /* Prose rhythm — the default for anything that isn't a page-level division. */
+  --flow-space: 1em;
   padding: var(--space-gutter);
 }
 
-/* -----------------------------------------------------------------------------
-   Flow — vertical rhythm between siblings. An element asks for its own spacing
-   by declaring --flow-space on itself.
-   -------------------------------------------------------------------------- */
+main.flow > section {
+  --flow-space: var(--space-section);
+}
+
+:where(main.flow > section) > * {
+  --flow-space: 1em;
+}
+
+main .flow > h2 {
+  --flow-space: var(--space-section);
+}
 
 .flow > * + * {
   margin-block-start: var(--flow-space, var(--space-prose));
 }
 
-/* A grid nested inside prose is a sub-block rather than a paragraph, so it
-   wants more air. Sections are excluded — their rhythm is the page rhythm
-   declared on <main>. */
 .flow > :is(.layout-grid, .layout-canvas):not(section) {
   --flow-space: var(--space-block);
 
-  /* ...without leaking the larger value down into the block's own contents. */
   > * {
     --flow-space: var(--space-prose);
   }
 }
 
-/* -----------------------------------------------------------------------------
-   .layout-grid — an intrinsically wrapping row of equal columns
-   -------------------------------------------------------------------------- */
-
 .layout-grid {
   --layout-grid-min: 22ch;
-  --layout-grid-gap: var(--space-gap);
+  --layout-grid-gap: var(--space-row) var(--space-gap);
 
   display: grid;
   grid-template-columns: repeat(
@@ -78,33 +55,17 @@ main {
   gap: var(--layout-grid-gap);
 }
 
-/* Spanning every column is the one placement that stays meaningful when the
-   column count is unknown. */
 .layout-grid > h2,
+.layout-grid > h3,
 .layout-grid__col-all {
   grid-column: 1 / -1;
 }
 
-/* -----------------------------------------------------------------------------
-   .layout-canvas — a twelve-column editorial canvas
-
-     full   edge to edge
-     inset  the middle six columns — a comfortable measure for body text
-     aside  the right-hand margin, for footnotes and marginalia
-
-   Children span `full` by default and compositions are opted into inside a
-   min-width query, so nothing has to be undone on small screens.
-   -------------------------------------------------------------------------- */
-
 .layout-canvas {
-  --layout-canvas-gap: var(--space-gap);
+  --layout-canvas-gap: var(--space-row) var(--space-gap);
 
   display: grid;
   gap: var(--layout-canvas-gap);
-
-  /* One column until there is width worth composing in, with every name
-     collapsed onto it — so `inset` and `aside` degrade to full width on their
-     own, and no placement has to be undone. */
   grid-template-columns:
     [full-start inset-start aside-start] minmax(0, 1fr)
     [aside-end inset-end full-end];
@@ -123,16 +84,10 @@ main {
   grid-column: full;
 }
 
-/* Adopt the parent canvas's columns, so nested content keeps the same lines
-   (and the same names) instead of starting a grid of its own. */
 .layout-canvas--subgrid {
   grid-template-columns: subgrid;
+  column-gap: normal;
 }
-
-/* -----------------------------------------------------------------------------
-   .flex-layout-grid — like .layout-grid, except a short last row stretches to
-   fill the width instead of leaving a hole.
-   -------------------------------------------------------------------------- */
 
 .flex-layout-grid {
   --flex-grid-min: 20rem;
