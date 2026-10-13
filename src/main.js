@@ -1,7 +1,9 @@
 import './styles/main.css'
 import { initReveals } from './reveal.js'
+import { initLazyVideos } from './lazy-video.js'
 
 initReveals();
+initLazyVideos();
 
 if (import.meta.env.DEV) {
   const favicon = document.querySelector('link[rel="icon"]');
