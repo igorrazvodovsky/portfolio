@@ -81,14 +81,6 @@
             found or understood becomes emails, calls and rounds of clarification, 
             the slow and expensive kind of support.
           </p>
-          <p>
-            So the builder had to do more than collect fields. It had to bake
-            form-design craft into the tool itself, keep creators thinking in
-            their users' terms, and give the organisation shared means of
-            categorisation — a company-wide vocabulary for all the things and
-            concepts it contains, which is what makes forms findable in the
-            first place.
-          </p>
         </div>
       </section>
 
@@ -106,7 +98,7 @@
             <small class="author">Photo by Brooke Cagle</small>
             <h3>
               Support<a class="footnote" href="#footnote-1"><sup>1</sup></a>
-              agent, formcreator
+              agent, form creator
             </h3>
             <p>
               Are responsible for creating, sustaining and improving a
@@ -130,7 +122,7 @@
           />
           <figcaption class="flow">
             <small class="author">Photo by Amy Hirschi</small>
-            <h3>Employee, end-user of the form</h3>
+            <h3>Employee, end‑user of the form</h3>
             <p>
               Has a task and needs support in achieving it. Can be a person or a
               group's representative. In order to get support, they need to find
@@ -145,38 +137,31 @@
         <article id="process-map" class="flow">
           <h3>Strategic reframe: from data collection to user assistance</h3>
           <p>
-            The application of which the builder is a part of is only a
-            phase in the more general journey people in the company embark on
-            when they need support with something. Acknowledgement of this by
-            the team was important for a better understanding of where our users
-            come from and what happens after they fill out their forms.
-          </p>
-          <p>
-            The journey mapping also gave us clarity and alignment on goals, expectations,
-            and dependencies. <i>Stakeholder interviews</i> broadened that
-            picture and surfaced concerns we hadn't anticipated.
+            The application the builder is part of is only a phase in the more general journey people in the company embark on when they need support with something. Acknowledgement of this by the team was important for a better understanding of where our users come from and what happens after they fill out their forms.
           </p>
           <figure>
             <img
               loading="lazy"
               decoding="async"
               src="/src/images/formbuilder/journey.png"
-              alt="Form builder withing the broader context"
+              alt="Form builder within the broader context"
             />
             <figcaption>
               Overview of the end-user journey and form builder's place within
               it.
             </figcaption>
           </figure>
+          <p>
+            The journey mapping also gave us clarity and alignment on goals, expectations, and dependencies. <i>Stakeholder interviews</i> broadened that picture and surfaced concerns we hadn't anticipated.
+          </p>
+          <p>
+            Seeing the builder as one step in the journey changed what we expected of it. A tool that only collected fields would leave form quality to people who are not designers, and the journey showed where that cost them: in forms nobody could find and questions nobody could answer. So the builder had to carry the craft itself, and we did that by dividing the work between the creator and the tool. The creator is asked only what they know best: what people will search for, and what answer a question expects. The tool takes care of what can be standardised, such as picking the right input, and brings in explanations, examples and defaults only when a question calls for them. And where a choice, such as setting a default, comes with a risk, the tool says so.
+          </p>
         </article>
         <article id="process-topic" class="flow">
-          <h3>Ensuring discoverability</h3>
+          <h3>What the creator is asked</h3>
           <p>
-            Finding the right form was one of the biggest pain points for the
-            previous reincarnation of the app and our goal was to make it easier
-            to do. To achieve this we needed to make sure our users name and
-            organize their forms in a way that their respective users can relate
-            to.
+            Creators are prompted with "What will users search for?" instead of "Name your form", so they describe the form in the words of the people who will look for it. Finding the right form was one of the biggest pain points of the previous incarnation of the app, and it is the creator who decides whether a form can be found.
           </p>
           <p>
             The job of defining the topic of the form is divided between its
@@ -184,7 +169,7 @@
             to the form's definition: the immediate "topic" at hand and the
             broader "subject" space within which the process takes place.
             <i>E.g.</i> in "new user in HR system" the "new user" will be a
-            topic and the "HR system" – its context that distinguishes it from
+            topic and the "HR system" &ndash; its context that distinguishes it from
             other forms dedicated to the creation of users. It was important to
             build our search to understand different combinations between the
             two.<a class="footnote" href="#footnote-2"><sup>2</sup></a>
@@ -212,7 +197,7 @@
             loading="lazy"
             decoding="async"
             src="/src/images/formbuilder/topic.png"
-            alt="Question configuration UI"
+            alt="Form setup: a topic field, then tags for the form's broader context"
             width="1440"
             height="856"
           />
@@ -228,15 +213,20 @@
           />
         </figure>
 
-        <article id="process-config">
-          <div>
-            <h3>Making forms automatically well-designed</h3>
-            <p>When non-designers create forms, there's an opportunity to guide them towards clearer labels, better help text, and more useful error messages through progressive disclosure with embedded best practices.</p>
-            <p>
-              Simple forms stay simple. Complex forms reveal options progressively.
-              Every component automatically includes proper labels, clear help text, and user-friendly validation.
-            </p>
-          </div>
+        <article id="process-config" class="flow">
+          <h3>What the tool decides</h3>
+          <p>
+            Inputs are named after the answer they collect, not the widget that collects it: <i>Input field</i> becomes <i>Text</i>, <i>Checkbox</i> becomes <i>Yes/No</i>, <i>Date picker</i> becomes <i>Date</i>. Whether choices render as radio buttons, checkboxes or a dropdown is the system's call, based on the number of options and other context.
+          </p>
+          <p>
+            The rest of a question's setup is disclosed progressively. Explanations, examples and defaults are offered as further steps, not up front, so the creator sees them only when a question needs them. Simple questions stay simple to set up, and harder ones get their extra settings without burying the basics.
+          </p>
+        </article>
+        <article id="process-defaults" class="flow">
+          <h3>Where the tool warns</h3>
+          <p>
+            Pre-selecting the most frequent answer speeds a form up &mdash; but people tend to stick with whatever's already selected, which can nudge them down a certain path. The builder lets creators set defaults and cautions them about the risk at the same time. This is how most of the guidance in the builder works: creators can still make the riskier choice, and the tool counsels.
+          </p>
         </article>
         <article id="process-config-details" class="layout-canvas layout-canvas--subgrid">
           <figure>
@@ -304,55 +294,7 @@
           </figure>
         </article>
         <!-- TODO: Front-line collaboration -->
-        <article id="process-roadmap" class="flow">
-          <h3>Roadmap planning</h3>
-          <p>
-            I participated in the product roadmap planning cycle by highlighting
-            user needs and the state of the team’s current response to those
-            needs: gaps, opportunities, and blindspots. Helped team members
-            frame their work around the problems that need to be solved rather
-            than the specific features they want to build.
-          </p>
-          <p>
-            <em>Kano modelling </em> was used for prioritisation of new
-            features. Being limited in resources, our focus was on serving our
-            users' basic expectations, to make sure there’s nothing they’re
-            missing.
-          </p>
-        </article>
         <!-- TODO: Integration details -->
-      </section>
-
-      <section id="decisions" class="layout-grid">
-        <h2>Key decisions</h2>
-        <article class="flow">
-          <h3>Ask what users will search for</h3>
-          <p>
-            Creators are prompted with "What will users search for?" instead of
-            "Name your form". The ambition was to change how the person
-            building the form thinks — designing the conditions for good forms
-            one level up from the form itself.
-          </p>
-        </article>
-        <article class="flow">
-          <h3>Name inputs by the answer, not the widget</h3>
-          <p>
-            Not what the user will see, but what you expect from them in
-            return: <i>Input field</i> becomes <i>Text</i>, <i>Checkbox</i>
-            becomes <i>Yes/No</i>, <i>Date picker</i> becomes <i>Date</i>.
-            Whether choices render as radio buttons, checkboxes or a dropdown
-            is the system's call, based on the number of options.
-          </p>
-        </article>
-        <article class="flow">
-          <h3>Defaults, with a warning</h3>
-          <p>
-            Pre-selecting the most frequent answer speeds a form up — but
-            people tend to stick with whatever's already selected, which can
-            nudge them down a certain path. The builder lets creators set
-            defaults and cautions them about the risk in the same breath.
-          </p>
-        </article>
       </section>
 
       <section id="impact" class="layout-grid">
