@@ -14,6 +14,6 @@
     "@kitschpatrol/tldraw-cli": "^6.0.4",
     "beautiful-mermaid": "^1.1.3",
     "puppeteer": "^25.12.0",
-    "vite": "^8.0.16"
+    "vite": "^8.1.6"
   }
 }
