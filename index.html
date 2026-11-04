@@ -98,44 +98,41 @@
             class="entry__media layout-canvas layout-canvas--subgrid"
           >
             <figure>
-              <img
-                decoding="sync"
-                width="800"
-                height="600"
-                src="/src/images/conversational-self-service/attribution.webp"
-                alt=""
-              />
-            </figure>
-            <figure>
               <video
-                width="1198"
-                height="2000"
-                poster="/src/images/conversational-self-service/chat-exchange-poster.webp"
+                width="826"
+                height="1400"
+                poster="/src/images/conversational-self-service/conversation-wide-poster.webp"
                 preload="none"
                 controls
                 data-autoplay
-                muted
                 loop
+                muted
                 playsinline
-                aria-label="Screen recording of a chat exchange with the seller's agent"
+                aria-label="Recording of the configurator chat on a phone: references typed into a message become values in the configuration"
               >
                 <source
-                  src="/src/images/conversational-self-service/chat-exchange.webm"
+                  media="(width <= 48em)"
+                  src="/src/images/conversational-self-service/conversation-phone.webm"
                   type="video/webm"
+                  data-poster="/src/images/conversational-self-service/conversation-phone-poster.webp"
                 />
                 <source
-                  src="/src/images/conversational-self-service/chat-exchange.mp4"
+                  media="(width <= 48em)"
+                  src="/src/images/conversational-self-service/conversation-phone.mp4"
                   type="video/mp4"
+                  data-poster="/src/images/conversational-self-service/conversation-phone-poster.webp"
                 />
+                <source src="/src/images/conversational-self-service/conversation-wide.webm" type="video/webm" />
+                <source src="/src/images/conversational-self-service/conversation-wide.mp4" type="video/mp4" />
               </video>
             </figure>
             <figure>
               <img
                 decoding="sync"
-                width="1600"
-                height="1100"
-                src="/src/images/home/config-4.webp"
-                alt="The agreement document open at its platform schedule: platform and drive type marked as chosen by you, energy package and class marked as proposed, with a note on which drive rates which class"
+                width="800"
+                height="600"
+                src="/src/images/conversational-self-service/attribution.webp"
+                alt="Configuration values, each marked with where it came from: the rules, the buyer, or a document the buyer’s agent read"
               />
             </figure>
             <figure>
@@ -144,8 +141,37 @@
                 width="1408"
                 height="768"
                 src="/src/images/home/elevator.avif"
-                alt="A render of the configured car: two side-opening door panels, and a landing door with a vision panel and a call button"
+                alt="Render of the configured lift car and its landing door"
               />
+            </figure>
+            <figure>
+              <video
+                width="1738"
+                height="696"
+                poster="/src/images/conversational-self-service/agents-meet-wide-poster.webp"
+                preload="none"
+                controls
+                data-autoplay
+                loop
+                muted
+                playsinline
+                aria-label="Recording of a buyer’s own agent putting a question to the seller’s assistant, then handing the answer back to the buyer"
+              >
+                <source
+                  media="(width <= 48em)"
+                  src="/src/images/conversational-self-service/agents-meet-phone.webm"
+                  type="video/webm"
+                  data-poster="/src/images/conversational-self-service/agents-meet-phone-poster.webp"
+                />
+                <source
+                  media="(width <= 48em)"
+                  src="/src/images/conversational-self-service/agents-meet-phone.mp4"
+                  type="video/mp4"
+                  data-poster="/src/images/conversational-self-service/agents-meet-phone-poster.webp"
+                />
+                <source src="/src/images/conversational-self-service/agents-meet-wide.webm" type="video/webm" />
+                <source src="/src/images/conversational-self-service/agents-meet-wide.mp4" type="video/mp4" />
+              </video>
             </figure>
           </div>
         </article>
@@ -155,34 +181,36 @@
             <a href="/notes/pattern-playground.html">Pattern playground</a> — A personal design-system-adjacent playground for developing the longer-term ideas.
           </p>
           <div
-            class="entry__media entry__media--triptych layout-canvas layout-canvas--subgrid"
+            class="entry__media layout-canvas layout-canvas--subgrid"
           >
             <figure>
-              <img
-                decoding="sync"
-                width="1760"
-                height="1320"
-                src="/src/images/home/pp-1.webp"
-                alt="The whole graph, zoomed out: coloured pattern dots and hollow ones, drawn as a single loose cloud of overlapping links"
-              />
-            </figure>
-            <figure>
-              <img
-                decoding="sync"
-                width="880"
-                height="660"
-                src="/src/images/home/pp-2.webp"
-                alt="Zoomed in on Suggestion, with the rest of the graph faded behind it: Autofill, Delegation, Prompt, Next-best action and a dozen other neighbours named"
-              />
-            </figure>
-            <figure>
-              <img
-                decoding="sync"
-                width="880"
-                height="660"
-                src="/src/images/home/pp-3.webp"
-                alt="Zoomed in on Saving, the rest faded the same way, and a smaller neighbourhood: Undo, Form, Deletion, Action consequences, Editing in place, Draft and publish"
-              />
+              <video
+                width="2480"
+                height="880"
+                poster="/src/images/home/reliance-wide-poster.webp"
+                preload="none"
+                controls
+                data-autoplay
+                loop
+                muted
+                playsinline
+                aria-label="Recording of the pattern graph: five patterns light up in turn, and an AI-drafted reply gains each one’s feature"
+              >
+                <source
+                  media="(width <= 48em)"
+                  src="/src/images/home/reliance-phone.webm"
+                  type="video/webm"
+                  data-poster="/src/images/home/reliance-phone-poster.webp"
+                />
+                <source
+                  media="(width <= 48em)"
+                  src="/src/images/home/reliance-phone.mp4"
+                  type="video/mp4"
+                  data-poster="/src/images/home/reliance-phone-poster.webp"
+                />
+                <source src="/src/images/home/reliance-wide.webm" type="video/webm" />
+                <source src="/src/images/home/reliance-wide.mp4" type="video/mp4" />
+              </video>
             </figure>
           </div>
         </article>
@@ -245,7 +273,7 @@
                 muted
                 loop
                 playsinline
-                aria-label="Screen recording of the lighting management system"
+                aria-label="Recording of the lighting profile editor: brightness schedules for one area, drawn as a chart from dusk to dawn"
               >
                 <source src="/src/images/lighting/profile.mp4" type="video/mp4" />
               </video>
@@ -386,7 +414,7 @@
                 width="2256"
                 height="800"
                 src="/src/images/home/convertiq.png"
-                alt="ConvertIQ project preview"
+                alt="Campaign list: one active campaign with its results, reach and spend, above three that have ended"
               />
             </figure>
           </div>
@@ -408,7 +436,7 @@
                 width="1200"
                 height="202"
                 src="/src/images/home/jukebox.svg"
-                alt="Jukebox project preview"
+                alt="Line drawing of a café: people at tables, a waiter, and a jukebox at the end of the room"
               />
             </figure>
           </div>
