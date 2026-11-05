@@ -1,0 +1,46 @@
+/* Heading anchors — see src/heading-anchors.js. */
+
+heading-anchors {
+  display: contents;
+}
+
+/* Land a jump with some air above it: headings are trimmed to cap height, so
+   without a margin the text would sit flush against the top of the viewport. */
+heading-anchors :is(section, article)[id],
+.anchor-h {
+  scroll-margin-block-start: var(--space-gutter);
+}
+
+.anchor-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.anchor-link:hover {
+  color: inherit;
+}
+
+.anchor-icon {
+  margin-inline-start: 0.3em;
+  font-weight: 400;
+  color: oklch(0% 0 0 / 30%);
+  transition: color 0.2s ease-out, opacity 0.2s ease-out;
+}
+
+.anchor-link:hover .anchor-icon,
+.anchor-link:focus-visible .anchor-icon {
+  color: oklch(0% 0 0 / 60%);
+}
+
+/* With a pointer the "#" waits for the heading to be hovered; on touch there is
+   no hover to wait for, so it stays visible. */
+@media (hover: hover) {
+  .anchor-icon {
+    opacity: 0;
+  }
+
+  .anchor-h:hover .anchor-icon,
+  .anchor-link:focus-visible .anchor-icon {
+    opacity: 1;
+  }
+}

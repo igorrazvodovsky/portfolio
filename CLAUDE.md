@@ -63,6 +63,8 @@ A UX portfolio site: vanilla JavaScript, Vite, one HTML file per page. No framew
 
 *Behaviour.* A custom element is the house convention. `src/reveal.js` is the deliberate exception, and says why in its header comment — a trigger and the text it reveals are separated by prose that has no business being wrapped in anything, so `aria-controls` links them instead. It ships working without JS: the reveal markup is expanded until the script collapses it.
 
+`<heading-anchors>` (`src/heading-anchors.js`) wraps `<main>` on case and note pages and turns each `h2`/`h3` into a link to its section, with a `#` that appears on hover. A heading that is the first in a `section[id]` links to that id, so `#problem`, `#approach` stay the stable URLs; other headings get an id from their text. It takes `display: contents`, so it never affects layout. A heading that already holds a link gets a separate `#` link rather than being wrapped.
+
 ### Diagrams
 
 Mermaid sources live in `src/diagrams/<slug>/<name>.mmd` and render to `src/images/<slug>/<name>.svg` with `npm run diagrams`. The renderer is [beautiful-mermaid](https://github.com/lukilabs/beautiful-mermaid) — a library, not a CLI, so `scripts/render-diagrams.mjs` is the entry point and the single place the look is set. It walks the tree, so a new `.mmd` needs no registration.

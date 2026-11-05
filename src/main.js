@@ -1,6 +1,7 @@
 import './styles/main.css'
 import { initReveals } from './reveal.js'
 import { initLazyVideos } from './lazy-video.js'
+import './heading-anchors.js'
 
 initReveals();
 initLazyVideos();

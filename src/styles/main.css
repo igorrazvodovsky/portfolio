@@ -2,6 +2,7 @@
 @import "layout.css";
 @import "typography.css";
 @import "reveal.css";
+@import "heading-anchors.css";
 @import "home.css";
 @import "./cases/case.css";
 @import "./cases/lighting.css";
