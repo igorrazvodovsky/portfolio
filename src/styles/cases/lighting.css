@@ -6,10 +6,69 @@
   --flow-space: var(--space-gutter);
 }
 
+/* Both user groups adopt the section's intrinsic tracks through a subgrid,
+   one user to a track, so the primary and secondary lists share columns
+   with each other and with Constraints and Impact below. Three primary
+   users leave the fourth track empty, as Impact's three items do. A nested
+   .layout-grid would count its own tracks instead: three for the primary
+   list and four for the secondary, out of line with each other. The groups
+   keep their flow rhythm, so they drop the row gap. */
+#lighting #users .user-group {
+  display: grid;
+  grid-template-columns: subgrid;
+  row-gap: 0;
+
+  > * {
+    grid-column: 1 / -1;
+  }
+}
+
 #lighting #users .user-group__list {
   --flow-space: 1em;
 
-  > * {
-    --flow-space: 1em;
+  display: grid;
+  grid-template-columns: subgrid;
+  gap: var(--space-row) var(--space-gap);
+}
+
+/* Secondary users have no photo, but they are set at caption size and
+   rhythm so the two lists read as one scale. */
+#lighting #users .user-group__list > article {
+  font-size: smaller;
+
+  > h4 + * {
+    --flow-space: 0.75em;
+  }
+}
+
+/* Modelling the domain is a canvas so its footnotes can sit in the margin.
+   The intro and the layers hold the left nine columns and each footnote
+   takes the aside columns on its own row, beside the text it annotates.
+   Nine canvas columns are three of the section's intrinsic tracks, so the
+   layers fall into the same columns as the primary users, with the fourth
+   track left to the notes. That holds only once the section has four
+   tracks, which it reaches at about 83em; below that, nine columns cannot
+   fit three layers, so the layers take the whole canvas, as the users do,
+   and the footnotes stay in the flow. The article keeps its flow rhythm,
+   so it drops the row gap. */
+#lighting #domain {
+  row-gap: 0;
+}
+
+@media (width > 84em) {
+  #lighting #domain {
+    > p,
+    > .layout-grid {
+      grid-column: full-start / inset-end;
+    }
+
+    > .footnote {
+      grid-column: aside;
+    }
+
+    /* Shares the layers' block spacing so it starts level with them. */
+    > .layout-grid + .footnote {
+      --flow-space: var(--space-block);
+    }
   }
 }

@@ -258,60 +258,65 @@
             <a href="/cases/lighting.html">Making light work</a> — Designing a
             management system for large-scale outdoor lighting networks.
           </p>
-          <!-- Composed row: the video at half the canvas across two rows,
-               the four stills two by two beside it. Placement is in
+          <!-- Composed row: the profile editor at half the canvas across two
+               rows, the map zoom beside it at the same height, the stat and
+               the ticket stacked in the last quarter. Placement is in
                home.css under #lighting. -->
           <div class="entry__media layout-canvas layout-canvas--subgrid">
             <figure>
               <video
-                width="1440"
-                height="900"
-                poster="/src/images/lighting/profile-poster.webp"
+                width="1280"
+                height="880"
+                poster="/src/images/lighting/profile-editor-poster.webp"
                 preload="none"
                 controls
                 data-autoplay
-                muted
                 loop
+                muted
                 playsinline
-                aria-label="Recording of the lighting profile editor: brightness schedules for one area, drawn as a chart from dusk to dawn"
+                aria-label="The dimming profile editor for Harbour promenade: a schedule is added and dragged down to 67% from 22:00 to 06:00, and the night's brightness chart dips with it; then Account for traffic is switched on and a paler band fills the dip back up to 100%. Traffic is then switched off and the schedule deleted, and it starts over"
               >
-                <source src="/src/images/lighting/profile.mp4" type="video/mp4" />
+                <source
+                  media="(width <= 48em)"
+                  src="/src/images/lighting/profile-editor-compact.mp4"
+                  type="video/mp4"
+                  data-poster="/src/images/lighting/profile-editor-compact-poster.webp"
+                />
+                <source src="/src/images/lighting/profile-editor.mp4" type="video/mp4" />
+              </video>
+            </figure>
+            <figure>
+              <video
+                width="600"
+                height="880"
+                poster="/src/images/lighting/map-zoom-poster.webp"
+                preload="none"
+                controls
+                data-autoplay
+                loop
+                muted
+                playsinline
+                aria-label="The lighting map of Solna zooming through its three bands: districts with their lamp counts, then the areas inside Skytteholm with Solnavägen flagged, then the lamps along Solnavägen, where SV-006 is not responding, before zooming back out to the districts"
+              >
+                <source src="/src/images/lighting/map-zoom.mp4" type="video/mp4" />
               </video>
             </figure>
             <figure>
               <img
                 decoding="sync"
-                width="1400"
-                height="1400"
-                src="/src/images/lighting/map-1.webp"
-                alt="Lighting map at city scale, districts labelled with luminaire counts"
+                width="1008"
+                height="672"
+                src="/src/images/lighting/dimming-economy.webp"
+                alt="Dimming economy from the energy report: 37% less energy than at full brightness, last quarter"
               />
             </figure>
             <figure>
               <img
                 decoding="sync"
-                width="1104"
-                height="828"
-                src="/src/images/lighting/thumb-report.webp"
-                alt="Last quarter's energy report: consumption, economy and hours worked as totals, then the same figures per area"
-              />
-            </figure>
-            <figure>
-              <img
-                decoding="sync"
-                width="700"
-                height="700"
-                src="/src/images/lighting/map-3.webp"
-                alt="Street level: numbered luminaires along a road, one selected and one flagged with a fault"
-              />
-            </figure>
-            <figure>
-              <img
-                decoding="sync"
-                width="1104"
-                height="828"
-                src="/src/images/lighting/device-and-task.webp"
-                alt="A device panel: a high-priority ticket for lost communication, and the profile the device inherits from its area"
+                width="1008"
+                height="672"
+                src="/src/images/lighting/fault-ticket.webp"
+                alt="A fault ticket: lost communication with a segment controller on Solnavägen, new and high priority, assigned to Anna Lindqvist"
               />
             </figure>
           </div>
@@ -415,28 +420,6 @@
                 height="800"
                 src="/src/images/home/convertiq.png"
                 alt="Campaign list: one active campaign with its results, reach and spend, above three that have ended"
-              />
-            </figure>
-          </div>
-        </article>
-        <article id="jukebox" class="flow layout-canvas layout-canvas--subgrid">
-          <small>2017</small>
-          <p>
-            <a
-              href="https://uxdesign.cc/turning-spotify-into-jukebox-c6f0ae031284"
-              >Thinking about turning Spotify into jukebox</a
-            >
-            — A concept investigating the playing music in public places using
-            streaming services.
-          </p>
-          <div class="entry__media layout-grid">
-            <figure>
-              <img
-                decoding="sync"
-                width="1200"
-                height="202"
-                src="/src/images/home/jukebox.svg"
-                alt="Line drawing of a café: people at tables, a waiter, and a jukebox at the end of the room"
               />
             </figure>
           </div>
